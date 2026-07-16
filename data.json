@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-16T18:42:52+00:00",
+  "generated": "2026-07-16T20:07:12+00:00",
   "kpis": {
     "total": 72,
     "resolved": 17,
@@ -10,7 +10,7 @@
     "openS1": 2,
     "openS2": 20,
     "totalOpen": 55,
-    "unassignedOpen": 14,
+    "unassignedOpen": 13,
     "future": 5,
     "setAside": 4
   },
@@ -165,8 +165,8 @@
     },
     {
       "label": "Unassigned",
-      "total": 18,
-      "open": 14
+      "total": 17,
+      "open": 13
     },
     {
       "label": "Jerome Michael",
@@ -175,8 +175,8 @@
     },
     {
       "label": "Chris Smith",
-      "total": 2,
-      "open": 2
+      "total": 3,
+      "open": 3
     },
     {
       "label": "Scott Duckworth",
