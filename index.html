@@ -1,235 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>DSA Dashboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
 <style>
   :root{
-    --marine:#081581; --navy:#050D57; --blue:#1742F6; --teal:#00B6C3;
-    --magenta:#C200CC; --purple:#6D18F1; --charcoal:#3C454E;
-    --ink:#20272E; --muted:#5A6570; --faint:#8A929A;
-    --grid:#EDF1F3; --line:#E3E7EA; --card:#FFFFFF; --bg:#F4F6F8; --dot:#5FE0EC;
+    --marine:#081581; --navy:#050D57; --charcoal:#3C454E;
+    --execute:#1742F6; --win:#00B6C3; --plan:#C200CC; --analyze:#6D18F1;
+    --sev1:#7C0083; --sev2:#C200CC; --sev3:#DA6BE0; --sev4:#EFC2F2;
+    --paper:#F4F6F7; --card:#FFFFFF; --line:#E3E7EA; --ink:#1B2A33;
+    --muted:#5E7180; --faint:#8A99A4; --grid:#EDF1F3; --done:#C7D0D6;
+    --radius:14px; --shadow:0 1px 2px rgba(0,32,48,.04),0 8px 24px rgba(0,32,48,.06);
   }
   *{box-sizing:border-box}
-  body{margin:0;background:var(--bg);color:var(--ink);
-       font-family:"Figtree",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 20px 56px;}
-  /* header */
-  header{background:var(--marine);color:#fff;margin-bottom:22px;}
-  .hbar{max-width:1120px;margin:0 auto;padding:22px 20px;display:flex;
-        align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;}
-  .brand{font-size:30px;font-weight:800;letter-spacing:-.5px;}
-  .brand .d{color:var(--dot);}
-  .brand .sub{display:block;font-size:12px;font-weight:600;letter-spacing:2px;
-              color:#B9C2E8;margin-top:2px;}
-  .htitle{font-size:22px;font-weight:700;text-align:right;}
-  .htitle .stamp{display:block;font-size:12px;font-weight:500;color:#B9C2E8;margin-top:4px;}
-  .accent{height:5px;background:linear-gradient(90deg,var(--teal) 0 25%,var(--blue) 25% 50%,var(--magenta) 50% 75%,var(--purple) 75% 100%);}
-  /* placeholder / error banners */
-  .note{padding:10px 14px;border-radius:8px;font-size:13px;font-weight:600;margin-bottom:18px;}
-  .note.ph{background:#FFF4D6;color:#7a5b00;border:1px solid #F0D48A;}
-  .note.err{background:#FDE7EF;color:#8a0043;border:1px solid #F3B6cf;}
-  /* cards */
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;}
-  .card h2{margin:0 0 14px;font-size:13px;font-weight:700;letter-spacing:.6px;
-           text-transform:uppercase;color:var(--muted);}
+  body{margin:0;background:var(--paper);color:var(--ink);
+    font-family:'Figtree',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    font-variant-numeric:tabular-nums;line-height:1.5;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 24px 72px;}
+  .topbar{background:var(--marine);color:#fff;}
+  .topbar-in{max-width:1180px;margin:0 auto;padding:18px 24px;display:flex;align-items:center;gap:18px;}
+  .brand{font-weight:800;font-size:22px;letter-spacing:-.5px;}
+  .brand .dot{color:#5FE0EC;}
+  .topbar .divider{width:1px;height:22px;background:rgba(255,255,255,.25);}
+  .topbar .sub{font-weight:500;font-size:14px;color:rgba(255,255,255,.82);}
+  .topbar .spacer{flex:1}
+  .topbar .asof{font-size:12.5px;color:rgba(255,255,255,.7);font-weight:500;}
+  .hero{background:linear-gradient(160deg,var(--navy),var(--marine) 70%);color:#fff;
+    border-radius:var(--radius);margin-top:26px;padding:30px 32px;box-shadow:var(--shadow);
+    display:grid;grid-template-columns:1.35fr 1fr;gap:36px;align-items:center;}
+  .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:700;color:#5FE0EC;margin:0 0 10px;}
+  .hero h1{margin:0 0 6px;font-size:30px;line-height:1.12;font-weight:800;letter-spacing:-.6px;}
+  .hero p.lede{margin:0;color:rgba(255,255,255,.8);font-size:14.5px;max-width:48ch;}
+  .readout{display:flex;align-items:baseline;gap:14px;margin:20px 0 12px;}
+  .readout .big{font-size:58px;font-weight:800;letter-spacing:-2px;line-height:1;}
+  .readout .big small{font-size:26px;font-weight:700;opacity:.6;margin-left:2px;}
+  .readout .rlabel{font-size:13px;color:rgba(255,255,255,.78);max-width:18ch;}
+  .meter .track{display:flex;height:16px;border-radius:9px;overflow:hidden;background:rgba(255,255,255,.12);}
+  .meter .seg{height:100%;transition:width .8s cubic-bezier(.22,.61,.36,1);}
+  .meter .legend{display:flex;flex-wrap:wrap;gap:14px 20px;margin-top:14px;}
+  .meter .lg{display:flex;align-items:center;gap:8px;font-size:12.5px;color:rgba(255,255,255,.85);}
+  .meter .sw{width:11px;height:11px;border-radius:3px;display:inline-block;}
+  .alertcard{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:20px 22px;}
+  .alertcard h3{margin:0 0 8px;font-size:12px;text-transform:uppercase;letter-spacing:.14em;color:rgba(255,255,255,.7);font-weight:700;}
+  .alertrow{display:flex;align-items:center;justify-content:space-between;padding:11px 0;border-top:1px solid rgba(255,255,255,.1);}
+  .alertrow:first-of-type{border-top:none;}
+  .alertrow .n{font-size:26px;font-weight:800;letter-spacing:-1px;}
+  .alertrow .k{font-size:13px;color:rgba(255,255,255,.82);display:flex;align-items:center;gap:9px;}
+  .pip{width:9px;height:9px;border-radius:50%;display:inline-block;}
+  .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:16px;}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;box-shadow:var(--shadow);}
+  .kpi .n{font-size:26px;font-weight:800;letter-spacing:-1px;color:var(--marine);}
+  .kpi .l{font-size:11.5px;color:var(--muted);font-weight:600;margin-top:2px;line-height:1.25;}
+  .kpi .bar{height:3px;border-radius:2px;background:var(--grid);margin-top:10px;overflow:hidden;}
+  .kpi .bar i{display:block;height:100%;border-radius:2px;}
+  h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);font-weight:700;margin:34px 0 14px;}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-  .grid-hero{display:grid;grid-template-columns:1.15fr .85fr;gap:18px;margin-bottom:18px;}
-  section{margin-bottom:18px;}
-  @media(max-width:820px){.grid2,.grid-hero{grid-template-columns:1fr;}}
-  /* hero readiness */
-  .big{font-size:56px;font-weight:800;line-height:1;color:var(--marine);}
-  .big span{font-size:22px;color:var(--muted);font-weight:700;}
-  .barout{height:14px;border-radius:8px;background:var(--grid);overflow:hidden;margin:16px 0 8px;}
-  .barin{height:100%;background:var(--teal);border-radius:8px;}
-  .legend{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:12px;font-size:12.5px;color:var(--muted);}
-  .legend .k{display:inline-flex;align-items:center;gap:6px;}
-  .legend .sw{width:11px;height:11px;border-radius:3px;display:inline-block;}
-  /* attention */
-  .att{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
-  @media(max-width:640px){.att{grid-template-columns:repeat(2,1fr);}}
-  .att .cell{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;}
-  .att .n{font-size:30px;font-weight:800;line-height:1;}
-  .att .l{font-size:12px;color:var(--muted);margin-top:6px;font-weight:600;}
-  .att .crit .n{color:var(--magenta);}
-  .att .warn .n{color:var(--purple);}
-  .att .mut .n{color:var(--marine);}
-  /* kpi strip */
-  .kpis{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;}
-  @media(max-width:640px){.kpis{grid-template-columns:repeat(2,1fr);}}
-  .kpi{padding:12px 6px;text-align:center;border-right:1px solid var(--line);}
-  .kpi:last-child{border-right:none;}
-  .kpi .n{font-size:26px;font-weight:800;color:var(--marine);}
-  .kpi .l{font-size:11.5px;color:var(--muted);margin-top:4px;font-weight:600;}
-  /* bars */
-  .row{display:flex;align-items:center;gap:10px;margin:9px 0;font-size:13px;}
-  .row .lab{width:180px;flex:none;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
-  .row .track{flex:1;background:var(--grid);border-radius:6px;height:20px;position:relative;overflow:hidden;}
-  .row .fill{height:100%;border-radius:6px;}
-  .row .fill.open{position:absolute;top:0;left:0;background:var(--magenta);opacity:.9;}
-  .row .fill.tot{background:var(--marine);}
-  .row .val{width:66px;flex:none;text-align:right;color:var(--muted);font-variant-numeric:tabular-nums;}
-  @media(max-width:640px){.row .lab{width:120px;}}
-  /* donut */
-  .donutwrap{display:flex;align-items:center;gap:18px;}
-  .donut{flex:none;}
-  .dlegend{font-size:13px;}
-  .dlegend .k{display:flex;align-items:center;gap:8px;margin:6px 0;}
-  .dlegend .sw{width:12px;height:12px;border-radius:3px;}
-  .dlegend .c{margin-left:auto;color:var(--muted);font-variant-numeric:tabular-nums;padding-left:14px;}
-  /* tables / lists */
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow);}
+  .panel .head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
+  .panel h3{margin:0 0 3px;font-size:16px;font-weight:700;letter-spacing:-.2px;}
+  .panel .cap{margin:0 0 18px;font-size:12.5px;color:var(--faint);}
+  .donut-wrap{display:flex;gap:26px;align-items:center;}
+  .donut{position:relative;flex:0 0 auto;}
+  .donut .ctr{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  .donut .ctr b{font-size:30px;font-weight:800;letter-spacing:-1px;color:var(--marine);line-height:1;}
+  .donut .ctr span{font-size:11px;color:var(--muted);font-weight:600;margin-top:2px;}
+  .dlegend{flex:1;display:flex;flex-direction:column;gap:9px;}
+  .dlegend .row{display:flex;align-items:center;gap:10px;font-size:13px;}
+  .dlegend .row .sw{width:11px;height:11px;border-radius:3px;}
+  .dlegend .row .lab{flex:1;color:var(--ink);}
+  .dlegend .row .v{font-weight:700;color:var(--marine);}
+  .dlegend .row .pct{color:var(--faint);font-size:11.5px;width:38px;text-align:right;}
+  .bars{display:flex;flex-direction:column;gap:11px;}
+  .brow .top{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;margin-bottom:5px;}
+  .brow .top .lab{color:var(--ink);}
+  .brow .top .val{font-weight:700;color:var(--marine);font-size:12.5px;white-space:nowrap;}
+  .brow .top .val .mut{color:var(--faint);font-weight:600;}
+  .track{background:var(--grid);border-radius:6px;height:9px;overflow:hidden;display:flex;}
+  .track i{display:block;height:100%;transition:width .8s cubic-bezier(.22,.61,.36,1);}
+  .track i.open{background:var(--marine);}
+  .track i.done{background:var(--done);}
+  .sevrow{display:grid;grid-template-columns:118px 1fr 96px;align-items:center;gap:12px;margin-bottom:12px;}
+  .sevrow .name{font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:8px;}
+  .sevrow .name .sw{width:12px;height:12px;border-radius:3px;flex:none;}
+  .sevrow .track{height:16px;}
+  .sevrow .cnt{font-size:12px;color:var(--muted);text-align:right;white-space:nowrap;}
+  .sevrow .cnt b{color:var(--plan);font-size:13px;}
+  .legend-mini{font-size:11.5px;color:var(--faint);margin-top:14px;}
+  .legend-mini .sw{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin:0 4px 0 0;}
+  .toggle{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;flex:none;}
+  .toggle button{border:none;background:#fff;padding:4px 10px;font-size:11px;font-weight:700;color:var(--muted);cursor:pointer;}
+  .toggle button.active{background:var(--marine);color:#fff;}
+  .itrow{display:flex;align-items:center;gap:12px;margin-bottom:12px;font-size:13px;}
+  .itrow .lab{width:150px;flex:none;color:var(--ink);font-weight:600;}
+  .itrow .t{flex:1;background:var(--grid);border-radius:6px;height:14px;overflow:hidden;}
+  .itrow .t i{display:block;height:100%;background:var(--execute);border-radius:6px;}
+  .itrow .n{width:34px;text-align:right;font-weight:800;color:var(--marine);}
+  .itrow.future .t i{background:var(--analyze);}
+  .futrow{display:flex;align-items:center;gap:10px;padding:9px 0;border-top:1px solid var(--grid);font-size:13px;}
+  .futrow:first-child{border-top:none;}
+  .futrow .wi{flex:1;color:var(--ink);}
+  .futrow .ow{color:var(--faint);font-size:12px;white-space:nowrap;}
+  .recentrow{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid var(--grid);font-size:13px;}
+  .recentrow:first-child{border-top:none;}
+  .recentrow .d{color:var(--win);font-weight:700;flex:none;}
   table{width:100%;border-collapse:collapse;font-size:13px;}
-  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);}
-  th{font-size:11px;text-transform:uppercase;letter-spacing:.5px;color:var(--faint);}
-  td.sev{font-weight:800;}
-  .pill{display:inline-block;padding:2px 8px;border-radius:20px;font-size:11px;font-weight:700;}
-  .s1{background:#7C0083;color:#fff;} .s2{background:var(--magenta);color:#fff;}
-  .recent li{display:flex;justify-content:space-between;gap:12px;padding:7px 0;border-bottom:1px solid var(--line);font-size:13px;}
-  .recent li .d{color:var(--teal);font-weight:700;font-variant-numeric:tabular-nums;flex:none;}
-  ul.recent{list-style:none;margin:0;padding:0;}
-  footer{margin-top:26px;font-size:12px;color:var(--faint);text-align:center;}
-  footer a{color:var(--marine);text-decoration:none;font-weight:600;}
-  h2 .hint{font-weight:600;color:var(--faint);text-transform:none;letter-spacing:0;font-size:11px;}
+  thead th{text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);font-weight:700;padding:0 12px 10px;border-bottom:2px solid var(--line);}
+  thead th.sortable{cursor:pointer;user-select:none;}
+  thead th.sortable:hover{color:var(--marine);}
+  thead th .arw{font-size:9px;opacity:.6;margin-left:3px;}
+  tbody td{padding:11px 12px;border-bottom:1px solid var(--grid);vertical-align:middle;}
+  tbody tr:hover{background:#FAFCFD;}
+  .wicell{font-weight:600;color:var(--ink);}
+  .tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap;background:#EEF3F6;}
+  .tag .pip{width:7px;height:7px;}
+  .sev-badge{font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;color:#fff;}
+  .owner{color:var(--muted);}
+  .owner.none{color:var(--faint);font-style:italic;}
+  .toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:2px 0 16px;}
+  .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer;}
+  .chip.active{background:var(--marine);border-color:var(--marine);color:#fff;}
+  select.sel{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12.5px;color:var(--ink);background:#fff;}
+  .cnote{font-size:12px;color:var(--faint);margin-left:auto;}
+  .note{display:flex;gap:12px;align-items:flex-start;background:#FCF3F9;border:1px solid #F0D4E7;border-left:3px solid var(--plan);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13px;color:#5a3350;}
+  .note b{color:var(--plan);}
+  .banner{border-radius:10px;padding:11px 15px;font-size:13px;font-weight:600;margin:22px 0 -4px;}
+  .banner.ph{background:#FFF4D6;color:#7a5b00;border:1px solid #F0D48A;}
+  .banner.err{background:#FDE7EF;color:#8a0043;border:1px solid #F3B6cf;}
+  footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;font-size:12px;color:var(--faint);}
+  footer a{color:var(--muted);text-decoration:none;font-weight:600;}
+  footer .spacer{flex:1}
+  @media (max-width:900px){.hero{grid-template-columns:1fr;gap:24px;padding:24px;}.kpis{grid-template-columns:repeat(2,1fr);}.grid2{grid-template-columns:1fr;}.readout .big{font-size:48px;}}
 </style>
 </head>
 <body>
-<header>
-  <div class="hbar">
-    <div class="brand">Deltek<span class="d">.</span>
-      <span class="sub">DSA DASHBOARD</span></div>
-    <div class="htitle">Launch Readiness
-      <span class="stamp" id="stamp">Loading…</span></div>
+  <div class="topbar"><div class="topbar-in">
+    <div class="brand">Deltek<span class="dot">.</span></div>
+    <div class="divider"></div>
+    <div class="sub">DSA Dashboard</div>
+    <div class="spacer"></div>
+    <div class="asof" id="asof">Loading…</div>
+  </div></div>
+  <div class="wrap">
+    <div id="banner"></div>
+    <div id="app"></div>
   </div>
-</header>
-<div class="accent"></div>
-
-<div class="wrap">
-  <div id="banner"></div>
-  <div id="app"></div>
-</div>
-
 <script>
-const C = {
-  status:{"Complete":"#00B6C3","In progress":"#1742F6","Re-test":"#6D18F1",
-          "Working as designed":"#9AA3AB","Not started":"#CDD3D8"},
-  sev:{"S1 · Mission critical":"#7C0083","S2 · Critical":"#C200CC",
-       "S3 · Elevated":"#DA6BE0","S4 · General":"#EFC2F2","Unspecified":"#C4CDD3"},
-};
-const esc = s => String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $ = s => document.querySelector(s);
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const C = {marine:'#081581',execute:'#1742F6',win:'#00B6C3',plan:'#C200CC',analyze:'#6D18F1',notstarted:'#CDD3D8'};
+const STATUS_COLOR = {"Complete":C.win,"Re-open":C.plan,"In progress":C.execute,"Re-test":C.analyze,"Working as designed":'#9AA3AB',"Not started":C.notstarted};
+const SEV_COLOR = {"S1 · Mission critical":'#7C0083',"S2 · Critical":'#C200CC',"S3 · Elevated":'#DA6BE0',"S4 · General":'#EFC2F2',"Unspecified":'#C4CDD3'};
+const SEVK = {"S1":0,"S2":1};
+let D=null, barSort='open', punch={sev:'all',owner:'all',key:'sev',dir:1};
 
-function bars(items, colorFn){
-  const max = Math.max(1, ...items.map(i=>i.total));
-  return items.map(i=>{
-    const totPct = i.total/max*100, opPct = (i.open||0)/max*100;
-    const val = (i.open!==undefined) ? `${i.total} · ${i.open} open` : `${i.total}`;
-    return `<div class="row"><div class="lab" title="${esc(i.label)}">${esc(i.label)}</div>
-      <div class="track"><div class="fill tot" style="width:${totPct}%;background:${colorFn?colorFn(i.label):'var(--marine)'}"></div>
-      ${i.open!==undefined?`<div class="fill open" style="width:${opPct}%"></div>`:''}</div>
-      <div class="val">${val}</div></div>`;
-  }).join("");
+function donut(status){
+  const total = status.reduce((a,b)=>a+b.count,0)||1;
+  const size=168,sw=26,r=(size-sw)/2,cx=size/2,cy=size/2,circ=2*Math.PI*r;
+  let off=0, segs='';
+  status.forEach(s=>{const len=s.count/total*circ;
+    segs+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${STATUS_COLOR[s.label]||'#C4CDD3'}" stroke-width="${sw}" stroke-dasharray="${len} ${circ-len}" stroke-dashoffset="${-off}" transform="rotate(-90 ${cx} ${cy})"><title>${esc(s.label)}: ${s.count}</title></circle>`;
+    off+=len;});
+  const done = status.find(s=>s.label==='Complete');
+  const leg = status.map(s=>`<div class="row"><span class="sw" style="background:${STATUS_COLOR[s.label]||'#C4CDD3'}"></span><span class="lab">${esc(s.label)}</span><span class="v">${s.count}</span><span class="pct">${Math.round(s.count/total*100)}%</span></div>`).join('');
+  return `<div class="donut-wrap"><div class="donut" style="width:${size}px;height:${size}px">
+    <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EDF1F3" stroke-width="${sw}"></circle>${segs}</svg>
+    <div class="ctr"><b>${done?done.count:0}</b><span>of ${total} done</span></div>
+    </div><div class="dlegend">${leg}</div></div>`;
 }
-
-function donut(items){
-  const total = items.reduce((a,b)=>a+b.count,0)||1;
-  const R=52, CX=64, CY=64, circ=2*Math.PI*R;
-  let off=0, segs="";
-  items.forEach(i=>{
-    const frac=i.count/total, len=frac*circ;
-    segs+=`<circle cx="${CX}" cy="${CY}" r="${R}" fill="none" stroke="${C.status[i.label]||'#C4CDD3'}"
-      stroke-width="20" stroke-dasharray="${len} ${circ-len}" stroke-dashoffset="${-off}"
-      transform="rotate(-90 ${CX} ${CY})"></circle>`;
-    off+=len;
-  });
-  const pct = Math.round((items.find(i=>i.label==="Complete")?.count||0)/total*100);
-  const leg = items.map(i=>`<div class="k"><span class="sw" style="background:${C.status[i.label]||'#C4CDD3'}"></span>
-    ${esc(i.label)}<span class="c">${i.count}</span></div>`).join("");
-  return `<div class="donutwrap"><svg class="donut" width="128" height="128" viewBox="0 0 128 128">
-    ${segs}<text x="64" y="60" text-anchor="middle" font-size="26" font-weight="800" fill="#081581">${pct}%</text>
-    <text x="64" y="78" text-anchor="middle" font-size="10" fill="#5A6570">complete</text></svg>
-    <div class="dlegend">${leg}</div></div>`;
+function sevBars(sev){
+  const max=Math.max(...sev.map(s=>s.total),1);
+  return sev.map(s=>{const c=SEV_COLOR[s.label]||'#C4CDD3',done=s.total-s.open;
+    return `<div class="sevrow" title="${esc(s.label)} — ${s.open} open of ${s.total}">
+      <div class="name"><span class="sw" style="background:${c}"></span>${esc(s.label)}</div>
+      <div class="track" style="width:${s.total/max*100}%"><i class="open" style="width:${s.total?s.open/s.total*100:0}%;background:${c}"></i><i class="done" style="width:${s.total?done/s.total*100:0}%"></i></div>
+      <div class="cnt"><b>${s.open}</b> open <span class="mut">/ ${s.total}</span></div></div>`;
+  }).join('');
 }
-
-function render(d){
-  document.getElementById("stamp").textContent =
-    d.generated==="placeholder" ? "Sample data" :
-    "Updated " + new Date(d.generated).toLocaleString(undefined,{dateStyle:"medium",timeStyle:"short"});
-
-  const banner = document.getElementById("banner");
-  if(d.generated==="placeholder"){
-    banner.innerHTML = `<div class="note ph">Showing sample data — the first GitHub Action refresh will replace this with live tracker numbers.</div>`;
-  }
-  const k=d.kpis;
-  const html = `
-  <div class="grid-hero">
-    <div class="card">
-      <h2>Launch readiness</h2>
-      <div class="big">${k.resolvedPct}<span>% resolved</span></div>
-      <div class="barout"><div class="barin" style="width:${k.resolvedPct}%"></div></div>
-      <div style="font-size:13px;color:var(--muted)">${k.resolved} of ${k.total} work items complete</div>
-      <div class="legend">
-        ${d.status.map(s=>`<span class="k"><span class="sw" style="background:${C.status[s.label]||'#C4CDD3'}"></span>${esc(s.label)} ${s.count}</span>`).join("")}
-      </div>
+function splitBars(items){
+  const arr=items.slice().sort((a,b)=> barSort==='open' ? b.open-a.open : b.total-a.total);
+  const max=Math.max(...arr.map(i=>i.total),1);
+  return arr.map(i=>{const done=i.total-i.open;
+    return `<div class="brow" title="${esc(i.label)} — ${i.open} open, ${done} done (${i.total} total)">
+      <div class="top"><span class="lab">${esc(i.label)}</span><span class="val">${i.open} open <span class="mut">/ ${i.total}</span></span></div>
+      <div class="track"><i class="open" style="width:${i.total?i.open/max*100:0}%"></i><i class="done" style="width:${i.total?done/max*100:0}%"></i></div></div>`;
+  }).join('');
+}
+function itemTypeBars(its){
+  const max=Math.max(...its.map(i=>i.count),1);
+  return its.map(i=>{const fut=i.label==='Enhancement/Wishlist';
+    return `<div class="itrow ${fut?'future':''}"><div class="lab">${esc(i.label)}${fut?' ↗':''}</div><div class="t"><i style="width:${i.count/max*100}%"></i></div><div class="n">${i.count}</div></div>`;
+  }).join('');
+}
+function punchRows(){
+  let rows=D.punch.slice();
+  if(punch.sev!=='all') rows=rows.filter(r=>r.sev===punch.sev);
+  if(punch.owner!=='all') rows=rows.filter(r=>r.owner===punch.owner);
+  const PRI={"High":0,"Medium":1,"Low":2,"—":3};
+  const ST={"Re-open":0,"In progress":1,"Re-test":2,"Not started":3};
+  const cmp={sev:(a,b)=>(SEVK[a.sev]-SEVK[b.sev])||ST[a.status]-ST[b.status],
+    wi:(a,b)=>a.wi.localeCompare(b.wi),pri:(a,b)=>(PRI[a.pri]??9)-(PRI[b.pri]??9),
+    status:(a,b)=>(ST[a.status]??9)-(ST[b.status]??9),owner:(a,b)=>a.owner.localeCompare(b.owner)}[punch.key];
+  rows.sort((a,b)=>cmp(a,b)*punch.dir);
+  const body=rows.map(r=>`<tr>
+    <td class="wicell">${esc(r.wi)}</td>
+    <td><span class="sev-badge" style="background:${r.sev==='S1'?'#7C0083':'#C200CC'}">${r.sev}</span></td>
+    <td>${esc(r.pri)}</td>
+    <td><span class="tag"><span class="pip" style="background:${STATUS_COLOR[r.status]||'#9AA3AB'}"></span>${esc(r.status)}</span></td>
+    <td class="owner ${r.owner==='Unassigned'?'none':''}">${esc(r.owner)}</td></tr>`).join('');
+  $('#critBody').innerHTML = body || `<tr><td colspan="5" style="color:var(--faint);padding:18px 12px">No items match this filter.</td></tr>`;
+  $('#punchCount').textContent = `${rows.length} of ${D.punch.length} shown`;
+  document.querySelectorAll('#critHead th.sortable').forEach(th=>{
+    const k=th.dataset.k; th.querySelector('.arw').textContent = punch.key===k ? (punch.dir>0?'▲':'▼') : '';});
+}
+function render(){
+  const k=D.kpis, ph=D.generated==='placeholder';
+  $('#asof').textContent = ph ? 'Sample data' : 'Updated '+new Date(D.generated).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'});
+  $('#banner').innerHTML = ph ? `<div class="banner ph">Showing sample data that matches the tracker at last check — the first GitHub Action run will refresh it live.</div>` : '';
+  const meterSeg = D.status.map(s=>`<div class="seg" style="width:${s.count/k.total*100}%;background:${STATUS_COLOR[s.label]||'#C4CDD3'}" title="${esc(s.label)}: ${s.count}"></div>`).join('');
+  const meterLeg = D.status.map(s=>`<div class="lg"><span class="sw" style="background:${STATUS_COLOR[s.label]||'#C4CDD3'}"></span>${esc(s.label)} ${s.count}</div>`).join('');
+  const kpiCards=[['Total in scope',k.total,C.marine],['Resolved',k.resolved,C.win],['In progress',k.inProgress,C.execute],['Not started',k.notStarted,C.notstarted],['Open',k.totalOpen,C.plan],['Re-opened',k.reopened,C.plan]];
+  const owners=[...new Set(D.punch.map(r=>r.owner))];
+  D.app.innerHTML = `
+  <section class="hero">
+    <div>
+      <p class="eyebrow">Dela · QA &amp; Test Tracking</p>
+      <h1>Where the DSA stands before launch</h1>
+      <p class="lede">Every defect and test-case failure logged for Dela, by resolution status and severity. Enhancement/Wishlist items are excluded as future scope. Live from the DSA Work Items Tracker.</p>
+      <div class="readout"><div class="big">${k.resolvedPct}<small>%</small></div>
+        <div class="rlabel">of <b>${k.total}</b> in-scope items resolved (marked Complete)</div></div>
+      <div class="meter"><div class="track">${meterSeg}</div><div class="legend">${meterLeg}</div></div>
     </div>
-    <div class="card">
-      <h2>Needs attention</h2>
-      <div class="att">
-        <div class="cell crit"><div class="n">${k.openS1}</div><div class="l">Open Mission-Critical (S1)</div></div>
-        <div class="cell crit"><div class="n">${k.openS2}</div><div class="l">Open Critical (S2)</div></div>
-        <div class="cell warn"><div class="n">${k.totalOpen}</div><div class="l">Total open</div></div>
-        <div class="cell mut"><div class="n">${k.unassignedOpen}</div><div class="l">Unassigned & open</div></div>
-      </div>
+    <div class="alertcard"><h3>Needs attention now</h3>
+      <div class="alertrow"><div class="k"><span class="pip" style="background:var(--sev1)"></span>Open mission-critical (S1)</div><div class="n">${k.openS1}</div></div>
+      <div class="alertrow"><div class="k"><span class="pip" style="background:var(--sev2)"></span>Open critical (S2)</div><div class="n">${k.openS2}</div></div>
+      <div class="alertrow"><div class="k"><span class="pip" style="background:var(--plan)"></span>Re-opened (regressions)</div><div class="n">${k.reopened}</div></div>
+      <div class="alertrow"><div class="k"><span class="pip" style="background:var(--analyze)"></span>Unassigned &amp; open</div><div class="n">${k.unassignedOpen}</div></div>
     </div>
-  </div>
-
-  <section class="card"><div class="kpis">
-    <div class="kpi"><div class="n">${k.total}</div><div class="l">Total items</div></div>
-    <div class="kpi"><div class="n">${k.resolved}</div><div class="l">Resolved</div></div>
-    <div class="kpi"><div class="n">${k.inProgress}</div><div class="l">In progress</div></div>
-    <div class="kpi"><div class="n">${k.notStarted}</div><div class="l">Not started</div></div>
-    <div class="kpi"><div class="n">${k.totalOpen}</div><div class="l">Open</div></div>
-  </div></section>
-
-  <div class="grid2">
-    <section class="card"><h2>Status breakdown</h2>${donut(d.status)}</section>
-    <section class="card"><h2>Severity <span class="hint">bar = total · magenta = still open</span></h2>${bars(d.severity, l=>C.sev[l]||'#C4CDD3')}</section>
-  </div>
-
-  <div class="grid2">
-    <section class="card"><h2>Defects by category</h2>${bars(d.category)}</section>
-    <section class="card"><h2>Root-cause layer</h2>${bars(d.rootCause)}</section>
-  </div>
-
-  <div class="grid2">
-    <section class="card"><h2>Workload by assignee</h2>${bars(d.owner)}</section>
-    <section class="card"><h2>Recently resolved <span class="hint">last 7 days</span></h2>
-      <ul class="recent">${(d.recent||[]).map(r=>`<li><span>${esc(r.wi)}</span><span class="d">${esc(r.resolved.slice(5))}</span></li>`).join("") || '<li style="color:var(--faint)">None in the last 7 days</li>'}</ul>
-    </section>
-  </div>
-
-  <section class="card"><h2>Open critical punch list <span class="hint">S1 & S2 not complete — ${d.punch.length} items</span></h2>
-    <table><thead><tr><th>Sev</th><th>Work item</th><th>Priority</th><th>Status</th><th>Owner</th></tr></thead>
-    <tbody>${d.punch.map(p=>`<tr>
-      <td class="sev"><span class="pill ${p.sev==='S1'?'s1':'s2'}">${p.sev}</span></td>
-      <td>${esc(p.wi)}</td><td>${esc(p.pri)}</td><td>${esc(p.status)}</td><td>${esc(p.owner)}</td></tr>`).join("")}
-    </tbody></table>
   </section>
 
-  <footer>
-    Source: <a href="https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91" target="_blank" rel="noopener">DSA Work Items Tracker</a>
-    · Deltek Customer Learning Experience · auto-refreshed via GitHub Actions
-  </footer>`;
-  document.getElementById("app").innerHTML = html;
-}
+  <div class="kpis">${kpiCards.map(c=>`<div class="kpi"><div class="n">${c[1]}</div><div class="l">${c[0]}</div><div class="bar"><i style="width:${Math.min(100,c[1]/k.total*100)}%;background:${c[2]}"></i></div></div>`).join('')}</div>
 
-fetch("./data.json?cb=" + Date.now())
-  .then(r=>{ if(!r.ok) throw new Error(r.status); return r.json(); })
-  .then(render)
-  .catch(e=>{
-    document.getElementById("stamp").textContent = "Data unavailable";
-    document.getElementById("banner").innerHTML =
-      `<div class="note err">Couldn't load <code>data.json</code> (${esc(e.message)}). If you just set this up, the first GitHub Action run hasn't published data yet.</div>`;
-  });
+  <h2 class="sec">Resolution &amp; risk</h2>
+  <div class="grid2">
+    <div class="panel"><h3>Status breakdown</h3><p class="cap">Workflow state across in-scope items. Re-open = completed then reopened.</p>${donut(D.status)}</div>
+    <div class="panel"><h3>Severity distribution</h3><p class="cap">Bar = total logged; the <b style="color:var(--plan)">magenta number</b> is how many are still open.</p>${sevBars(D.severity)}
+      <div class="legend-mini"><span class="sw" style="background:var(--marine)"></span>still open &nbsp; <span class="sw" style="background:var(--done)"></span>done</div></div>
+  </div>
+
+  <h2 class="sec">Where the defects live</h2>
+  <div class="grid2">
+    <div class="panel"><div class="head"><div><h3>By category</h3><p class="cap">What kind of problem it is.</p></div>${sortToggle()}</div><div class="bars" id="catBars">${splitBars(D.category)}</div>
+      <div class="legend-mini"><span class="sw" style="background:var(--marine)"></span>open &nbsp; <span class="sw" style="background:var(--done)"></span>done</div></div>
+    <div class="panel"><div class="head"><div><h3>By root-cause layer</h3><p class="cap">Which part of the stack the fix lands in.</p></div></div><div class="bars" id="rcBars">${splitBars(D.rootCause)}</div>
+      <div class="legend-mini"><span class="sw" style="background:var(--marine)"></span>open &nbsp; <span class="sw" style="background:var(--done)"></span>done</div></div>
+  </div>
+
+  <h2 class="sec">Ownership</h2>
+  <div class="panel"><h3>Workload by assignee</h3><p class="cap"><span style="color:var(--marine);font-weight:700">Marine</span> still open · <span style="color:var(--done);font-weight:700">grey</span> done. No assignee grouped as Unassigned.</p>
+    <div class="bars" id="ownerBars">${splitBars(D.owner)}</div></div>
+
+  <h2 class="sec">Momentum &amp; work mix</h2>
+  <div class="grid2">
+    <div class="panel"><h3>Recently resolved</h3><p class="cap">Marked Complete in the last 7 days.</p>
+      ${D.recent.length?D.recent.map(r=>`<div class="recentrow"><span>${esc(r.wi)}</span><span class="d">${esc(r.resolved.slice(5))}</span></div>`).join(''):'<p style="color:var(--faint);font-size:13px">Nothing in the last 7 days.</p>'}</div>
+    <div class="panel"><h3>Work item types</h3><p class="cap">All logged rows by type. Enhancement/Wishlist (↗) is future scope, excluded from the counts above.</p>
+      ${itemTypeBars(D.itemTypes)}</div>
+  </div>
+
+  <h2 class="sec">Open critical &amp; mission-critical items</h2>
+  <div class="panel" style="padding-top:20px;">
+    <p class="cap" style="margin-top:0;">The pre-launch punch list: S1/S2 items not yet Complete. Filter and sort to work it.</p>
+    <div class="toolbar">
+      <span class="chip ${punch.sev==='all'?'active':''}" data-sev="all">All</span>
+      <span class="chip ${punch.sev==='S1'?'active':''}" data-sev="S1">S1 only</span>
+      <span class="chip ${punch.sev==='S2'?'active':''}" data-sev="S2">S2 only</span>
+      <select class="sel" id="ownerSel"><option value="all">All owners</option>${owners.map(o=>`<option value="${esc(o)}" ${punch.owner===o?'selected':''}>${esc(o)}</option>`).join('')}</select>
+      <span class="cnote" id="punchCount"></span>
+    </div>
+    <div style="overflow-x:auto;"><table>
+      <thead id="critHead"><tr>
+        <th class="sortable" data-k="wi">Work item<span class="arw"></span></th>
+        <th class="sortable" data-k="sev">Severity<span class="arw"></span></th>
+        <th class="sortable" data-k="pri">Priority<span class="arw"></span></th>
+        <th class="sortable" data-k="status">Status<span class="arw"></span></th>
+        <th class="sortable" data-k="owner">Owner<span class="arw"></span></th>
+      </tr></thead><tbody id="critBody"></tbody></table></div>
+    <div class="note"><div><b>Counting:</b> ${k.future} Enhancement/Wishlist item(s) are held as future scope and ${k.setAside} duplicate(s) set aside, so neither inflates the open count. ${k.reopened} item(s) were reopened after being marked Complete.</div></div>
+  </div>
+
+  <h2 class="sec">Future scope &amp; backlog</h2>
+  <div class="panel"><h3>Enhancement / Wishlist</h3><p class="cap">Deferred to post-launch — not counted toward readiness above.</p>
+    ${D.future.length?D.future.map(f=>`<div class="futrow"><span class="wi">${esc(f.wi)}</span><span class="tag"><span class="pip" style="background:${STATUS_COLOR[f.status]||'#9AA3AB'}"></span>${esc(f.status)}</span><span class="ow">${esc(f.owner)}</span></div>`).join(''):'<p style="color:var(--faint);font-size:13px">None.</p>'}</div>
+
+  <footer>
+    <span>Source: <b>DSA Work Items Tracker</b> (Smartsheet)</span>
+    <a href="https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91" target="_blank" rel="noopener">Open sheet →</a>
+    <span class="spacer"></span>
+    <span>Auto-refreshed via GitHub Actions${ph?' · sample data':''} · Deltek CLX</span>
+  </footer>`;
+
+  // grow meter/bars from 0
+  requestAnimationFrame(()=>{document.querySelectorAll('.meter .seg').forEach(s=>{const w=s.style.width;s.style.width='0';requestAnimationFrame(()=>s.style.width=w);});});
+  punchRows();
+  wire();
+}
+function sortToggle(){
+  return `<div class="toggle" id="barSort"><button data-s="open" class="${barSort==='open'?'active':''}">Most open</button><button data-s="total" class="${barSort==='total'?'active':''}">Most total</button></div>`;
+}
+function wire(){
+  const bs=$('#barSort'); if(bs) bs.querySelectorAll('button').forEach(b=>b.onclick=()=>{barSort=b.dataset.s;
+    $('#catBars').innerHTML=splitBars(D.category); $('#rcBars').innerHTML=splitBars(D.rootCause); $('#ownerBars').innerHTML=splitBars(D.owner);
+    bs.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.s===barSort));});
+  document.querySelectorAll('.chip[data-sev]').forEach(c=>c.onclick=()=>{punch.sev=c.dataset.sev;
+    document.querySelectorAll('.chip[data-sev]').forEach(x=>x.classList.toggle('active',x.dataset.sev===punch.sev));punchRows();});
+  const os=$('#ownerSel'); if(os) os.onchange=()=>{punch.owner=os.value;punchRows();};
+  document.querySelectorAll('#critHead th.sortable').forEach(th=>th.onclick=()=>{const kk=th.dataset.k;
+    if(punch.key===kk)punch.dir*=-1; else {punch.key=kk;punch.dir=1;} punchRows();});
+}
+D=null;
+fetch('./data.json?cb='+Date.now()).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
+  .then(d=>{D=d;D.app=$('#app');render();})
+  .catch(e=>{$('#asof').textContent='Data unavailable';
+    $('#banner').innerHTML=`<div class="banner err">Couldn't load <code>data.json</code> (${esc(e.message)}). If you just set this up, the first GitHub Action run hasn't published data yet.</div>`;});
 </script>
 </body>
 </html>
