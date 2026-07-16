@@ -1,18 +1,18 @@
 {
-  "generated": "2026-07-16T21:35:35+00:00",
+  "generated": "2026-07-16T23:04:10+00:00",
   "kpis": {
-    "total": 73,
+    "total": 74,
     "resolved": 19,
     "resolvedPct": 26,
-    "inProgress": 11,
-    "notStarted": 31,
-    "reopened": 8,
+    "inProgress": 10,
+    "notStarted": 28,
+    "reopened": 7,
     "openS1": 2,
     "openS2": 20,
-    "totalOpen": 54,
-    "unassignedOpen": 13,
+    "totalOpen": 55,
+    "unassignedOpen": 12,
     "future": 5,
-    "setAside": 4
+    "setAside": 5
   },
   "status": [
     {
@@ -21,19 +21,19 @@
     },
     {
       "label": "Re-open",
-      "count": 8
+      "count": 7
     },
     {
       "label": "In progress",
-      "count": 11
+      "count": 10
     },
     {
       "label": "Re-test",
-      "count": 4
+      "count": 10
     },
     {
       "label": "Not started",
-      "count": 31
+      "count": 28
     }
   ],
   "severity": [
@@ -49,8 +49,8 @@
     },
     {
       "label": "S3 · Elevated",
-      "total": 30,
-      "open": 22
+      "total": 31,
+      "open": 23
     },
     {
       "label": "S4 · General",
@@ -66,8 +66,8 @@
   "category": [
     {
       "label": "Escalation & Handoff",
-      "total": 22,
-      "open": 15
+      "total": 21,
+      "open": 14
     },
     {
       "label": "UX / Conversation Design",
@@ -80,6 +80,11 @@
       "open": 6
     },
     {
+      "label": "Grounding / Synthesis",
+      "total": 5,
+      "open": 5
+    },
+    {
       "label": "Unspecified",
       "total": 4,
       "open": 3
@@ -90,14 +95,9 @@
       "open": 3
     },
     {
-      "label": "Grounding / Synthesis",
+      "label": "Guardrails / Output Quality",
       "total": 4,
       "open": 4
-    },
-    {
-      "label": "Guardrails / Output Quality",
-      "total": 3,
-      "open": 3
     },
     {
       "label": "Retrieval Quality",
@@ -123,8 +123,8 @@
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 22,
-      "open": 20
+      "total": 23,
+      "open": 21
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -155,18 +155,18 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 27,
-      "open": 16
+      "total": 26,
+      "open": 15
     },
     {
       "label": "Daniel Nicholas",
-      "total": 20,
-      "open": 18
+      "total": 23,
+      "open": 21
     },
     {
       "label": "Unassigned",
-      "total": 17,
-      "open": 13
+      "total": 16,
+      "open": 12
     },
     {
       "label": "Jerome Michael",
@@ -192,7 +192,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 58
+      "count": 60
     },
     {
       "label": "Untagged",
@@ -296,7 +296,7 @@
       "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
       "sev": "S1",
       "pri": "High",
-      "status": "In progress",
+      "status": "Re-test",
       "owner": "Swastik Sharma"
     },
     {
@@ -307,13 +307,6 @@
       "owner": "Jerome Michael"
     },
     {
-      "wi": "SME-011 — Chat session cross-contamination between sessions",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Swastik Sharma"
-    },
-    {
       "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
       "sev": "S2",
       "pri": "High",
@@ -321,11 +314,11 @@
       "owner": "Chris Smith"
     },
     {
-      "wi": "No Tracking No. - Validate if Standard Care Customers have Available Cases",
+      "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Swastik Sharma"
+      "owner": "Daniel Nicholas"
     },
     {
       "wi": "No Tracking No.: Validate if Standard Care Customers have Available Cases",
@@ -370,11 +363,32 @@
       "owner": "Swastik Sharma"
     },
     {
+      "wi": "No Tracking No. - Validate if Standard Care Customers have Available Cases",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "SME-011 — Chat session cross-contamination between sessions",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma"
+    },
+    {
       "wi": "SME-013 — Chat becomes stuck / non-responsive",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
       "owner": "Chris Smith"
+    },
+    {
+      "wi": "SME-014 — Can't reach support right now during escalation",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma"
     },
     {
       "wi": "TC-06-03 - DSA did not ask to confirm the information before creating the case",
@@ -384,25 +398,11 @@
       "owner": "Swastik Sharma"
     },
     {
-      "wi": "No Tracking no. - Non ASC - no case is created but verbiage is saying out of cases",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma"
-    },
-    {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
       "owner": "Daniel Nicholas"
-    },
-    {
-      "wi": "SME-014 — Can't reach support right now during escalation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma"
     },
     {
       "wi": "TC-07-03 - case created from non ASC, no attempt to help from DSA",
