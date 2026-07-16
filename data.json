@@ -1,103 +1,443 @@
 {
-  "generated": "placeholder",
+  "generated": "2026-07-16T18:34:34+00:00",
   "kpis": {
-    "total": 73, "resolved": 18, "resolvedPct": 25, "inProgress": 12, "notStarted": 33,
-    "reopened": 5, "openS1": 2, "openS2": 20, "totalOpen": 55, "unassignedOpen": 15,
-    "future": 5, "setAside": 3
+    "total": 72,
+    "resolved": 17,
+    "resolvedPct": 24,
+    "inProgress": 12,
+    "notStarted": 32,
+    "reopened": 5,
+    "openS1": 2,
+    "openS2": 20,
+    "totalOpen": 55,
+    "unassignedOpen": 14,
+    "future": 5,
+    "setAside": 4
   },
   "status": [
-    {"label": "Complete", "count": 18},
-    {"label": "Re-open", "count": 5},
-    {"label": "In progress", "count": 12},
-    {"label": "Re-test", "count": 5},
-    {"label": "Not started", "count": 33}
+    {
+      "label": "Complete",
+      "count": 17
+    },
+    {
+      "label": "Re-open",
+      "count": 5
+    },
+    {
+      "label": "In progress",
+      "count": 12
+    },
+    {
+      "label": "Re-test",
+      "count": 6
+    },
+    {
+      "label": "Not started",
+      "count": 32
+    }
   ],
   "severity": [
-    {"label": "S1 \u00b7 Mission critical", "total": 4, "open": 2},
-    {"label": "S2 \u00b7 Critical", "total": 28, "open": 20},
-    {"label": "S3 \u00b7 Elevated", "total": 31, "open": 24},
-    {"label": "S4 \u00b7 General", "total": 7, "open": 7},
-    {"label": "Unspecified", "total": 3, "open": 2}
+    {
+      "label": "S1 · Mission critical",
+      "total": 4,
+      "open": 2
+    },
+    {
+      "label": "S2 · Critical",
+      "total": 28,
+      "open": 20
+    },
+    {
+      "label": "S3 · Elevated",
+      "total": 30,
+      "open": 24
+    },
+    {
+      "label": "S4 · General",
+      "total": 7,
+      "open": 7
+    },
+    {
+      "label": "Unspecified",
+      "total": 3,
+      "open": 2
+    }
   ],
   "category": [
-    {"label": "Escalation & Handoff", "total": 22, "open": 16},
-    {"label": "UX / Conversation Design", "total": 20, "open": 15},
-    {"label": "Platform / Infrastructure", "total": 12, "open": 7},
-    {"label": "Content / Instruction Defects", "total": 4, "open": 3},
-    {"label": "Grounding / Synthesis", "total": 4, "open": 4},
-    {"label": "Guardrails / Output Quality", "total": 3, "open": 3},
-    {"label": "Unspecified", "total": 3, "open": 2},
-    {"label": "Retrieval Quality", "total": 2, "open": 2},
-    {"label": "Session Management", "total": 2, "open": 2},
-    {"label": "Consistency / Determinism", "total": 1, "open": 1}
+    {
+      "label": "Escalation & Handoff",
+      "total": 22,
+      "open": 16
+    },
+    {
+      "label": "UX / Conversation Design",
+      "total": 20,
+      "open": 15
+    },
+    {
+      "label": "Platform / Infrastructure",
+      "total": 11,
+      "open": 7
+    },
+    {
+      "label": "Content / Instruction Defects",
+      "total": 4,
+      "open": 3
+    },
+    {
+      "label": "Grounding / Synthesis",
+      "total": 4,
+      "open": 4
+    },
+    {
+      "label": "Unspecified",
+      "total": 3,
+      "open": 2
+    },
+    {
+      "label": "Guardrails / Output Quality",
+      "total": 3,
+      "open": 3
+    },
+    {
+      "label": "Retrieval Quality",
+      "total": 2,
+      "open": 2
+    },
+    {
+      "label": "Session Management",
+      "total": 2,
+      "open": 2
+    },
+    {
+      "label": "Consistency / Determinism",
+      "total": 1,
+      "open": 1
+    }
   ],
   "rootCause": [
-    {"label": "Frontend / Chat Widget", "total": 23, "open": 12},
-    {"label": "Instruction File / Prompt", "total": 22, "open": 20},
-    {"label": "n8n Workflow / Orchestration", "total": 20, "open": 17},
-    {"label": "Unspecified", "total": 3, "open": 2},
-    {"label": "Knowledge Source / Retrieval", "total": 2, "open": 2},
-    {"label": "Escalation Integration (RNT/Five9)", "total": 2, "open": 1},
-    {"label": "Session / State Management", "total": 1, "open": 1}
+    {
+      "label": "Frontend / Chat Widget",
+      "total": 23,
+      "open": 13
+    },
+    {
+      "label": "Instruction File / Prompt",
+      "total": 22,
+      "open": 20
+    },
+    {
+      "label": "n8n Workflow / Orchestration",
+      "total": 19,
+      "open": 16
+    },
+    {
+      "label": "Unspecified",
+      "total": 3,
+      "open": 2
+    },
+    {
+      "label": "Escalation Integration (RNT/Five9)",
+      "total": 2,
+      "open": 1
+    },
+    {
+      "label": "Knowledge Source / Retrieval",
+      "total": 2,
+      "open": 2
+    },
+    {
+      "label": "Session / State Management",
+      "total": 1,
+      "open": 1
+    }
   ],
   "owner": [
-    {"label": "Swastik Sharma", "total": 26, "open": 16},
-    {"label": "Unassigned", "total": 19, "open": 15},
-    {"label": "Daniel Nicholas", "total": 18, "open": 16},
-    {"label": "Jerome Michael", "total": 5, "open": 4},
-    {"label": "Chris Smith", "total": 3, "open": 3},
-    {"label": "benphetteplace@deltek.com", "total": 1, "open": 1},
-    {"label": "Scott Duckworth", "total": 1, "open": 0}
+    {
+      "label": "Swastik Sharma",
+      "total": 27,
+      "open": 17
+    },
+    {
+      "label": "Daniel Nicholas",
+      "total": 19,
+      "open": 17
+    },
+    {
+      "label": "Unassigned",
+      "total": 18,
+      "open": 14
+    },
+    {
+      "label": "Jerome Michael",
+      "total": 4,
+      "open": 4
+    },
+    {
+      "label": "Chris Smith",
+      "total": 2,
+      "open": 2
+    },
+    {
+      "label": "Scott Duckworth",
+      "total": 1,
+      "open": 0
+    },
+    {
+      "label": "benphetteplace@deltek.com",
+      "total": 1,
+      "open": 1
+    }
   ],
   "itemTypes": [
-    {"label": "Issue/Bugs", "count": 57},
-    {"label": "Untagged", "count": 16},
-    {"label": "Enhancement/Wishlist", "count": 5},
-    {"label": "Task", "count": 3}
+    {
+      "label": "Issue/Bugs",
+      "count": 57
+    },
+    {
+      "label": "Untagged",
+      "count": 16
+    },
+    {
+      "label": "Enhancement/Wishlist",
+      "count": 5
+    },
+    {
+      "label": "Task",
+      "count": 3
+    }
   ],
   "future": [
-    {"wi": "Ability to enlarge or undock the chat window", "status": "Working as designed", "owner": "Unassigned"},
-    {"wi": "Ability to print or download chat with Dela", "status": "Working as designed", "owner": "Unassigned"},
-    {"wi": "Terminate DSA chat after case/chat is fulfilled", "status": "Working as designed", "owner": "Swastik Sharma"},
-    {"wi": "SmartSoftware customers can't submit cases or chat", "status": "Not started", "owner": "Unassigned"},
-    {"wi": "TC-06-04 \u2014 Can't update info before case submitted", "status": "Working as designed", "owner": "Swastik Sharma"}
+    {
+      "wi": "No Tracking - Terminate DSA chat after case or chat is fulfilled",
+      "status": "Working as designed",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "TC-06-04 - Cannot update information before case submitted",
+      "status": "Working as designed",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "Ability to enlarge the chat window, or undock the chat window instead of embedded in the home page",
+      "status": "Working as designed",
+      "owner": "Unassigned"
+    },
+    {
+      "wi": "SmartSoftware Customers Cannot Submit Cases or Initiate a Chat",
+      "status": "Not started",
+      "owner": "Unassigned"
+    },
+    {
+      "wi": "Ability to Print or Download Chat with DSA",
+      "status": "Working as designed",
+      "owner": "Unassigned"
+    }
   ],
   "recent": [
-    {"wi": "No support plan for Ajera shouldn't see Dela", "resolved": "2026-07-15"},
-    {"wi": "TC-17-03 \u2014 Feedback text invisible (white on white)", "resolved": "2026-07-15"},
-    {"wi": "TC-17-03/04 \u2014 Feedback shows stars not thumbs", "resolved": "2026-07-15"},
-    {"wi": "SME-008 \u2014 Interactions don't feel conversational", "resolved": "2026-07-14"},
-    {"wi": "TC-04-01 \u2014 No Citation or Link Displays", "resolved": "2026-07-14"},
-    {"wi": "TC-08-02 \u2014 Chat dialog opens and button available", "resolved": "2026-07-14"},
-    {"wi": "TC-08-02 \u2014 Did not get a live chat", "resolved": "2026-07-14"},
-    {"wi": "TC-08-04 \u2014 Chat window opens but also a button", "resolved": "2026-07-14"},
-    {"wi": "TC-No# \u2014 Chat window hidden behind another window", "resolved": "2026-07-14"},
-    {"wi": "Create a link to Manage Cases", "resolved": "2026-07-13"},
-    {"wi": "Standard Care no-cases message", "resolved": "2026-07-13"},
-    {"wi": "No Tracking No. \u2014 Could not reach n8n (timed out)", "resolved": "2026-07-13"}
+    {
+      "wi": "If a user has no support plan for ajera they shouldnt see Dela",
+      "resolved": "2026-07-15"
+    },
+    {
+      "wi": "TC-17-03/TC-17-04 — Feedback displaying as stars instead of thumbs up/down",
+      "resolved": "2026-07-15"
+    },
+    {
+      "wi": "TC-17-03 — Feedback text invisible (white text on white background)",
+      "resolved": "2026-07-15"
+    },
+    {
+      "wi": "TC-08-02 - Chat dialog opens and button available in DSA chat window",
+      "resolved": "2026-07-14"
+    },
+    {
+      "wi": "TC-08-02 - Did not get a live chat",
+      "resolved": "2026-07-14"
+    },
+    {
+      "wi": "TC-08-04 - Chat window opens but there is also a button",
+      "resolved": "2026-07-14"
+    },
+    {
+      "wi": "TC-No# - Chat window hidden behind another window",
+      "resolved": "2026-07-14"
+    },
+    {
+      "wi": "TC-04-01 - No Citation or Link Displays",
+      "resolved": "2026-07-14"
+    },
+    {
+      "wi": "SME-008 — Interactions do not feel conversational",
+      "resolved": "2026-07-14"
+    },
+    {
+      "wi": "Create a link of the case that takes them to the Manage Cases",
+      "resolved": "2026-07-13"
+    },
+    {
+      "wi": "If a Standard Care customer does not have any cases available,\n they get a message:",
+      "resolved": "2026-07-13"
+    },
+    {
+      "wi": "TC-02-02 - DSA Asking Questions, not Providing Answer",
+      "resolved": "2026-07-13"
+    }
   ],
   "punch": [
-    {"wi": "DELA-018 \u2014 DSA refuses to create case for entitled customer", "sev": "S1", "pri": "High", "status": "Re-open", "owner": "Jerome Michael"},
-    {"wi": "DELA-020 \u2014 SLA Instance field not updating on case creation", "sev": "S1", "pri": "High", "status": "In progress", "owner": "Swastik Sharma"},
-    {"wi": "DELA-019 \u2014 Inconsistent Severity / Issue Type on case creation", "sev": "S2", "pri": "High", "status": "Re-open", "owner": "Jerome Michael"},
-    {"wi": "DELA-023 \u2014 502 Bad Gateway from nginx reverse proxy", "sev": "S2", "pri": "High", "status": "In progress", "owner": "Chris Smith"},
-    {"wi": "No Tracking \u2014 Case and Chat created at the same time", "sev": "S2", "pri": "High", "status": "In progress", "owner": "Swastik Sharma"},
-    {"wi": "No Tracking No. \u2014 Validate Standard Care available cases", "sev": "S2", "pri": "High", "status": "In progress", "owner": "Swastik Sharma"},
-    {"wi": "No Tracking No. \u2014 Validate Standard Care available cases (2)", "sev": "S2", "pri": "High", "status": "In progress", "owner": "Swastik Sharma"},
-    {"wi": "SME-002 \u2014 Incorrect Ajera terminology & nav paths", "sev": "S2", "pri": "High", "status": "In progress", "owner": "Daniel Nicholas"},
-    {"wi": "SME-003 \u2014 Instructions reference controls that don't exist", "sev": "S2", "pri": "High", "status": "In progress", "owner": "Daniel Nicholas"},
-    {"wi": "SME-005 \u2014 Correct KB source retrieved but answer wrong", "sev": "S2", "pri": "High", "status": "In progress", "owner": "Daniel Nicholas"},
-    {"wi": "SME-013 \u2014 Chat becomes stuck / non-responsive", "sev": "S2", "pri": "High", "status": "Re-test", "owner": "Chris Smith"},
-    {"wi": "No Tracking \u2014 Case and chat for non-ASC", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Swastik Sharma"},
-    {"wi": "No Tracking \u2014 Non-ASC 'out of cases' verbiage", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Swastik Sharma"},
-    {"wi": "SME-010 \u2014 Source KB articles unrelated to issue", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Daniel Nicholas"},
-    {"wi": "SME-012 \u2014 Dela replies with only ellipsis", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Chris Smith"},
-    {"wi": "SME-014 \u2014 Can't reach support during escalation", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Swastik Sharma"},
-    {"wi": "TC-06-03 \u2014 No confirm before creating case", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Swastik Sharma"},
-    {"wi": "TC-07-03 \u2014 Case created from non-ASC, no help", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Daniel Nicholas"},
-    {"wi": "TC-08-01 \u2014 Did not create a chat after 3 turns", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Daniel Nicholas"},
-    {"wi": "TC-09b-04 \u2014 PII (DOB) stored in chat transcript", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Unassigned"},
-    {"wi": "TC-11-02 \u2014 PII info displayed in customer response", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Unassigned"},
-    {"wi": "TC-12-02/04 \u2014 Case auto-created without confirmation", "sev": "S2", "pri": "High", "status": "Not started", "owner": "Daniel Nicholas"}
+    {
+      "wi": "DELA-018 — DSA refuses to create case for customer with valid case allocation",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Jerome Michael"
+    },
+    {
+      "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
+      "sev": "S1",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Jerome Michael"
+    },
+    {
+      "wi": "SME-011 — Chat session cross-contamination between sessions",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Chris Smith"
+    },
+    {
+      "wi": "No Tracking - Case and Chat created at the same time",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking No. - Validate if Standard Care Customers have Available Cases",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking No.: Validate if Standard Care Customers have Available Cases",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "SME-005 — Correct KB source retrieved but answer is wrong",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "SME-013 — Chat becomes stuck / non-responsive",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Chris Smith"
+    },
+    {
+      "wi": "No Tracking - Case and chat for non-ASC",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking no. - Non ASC - no case is created but verbiage is saying out of cases",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "SME-014 — Can't reach support right now during escalation",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "TC-06-03 - DSA did not ask to confirm the information before creating the case",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "TC-07-03 - case created from non ASC, no attempt to help from DSA",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "TC-08-01 - Did not create a chat after 3 turns",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Unassigned"
+    },
+    {
+      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
+    }
   ]
 }
