@@ -1,0 +1,44 @@
+name: Refresh DSA metrics
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes (UTC). Adjust as needed.
+  workflow_dispatch: {}        # adds a manual "Run workflow" button
+
+permissions:
+  contents: write              # allow the job to commit data.json
+
+concurrency:
+  group: refresh-dsa
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install smartsheet-python-sdk
+
+      - name: Build data.json
+        env:
+          SMARTSHEET_TOKEN: ${{ secrets.SMARTSHEET_TOKEN }}
+          # SHEET_ID: "564920532815748"   # uncomment to override the default
+        run: python build_data.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name "dsa-metrics-bot"
+          git config user.email "dsa-metrics-bot@users.noreply.github.com"
+          git add data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Refresh DSA metrics ($(date -u +'%Y-%m-%dT%H:%MZ'))"
+            git push
+          fi
