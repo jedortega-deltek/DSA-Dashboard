@@ -51,7 +51,7 @@
   .alertrow .n{font-size:26px;font-weight:800;letter-spacing:-1px;}
   .alertrow .k{font-size:13px;color:rgba(255,255,255,.82);display:flex;align-items:center;gap:9px;}
   .pip{width:9px;height:9px;border-radius:50%;display:inline-block;}
-  .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-top:16px;}
+  .kpis{display:grid;grid-template-columns:repeat(7,1fr);gap:12px;margin-top:16px;}
   .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:15px 16px;box-shadow:var(--shadow);}
   .kpi .n{font-size:26px;font-weight:800;letter-spacing:-1px;color:var(--marine);}
   .kpi .l{font-size:11.5px;color:var(--muted);font-weight:600;margin-top:2px;line-height:1.25;}
@@ -223,12 +223,10 @@ function render(){
   $('#banner').innerHTML = ph ? `<div class="banner ph">Showing sample data that matches the tracker at last check — the first GitHub Action run will refresh it live.</div>` : '';
   const meterSeg = D.status.map(s=>`<div class="seg" style="width:${s.count/k.total*100}%;background:${STATUS_COLOR[s.label]||'#C4CDD3'}" title="${esc(s.label)}: ${s.count}"></div>`).join('');
   const meterLeg = D.status.map(s=>`<div class="lg"><span class="sw" style="background:${STATUS_COLOR[s.label]||'#C4CDD3'}"></span>${esc(s.label)} ${s.count}</div>`).join('');
-  const kpiCards=[['Total in scope',k.total,C.marine],['Resolved',k.resolved,C.win],['In progress',k.inProgress,C.execute],['Not started',k.notStarted,C.notstarted],['Open',k.totalOpen,C.plan],['Re-opened',k.reopened,C.plan]];
   const owners=[...new Set(D.punch.map(r=>r.owner))];
   D.app.innerHTML = `
   <section class="hero">
     <div>
-      <p class="eyebrow">Dela · QA &amp; Test Tracking</p>
       <h1>Where the DSA stands before launch</h1>
       <p class="lede">Every defect and test-case failure logged for Dela, by resolution status and severity. Enhancement/Wishlist items are excluded as future scope. Live from the DSA Work Items Tracker.</p>
       <div class="readout"><div class="big">${k.resolvedPct}<small>%</small></div>
@@ -238,12 +236,10 @@ function render(){
     <div class="alertcard"><h3>Needs attention now</h3>
       <div class="alertrow"><div class="k"><span class="pip" style="background:var(--sev1)"></span>Open mission-critical (S1)</div><div class="n">${k.openS1}</div></div>
       <div class="alertrow"><div class="k"><span class="pip" style="background:var(--sev2)"></span>Open critical (S2)</div><div class="n">${k.openS2}</div></div>
-      <div class="alertrow"><div class="k"><span class="pip" style="background:var(--plan)"></span>Re-opened (regressions)</div><div class="n">${k.reopened}</div></div>
+      <div class="alertrow"><div class="k"><span class="pip" style="background:var(--plan)"></span>Re-opened</div><div class="n">${k.reopened}</div></div>
       <div class="alertrow"><div class="k"><span class="pip" style="background:var(--analyze)"></span>Unassigned &amp; open</div><div class="n">${k.unassignedOpen}</div></div>
     </div>
   </section>
-
-  <div class="kpis">${kpiCards.map(c=>`<div class="kpi"><div class="n">${c[1]}</div><div class="l">${c[0]}</div><div class="bar"><i style="width:${Math.min(100,c[1]/k.total*100)}%;background:${c[2]}"></i></div></div>`).join('')}</div>
 
   <h2 class="sec">Resolution &amp; risk</h2>
   <div class="grid2">
@@ -254,9 +250,9 @@ function render(){
 
   <h2 class="sec">Where the defects live</h2>
   <div class="grid2">
-    <div class="panel"><div class="head"><div><h3>By category</h3><p class="cap">What kind of problem it is.</p></div>${sortToggle()}</div><div class="bars" id="catBars">${splitBars(D.category)}</div>
+    <div class="panel"><h3>By category</h3><p class="cap">What kind of problem it is.</p><div class="bars" id="catBars">${splitBars(D.category)}</div>
       <div class="legend-mini"><span class="sw" style="background:var(--marine)"></span>open &nbsp; <span class="sw" style="background:var(--done)"></span>done</div></div>
-    <div class="panel"><div class="head"><div><h3>By root-cause layer</h3><p class="cap">Which part of the stack the fix lands in.</p></div></div><div class="bars" id="rcBars">${splitBars(D.rootCause)}</div>
+    <div class="panel"><h3>By root-cause layer</h3><p class="cap">Which part of the stack the fix lands in.</p><div class="bars" id="rcBars">${splitBars(D.rootCause)}</div>
       <div class="legend-mini"><span class="sw" style="background:var(--marine)"></span>open &nbsp; <span class="sw" style="background:var(--done)"></span>done</div></div>
   </div>
 
@@ -309,13 +305,7 @@ function render(){
   punchRows();
   wire();
 }
-function sortToggle(){
-  return `<div class="toggle" id="barSort"><button data-s="open" class="${barSort==='open'?'active':''}">Most open</button><button data-s="total" class="${barSort==='total'?'active':''}">Most total</button></div>`;
-}
 function wire(){
-  const bs=$('#barSort'); if(bs) bs.querySelectorAll('button').forEach(b=>b.onclick=()=>{barSort=b.dataset.s;
-    $('#catBars').innerHTML=splitBars(D.category); $('#rcBars').innerHTML=splitBars(D.rootCause); $('#ownerBars').innerHTML=splitBars(D.owner);
-    bs.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.s===barSort));});
   document.querySelectorAll('.chip[data-sev]').forEach(c=>c.onclick=()=>{punch.sev=c.dataset.sev;
     document.querySelectorAll('.chip[data-sev]').forEach(x=>x.classList.toggle('active',x.dataset.sev===punch.sev));punchRows();});
   const os=$('#ownerSel'); if(os) os.onchange=()=>{punch.owner=os.value;punchRows();};
