@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-17T12:11:41+00:00",
+  "generated": "2026-07-17T12:44:43+00:00",
   "kpis": {
-    "total": 70,
-    "resolved": 19,
-    "resolvedPct": 27,
-    "inProgress": 9,
+    "total": 71,
+    "resolved": 20,
+    "resolvedPct": 28,
+    "inProgress": 8,
     "notStarted": 24,
-    "reTest": 14,
+    "reTest": 15,
     "reopened": 4,
     "openS1": 3,
     "openS2": 21,
     "totalOpen": 51,
-    "unassignedOpen": 0,
+    "unassignedOpen": 1,
     "future": 9,
     "setAside": 5
   },
   "status": [
     {
       "label": "Complete",
-      "count": 19
+      "count": 20
     },
     {
       "label": "Re-open",
@@ -26,11 +26,11 @@
     },
     {
       "label": "In progress",
-      "count": 9
+      "count": 8
     },
     {
       "label": "Re-test",
-      "count": 14
+      "count": 15
     },
     {
       "label": "Not started",
@@ -51,12 +51,17 @@
     {
       "label": "S3 · Elevated",
       "total": 31,
-      "open": 22
+      "open": 21
     },
     {
       "label": "S4 · General",
       "total": 5,
       "open": 5
+    },
+    {
+      "label": "Unspecified",
+      "total": 1,
+      "open": 1
     }
   ],
   "category": [
@@ -93,7 +98,7 @@
     {
       "label": "Retrieval Quality",
       "total": 2,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Session Management",
@@ -102,6 +107,11 @@
     },
     {
       "label": "Consistency / Determinism",
+      "total": 1,
+      "open": 1
+    },
+    {
+      "label": "Unspecified",
       "total": 1,
       "open": 1
     }
@@ -130,12 +140,17 @@
     {
       "label": "Knowledge Source / Retrieval",
       "total": 2,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Session / State Management",
       "total": 2,
       "open": 2
+    },
+    {
+      "label": "Unspecified",
+      "total": 1,
+      "open": 1
     }
   ],
   "owner": [
@@ -146,13 +161,13 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 28,
+      "total": 29,
       "open": 26
     },
     {
       "label": "Unassigned",
-      "total": 4,
-      "open": 0
+      "total": 5,
+      "open": 1
     },
     {
       "label": "Chris Smith",
@@ -168,11 +183,6 @@
       "label": "Scott Duckworth",
       "total": 1,
       "open": 0
-    },
-    {
-      "label": "benphetteplace@deltek.com",
-      "total": 1,
-      "open": 1
     }
   ],
   "itemTypes": [
@@ -190,7 +200,7 @@
     },
     {
       "label": "Untagged",
-      "count": 2
+      "count": 3
     }
   ],
   "future": [
@@ -532,14 +542,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-017 -- Incorrect answer sourced from incorrect KB article (upstream content defect)",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "In progress",
-      "owner": "benphetteplace@deltek.com",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-01-01: Time for Response More than 10 seconds",
       "sev": "S3",
       "pri": "Medium",
@@ -698,6 +700,14 @@
       "status": "Not started",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-006 - Valid Ajera question ignored",
+      "sev": "—",
+      "pri": "—",
+      "status": "Re-test",
+      "owner": "Unassigned",
+      "type": "Untagged"
     }
   ]
 }
