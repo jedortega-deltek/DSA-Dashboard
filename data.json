@@ -1,11 +1,12 @@
 {
-  "generated": "2026-07-17T12:05:09+00:00",
+  "generated": "2026-07-17T12:09:49+00:00",
   "kpis": {
     "total": 70,
     "resolved": 19,
     "resolvedPct": 27,
     "inProgress": 9,
     "notStarted": 24,
+    "reTest": 14,
     "reopened": 4,
     "openS1": 3,
     "openS2": 21,
@@ -289,174 +290,414 @@
       "resolved": "2026-07-13"
     }
   ],
-  "punch": [
+  "openItems": [
     {
       "wi": "DELA-018 — DSA refuses to create case for customer with valid case allocation",
       "sev": "S1",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
       "sev": "S1",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S1",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Chris Smith"
+      "owner": "Chris Smith",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-005 — Correct KB source retrieved but answer is wrong",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Jerome Michael"
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "No Tracking - Case and Chat created at the same time",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "No Tracking - Case and chat for non-ASC",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "No Tracking No. - Validate if Standard Care Customers have Available Cases",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "No Tracking No.: Validate if Standard Care Customers have Available Cases",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-011 — Chat session cross-contamination between sessions",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-013 — Chat becomes stuck / non-responsive",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Chris Smith"
+      "owner": "Chris Smith",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-014 — Can't reach support right now during escalation",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "TC-06-03 - DSA did not ask to confirm the information before creating the case",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma"
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "NO TRACKING NO. - Workflow execution failed during chat",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Chris Smith"
+      "owner": "Chris Smith",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "TC-07-03 - case created from non ASC, no attempt to help from DSA",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "TC-08-01 - Did not create a chat after 3 turns",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas"
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
+      "sev": "S3",
+      "pri": "Low",
+      "status": "Re-open",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-02-01 - One Question at a time",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-02-04 - Best-effort fallback after two diagnostic turns",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-04-03 - Only provides one option with steps",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Untagged"
+    },
+    {
+      "wi": "SME-009 — Unprofessional wording in responses",
+      "sev": "S3",
+      "pri": "Low",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "SME-017 -- Incorrect answer sourced from incorrect KB article (upstream content defect)",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "benphetteplace@deltek.com",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-18-02 — No holding message displayed (5 min wait)",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - After hours case creation verbiage",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Duplicate DSA Searches",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "Odd Response When Discussing KBs",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "SME-004 — Same question returns different answers / inconsistent behavior",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "SME-007 — Excessive response times (seconds to minutes)",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-09-02 - Summary missing information and formatting issues",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-13-02 - If Customer with Ajera and Other Products displays both DSA and Knowledge Search",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-14-04 - Sessions tagged DSA vs control",
+      "sev": "S3",
+      "pri": "Low",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "DELA-021 — Prevent additional input while DSA is formulating a response",
+      "sev": "S4",
+      "pri": "Low",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "DELA-022 — Add confirmation dialog when ending chat",
+      "sev": "S4",
+      "pri": "Low",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "Change text on the chatbot and greeting",
+      "sev": "S4",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Task"
+    },
+    {
+      "wi": "No Tracking No. - Doesn't know phone number to Support",
+      "sev": "S4",
+      "pri": "Low",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-08-03 - Did not get a human",
+      "sev": "S4",
+      "pri": "Low",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     }
   ]
 }
