@@ -144,6 +144,7 @@ kpis = {
     "resolvedPct": round(resolved / total * 100) if total else 0,
     "inProgress": cnt(actionable, lambda r: status_of(r) == "In Progress"),
     "notStarted": cnt(actionable, lambda r: status_of(r) == "Not Started"),
+    "reTest": cnt(actionable, lambda r: status_of(r) == "Re-test"),
     "reopened": cnt(actionable, lambda r: status_of(r) == "Re-open"),
     "openS1": cnt(actionable, lambda r: sev_of(r) == "S1 \u00b7 Mission critical" and is_open(r)),
     "openS2": cnt(actionable, lambda r: sev_of(r) == "S2 \u00b7 Critical" and is_open(r)),
@@ -169,30 +170,30 @@ for r in actionable:
 recent.sort(key=lambda x: x["resolved"], reverse=True)
 recent = recent[:12]
 
-# ---- Open critical punch list (actionable, open, S1/S2) ----
-SEV_RANK = {"S1 \u00b7 Mission critical": 0, "S2 \u00b7 Critical": 1}
-STATUS_RANK = {"Re-open": 0, "In Progress": 1, "Re-test": 2, "Not Started": 3}
-punch = []
+# ---- Open items (actionable & open, all severities) ----
+SEV_SHORT = {"S1-Mission Critical": "S1", "S2-Critical": "S2", "S3-Elevated": "S3", "S4-General": "S4"}
+SEV_RANK = {"S1": 0, "S2": 1, "S3": 2, "S4": 3, "\u2014": 4}
+STATUS_RANK = {"Re-open": 0, "In progress": 1, "Re-test": 2, "Not started": 3}
+open_items = []
 for r in actionable:
-    lab = sev_of(r)
-    if lab in SEV_RANK and is_open(r):
-        punch.append({
-            "wi": norm(g(r, "Work Item")),
-            "sev": lab.split(" ")[0],
-            "pri": norm(g(r, "Priority")) or "\u2014",
-            "status": STATUS_DISPLAY.get(status_of(r), status_of(r)),
-            "owner": owner_of(r),
-            "_sr": SEV_RANK[lab], "_tr": STATUS_RANK.get(status_of(r), 4),
-        })
-punch.sort(key=lambda x: (x["_sr"], x["_tr"], x["wi"]))
-for p in punch:
-    p.pop("_sr"); p.pop("_tr")
+    if not is_open(r):
+        continue
+    sv = SEV_SHORT.get(norm(g(r, "Severity")), "\u2014")
+    open_items.append({
+        "wi": norm(g(r, "Work Item")),
+        "sev": sv,
+        "pri": norm(g(r, "Priority")) or "\u2014",
+        "status": STATUS_DISPLAY.get(status_of(r), status_of(r)),
+        "owner": owner_of(r),
+        "type": item_type(r) or "Untagged",
+    })
+open_items.sort(key=lambda x: (SEV_RANK.get(x["sev"], 9), STATUS_RANK.get(x["status"], 9), x["wi"]))
 
 data = {
     "generated": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
     "kpis": kpis, "status": status_rows, "severity": severity,
     "category": category, "rootCause": root_cause, "owner": owner,
-    "itemTypes": item_types, "future": future, "recent": recent, "punch": punch,
+    "itemTypes": item_types, "future": future, "recent": recent, "openItems": open_items,
 }
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
