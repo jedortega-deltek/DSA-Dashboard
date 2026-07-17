@@ -168,8 +168,9 @@ const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&l
 const C = {marine:'#081581',execute:'#1742F6',win:'#00B6C3',plan:'#C200CC',analyze:'#6D18F1',notstarted:'#CDD3D8'};
 const STATUS_COLOR = {"Complete":C.win,"Re-open":C.plan,"In progress":C.execute,"Re-test":C.analyze,"Working as designed":'#9AA3AB',"Not started":C.notstarted};
 const SEV_COLOR = {"S1 · Mission critical":'#7C0083',"S2 · Critical":'#C200CC',"S3 · Elevated":'#DA6BE0',"S4 · General":'#EFC2F2',"Unspecified":'#C4CDD3'};
-const SEVK = {"S1":0,"S2":1};
-let D=null, barSort='open', punch={sev:'all',owner:'all',key:'sev',dir:1};
+const SEVK = {"S1":0,"S2":1,"S3":2,"S4":3,"—":4};
+const SEV_BADGE = {"S1":["#7C0083","#fff"],"S2":["#C200CC","#fff"],"S3":["#DA6BE0","#fff"],"S4":["#EFC2F2","#7A2F80"],"—":["#C4CDD3","#3C454E"]};
+let D=null, barSort='open', punch={sev:'all',status:'all',key:'sev',dir:1};
 
 function donut(status){
   const total = status.reduce((a,b)=>a+b.count,0)||1;
@@ -210,24 +211,24 @@ function itemTypeBars(its){
     return `<div class="itrow ${fut?'future':''}"><div class="lab">${esc(i.label)}${fut?' ↗':''}</div><div class="t"><i style="width:${i.count/max*100}%"></i></div><div class="n">${i.count}</div></div>`;
   }).join('');
 }
-function punchRows(){
-  let rows=D.punch.slice();
+function openItemsRows(){
+  let rows=D.openItems.slice();
   if(punch.sev!=='all') rows=rows.filter(r=>r.sev===punch.sev);
-  if(punch.owner!=='all') rows=rows.filter(r=>r.owner===punch.owner);
+  if(punch.status!=='all') rows=rows.filter(r=>r.status===punch.status);
   const PRI={"High":0,"Medium":1,"Low":2,"—":3};
   const ST={"Re-open":0,"In progress":1,"Re-test":2,"Not started":3};
   const cmp={sev:(a,b)=>(SEVK[a.sev]-SEVK[b.sev])||ST[a.status]-ST[b.status],
     wi:(a,b)=>a.wi.localeCompare(b.wi),pri:(a,b)=>(PRI[a.pri]??9)-(PRI[b.pri]??9),
     status:(a,b)=>(ST[a.status]??9)-(ST[b.status]??9),owner:(a,b)=>a.owner.localeCompare(b.owner)}[punch.key];
   rows.sort((a,b)=>cmp(a,b)*punch.dir);
-  const body=rows.map(r=>`<tr>
+  const body=rows.map(r=>{const bd=SEV_BADGE[r.sev]||SEV_BADGE['—'];return `<tr>
     <td class="wicell">${esc(r.wi)}</td>
-    <td><span class="sev-badge" style="background:${r.sev==='S1'?'#7C0083':'#C200CC'}">${r.sev}</span></td>
+    <td><span class="sev-badge" style="background:${bd[0]};color:${bd[1]}">${r.sev}</span></td>
     <td>${esc(r.pri)}</td>
     <td><span class="tag"><span class="pip" style="background:${STATUS_COLOR[r.status]||'#9AA3AB'}"></span>${esc(r.status)}</span></td>
-    <td class="owner ${r.owner==='Unassigned'?'none':''}">${esc(r.owner)}</td></tr>`).join('');
+    <td class="owner ${r.owner==='Unassigned'?'none':''}">${esc(r.owner)}</td></tr>`;}).join('');
   $('#critBody').innerHTML = body || `<tr><td colspan="5" style="color:var(--faint);padding:18px 12px">No items match this filter.</td></tr>`;
-  $('#punchCount').textContent = `${rows.length} of ${D.punch.length} shown`;
+  $('#punchCount').textContent = `${rows.length} of ${D.openItems.length} shown`;
   document.querySelectorAll('#critHead th.sortable').forEach(th=>{
     const k=th.dataset.k; th.querySelector('.arw').textContent = punch.key===k ? (punch.dir>0?'▲':'▼') : '';});
 }
@@ -247,7 +248,7 @@ function render(){
   $('#banner').innerHTML = ph ? `<div class="banner ph">Showing sample data that matches the tracker at last check — the first GitHub Action run will refresh it live.</div>` : '';
   const meterSeg = D.status.map(s=>`<div class="seg" style="width:${s.count/k.total*100}%;background:${STATUS_COLOR[s.label]||'#C4CDD3'}" title="${esc(s.label)}: ${s.count}"></div>`).join('');
   const meterLeg = D.status.map(s=>`<div class="lg"><span class="sw" style="background:${STATUS_COLOR[s.label]||'#C4CDD3'}"></span>${esc(s.label)} ${s.count}</div>`).join('');
-  const owners=[...new Set(D.punch.map(r=>r.owner))];
+  const statuses=[...new Set(D.openItems.map(r=>r.status))];
   D.app.innerHTML = `
   <section class="hero">
     <div>
@@ -296,14 +297,16 @@ function render(){
       ${itemTypeBars(D.itemTypes)}</div>
   </div>
 
-  <h2 class="sec">Open critical &amp; mission-critical items</h2>
+  <h2 class="sec">Open Issue/bug items</h2>
   <div class="panel" style="padding-top:20px;">
-    <p class="cap" style="margin-top:0;">The pre-launch punch list: S1/S2 items not yet Complete. Filter and sort to work it.</p>
+    <p class="cap" style="margin-top:0;">Open items not yet Complete (Enhancement/Wishlist and duplicates excluded). Filter by severity and status, and sort any column.</p>
     <div class="toolbar">
       <span class="chip ${punch.sev==='all'?'active':''}" data-sev="all">All</span>
-      <span class="chip ${punch.sev==='S1'?'active':''}" data-sev="S1">S1 only</span>
-      <span class="chip ${punch.sev==='S2'?'active':''}" data-sev="S2">S2 only</span>
-      <select class="sel" id="ownerSel"><option value="all">All owners</option>${owners.map(o=>`<option value="${esc(o)}" ${punch.owner===o?'selected':''}>${esc(o)}</option>`).join('')}</select>
+      <span class="chip ${punch.sev==='S1'?'active':''}" data-sev="S1">S1</span>
+      <span class="chip ${punch.sev==='S2'?'active':''}" data-sev="S2">S2</span>
+      <span class="chip ${punch.sev==='S3'?'active':''}" data-sev="S3">S3</span>
+      <span class="chip ${punch.sev==='S4'?'active':''}" data-sev="S4">S4</span>
+      <select class="sel" id="statusSel"><option value="all">All statuses</option>${statuses.map(s=>`<option value="${esc(s)}" ${punch.status===s?'selected':''}>${esc(s)}</option>`).join('')}</select>
       <span class="cnote" id="punchCount"></span>
     </div>
     <div style="overflow-x:auto;"><table>
@@ -330,15 +333,15 @@ function render(){
 
   // grow meter/bars from 0
   requestAnimationFrame(()=>{document.querySelectorAll('.meter .seg').forEach(s=>{const w=s.style.width;s.style.width='0';requestAnimationFrame(()=>s.style.width=w);});});
-  punchRows();
+  openItemsRows();
   wire();
 }
 function wire(){
   document.querySelectorAll('.chip[data-sev]').forEach(c=>c.onclick=()=>{punch.sev=c.dataset.sev;
-    document.querySelectorAll('.chip[data-sev]').forEach(x=>x.classList.toggle('active',x.dataset.sev===punch.sev));punchRows();});
-  const os=$('#ownerSel'); if(os) os.onchange=()=>{punch.owner=os.value;punchRows();};
+    document.querySelectorAll('.chip[data-sev]').forEach(x=>x.classList.toggle('active',x.dataset.sev===punch.sev));openItemsRows();});
+  const ss=$('#statusSel'); if(ss) ss.onchange=()=>{punch.status=ss.value;openItemsRows();};
   document.querySelectorAll('#critHead th.sortable').forEach(th=>th.onclick=()=>{const kk=th.dataset.k;
-    if(punch.key===kk)punch.dir*=-1; else {punch.key=kk;punch.dir=1;} punchRows();});
+    if(punch.key===kk)punch.dir*=-1; else {punch.key=kk;punch.dir=1;} openItemsRows();});
 }
 D=null;
 fetch('./data.json?cb='+Date.now()).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
