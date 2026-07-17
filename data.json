@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-17T21:26:47+00:00",
+  "generated": "2026-07-17T22:26:09+00:00",
   "kpis": {
     "total": 80,
-    "resolved": 23,
-    "resolvedPct": 29,
+    "resolved": 27,
+    "resolvedPct": 34,
     "inProgress": 10,
     "notStarted": 30,
-    "reTest": 12,
-    "reopened": 5,
-    "openS1": 2,
-    "openS2": 21,
-    "totalOpen": 57,
+    "reTest": 6,
+    "reopened": 7,
+    "openS1": 1,
+    "openS2": 20,
+    "totalOpen": 53,
     "unassignedOpen": 9,
     "future": 9,
     "setAside": 5
@@ -18,11 +18,11 @@
   "status": [
     {
       "label": "Complete",
-      "count": 23
+      "count": 27
     },
     {
       "label": "Re-open",
-      "count": 5
+      "count": 7
     },
     {
       "label": "In progress",
@@ -30,7 +30,7 @@
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 6
     },
     {
       "label": "Not started",
@@ -41,17 +41,17 @@
     {
       "label": "S1 · Mission critical",
       "total": 4,
-      "open": 2
+      "open": 1
     },
     {
       "label": "S2 · Critical",
       "total": 30,
-      "open": 21
+      "open": 20
     },
     {
       "label": "S3 · Elevated",
       "total": 32,
-      "open": 22
+      "open": 20
     },
     {
       "label": "S4 · General",
@@ -68,12 +68,12 @@
     {
       "label": "Escalation & Handoff",
       "total": 21,
-      "open": 13
+      "open": 11
     },
     {
       "label": "UX / Conversation Design",
       "total": 19,
-      "open": 11
+      "open": 9
     },
     {
       "label": "Platform / Infrastructure",
@@ -125,12 +125,12 @@
     {
       "label": "Frontend / Chat Widget",
       "total": 22,
-      "open": 9
+      "open": 7
     },
     {
       "label": "n8n Workflow / Orchestration",
       "total": 20,
-      "open": 16
+      "open": 14
     },
     {
       "label": "Unspecified",
@@ -157,7 +157,7 @@
     {
       "label": "Swastik Sharma",
       "total": 29,
-      "open": 15
+      "open": 12
     },
     {
       "label": "Daniel Nicholas",
@@ -172,7 +172,7 @@
     {
       "label": "Jerome Michael",
       "total": 5,
-      "open": 4
+      "open": 3
     },
     {
       "label": "Chris Smith",
@@ -236,7 +236,7 @@
     },
     {
       "wi": "No Tracking No. - Order of Details Displayed when a New Case is Created",
-      "status": "Re-test",
+      "status": "Re-open",
       "owner": "Daniel Nicholas"
     },
     {
@@ -307,7 +307,7 @@
   ],
   "openItems": [
     {
-      "wi": "DELA-018 — DSA refuses to create case for customer with valid case allocation",
+      "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
       "sev": "S1",
       "pri": "High",
       "status": "Re-test",
@@ -315,11 +315,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
-      "sev": "S1",
+      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
+      "sev": "S2",
       "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
+      "status": "Re-open",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
@@ -384,22 +384,6 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking - Case and chat for non-ASC",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -547,22 +531,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-13-02 - If Customer with Ajera and Other Products displays both DSA and Knowledge Search",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-18-02 — No holding message displayed (5 min wait)",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -694,7 +662,7 @@
       "wi": "TC-006 - Valid Ajera question ignored",
       "sev": "—",
       "pri": "—",
-      "status": "Re-test",
+      "status": "Re-open",
       "owner": "Unassigned",
       "type": "Untagged"
     },
