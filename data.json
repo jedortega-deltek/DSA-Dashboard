@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T13:58:43+00:00",
+  "generated": "2026-07-17T14:49:17+00:00",
   "kpis": {
     "total": 71,
     "resolved": 20,
@@ -156,8 +156,8 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 30,
-      "open": 19
+      "total": 28,
+      "open": 17
     },
     {
       "label": "Daniel Nicholas",
@@ -170,14 +170,14 @@
       "open": 1
     },
     {
+      "label": "Jerome Michael",
+      "total": 5,
+      "open": 4
+    },
+    {
       "label": "Chris Smith",
       "total": 3,
       "open": 3
-    },
-    {
-      "label": "Jerome Michael",
-      "total": 3,
-      "open": 2
     },
     {
       "label": "Scott Duckworth",
@@ -607,7 +607,7 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
@@ -639,7 +639,7 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
