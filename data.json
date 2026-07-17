@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-17T07:23:47+00:00",
+  "generated": "2026-07-17T09:28:38+00:00",
   "kpis": {
     "total": 74,
     "resolved": 19,
     "resolvedPct": 26,
     "inProgress": 9,
     "notStarted": 28,
-    "reopened": 6,
+    "reopened": 4,
     "openS1": 2,
     "openS2": 20,
     "totalOpen": 55,
@@ -21,7 +21,7 @@
     },
     {
       "label": "Re-open",
-      "count": 6
+      "count": 4
     },
     {
       "label": "In progress",
@@ -29,7 +29,7 @@
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 14
     },
     {
       "label": "Not started",
@@ -300,13 +300,6 @@
       "owner": "Swastik Sharma"
     },
     {
-      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Jerome Michael"
-    },
-    {
       "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
       "sev": "S2",
       "pri": "High",
@@ -340,6 +333,13 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Jerome Michael"
     },
     {
       "wi": "No Tracking - Case and Chat created at the same time",
