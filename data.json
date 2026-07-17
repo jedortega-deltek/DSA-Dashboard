@@ -1,28 +1,28 @@
 {
-  "generated": "2026-07-17T19:21:54+00:00",
+  "generated": "2026-07-17T20:28:51+00:00",
   "kpis": {
-    "total": 74,
-    "resolved": 20,
-    "resolvedPct": 27,
+    "total": 76,
+    "resolved": 23,
+    "resolvedPct": 30,
     "inProgress": 10,
-    "notStarted": 24,
-    "reTest": 16,
-    "reopened": 4,
+    "notStarted": 26,
+    "reTest": 12,
+    "reopened": 5,
     "openS1": 2,
-    "openS2": 22,
-    "totalOpen": 54,
-    "unassignedOpen": 3,
+    "openS2": 21,
+    "totalOpen": 53,
+    "unassignedOpen": 5,
     "future": 9,
     "setAside": 5
   },
   "status": [
     {
       "label": "Complete",
-      "count": 20
+      "count": 23
     },
     {
       "label": "Re-open",
-      "count": 4
+      "count": 5
     },
     {
       "label": "In progress",
@@ -30,11 +30,11 @@
     },
     {
       "label": "Re-test",
-      "count": 16
+      "count": 12
     },
     {
       "label": "Not started",
-      "count": 24
+      "count": 26
     }
   ],
   "severity": [
@@ -46,7 +46,7 @@
     {
       "label": "S2 · Critical",
       "total": 30,
-      "open": 22
+      "open": 21
     },
     {
       "label": "S3 · Elevated",
@@ -56,24 +56,24 @@
     {
       "label": "S4 · General",
       "total": 5,
-      "open": 5
+      "open": 3
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 5,
+      "open": 5
     }
   ],
   "category": [
     {
       "label": "Escalation & Handoff",
       "total": 21,
-      "open": 14
+      "open": 13
     },
     {
       "label": "UX / Conversation Design",
       "total": 19,
-      "open": 13
+      "open": 11
     },
     {
       "label": "Platform / Infrastructure",
@@ -82,6 +82,11 @@
     },
     {
       "label": "Grounding / Synthesis",
+      "total": 5,
+      "open": 5
+    },
+    {
+      "label": "Unspecified",
       "total": 5,
       "open": 5
     },
@@ -101,11 +106,6 @@
       "open": 3
     },
     {
-      "label": "Unspecified",
-      "total": 3,
-      "open": 3
-    },
-    {
       "label": "Retrieval Quality",
       "total": 2,
       "open": 1
@@ -120,12 +120,12 @@
     {
       "label": "Instruction File / Prompt",
       "total": 23,
-      "open": 20
+      "open": 19
     },
     {
       "label": "Frontend / Chat Widget",
       "total": 22,
-      "open": 11
+      "open": 9
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -134,8 +134,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 5,
+      "open": 5
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -157,7 +157,7 @@
     {
       "label": "Swastik Sharma",
       "total": 29,
-      "open": 18
+      "open": 15
     },
     {
       "label": "Daniel Nicholas",
@@ -166,8 +166,8 @@
     },
     {
       "label": "Unassigned",
-      "total": 7,
-      "open": 3
+      "total": 9,
+      "open": 5
     },
     {
       "label": "Jerome Michael",
@@ -193,7 +193,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 73
+      "count": 75
     },
     {
       "label": "Enhancement/Wishlist",
@@ -323,6 +323,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking - Case and Chat created at the same time",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
       "sev": "S2",
       "pri": "High",
@@ -387,14 +395,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking - Case and Chat created at the same time",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking - Case and chat for non-ASC",
       "sev": "S2",
       "pri": "High",
@@ -436,14 +436,6 @@
     },
     {
       "wi": "SME-014 — Can't reach support right now during escalation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-06-03 - DSA did not ask to confirm the information before creating the case",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
@@ -675,22 +667,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "DELA-021 — Prevent additional input while DSA is formulating a response",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "DELA-022 — Add confirmation dialog when ending chat",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "Change text on the chatbot and greeting",
       "sev": "S4",
       "pri": "Medium",
@@ -726,6 +702,22 @@
       "wi": "No Tracking No. - Button available to submit a case after no activity",
       "sev": "—",
       "pri": "Medium",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Case created when I did not accept the chat",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Duplicate Cases created",
+      "sev": "—",
+      "pri": "—",
       "status": "Not started",
       "owner": "Unassigned",
       "type": "Issue/Bugs"
