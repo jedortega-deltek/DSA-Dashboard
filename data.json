@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-17T11:08:15+00:00",
+  "generated": "2026-07-17T12:05:09+00:00",
   "kpis": {
-    "total": 74,
+    "total": 70,
     "resolved": 19,
-    "resolvedPct": 26,
+    "resolvedPct": 27,
     "inProgress": 9,
-    "notStarted": 28,
+    "notStarted": 24,
     "reopened": 4,
-    "openS1": 2,
-    "openS2": 20,
-    "totalOpen": 55,
-    "unassignedOpen": 12,
-    "future": 5,
+    "openS1": 3,
+    "openS2": 21,
+    "totalOpen": 51,
+    "unassignedOpen": 0,
+    "future": 9,
     "setAside": 5
   },
   "status": [
@@ -33,34 +33,29 @@
     },
     {
       "label": "Not started",
-      "count": 28
+      "count": 24
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 4,
-      "open": 2
+      "total": 5,
+      "open": 3
     },
     {
       "label": "S2 · Critical",
-      "total": 28,
-      "open": 20
+      "total": 29,
+      "open": 21
     },
     {
       "label": "S3 · Elevated",
       "total": 31,
-      "open": 23
+      "open": 22
     },
     {
       "label": "S4 · General",
-      "total": 7,
-      "open": 7
-    },
-    {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 3
+      "total": 5,
+      "open": 5
     }
   ],
   "category": [
@@ -71,23 +66,18 @@
     },
     {
       "label": "UX / Conversation Design",
-      "total": 20,
-      "open": 15
+      "total": 19,
+      "open": 13
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 11,
-      "open": 6
+      "total": 12,
+      "open": 7
     },
     {
       "label": "Grounding / Synthesis",
       "total": 5,
       "open": 5
-    },
-    {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 3
     },
     {
       "label": "Content / Instruction Defects",
@@ -117,24 +107,19 @@
   ],
   "rootCause": [
     {
-      "label": "Frontend / Chat Widget",
-      "total": 23,
-      "open": 12
-    },
-    {
       "label": "Instruction File / Prompt",
       "total": 23,
-      "open": 21
+      "open": 20
+    },
+    {
+      "label": "Frontend / Chat Widget",
+      "total": 21,
+      "open": 10
     },
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 19,
-      "open": 15
-    },
-    {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 3
+      "total": 20,
+      "open": 16
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -148,25 +133,25 @@
     },
     {
       "label": "Session / State Management",
-      "total": 1,
-      "open": 1
+      "total": 2,
+      "open": 2
     }
   ],
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 27,
-      "open": 16
+      "total": 30,
+      "open": 19
     },
     {
       "label": "Daniel Nicholas",
-      "total": 23,
-      "open": 21
+      "total": 28,
+      "open": 26
     },
     {
       "label": "Unassigned",
-      "total": 16,
-      "open": 12
+      "total": 4,
+      "open": 0
     },
     {
       "label": "Chris Smith",
@@ -192,19 +177,19 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 60
-    },
-    {
-      "label": "Untagged",
-      "count": 16
+      "count": 70
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 5
+      "count": 9
     },
     {
       "label": "Task",
       "count": 3
+    },
+    {
+      "label": "Untagged",
+      "count": 2
     }
   ],
   "future": [
@@ -219,6 +204,26 @@
       "owner": "Swastik Sharma"
     },
     {
+      "wi": "SME-016 -- Session history lost after inactivity timeout (enhancement)",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "Additional Information S1 and S2 Customers on Submit a Case",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "TC-09-01 - Chat Transcript file in pdf",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking No. - Order of Details Displayed when a New Case is Created",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
+    },
+    {
       "wi": "Ability to enlarge the chat window, or undock the chat window instead of embedded in the home page",
       "status": "Working as designed",
       "owner": "Unassigned"
@@ -226,7 +231,7 @@
     {
       "wi": "SmartSoftware Customers Cannot Submit Cases or Initiate a Chat",
       "status": "Not started",
-      "owner": "Unassigned"
+      "owner": "Swastik Sharma"
     },
     {
       "wi": "Ability to Print or Download Chat with DSA",
@@ -298,6 +303,13 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
     },
     {
       "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
@@ -398,6 +410,13 @@
       "owner": "Swastik Sharma"
     },
     {
+      "wi": "NO TRACKING NO. - Workflow execution failed during chat",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Chris Smith"
+    },
+    {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
@@ -430,7 +449,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Unassigned"
+      "owner": "Daniel Nicholas"
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
