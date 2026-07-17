@@ -243,7 +243,9 @@ function leaderboard(owner){
       <div class="ct">${p.done}</div></div>`;}).join('');
 }
 function render(){
-  const k=D.kpis, ph=D.generated==='placeholder';
+  ['status','severity','category','rootCause','owner','itemTypes','future','recent','openItems'].forEach(key=>{ if(!Array.isArray(D[key])) D[key]=[]; });
+  const KDEF={total:0,resolved:0,resolvedPct:0,inProgress:0,notStarted:0,reTest:0,reopened:0,openS1:0,openS2:0,totalOpen:0,unassignedOpen:0,future:0,setAside:0};
+  const k=Object.assign({},KDEF,D.kpis||{}), ph=D.generated==='placeholder';
   $('#asof').textContent = ph ? 'Sample data' : 'Updated '+new Date(D.generated).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'});
   $('#banner').innerHTML = ph ? `<div class="banner ph">Showing sample data that matches the tracker at last check — the first GitHub Action run will refresh it live.</div>` : '';
   const meterSeg = D.status.map(s=>`<div class="seg" style="width:${s.count/k.total*100}%;background:${STATUS_COLOR[s.label]||'#C4CDD3'}" title="${esc(s.label)}: ${s.count}"></div>`).join('');
