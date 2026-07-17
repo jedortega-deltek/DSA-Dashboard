@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-17T09:28:38+00:00",
+  "generated": "2026-07-17T11:08:15+00:00",
   "kpis": {
     "total": 74,
     "resolved": 19,
@@ -236,6 +236,10 @@
   ],
   "recent": [
     {
+      "wi": "TC-23-03 — UI doesn't switch to Coveo search when Javascript is disabled",
+      "resolved": "2026-07-16"
+    },
+    {
       "wi": "If a user has no support plan for ajera they shouldnt see Dela",
       "resolved": "2026-07-15"
     },
@@ -277,10 +281,6 @@
     },
     {
       "wi": "If a Standard Care customer does not have any cases available,\n they get a message:",
-      "resolved": "2026-07-13"
-    },
-    {
-      "wi": "TC-02-02 - DSA Asking Questions, not Providing Answer",
       "resolved": "2026-07-13"
     }
   ],
