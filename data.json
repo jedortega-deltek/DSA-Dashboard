@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-17T17:40:54+00:00",
+  "generated": "2026-07-17T19:21:54+00:00",
   "kpis": {
-    "total": 73,
+    "total": 74,
     "resolved": 20,
     "resolvedPct": 27,
     "inProgress": 10,
-    "notStarted": 23,
+    "notStarted": 24,
     "reTest": 16,
     "reopened": 4,
     "openS1": 2,
     "openS2": 22,
-    "totalOpen": 53,
-    "unassignedOpen": 2,
+    "totalOpen": 54,
+    "unassignedOpen": 3,
     "future": 9,
     "setAside": 5
   },
@@ -34,7 +34,7 @@
     },
     {
       "label": "Not started",
-      "count": 23
+      "count": 24
     }
   ],
   "severity": [
@@ -60,8 +60,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 2,
-      "open": 2
+      "total": 3,
+      "open": 3
     }
   ],
   "category": [
@@ -101,14 +101,14 @@
       "open": 3
     },
     {
+      "label": "Unspecified",
+      "total": 3,
+      "open": 3
+    },
+    {
       "label": "Retrieval Quality",
       "total": 2,
       "open": 1
-    },
-    {
-      "label": "Unspecified",
-      "total": 2,
-      "open": 2
     },
     {
       "label": "Consistency / Determinism",
@@ -133,6 +133,11 @@
       "open": 16
     },
     {
+      "label": "Unspecified",
+      "total": 3,
+      "open": 3
+    },
+    {
       "label": "Escalation Integration (RNT/Five9)",
       "total": 2,
       "open": 1
@@ -144,11 +149,6 @@
     },
     {
       "label": "Session / State Management",
-      "total": 2,
-      "open": 2
-    },
-    {
-      "label": "Unspecified",
       "total": 2,
       "open": 2
     }
@@ -166,8 +166,8 @@
     },
     {
       "label": "Unassigned",
-      "total": 6,
-      "open": 2
+      "total": 7,
+      "open": 3
     },
     {
       "label": "Jerome Michael",
@@ -193,7 +193,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 72
+      "count": 73
     },
     {
       "label": "Enhancement/Wishlist",
@@ -726,6 +726,14 @@
       "wi": "No Tracking No. - Button available to submit a case after no activity",
       "sev": "—",
       "pri": "Medium",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
+      "sev": "—",
+      "pri": "—",
       "status": "Not started",
       "owner": "Unassigned",
       "type": "Issue/Bugs"
