@@ -1,15 +1,15 @@
 {
-  "generated": "2026-07-17T12:44:43+00:00",
+  "generated": "2026-07-17T13:58:43+00:00",
   "kpis": {
     "total": 71,
     "resolved": 20,
     "resolvedPct": 28,
-    "inProgress": 8,
-    "notStarted": 24,
-    "reTest": 15,
+    "inProgress": 9,
+    "notStarted": 22,
+    "reTest": 16,
     "reopened": 4,
-    "openS1": 3,
-    "openS2": 21,
+    "openS1": 2,
+    "openS2": 22,
     "totalOpen": 51,
     "unassignedOpen": 1,
     "future": 9,
@@ -26,27 +26,27 @@
     },
     {
       "label": "In progress",
-      "count": 8
+      "count": 9
     },
     {
       "label": "Re-test",
-      "count": 15
+      "count": 16
     },
     {
       "label": "Not started",
-      "count": 24
+      "count": 22
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 5,
-      "open": 3
+      "total": 4,
+      "open": 2
     },
     {
       "label": "S2 · Critical",
-      "total": 29,
-      "open": 21
+      "total": 30,
+      "open": 22
     },
     {
       "label": "S3 · Elevated",
@@ -161,8 +161,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 29,
-      "open": 26
+      "total": 28,
+      "open": 25
     },
     {
       "label": "Unassigned",
@@ -183,6 +183,11 @@
       "label": "Scott Duckworth",
       "total": 1,
       "open": 0
+    },
+    {
+      "label": "Ekta Mangal",
+      "total": 1,
+      "open": 1
     }
   ],
   "itemTypes": [
@@ -231,7 +236,7 @@
     },
     {
       "wi": "No Tracking No. - Order of Details Displayed when a New Case is Created",
-      "status": "Not started",
+      "status": "Re-test",
       "owner": "Daniel Nicholas"
     },
     {
@@ -318,14 +323,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
       "sev": "S2",
       "pri": "High",
@@ -335,6 +332,14 @@
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
@@ -550,6 +555,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-13-02 - If Customer with Ajera and Other Products displays both DSA and Knowledge Search",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-18-02 — No holding message displayed (5 min wait)",
       "sev": "S3",
       "pri": "Medium",
@@ -562,7 +575,7 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs"
     },
     {
@@ -623,14 +636,6 @@
     },
     {
       "wi": "TC-09-02 - Summary missing information and formatting issues",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-13-02 - If Customer with Ajera and Other Products displays both DSA and Knowledge Search",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
