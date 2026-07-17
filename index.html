@@ -57,6 +57,20 @@
   .kpi .l{font-size:11.5px;color:var(--muted);font-weight:600;margin-top:2px;line-height:1.25;}
   .kpi .bar{height:3px;border-radius:2px;background:var(--grid);margin-top:10px;overflow:hidden;}
   .kpi .bar i{display:block;height:100%;border-radius:2px;}
+  .lb{display:flex;flex-direction:column;gap:11px;}
+  .lbrow{display:flex;align-items:center;gap:14px;}
+  .medal{width:30px;height:30px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px;color:#fff;background:#B7C0C8;}
+  .medal.g{background:linear-gradient(145deg,#F6D861,#D4AF37);color:#5c4a00;box-shadow:0 2px 7px rgba(212,175,55,.45);}
+  .medal.s{background:linear-gradient(145deg,#DBE1E7,#AAB4BD);color:#39434c;box-shadow:0 2px 7px rgba(170,180,189,.45);}
+  .medal.b{background:linear-gradient(145deg,#E3924F,#C2792F);color:#3f2400;box-shadow:0 2px 7px rgba(194,121,47,.4);}
+  .lbrow .nm{width:170px;flex:none;font-weight:600;font-size:13.5px;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  .lbrow .tr{flex:1;background:var(--grid);border-radius:7px;height:16px;overflow:hidden;}
+  .lbrow .tr i{display:block;height:100%;border-radius:7px;background:var(--marine);transition:width .8s cubic-bezier(.22,.61,.36,1);}
+  .lbrow.g .tr i{background:linear-gradient(90deg,#EBC63A,#D4AF37);}
+  .lbrow.s .tr i{background:linear-gradient(90deg,#C7CFD6,#AAB4BD);}
+  .lbrow.b .tr i{background:linear-gradient(90deg,#DA8B4C,#C2792F);}
+  .lbrow .ct{width:38px;text-align:right;font-weight:800;color:var(--marine);flex:none;font-size:15px;}
+  .lbrow.zero .nm,.lbrow.zero .ct{color:var(--faint);}
   h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);font-weight:700;margin:34px 0 14px;}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow);}
@@ -217,6 +231,16 @@ function punchRows(){
   document.querySelectorAll('#critHead th.sortable').forEach(th=>{
     const k=th.dataset.k; th.querySelector('.arw').textContent = punch.key===k ? (punch.dir>0?'▲':'▼') : '';});
 }
+function leaderboard(owner){
+  const people=owner.filter(o=>o.label!=='Unassigned').map(o=>({name:o.label,done:o.total-o.open}));
+  people.sort((a,b)=> b.done-a.done || a.name.localeCompare(b.name));
+  const max=Math.max(...people.map(p=>p.done),1), cls=['g','s','b'];
+  return people.map((p,i)=>{const c=i<3&&p.done>0?cls[i]:'';
+    return `<div class="lbrow ${c} ${p.done===0?'zero':''}"><div class="medal ${c}">${i+1}</div>
+      <div class="nm" title="${esc(p.name)}">${esc(p.name)}</div>
+      <div class="tr"><i style="width:${p.done/max*100}%"></i></div>
+      <div class="ct">${p.done}</div></div>`;}).join('');
+}
 function render(){
   const k=D.kpis, ph=D.generated==='placeholder';
   $('#asof').textContent = ph ? 'Sample data' : 'Updated '+new Date(D.generated).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'});
@@ -240,6 +264,10 @@ function render(){
       <div class="alertrow"><div class="k"><span class="pip" style="background:var(--analyze)"></span>Unassigned &amp; open</div><div class="n">${k.unassignedOpen}</div></div>
     </div>
   </section>
+
+  <h2 class="sec">Completed by assignee</h2>
+  <div class="panel"><h3>Fixes marked Complete — top contributors</h3><p class="cap">Items moved to Complete, ranked per person. Gold, silver and bronze lead the board.</p>
+    <div class="lb">${leaderboard(D.owner)}</div></div>
 
   <h2 class="sec">Resolution &amp; risk</h2>
   <div class="grid2">
