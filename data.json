@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T06:55:53+00:00",
+  "generated": "2026-07-20T10:19:07+00:00",
   "kpis": {
     "total": 80,
     "resolved": 27,
@@ -11,7 +11,7 @@
     "openS1": 1,
     "openS2": 20,
     "totalOpen": 53,
-    "unassignedOpen": 9,
+    "unassignedOpen": 8,
     "future": 9,
     "setAside": 5
   },
@@ -166,13 +166,13 @@
     },
     {
       "label": "Unassigned",
-      "total": 13,
-      "open": 9
+      "total": 12,
+      "open": 8
     },
     {
       "label": "Jerome Michael",
-      "total": 5,
-      "open": 3
+      "total": 6,
+      "open": 4
     },
     {
       "label": "Chris Smith",
@@ -703,7 +703,7 @@
       "sev": "—",
       "pri": "—",
       "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
