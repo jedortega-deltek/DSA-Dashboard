@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-20T12:34:19+00:00",
+  "generated": "2026-07-20T15:17:18+00:00",
   "kpis": {
-    "total": 80,
+    "total": 71,
     "resolved": 27,
-    "resolvedPct": 34,
-    "inProgress": 10,
-    "notStarted": 30,
-    "reTest": 6,
-    "reopened": 7,
+    "resolvedPct": 38,
+    "inProgress": 12,
+    "notStarted": 16,
+    "reTest": 12,
+    "reopened": 4,
     "openS1": 1,
-    "openS2": 20,
-    "totalOpen": 53,
-    "unassignedOpen": 8,
+    "openS2": 24,
+    "totalOpen": 44,
+    "unassignedOpen": 4,
     "future": 9,
-    "setAside": 5
+    "setAside": 17
   },
   "status": [
     {
@@ -22,19 +22,19 @@
     },
     {
       "label": "Re-open",
-      "count": 7
+      "count": 4
     },
     {
       "label": "In progress",
-      "count": 10
+      "count": 12
     },
     {
       "label": "Re-test",
-      "count": 6
+      "count": 12
     },
     {
       "label": "Not started",
-      "count": 30
+      "count": 16
     }
   ],
   "severity": [
@@ -45,55 +45,50 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 30,
-      "open": 20
+      "total": 34,
+      "open": 24
     },
     {
       "label": "S3 · Elevated",
-      "total": 32,
-      "open": 20
+      "total": 26,
+      "open": 14
     },
     {
       "label": "S4 · General",
-      "total": 5,
-      "open": 3
+      "total": 4,
+      "open": 2
     },
     {
       "label": "Unspecified",
-      "total": 9,
-      "open": 9
+      "total": 3,
+      "open": 3
     }
   ],
   "category": [
-    {
-      "label": "Escalation & Handoff",
-      "total": 21,
-      "open": 11
-    },
     {
       "label": "UX / Conversation Design",
       "total": 19,
       "open": 9
     },
     {
-      "label": "Platform / Infrastructure",
-      "total": 12,
-      "open": 7
+      "label": "Escalation & Handoff",
+      "total": 18,
+      "open": 8
     },
     {
-      "label": "Unspecified",
-      "total": 9,
-      "open": 9
+      "label": "Platform / Infrastructure",
+      "total": 11,
+      "open": 6
+    },
+    {
+      "label": "Session Management",
+      "total": 8,
+      "open": 8
     },
     {
       "label": "Grounding / Synthesis",
-      "total": 5,
-      "open": 5
-    },
-    {
-      "label": "Content / Instruction Defects",
       "total": 4,
-      "open": 3
+      "open": 4
     },
     {
       "label": "Guardrails / Output Quality",
@@ -101,27 +96,22 @@
       "open": 4
     },
     {
-      "label": "Session Management",
+      "label": "Unspecified",
       "total": 3,
       "open": 3
+    },
+    {
+      "label": "Content / Instruction Defects",
+      "total": 2,
+      "open": 1
     },
     {
       "label": "Retrieval Quality",
       "total": 2,
       "open": 1
-    },
-    {
-      "label": "Consistency / Determinism",
-      "total": 1,
-      "open": 1
     }
   ],
   "rootCause": [
-    {
-      "label": "Instruction File / Prompt",
-      "total": 23,
-      "open": 19
-    },
     {
       "label": "Frontend / Chat Widget",
       "total": 22,
@@ -129,13 +119,18 @@
     },
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 20,
-      "open": 14
+      "total": 18,
+      "open": 12
+    },
+    {
+      "label": "Instruction File / Prompt",
+      "total": 15,
+      "open": 11
     },
     {
       "label": "Unspecified",
-      "total": 9,
-      "open": 9
+      "total": 10,
+      "open": 10
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -156,18 +151,18 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 29,
-      "open": 12
+      "total": 34,
+      "open": 17
     },
     {
       "label": "Daniel Nicholas",
-      "total": 28,
-      "open": 25
+      "total": 18,
+      "open": 15
     },
     {
       "label": "Unassigned",
-      "total": 12,
-      "open": 8
+      "total": 8,
+      "open": 4
     },
     {
       "label": "Jerome Michael",
@@ -193,7 +188,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 79
+      "count": 84
     },
     {
       "label": "Enhancement/Wishlist",
@@ -205,7 +200,7 @@
     },
     {
       "label": "Untagged",
-      "count": 3
+      "count": 1
     }
   ],
   "future": [
@@ -226,7 +221,7 @@
     },
     {
       "wi": "Additional Information S1 and S2 Customers on Submit a Case",
-      "status": "Not started",
+      "status": "In progress",
       "owner": "Daniel Nicholas"
     },
     {
@@ -236,7 +231,7 @@
     },
     {
       "wi": "No Tracking No. - Order of Details Displayed when a New Case is Created",
-      "status": "Re-open",
+      "status": "Complete",
       "owner": "Daniel Nicholas"
     },
     {
@@ -355,6 +350,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No. - DSA prompting every minute",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
@@ -363,7 +366,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
+      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
@@ -371,7 +374,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
+      "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
@@ -379,7 +382,15 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-005 — Correct KB source retrieved but answer is wrong",
+      "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
@@ -400,6 +411,30 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "SME-005 — Correct KB source retrieved but answer is wrong",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -427,51 +462,43 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
+      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
-      "pri": "High",
+      "pri": "—",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-07-03 - case created from non ASC, no attempt to help from DSA",
+      "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
-      "pri": "High",
+      "pri": "—",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-08-01 - Did not create a chat after 3 turns",
+      "wi": "No Tracking No. - Duplicate Cases created",
       "sev": "S2",
-      "pri": "High",
+      "pri": "—",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
+      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
-      "pri": "High",
+      "pri": "—",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
+      "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
-      "pri": "High",
+      "pri": "—",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -483,23 +510,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-02-01 - One Question at a time",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-02-04 - Best-effort fallback after two diagnostic turns",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-04-03 - Only provides one option with steps",
+      "wi": "TC-006 - Valid Ajera question ignored",
       "sev": "S3",
       "pri": "Medium",
       "status": "Re-open",
@@ -512,13 +523,21 @@
       "pri": "Medium",
       "status": "In progress",
       "owner": "Daniel Nicholas",
-      "type": "Untagged"
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - After hours case creation verbiage",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
     },
     {
       "wi": "SME-009 — Unprofessional wording in responses",
       "sev": "S3",
-      "pri": "Low",
-      "status": "In progress",
+      "pri": "Medium",
+      "status": "Re-test",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
@@ -526,7 +545,7 @@
       "wi": "TC-01-01: Time for Response More than 10 seconds",
       "sev": "S3",
       "pri": "Medium",
-      "status": "In progress",
+      "status": "Re-test",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
@@ -547,14 +566,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - After hours case creation verbiage",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking No. - Duplicate DSA Searches",
       "sev": "S3",
       "pri": "Medium",
@@ -563,43 +574,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "Odd Response When Discussing KBs",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "SME-004 — Same question returns different answers / inconsistent behavior",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "SME-007 — Excessive response times (seconds to minutes)",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -637,34 +616,18 @@
     {
       "wi": "Change text on the chatbot and greeting",
       "sev": "S4",
-      "pri": "Medium",
-      "status": "Not started",
+      "pri": "Low",
+      "status": "In progress",
       "owner": "Swastik Sharma",
       "type": "Task"
     },
     {
-      "wi": "No Tracking No. - Doesn't know phone number to Support",
+      "wi": "No Tracking No. - No option to skip submitting feedback",
       "sev": "S4",
-      "pri": "Low",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-08-03 - Did not get a human",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-006 - Valid Ajera question ignored",
-      "sev": "—",
       "pri": "—",
-      "status": "Re-open",
+      "status": "In progress",
       "owner": "Unassigned",
-      "type": "Untagged"
+      "type": "Issue/Bugs"
     },
     {
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
@@ -675,47 +638,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - Button available to submit a case after no activity",
-      "sev": "—",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - Case created when I did not accept the chat",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - DSA prompting every minute",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - Duplicate Cases created",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - No option to skip submitting feedback",
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
