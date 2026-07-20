@@ -1,28 +1,28 @@
 {
-  "generated": "placeholder",
+  "generated": "2026-07-20T17:53:42+00:00",
   "kpis": {
-    "total": 71,
-    "resolved": 27,
+    "total": 79,
+    "resolved": 30,
     "resolvedPct": 38,
     "inProgress": 12,
-    "notStarted": 16,
-    "reTest": 12,
-    "reopened": 4,
-    "openS1": 1,
-    "openS2": 24,
-    "totalOpen": 44,
+    "notStarted": 19,
+    "reTest": 8,
+    "reopened": 9,
+    "openS1": 0,
+    "openS2": 23,
+    "totalOpen": 49,
     "unassignedOpen": 4,
     "future": 9,
-    "setAside": 17
+    "setAside": 13
   },
   "status": [
     {
       "label": "Complete",
-      "count": 27
+      "count": 30
     },
     {
       "label": "Re-open",
-      "count": 4
+      "count": 9
     },
     {
       "label": "In progress",
@@ -30,28 +30,28 @@
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 8
     },
     {
       "label": "Not started",
-      "count": 16
+      "count": 19
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 4,
-      "open": 1
+      "open": 0
     },
     {
       "label": "S2 · Critical",
-      "total": 34,
-      "open": 24
+      "total": 35,
+      "open": 23
     },
     {
       "label": "S3 · Elevated",
-      "total": 26,
-      "open": 14
+      "total": 32,
+      "open": 20
     },
     {
       "label": "S4 · General",
@@ -60,35 +60,35 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 4,
+      "open": 4
     }
   ],
   "category": [
     {
       "label": "UX / Conversation Design",
-      "total": 19,
-      "open": 9
+      "total": 21,
+      "open": 11
     },
     {
       "label": "Escalation & Handoff",
-      "total": 18,
-      "open": 8
-    },
-    {
-      "label": "Platform / Infrastructure",
-      "total": 11,
+      "total": 19,
       "open": 6
     },
     {
+      "label": "Platform / Infrastructure",
+      "total": 12,
+      "open": 7
+    },
+    {
       "label": "Session Management",
-      "total": 8,
-      "open": 8
+      "total": 9,
+      "open": 9
     },
     {
       "label": "Grounding / Synthesis",
-      "total": 4,
-      "open": 4
+      "total": 5,
+      "open": 5
     },
     {
       "label": "Guardrails / Output Quality",
@@ -97,13 +97,13 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 4,
+      "open": 4
     },
     {
       "label": "Content / Instruction Defects",
-      "total": 2,
-      "open": 1
+      "total": 3,
+      "open": 2
     },
     {
       "label": "Retrieval Quality",
@@ -114,23 +114,23 @@
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 22,
-      "open": 7
-    },
-    {
-      "label": "n8n Workflow / Orchestration",
-      "total": 18,
-      "open": 12
-    },
-    {
-      "label": "Instruction File / Prompt",
-      "total": 15,
+      "total": 26,
       "open": 11
     },
     {
+      "label": "n8n Workflow / Orchestration",
+      "total": 23,
+      "open": 14
+    },
+    {
+      "label": "Instruction File / Prompt",
+      "total": 20,
+      "open": 16
+    },
+    {
       "label": "Unspecified",
-      "total": 10,
-      "open": 10
+      "total": 4,
+      "open": 4
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -151,13 +151,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 34,
+      "total": 37,
       "open": 17
     },
     {
       "label": "Daniel Nicholas",
-      "total": 18,
-      "open": 15
+      "total": 22,
+      "open": 19
     },
     {
       "label": "Unassigned",
@@ -166,8 +166,8 @@
     },
     {
       "label": "Jerome Michael",
-      "total": 6,
-      "open": 4
+      "total": 7,
+      "open": 5
     },
     {
       "label": "Chris Smith",
@@ -175,20 +175,20 @@
       "open": 3
     },
     {
-      "label": "Ekta Mangal",
-      "total": 1,
-      "open": 1
-    },
-    {
       "label": "Scott Duckworth",
       "total": 1,
       "open": 0
+    },
+    {
+      "label": "Ekta Mangal",
+      "total": 1,
+      "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 84
+      "count": 87
     },
     {
       "label": "Enhancement/Wishlist",
@@ -200,43 +200,13 @@
     },
     {
       "label": "Untagged",
-      "count": 1
+      "count": 2
     }
   ],
   "future": [
     {
-      "wi": "Ability to enlarge the chat window, or undock the chat window instead of embedded in the home page",
-      "status": "Working as designed",
-      "owner": "Unassigned"
-    },
-    {
-      "wi": "Ability to Print or Download Chat with DSA",
-      "status": "Working as designed",
-      "owner": "Unassigned"
-    },
-    {
-      "wi": "Additional Information S1 and S2 Customers on Submit a Case",
-      "status": "In progress",
-      "owner": "Daniel Nicholas"
-    },
-    {
       "wi": "No Tracking - Terminate DSA chat after case or chat is fulfilled",
       "status": "Working as designed",
-      "owner": "Swastik Sharma"
-    },
-    {
-      "wi": "No Tracking No. - Order of Details Displayed when a New Case is Created",
-      "status": "Complete",
-      "owner": "Daniel Nicholas"
-    },
-    {
-      "wi": "SmartSoftware Customers Cannot Submit Cases or Initiate a Chat",
-      "status": "Not started",
-      "owner": "Swastik Sharma"
-    },
-    {
-      "wi": "SME-016 -- Session history lost after inactivity timeout (enhancement)",
-      "status": "Not started",
       "owner": "Swastik Sharma"
     },
     {
@@ -245,9 +215,39 @@
       "owner": "Swastik Sharma"
     },
     {
+      "wi": "SME-016 -- Session history lost after inactivity timeout (enhancement)",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "Additional Information S1 and S2 Customers on Submit a Case",
+      "status": "In progress",
+      "owner": "Daniel Nicholas"
+    },
+    {
       "wi": "TC-09-01 - Chat Transcript file in pdf",
       "status": "Not started",
       "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking No. - Order of Details Displayed when a New Case is Created",
+      "status": "Complete",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "Ability to enlarge the chat window, or undock the chat window instead of embedded in the home page",
+      "status": "Working as designed",
+      "owner": "Unassigned"
+    },
+    {
+      "wi": "SmartSoftware Customers Cannot Submit Cases or Initiate a Chat",
+      "status": "Not started",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "Ability to Print or Download Chat with DSA",
+      "status": "Working as designed",
+      "owner": "Unassigned"
     }
   ],
   "recent": [
@@ -260,20 +260,12 @@
       "resolved": "2026-07-15"
     },
     {
-      "wi": "TC-17-03 — Feedback text invisible (white text on white background)",
-      "resolved": "2026-07-15"
-    },
-    {
       "wi": "TC-17-03/TC-17-04 — Feedback displaying as stars instead of thumbs up/down",
       "resolved": "2026-07-15"
     },
     {
-      "wi": "SME-008 — Interactions do not feel conversational",
-      "resolved": "2026-07-14"
-    },
-    {
-      "wi": "TC-04-01 - No Citation or Link Displays",
-      "resolved": "2026-07-14"
+      "wi": "TC-17-03 — Feedback text invisible (white text on white background)",
+      "resolved": "2026-07-15"
     },
     {
       "wi": "TC-08-02 - Chat dialog opens and button available in DSA chat window",
@@ -292,23 +284,23 @@
       "resolved": "2026-07-14"
     },
     {
+      "wi": "TC-04-01 - No Citation or Link Displays",
+      "resolved": "2026-07-14"
+    },
+    {
+      "wi": "SME-008 — Interactions do not feel conversational",
+      "resolved": "2026-07-14"
+    },
+    {
       "wi": "Create a link of the case that takes them to the Manage Cases",
       "resolved": "2026-07-13"
     },
     {
-      "wi": "If a Standard Care customer does not have any cases available, they get a message",
+      "wi": "If a Standard Care customer does not have any cases available,\n they get a message:",
       "resolved": "2026-07-13"
     }
   ],
   "openItems": [
-    {
-      "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
     {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
@@ -398,22 +390,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Validate if Standard Care Customers have Available Cases",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No.: Validate if Standard Care Customers have Available Cases",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
       "sev": "S2",
       "pri": "High",
@@ -486,6 +462,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
       "pri": "High",
@@ -504,13 +488,53 @@
     {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
-      "pri": "Medium",
+      "pri": "Low",
       "status": "Re-open",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "Odd Response When Discussing KBs",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-006 - Valid Ajera question ignored",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-02-01 - One Question at a time",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-04-03 - Only provides one option with steps",
       "sev": "S3",
       "pri": "Medium",
       "status": "Re-open",
@@ -542,14 +566,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -559,6 +575,14 @@
     },
     {
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
@@ -582,6 +606,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-09-02 - Summary missing information and formatting issues",
       "sev": "S3",
       "pri": "Medium",
@@ -592,7 +624,7 @@
     {
       "wi": "TC-14-04 - Sessions tagged DSA vs control",
       "sev": "S3",
-      "pri": "Medium",
+      "pri": "Low",
       "status": "Not started",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
@@ -626,11 +658,11 @@
       "sev": "S4",
       "pri": "Low",
       "status": "In progress",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
-      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
+      "wi": "No Tracking no. - No available cases, update message",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
@@ -638,7 +670,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
@@ -646,12 +678,20 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
+      "wi": "TC-04-02 - DSA and DLH not the same",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
       "owner": "Unassigned",
       "type": "Issue/Bugs"
+    },
+    {
+      "wi": "",
+      "sev": "—",
+      "pri": "—",
+      "status": "",
+      "owner": "Unassigned",
+      "type": "Untagged"
     }
   ],
   "aging": [
@@ -680,10 +720,10 @@
       "days": 7
     },
     {
-      "wi": "No Tracking No.: Validate if Standard Care Customers have Available Cases",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
+      "wi": "TC-02-01 - One Question at a time",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-open",
       "opened": "2026-07-13",
       "days": 7
     },
@@ -752,22 +792,6 @@
       "days": 7
     },
     {
-      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
-      "sev": "S2",
-      "owner": "Jerome Michael",
-      "status": "Re-open",
-      "opened": "2026-07-14",
-      "days": 6
-    },
-    {
-      "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
-      "sev": "S1",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "2026-07-14",
-      "days": 6
-    },
-    {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "owner": "Daniel Nicholas",
@@ -780,6 +804,14 @@
       "sev": "S3",
       "owner": "Swastik Sharma",
       "status": "Not started",
+      "opened": "2026-07-14",
+      "days": 6
+    },
+    {
+      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
+      "sev": "S2",
+      "owner": "Jerome Michael",
+      "status": "Re-open",
       "opened": "2026-07-14",
       "days": 6
     },
@@ -816,6 +848,14 @@
       "days": 4
     },
     {
+      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
+      "sev": "S3",
+      "owner": "Jerome Michael",
+      "status": "Not started",
+      "opened": "2026-07-17",
+      "days": 3
+    },
+    {
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
       "sev": "S3",
       "owner": "Swastik Sharma",
@@ -824,82 +864,106 @@
       "days": 3
     },
     {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
-      "sev": "—",
-      "owner": "Unassigned",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking No. - After hours case creation verbiage",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
       "owner": "Swastik Sharma",
       "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking No. - DSA prompting every minute",
-      "sev": "S2",
-      "owner": "Jerome Michael",
-      "status": "In progress",
-      "opened": "",
-      "days": null
+      "opened": "2026-07-17",
+      "days": 3
     },
     {
       "wi": "No Tracking No. - Duplicate Cases created",
       "sev": "S2",
       "owner": "Swastik Sharma",
       "status": "Not started",
-      "opened": "",
-      "days": null
+      "opened": "2026-07-17",
+      "days": 3
     },
     {
-      "wi": "No Tracking No. - Duplicate DSA Searches",
-      "sev": "S3",
+      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
+      "sev": "S2",
       "owner": "Swastik Sharma",
       "status": "Not started",
-      "opened": "",
-      "days": null
+      "opened": "2026-07-17",
+      "days": 3
     },
     {
       "wi": "No Tracking No. - No option to skip submitting feedback",
       "sev": "S4",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "status": "In progress",
+      "opened": "2026-07-17",
+      "days": 3
+    },
+    {
+      "wi": "No Tracking No. - DSA prompting every minute",
+      "sev": "S2",
+      "owner": "Jerome Michael",
+      "status": "In progress",
+      "opened": "2026-07-17",
+      "days": 3
+    },
+    {
+      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
+      "sev": "S3",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "2026-07-17",
+      "days": 3
+    },
+    {
+      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "2026-07-20",
+      "days": 0
+    },
+    {
+      "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "2026-07-20",
+      "days": 0
+    },
+    {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "2026-07-20",
+      "days": 0
+    },
+    {
+      "wi": "TC-04-03 - Only provides one option with steps",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
     {
-      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
-      "sev": "S2",
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
+      "sev": "S3",
       "owner": "Daniel Nicholas",
-      "status": "In progress",
+      "status": "Re-open",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Odd Response When Discussing KBs",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-open",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
@@ -912,63 +976,15 @@
       "days": null
     },
     {
-      "wi": "No Tracking No. - Validate if Standard Care Customers have Available Cases",
-      "sev": "S2",
+      "wi": "No Tracking No. - Duplicate DSA Searches",
+      "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
-      "sev": "—",
-      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
       "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "owner": "Jerome Michael",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-006 - Valid Ajera question ignored",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
-      "sev": "—",
-      "owner": "Unassigned",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-09-02 - Summary missing information and formatting issues",
       "sev": "S3",
       "owner": "Jerome Michael",
       "status": "Not started",
@@ -984,7 +1000,39 @@
       "days": null
     },
     {
+      "wi": "TC-09-02 - Summary missing information and formatting issues",
+      "sev": "S3",
+      "owner": "Jerome Michael",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
       "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
+      "sev": "S3",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking No. - After hours case creation verbiage",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "owner": "Daniel Nicholas",
       "status": "In progress",
@@ -1000,15 +1048,52 @@
       "days": null
     },
     {
-      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
+      "wi": "TC-006 - Valid Ajera question ignored",
       "sev": "S3",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
+      "status": "Re-open",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-04-02 - DSA and DLH not the same",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "",
       "opened": "",
       "days": null
     }
   ],
   "solved": [
+    {
+      "owner": "Swastik Sharma",
+      "resolved": "2026-07-06",
+      "wi": "TC-01-02 - Do not limit characters"
+    },
     {
       "owner": "Swastik Sharma",
       "resolved": "2026-07-13",
@@ -1017,12 +1102,12 @@
     {
       "owner": "Unassigned",
       "resolved": "2026-07-13",
-      "wi": "If a Standard Care customer does not have any cases available, they get a message"
+      "wi": "If a Standard Care customer does not have any cases available,\n they get a message:"
     },
     {
-      "owner": "Swastik Sharma",
-      "resolved": "2026-07-15",
-      "wi": "If a user has no support plan for ajera they shouldnt see Dela"
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-13",
+      "wi": "TC-02-02 - DSA Asking Questions, not Providing Answer"
     },
     {
       "owner": "Swastik Sharma",
@@ -1040,29 +1125,9 @@
       "wi": "SME-006 — n8n connection failure: Could not reach n8n (empty response)"
     },
     {
-      "owner": "Scott Duckworth",
-      "resolved": "2026-07-14",
-      "wi": "SME-008 — Interactions do not feel conversational"
-    },
-    {
       "owner": "Daniel Nicholas",
       "resolved": "2026-07-13",
       "wi": "SME-015 -- Escalation flow calibration: engagement threshold before agent routing"
-    },
-    {
-      "owner": "Swastik Sharma",
-      "resolved": "2026-07-06",
-      "wi": "TC-01-02 - Do not limit characters"
-    },
-    {
-      "owner": "Daniel Nicholas",
-      "resolved": "2026-07-13",
-      "wi": "TC-02-02 - DSA Asking Questions, not Providing Answer"
-    },
-    {
-      "owner": "Unassigned",
-      "resolved": "2026-07-14",
-      "wi": "TC-04-01 - No Citation or Link Displays"
     },
     {
       "owner": "Unassigned",
@@ -1081,8 +1146,23 @@
     },
     {
       "owner": "Swastik Sharma",
+      "resolved": "2026-07-14",
+      "wi": "TC-No# - Chat window hidden behind another window"
+    },
+    {
+      "owner": "Unassigned",
+      "resolved": "2026-07-14",
+      "wi": "TC-04-01 - No Citation or Link Displays"
+    },
+    {
+      "owner": "Scott Duckworth",
+      "resolved": "2026-07-14",
+      "wi": "SME-008 — Interactions do not feel conversational"
+    },
+    {
+      "owner": "Swastik Sharma",
       "resolved": "2026-07-15",
-      "wi": "TC-17-03 — Feedback text invisible (white text on white background)"
+      "wi": "If a user has no support plan for ajera they shouldnt see Dela"
     },
     {
       "owner": "Swastik Sharma",
@@ -1090,14 +1170,14 @@
       "wi": "TC-17-03/TC-17-04 — Feedback displaying as stars instead of thumbs up/down"
     },
     {
+      "owner": "Swastik Sharma",
+      "resolved": "2026-07-15",
+      "wi": "TC-17-03 — Feedback text invisible (white text on white background)"
+    },
+    {
       "owner": "Jerome Michael",
       "resolved": "2026-07-16",
       "wi": "TC-23-03 — UI doesn't switch to Coveo search when Javascript is disabled"
-    },
-    {
-      "owner": "Swastik Sharma",
-      "resolved": "2026-07-14",
-      "wi": "TC-No# - Chat window hidden behind another window"
     }
   ]
 }
