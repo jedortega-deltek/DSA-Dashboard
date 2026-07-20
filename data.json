@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-20T17:53:42+00:00",
+  "generated": "2026-07-20T19:15:05+00:00",
   "kpis": {
     "total": 79,
     "resolved": 30,
@@ -9,7 +9,7 @@
     "reTest": 8,
     "reopened": 9,
     "openS1": 0,
-    "openS2": 23,
+    "openS2": 25,
     "totalOpen": 49,
     "unassignedOpen": 4,
     "future": 9,
@@ -45,13 +45,13 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 35,
-      "open": 23
+      "total": 37,
+      "open": 25
     },
     {
       "label": "S3 · Elevated",
-      "total": 32,
-      "open": 20
+      "total": 33,
+      "open": 21
     },
     {
       "label": "S4 · General",
@@ -60,8 +60,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 4
+      "total": 1,
+      "open": 1
     }
   ],
   "category": [
@@ -478,6 +478,22 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking no. - No available cases, update message",
+      "sev": "S2",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
+      "sev": "S2",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
       "pri": "High",
@@ -576,7 +592,7 @@
     {
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
       "sev": "S3",
-      "pri": "Medium",
+      "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -584,7 +600,7 @@
     {
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
       "sev": "S3",
-      "pri": "Medium",
+      "pri": "Low",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -606,9 +622,17 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-04-02 - DSA and DLH not the same",
+      "sev": "S3",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
       "sev": "S3",
-      "pri": "Medium",
+      "pri": "High",
       "status": "Not started",
       "owner": "Jerome Michael",
       "type": "Issue/Bugs"
@@ -640,7 +664,7 @@
     {
       "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
       "sev": "S3",
-      "pri": "Medium",
+      "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -659,30 +683,6 @@
       "pri": "Low",
       "status": "In progress",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-04-02 - DSA and DLH not the same",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
       "type": "Issue/Bugs"
     },
     {
@@ -1057,7 +1057,7 @@
     },
     {
       "wi": "No Tracking no. - No available cases, update message",
-      "sev": "—",
+      "sev": "S2",
       "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
@@ -1065,7 +1065,7 @@
     },
     {
       "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "—",
+      "sev": "S2",
       "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
@@ -1073,7 +1073,7 @@
     },
     {
       "wi": "TC-04-02 - DSA and DLH not the same",
-      "sev": "—",
+      "sev": "S3",
       "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
