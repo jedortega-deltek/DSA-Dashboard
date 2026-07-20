@@ -1,28 +1,28 @@
 {
-  "generated": "2026-07-20T15:17:18+00:00",
+  "generated": "2026-07-20T17:00:50+00:00",
   "kpis": {
-    "total": 71,
-    "resolved": 27,
+    "total": 79,
+    "resolved": 30,
     "resolvedPct": 38,
     "inProgress": 12,
-    "notStarted": 16,
-    "reTest": 12,
-    "reopened": 4,
-    "openS1": 1,
-    "openS2": 24,
-    "totalOpen": 44,
+    "notStarted": 19,
+    "reTest": 8,
+    "reopened": 9,
+    "openS1": 0,
+    "openS2": 23,
+    "totalOpen": 49,
     "unassignedOpen": 4,
     "future": 9,
-    "setAside": 17
+    "setAside": 13
   },
   "status": [
     {
       "label": "Complete",
-      "count": 27
+      "count": 30
     },
     {
       "label": "Re-open",
-      "count": 4
+      "count": 9
     },
     {
       "label": "In progress",
@@ -30,28 +30,28 @@
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 8
     },
     {
       "label": "Not started",
-      "count": 16
+      "count": 19
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 4,
-      "open": 1
+      "open": 0
     },
     {
       "label": "S2 · Critical",
-      "total": 34,
-      "open": 24
+      "total": 35,
+      "open": 23
     },
     {
       "label": "S3 · Elevated",
-      "total": 26,
-      "open": 14
+      "total": 32,
+      "open": 20
     },
     {
       "label": "S4 · General",
@@ -60,35 +60,35 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 4,
+      "open": 4
     }
   ],
   "category": [
     {
       "label": "UX / Conversation Design",
-      "total": 19,
-      "open": 9
+      "total": 21,
+      "open": 11
     },
     {
       "label": "Escalation & Handoff",
-      "total": 18,
-      "open": 8
-    },
-    {
-      "label": "Platform / Infrastructure",
-      "total": 11,
+      "total": 19,
       "open": 6
     },
     {
+      "label": "Platform / Infrastructure",
+      "total": 12,
+      "open": 7
+    },
+    {
       "label": "Session Management",
-      "total": 8,
-      "open": 8
+      "total": 9,
+      "open": 9
     },
     {
       "label": "Grounding / Synthesis",
-      "total": 4,
-      "open": 4
+      "total": 5,
+      "open": 5
     },
     {
       "label": "Guardrails / Output Quality",
@@ -97,13 +97,13 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 4,
+      "open": 4
     },
     {
       "label": "Content / Instruction Defects",
-      "total": 2,
-      "open": 1
+      "total": 3,
+      "open": 2
     },
     {
       "label": "Retrieval Quality",
@@ -114,23 +114,23 @@
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 22,
-      "open": 7
-    },
-    {
-      "label": "n8n Workflow / Orchestration",
-      "total": 18,
-      "open": 12
-    },
-    {
-      "label": "Instruction File / Prompt",
-      "total": 15,
+      "total": 26,
       "open": 11
     },
     {
+      "label": "n8n Workflow / Orchestration",
+      "total": 23,
+      "open": 14
+    },
+    {
+      "label": "Instruction File / Prompt",
+      "total": 20,
+      "open": 16
+    },
+    {
       "label": "Unspecified",
-      "total": 10,
-      "open": 10
+      "total": 4,
+      "open": 4
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -151,13 +151,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 34,
+      "total": 37,
       "open": 17
     },
     {
       "label": "Daniel Nicholas",
-      "total": 18,
-      "open": 15
+      "total": 22,
+      "open": 19
     },
     {
       "label": "Unassigned",
@@ -166,8 +166,8 @@
     },
     {
       "label": "Jerome Michael",
-      "total": 6,
-      "open": 4
+      "total": 7,
+      "open": 5
     },
     {
       "label": "Chris Smith",
@@ -188,7 +188,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 84
+      "count": 87
     },
     {
       "label": "Enhancement/Wishlist",
@@ -200,7 +200,7 @@
     },
     {
       "label": "Untagged",
-      "count": 1
+      "count": 2
     }
   ],
   "future": [
@@ -302,14 +302,6 @@
   ],
   "openItems": [
     {
-      "wi": "DELA-020 — SLA Instance field not updating on case creation (Standard Care case decrement broken)",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
@@ -398,22 +390,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Validate if Standard Care Customers have Available Cases",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No.: Validate if Standard Care Customers have Available Cases",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
       "sev": "S2",
       "pri": "High",
@@ -464,7 +440,7 @@
     {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
-      "pri": "—",
+      "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -472,7 +448,7 @@
     {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
-      "pri": "—",
+      "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -480,7 +456,15 @@
     {
       "wi": "No Tracking No. - Duplicate Cases created",
       "sev": "S2",
-      "pri": "—",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -488,7 +472,7 @@
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
-      "pri": "—",
+      "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -496,7 +480,7 @@
     {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
-      "pri": "—",
+      "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -510,7 +494,47 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "Odd Response When Discussing KBs",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-006 - Valid Ajera question ignored",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-02-01 - One Question at a time",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-04-03 - Only provides one option with steps",
       "sev": "S3",
       "pri": "Medium",
       "status": "Re-open",
@@ -542,14 +566,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -566,6 +582,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No. - Duplicate DSA Searches",
       "sev": "S3",
       "pri": "Medium",
@@ -575,6 +599,14 @@
     },
     {
       "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
@@ -624,13 +656,13 @@
     {
       "wi": "No Tracking No. - No option to skip submitting feedback",
       "sev": "S4",
-      "pri": "—",
+      "pri": "Low",
       "status": "In progress",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
-      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
+      "wi": "No Tracking no. - No available cases, update message",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
@@ -638,7 +670,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
@@ -646,12 +678,20 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
+      "wi": "TC-04-02 - DSA and DLH not the same",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
       "owner": "Unassigned",
       "type": "Issue/Bugs"
+    },
+    {
+      "wi": "",
+      "sev": "—",
+      "pri": "—",
+      "status": "",
+      "owner": "Unassigned",
+      "type": "Untagged"
     }
   ]
 }
