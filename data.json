@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-20T19:15:05+00:00",
+  "generated": "2026-07-20T20:49:59+00:00",
   "kpis": {
-    "total": 79,
-    "resolved": 30,
-    "resolvedPct": 38,
-    "inProgress": 12,
-    "notStarted": 19,
+    "total": 78,
+    "resolved": 33,
+    "resolvedPct": 42,
+    "inProgress": 11,
+    "notStarted": 16,
     "reTest": 8,
     "reopened": 9,
     "openS1": 0,
-    "openS2": 25,
-    "totalOpen": 49,
-    "unassignedOpen": 4,
+    "openS2": 21,
+    "totalOpen": 45,
+    "unassignedOpen": 2,
     "future": 9,
-    "setAside": 13
+    "setAside": 15
   },
   "status": [
     {
       "label": "Complete",
-      "count": 30
+      "count": 33
     },
     {
       "label": "Re-open",
@@ -26,7 +26,7 @@
     },
     {
       "label": "In progress",
-      "count": 12
+      "count": 11
     },
     {
       "label": "Re-test",
@@ -34,19 +34,19 @@
     },
     {
       "label": "Not started",
-      "count": 19
+      "count": 16
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 4,
+      "total": 5,
       "open": 0
     },
     {
       "label": "S2 · Critical",
-      "total": 37,
-      "open": 25
+      "total": 35,
+      "open": 21
     },
     {
       "label": "S3 · Elevated",
@@ -78,12 +78,12 @@
     {
       "label": "Platform / Infrastructure",
       "total": 12,
-      "open": 7
+      "open": 5
     },
     {
       "label": "Session Management",
       "total": 9,
-      "open": 9
+      "open": 8
     },
     {
       "label": "Grounding / Synthesis",
@@ -96,14 +96,14 @@
       "open": 4
     },
     {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 4
-    },
-    {
       "label": "Content / Instruction Defects",
       "total": 3,
       "open": 2
+    },
+    {
+      "label": "Unspecified",
+      "total": 3,
+      "open": 3
     },
     {
       "label": "Retrieval Quality",
@@ -120,7 +120,7 @@
     {
       "label": "n8n Workflow / Orchestration",
       "total": 23,
-      "open": 14
+      "open": 11
     },
     {
       "label": "Instruction File / Prompt",
@@ -129,8 +129,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 4
+      "total": 3,
+      "open": 3
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -151,44 +151,44 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 37,
-      "open": 17
+      "total": 34,
+      "open": 14
     },
     {
       "label": "Daniel Nicholas",
-      "total": 22,
-      "open": 19
+      "total": 26,
+      "open": 23
     },
     {
       "label": "Unassigned",
-      "total": 8,
-      "open": 4
+      "total": 6,
+      "open": 2
     },
     {
       "label": "Jerome Michael",
-      "total": 7,
-      "open": 5
+      "total": 6,
+      "open": 4
     },
     {
       "label": "Chris Smith",
       "total": 3,
-      "open": 3
+      "open": 1
+    },
+    {
+      "label": "Ekta Mangal",
+      "total": 2,
+      "open": 1
     },
     {
       "label": "Scott Duckworth",
       "total": 1,
       "open": 0
-    },
-    {
-      "label": "Ekta Mangal",
-      "total": 1,
-      "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 87
+      "count": 88
     },
     {
       "label": "Enhancement/Wishlist",
@@ -252,6 +252,14 @@
   ],
   "recent": [
     {
+      "wi": "NO TRACKING NO. - Workflow execution failed during chat",
+      "resolved": "2026-07-20"
+    },
+    {
+      "wi": "Telemetry object being passed to front end",
+      "resolved": "2026-07-20"
+    },
+    {
       "wi": "TC-23-03 — UI doesn't switch to Coveo search when Javascript is disabled",
       "resolved": "2026-07-16"
     },
@@ -290,14 +298,6 @@
     {
       "wi": "SME-008 — Interactions do not feel conversational",
       "resolved": "2026-07-14"
-    },
-    {
-      "wi": "Create a link of the case that takes them to the Manage Cases",
-      "resolved": "2026-07-13"
-    },
-    {
-      "wi": "If a Standard Care customer does not have any cases available,\n they get a message:",
-      "resolved": "2026-07-13"
     }
   ],
   "openItems": [
@@ -306,7 +306,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Re-open",
-      "owner": "Jerome Michael",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -318,27 +318,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Chris Smith",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "NO TRACKING NO. - Workflow execution failed during chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Chris Smith",
       "type": "Issue/Bugs"
     },
     {
@@ -353,6 +337,14 @@
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
+      "status": "In progress",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message",
+      "sev": "S2",
+      "pri": "—",
       "status": "In progress",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
@@ -442,19 +434,11 @@
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - Duplicate Cases created",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
@@ -474,23 +458,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message",
-      "sev": "S2",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "S2",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -498,7 +466,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -810,26 +778,10 @@
     {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
-      "owner": "Jerome Michael",
+      "owner": "Daniel Nicholas",
       "status": "Re-open",
       "opened": "2026-07-14",
       "days": 6
-    },
-    {
-      "wi": "DELA-023 — 502 Bad Gateway from nginx reverse proxy",
-      "sev": "S2",
-      "owner": "Chris Smith",
-      "status": "In progress",
-      "opened": "2026-07-15",
-      "days": 5
-    },
-    {
-      "wi": "NO TRACKING NO. - Workflow execution failed during chat",
-      "sev": "S2",
-      "owner": "Chris Smith",
-      "status": "In progress",
-      "opened": "2026-07-15",
-      "days": 5
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -872,17 +824,9 @@
       "days": 3
     },
     {
-      "wi": "No Tracking No. - Duplicate Cases created",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Not started",
-      "opened": "2026-07-17",
-      "days": 3
-    },
-    {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "2026-07-17",
       "days": 3
@@ -914,7 +858,7 @@
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "2026-07-20",
       "days": 0
@@ -922,7 +866,7 @@
     {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "2026-07-20",
       "days": 0
@@ -1034,7 +978,7 @@
     {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "status": "In progress",
       "opened": "",
       "days": null
@@ -1058,16 +1002,8 @@
     {
       "wi": "No Tracking no. - No available cases, update message",
       "sev": "S2",
-      "owner": "Unassigned",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "S2",
-      "owner": "Unassigned",
-      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
@@ -1178,6 +1114,16 @@
       "owner": "Jerome Michael",
       "resolved": "2026-07-16",
       "wi": "TC-23-03 — UI doesn't switch to Coveo search when Javascript is disabled"
+    },
+    {
+      "owner": "Chris Smith",
+      "resolved": "2026-07-20",
+      "wi": "NO TRACKING NO. - Workflow execution failed during chat"
+    },
+    {
+      "owner": "Ekta Mangal",
+      "resolved": "2026-07-20",
+      "wi": "Telemetry object being passed to front end"
     }
   ]
 }
