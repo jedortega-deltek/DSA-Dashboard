@@ -71,6 +71,22 @@
   .lbrow.b .tr i{background:linear-gradient(90deg,#DA8B4C,#C2792F);}
   .lbrow .ct{width:38px;text-align:right;font-weight:800;color:var(--marine);flex:none;font-size:15px;}
   .lbrow.zero .nm,.lbrow.zero .ct{color:var(--faint);}
+  .stat3{display:flex;gap:30px;margin-bottom:16px;flex-wrap:wrap;}
+  .stat3 .s .n{font-size:26px;font-weight:800;color:var(--marine);letter-spacing:-1px;line-height:1;}
+  .stat3 .s .l{font-size:11.5px;color:var(--muted);font-weight:600;margin-top:4px;}
+  .agewrap{max-height:330px;overflow:auto;border:1px solid var(--grid);border-radius:10px;}
+  .agewrap table{font-size:12.5px;}
+  .agewrap thead th{position:sticky;top:0;background:#fff;z-index:1;padding:9px 10px;border-bottom:2px solid var(--line);}
+  .days-pill{font-weight:800;color:var(--marine);white-space:nowrap;}
+  .spd{display:flex;align-items:flex-end;gap:12px;height:196px;padding:8px 4px 0;}
+  .spd .col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;min-width:0;}
+  .spd .tot{font-size:12px;font-weight:800;color:var(--marine);margin-bottom:5px;}
+  .spd .stack{width:100%;max-width:54px;display:flex;flex-direction:column;border-radius:6px 6px 0 0;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.07);}
+  .spd .seg{width:100%;min-height:2px;}
+  .spd .xl{font-size:11px;color:var(--muted);margin-top:9px;text-align:center;white-space:nowrap;}
+  .spdleg{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:16px;font-size:12px;color:var(--muted);}
+  .spdleg .k{display:inline-flex;align-items:center;gap:7px;}
+  .spdleg .sw{width:11px;height:11px;border-radius:3px;}
   h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);font-weight:700;margin:34px 0 14px;}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow);}
@@ -242,8 +258,48 @@ function leaderboard(owner){
       <div class="tr"><i style="width:${p.done/max*100}%"></i></div>
       <div class="ct">${p.done}</div></div>`;}).join('');
 }
+const OWNER_PAL=['#081581','#1742F6','#00B6C3','#6D18F1','#C200CC','#E0982E','#0A8F6A','#3C454E'];
+function ownerColorMap(names){const m={};let i=0;names.forEach(n=>{m[n]=(n==='Unassigned')?'#B7C0C8':OWNER_PAL[i++%OWNER_PAL.length];});return m;}
+function agingPanel(){
+  const a=D.aging;
+  if(!a.length) return `<p style="color:var(--faint);font-size:13px">Populates after the next data refresh (needs the updated generator).</p>`;
+  const dated=a.filter(x=>x.days!=null);
+  const avg=dated.length?Math.round(dated.reduce((s,x)=>s+x.days,0)/dated.length):0;
+  const oldest=dated.length?Math.max(...dated.map(x=>x.days)):0;
+  const nud=a.length-dated.length;
+  const rows=a.map(x=>{const bd=SEV_BADGE[x.sev]||SEV_BADGE['—'];return `<tr>
+    <td class="wicell">${esc(x.wi)}</td>
+    <td><span class="sev-badge" style="background:${bd[0]};color:${bd[1]}">${x.sev}</span></td>
+    <td class="owner ${x.owner==='Unassigned'?'none':''}">${esc(x.owner)}</td>
+    <td><span class="tag"><span class="pip" style="background:${STATUS_COLOR[x.status]||'#9AA3AB'}"></span>${esc(x.status)}</span></td>
+    <td>${x.opened?x.opened.slice(5):'—'}</td>
+    <td class="days-pill">${x.days!=null?x.days+'d':'—'}</td></tr>`;}).join('');
+  return `<div class="stat3">
+      <div class="s"><div class="n">${avg}d</div><div class="l">Avg age · open items</div></div>
+      <div class="s"><div class="n">${oldest}d</div><div class="l">Oldest open item</div></div>
+      <div class="s"><div class="n">${dated.length}<span style="font-size:15px;color:var(--faint)">/${a.length}</span></div><div class="l">Have a Date Found logged</div></div>
+    </div>
+    <div class="agewrap"><table><thead><tr><th>Work item</th><th>Sev</th><th>Owner</th><th>Status</th><th>Created</th><th>Days open</th></tr></thead>
+      <tbody>${rows}</tbody></table></div>
+    ${nud?`<p style="font-size:11.5px;color:var(--faint);margin:10px 0 0">${nud} open item(s) have no Date Found logged — add one in the tracker to age them.</p>`:''}`;
+}
+function solvedPanel(){
+  const s=D.solved;
+  if(!s.length) return `<p style="color:var(--faint);font-size:13px">Populates after the next data refresh (needs the updated generator).</p>`;
+  const byday={}; s.forEach(x=>{(byday[x.resolved]=byday[x.resolved]||{});byday[x.resolved][x.owner]=(byday[x.resolved][x.owner]||0)+1;});
+  const days=Object.keys(byday).sort();
+  const tot={}; s.forEach(x=>tot[x.owner]=(tot[x.owner]||0)+1);
+  const owners=[...new Set(s.map(x=>x.owner))].sort((a,b)=>tot[b]-tot[a]);
+  const col=ownerColorMap(owners);
+  const maxTot=Math.max(...days.map(d=>Object.values(byday[d]).reduce((a,b)=>a+b,0)),1), H=150;
+  const cols=days.map(d=>{const o=byday[d];const total=Object.values(o).reduce((a,b)=>a+b,0);const h=Math.max(6,Math.round(total/maxTot*H));
+    const segs=owners.filter(n=>o[n]).map(n=>`<div class="seg" title="${esc(n)}: ${o[n]} resolved ${d}" style="height:${Math.max(2,o[n]/total*h)}px;background:${col[n]}"></div>`).join('');
+    return `<div class="col"><div class="tot">${total}</div><div class="stack" style="height:${h}px">${segs}</div><div class="xl">${d.slice(5)}</div></div>`;}).join('');
+  const leg=owners.map(n=>`<span class="k"><span class="sw" style="background:${col[n]}"></span>${esc(n)} · ${tot[n]}</span>`).join('');
+  return `<div class="spd">${cols}</div><div class="spdleg">${leg}</div>`;
+}
 function render(){
-  ['status','severity','category','rootCause','owner','itemTypes','future','recent','openItems'].forEach(key=>{ if(!Array.isArray(D[key])) D[key]=[]; });
+  ['status','severity','category','rootCause','owner','itemTypes','future','recent','openItems','aging','solved'].forEach(key=>{ if(!Array.isArray(D[key])) D[key]=[]; });
   const KDEF={total:0,resolved:0,resolvedPct:0,inProgress:0,notStarted:0,reTest:0,reopened:0,openS1:0,openS2:0,totalOpen:0,unassignedOpen:0,future:0,setAside:0};
   const k=Object.assign({},KDEF,D.kpis||{}), ph=D.generated==='placeholder';
   $('#asof').textContent = ph ? 'Sample data' : 'Updated '+new Date(D.generated).toLocaleString(undefined,{dateStyle:'medium',timeStyle:'short'});
@@ -269,7 +325,7 @@ function render(){
   </section>
 
   <h2 class="sec">Completed by assignee</h2>
-  <div class="panel"><h3>Fixes marked Complete — top contributors</h3><p class="cap">Issues/bugs moved to Complete, sorted by completed/person.</p>
+  <div class="panel"><h3>Fixes marked Complete — top contributors</h3><p class="cap">Items moved to Complete, ranked per person. Gold, silver and bronze lead the board.</p>
     <div class="lb">${leaderboard(D.owner)}</div></div>
 
   <h2 class="sec">Resolution &amp; risk</h2>
@@ -297,6 +353,12 @@ function render(){
       ${D.recent.length?D.recent.map(r=>`<div class="recentrow"><span>${esc(r.wi)}</span><span class="d">${esc(r.resolved.slice(5))}</span></div>`).join(''):'<p style="color:var(--faint);font-size:13px">Nothing in the last 7 days.</p>'}</div>
     <div class="panel"><h3>Work item types</h3><p class="cap">All logged rows by type. Enhancement/Wishlist (↗) is future scope, excluded from the counts above.</p>
       ${itemTypeBars(D.itemTypes)}</div>
+  </div>
+
+  <h2 class="sec">Trends</h2>
+  <div class="grid2">
+    <div class="panel"><h3>Aging report</h3><p class="cap">How many days each open item has been open, from its Date Found. Oldest first.</p>${agingPanel()}</div>
+    <div class="panel"><h3>Issues solved per day</h3><p class="cap">Items marked Complete each day, stacked by assignee.</p>${solvedPanel()}</div>
   </div>
 
   <h2 class="sec">Open Issue/bug items</h2>
@@ -346,10 +408,14 @@ function wire(){
     if(punch.key===kk)punch.dir*=-1; else {punch.key=kk;punch.dir=1;} openItemsRows();});
 }
 D=null;
-fetch('./data.json?cb='+Date.now()).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();})
+const DATA_URL='https://raw.githubusercontent.com/jedortega-deltek/DSA-Dashboard/main/data.json';
+const bust=u=>u+(u.includes('?')?'&':'?')+'cb='+Date.now();
+const tryLoad=u=>fetch(bust(u)).then(r=>{if(!r.ok)throw new Error(r.status);return r.json();});
+tryLoad(DATA_URL)
+  .catch(()=>tryLoad('./data.json'))
   .then(d=>{D=d;D.app=$('#app');render();})
   .catch(e=>{$('#asof').textContent='Data unavailable';
-    $('#banner').innerHTML=`<div class="banner err">Couldn't load <code>data.json</code> (${esc(e.message)}). If you just set this up, the first GitHub Action run hasn't published data yet.</div>`;});
+    $('#banner').innerHTML=`<div class="banner err">Couldn't load <code>data.json</code> from GitHub (${esc(e.message)}). Check that the repo is public and the file exists at main/data.json.</div>`;});
 </script>
 </body>
 </html>

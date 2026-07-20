@@ -189,11 +189,45 @@ for r in actionable:
     })
 open_items.sort(key=lambda x: (SEV_RANK.get(x["sev"], 9), STATUS_RANK.get(x["status"], 9), x["wi"]))
 
+# ---- Aging: how long each OPEN item has been open (from Date Found) ----
+aging = []
+for r in actionable:
+    if not is_open(r):
+        continue
+    df = norm(g(r, "Date Found"))
+    try:
+        d0 = datetime.date.fromisoformat(df[:10]); days = (today - d0).days
+    except ValueError:
+        d0 = None; days = None
+    aging.append({
+        "wi": norm(g(r, "Work Item")),
+        "sev": SEV_SHORT.get(norm(g(r, "Severity")), "\u2014"),
+        "owner": owner_of(r),
+        "status": STATUS_DISPLAY.get(status_of(r), status_of(r)),
+        "opened": d0.isoformat() if d0 else "",
+        "days": days,
+    })
+aging.sort(key=lambda x: (x["days"] is None, -(x["days"] or 0)))
+
+# ---- Solved per day, by resource (Complete items that have a resolved date) ----
+solved = []
+for r in actionable:
+    if status_of(r) != "Complete":
+        continue
+    dr = norm(g(r, "Date Resolved"))
+    try:
+        d = datetime.date.fromisoformat(dr[:10])
+    except ValueError:
+        continue
+    solved.append({"owner": owner_of(r), "resolved": d.isoformat(), "wi": norm(g(r, "Work Item"))})
+solved.sort(key=lambda x: x["resolved"])
+
 data = {
     "generated": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
     "kpis": kpis, "status": status_rows, "severity": severity,
     "category": category, "rootCause": root_cause, "owner": owner,
     "itemTypes": item_types, "future": future, "recent": recent, "openItems": open_items,
+    "aging": aging, "solved": solved,
 }
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=2)
