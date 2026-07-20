@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-20T20:49:59+00:00",
+  "generated": "2026-07-20T22:07:38+00:00",
   "kpis": {
-    "total": 78,
+    "total": 81,
     "resolved": 33,
-    "resolvedPct": 42,
+    "resolvedPct": 41,
     "inProgress": 11,
-    "notStarted": 16,
+    "notStarted": 19,
     "reTest": 8,
     "reopened": 9,
     "openS1": 0,
     "openS2": 21,
-    "totalOpen": 45,
-    "unassignedOpen": 2,
+    "totalOpen": 48,
+    "unassignedOpen": 5,
     "future": 9,
     "setAside": 15
   },
@@ -34,7 +34,7 @@
     },
     {
       "label": "Not started",
-      "count": 16
+      "count": 19
     }
   ],
   "severity": [
@@ -60,8 +60,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 1,
-      "open": 1
+      "total": 4,
+      "open": 4
     }
   ],
   "category": [
@@ -86,6 +86,11 @@
       "open": 8
     },
     {
+      "label": "Unspecified",
+      "total": 6,
+      "open": 6
+    },
+    {
       "label": "Grounding / Synthesis",
       "total": 5,
       "open": 5
@@ -99,11 +104,6 @@
       "label": "Content / Instruction Defects",
       "total": 3,
       "open": 2
-    },
-    {
-      "label": "Unspecified",
-      "total": 3,
-      "open": 3
     },
     {
       "label": "Retrieval Quality",
@@ -129,8 +129,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 6,
+      "open": 6
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -161,8 +161,8 @@
     },
     {
       "label": "Unassigned",
-      "total": 6,
-      "open": 2
+      "total": 9,
+      "open": 5
     },
     {
       "label": "Jerome Michael",
@@ -188,7 +188,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 88
+      "count": 91
     },
     {
       "label": "Enhancement/Wishlist",
@@ -654,6 +654,30 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "",
       "sev": "—",
       "pri": "—",
@@ -1020,6 +1044,30 @@
       "sev": "—",
       "owner": "Unassigned",
       "status": "",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
       "opened": "",
       "days": null
     }
