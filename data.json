@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-21T12:00:41+00:00",
+  "generated": "2026-07-21T13:14:39+00:00",
   "kpis": {
-    "total": 80,
-    "resolved": 33,
-    "resolvedPct": 41,
-    "inProgress": 11,
-    "notStarted": 16,
-    "reTest": 11,
+    "total": 84,
+    "resolved": 36,
+    "resolvedPct": 43,
+    "inProgress": 10,
+    "notStarted": 20,
+    "reTest": 9,
     "reopened": 9,
     "openS1": 0,
-    "openS2": 22,
-    "totalOpen": 47,
-    "unassignedOpen": 0,
+    "openS2": 20,
+    "totalOpen": 48,
+    "unassignedOpen": 4,
     "future": 9,
     "setAside": 15
   },
   "status": [
     {
       "label": "Complete",
-      "count": 33
+      "count": 36
     },
     {
       "label": "Re-open",
@@ -26,15 +26,15 @@
     },
     {
       "label": "In progress",
-      "count": 11
+      "count": 10
     },
     {
       "label": "Re-test",
-      "count": 11
+      "count": 9
     },
     {
       "label": "Not started",
-      "count": 16
+      "count": 20
     }
   ],
   "severity": [
@@ -46,24 +46,29 @@
     {
       "label": "S2 · Critical",
       "total": 36,
-      "open": 22
+      "open": 20
     },
     {
       "label": "S3 · Elevated",
       "total": 35,
-      "open": 23
+      "open": 22
     },
     {
       "label": "S4 · General",
       "total": 4,
       "open": 2
+    },
+    {
+      "label": "Unspecified",
+      "total": 4,
+      "open": 4
     }
   ],
   "category": [
     {
       "label": "UX / Conversation Design",
       "total": 22,
-      "open": 12
+      "open": 11
     },
     {
       "label": "Escalation & Handoff",
@@ -83,15 +88,20 @@
     {
       "label": "Grounding / Synthesis",
       "total": 5,
-      "open": 5
+      "open": 4
     },
     {
       "label": "Content / Instruction Defects",
       "total": 4,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Guardrails / Output Quality",
+      "total": 4,
+      "open": 4
+    },
+    {
+      "label": "Unspecified",
       "total": 4,
       "open": 4
     },
@@ -115,7 +125,12 @@
     {
       "label": "Instruction File / Prompt",
       "total": 23,
-      "open": 19
+      "open": 16
+    },
+    {
+      "label": "Unspecified",
+      "total": 5,
+      "open": 5
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -131,27 +146,27 @@
       "label": "Session / State Management",
       "total": 2,
       "open": 2
-    },
-    {
-      "label": "Unspecified",
-      "total": 1,
-      "open": 1
     }
   ],
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 38,
-      "open": 15
+      "total": 37,
+      "open": 14
     },
     {
       "label": "Daniel Nicholas",
       "total": 30,
-      "open": 26
+      "open": 23
     },
     {
       "label": "Jerome Michael",
-      "total": 6,
+      "total": 7,
+      "open": 5
+    },
+    {
+      "label": "Unassigned",
+      "total": 4,
       "open": 4
     },
     {
@@ -173,7 +188,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 91
+      "count": 95
     },
     {
       "label": "Enhancement/Wishlist",
@@ -245,6 +260,14 @@
       "resolved": "2026-07-20"
     },
     {
+      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
+      "resolved": "2026-07-17"
+    },
+    {
+      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
+      "resolved": "2026-07-17"
+    },
+    {
       "wi": "TC-23-03 — UI doesn't switch to Coveo search when Javascript is disabled",
       "resolved": "2026-07-16"
     },
@@ -274,14 +297,6 @@
     },
     {
       "wi": "TC-No# - Chat window hidden behind another window",
-      "resolved": "2026-07-14"
-    },
-    {
-      "wi": "TC-04-01 - No Citation or Link Displays",
-      "resolved": "2026-07-14"
-    },
-    {
-      "wi": "SME-008 — Interactions do not feel conversational",
       "resolved": "2026-07-14"
     }
   ],
@@ -363,23 +378,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
@@ -540,14 +539,6 @@
       "pri": "Medium",
       "status": "In progress",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - After hours case creation verbiage",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -658,8 +649,40 @@
       "wi": "No Tracking No. - No option to skip submitting feedback",
       "sev": "S4",
       "pri": "Low",
-      "status": "In progress",
+      "status": "Re-test",
       "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - Case summary before confirmation verbiage",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-040 - Successful Transfer to Live Agent",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
       "type": "Issue/Bugs"
     }
   ],
@@ -693,22 +716,6 @@
       "sev": "S3",
       "owner": "Daniel Nicholas",
       "status": "Re-open",
-      "opened": "2026-07-13",
-      "days": 8
-    },
-    {
-      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 8
-    },
-    {
-      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 8
     },
@@ -836,7 +843,7 @@
       "wi": "No Tracking No. - No option to skip submitting feedback",
       "sev": "S4",
       "owner": "Swastik Sharma",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 4
     },
@@ -969,17 +976,9 @@
       "days": null
     },
     {
-      "wi": "No Tracking No. - After hours case creation verbiage",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
-      "owner": "Swastik Sharma",
+      "owner": "Jerome Michael",
       "status": "Re-test",
       "opened": "",
       "days": null
@@ -1036,6 +1035,38 @@
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
       "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - Case summary before confirmation verbiage",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-040 - Successful Transfer to Live Agent",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
@@ -1149,6 +1180,18 @@
       "resolved": "2026-07-16",
       "wi": "TC-23-03 — UI doesn't switch to Coveo search when Javascript is disabled",
       "days": 2
+    },
+    {
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-17",
+      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
+      "days": 4
+    },
+    {
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-17",
+      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
+      "days": 4
     },
     {
       "owner": "Chris Smith",
