@@ -178,6 +178,7 @@
   .toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:2px 0 16px;}
   .chip{border:1px solid var(--line);background:#fff;border-radius:999px;padding:5px 13px;font-size:12.5px;font-weight:600;color:var(--muted);cursor:pointer;}
   .chip.active{background:var(--marine);border-color:var(--marine);color:#fff;}
+  .tdiv{width:1px;height:20px;background:var(--line);margin:0 2px;}
   select.sel{border:1px solid var(--line);border-radius:8px;padding:6px 10px;font-size:12.5px;color:var(--ink);background:#fff;}
   .cnote{font-size:12px;color:var(--faint);margin-left:auto;}
   .note{display:flex;gap:12px;align-items:flex-start;background:#FCF3F9;border:1px solid #F0D4E7;border-left:3px solid var(--plan);border-radius:10px;padding:14px 16px;margin-top:16px;font-size:13px;color:#5a3350;}
@@ -212,7 +213,7 @@ const STATUS_COLOR = {"Complete":C.win,"Re-open":C.plan,"In progress":C.execute,
 const SEV_COLOR = {"S1 · Mission critical":'#7C0083',"S2 · Critical":'#C200CC',"S3 · Elevated":'#DA6BE0',"S4 · General":'#EFC2F2',"Unspecified":'#C4CDD3'};
 const SEVK = {"S1":0,"S2":1,"S3":2,"S4":3,"—":4};
 const SEV_BADGE = {"S1":["#7C0083","#fff"],"S2":["#C200CC","#fff"],"S3":["#DA6BE0","#fff"],"S4":["#EFC2F2","#7A2F80"],"—":["#C4CDD3","#3C454E"]};
-let D=null, barSort='open', punch={sev:'all',status:'all',key:'sev',dir:1}, TIPS={};
+let D=null, barSort='open', punch={sevSet:new Set(),statusSet:new Set(),key:'sev',dir:1}, TIPS={};
 (function(){
   const tip=document.getElementById('ctip');
   document.addEventListener('mousemove', e=>{
@@ -238,11 +239,12 @@ function donut(status){
     segs+=`<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${STATUS_COLOR[s.label]||'#C4CDD3'}" stroke-width="${sw}" stroke-dasharray="${len} ${circ-len}" stroke-dashoffset="${-off}" transform="rotate(-90 ${cx} ${cy})"><title>${esc(s.label)}: ${s.count}</title></circle>`;
     off+=len;});
   const done = status.find(s=>s.label==='Complete');
+  const openCount = total - (done?done.count:0);
   const leg = status.map(s=>`<div class="row"><span class="sw" style="background:${STATUS_COLOR[s.label]||'#C4CDD3'}"></span><span class="lab">${esc(s.label)}</span><span class="v">${s.count}</span><span class="pct">${Math.round(s.count/total*100)}%</span></div>`).join('');
   return `<div class="donut-wrap"><div class="donut" style="width:${size}px;height:${size}px">
     <svg width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
       <circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="#EDF1F3" stroke-width="${sw}"></circle>${segs}</svg>
-    <div class="ctr"><b>${done?done.count:0}</b><span>of ${total} done</span></div>
+    <div class="ctr"><b>${openCount}</b><span>open items</span></div>
     </div><div class="dlegend">${leg}</div></div>`;
 }
 function sevBars(sev){
@@ -271,8 +273,8 @@ function itemTypeBars(its){
 }
 function openItemsRows(){
   let rows=D.openItems.slice();
-  if(punch.sev!=='all') rows=rows.filter(r=>r.sev===punch.sev);
-  if(punch.status!=='all') rows=rows.filter(r=>r.status===punch.status);
+  if(punch.sevSet.size) rows=rows.filter(r=>punch.sevSet.has(r.sev));
+  if(punch.statusSet.size) rows=rows.filter(r=>punch.statusSet.has(r.status));
   const PRI={"High":0,"Medium":1,"Low":2,"—":3};
   const ST={"Re-open":0,"In progress":1,"Re-test":2,"Not started":3};
   const cmp={sev:(a,b)=>(SEVK[a.sev]-SEVK[b.sev])||ST[a.status]-ST[b.status],
@@ -392,7 +394,6 @@ function render(){
   $('#banner').innerHTML = ph ? `<div class="banner ph">Showing sample data that matches the tracker at last check — the first GitHub Action run will refresh it live.</div>` : '';
   const meterSeg = D.status.map(s=>`<div class="seg" style="width:${s.count/k.total*100}%;background:${STATUS_COLOR[s.label]||'#C4CDD3'}" title="${esc(s.label)}: ${s.count}"></div>`).join('');
   const meterLeg = D.status.map(s=>`<div class="lg"><span class="sw" style="background:${STATUS_COLOR[s.label]||'#C4CDD3'}"></span>${esc(s.label)} ${s.count}</div>`).join('');
-  const statuses=[...new Set(D.openItems.map(r=>r.status))];
   D.app.innerHTML = `
   <section class="hero">
     <div>
@@ -453,16 +454,8 @@ function render(){
 
   <h2 class="sec">Open Issue/bug items</h2>
   <div class="panel" style="padding-top:20px;">
-    <p class="cap" style="margin-top:0;">Open items not yet Complete (Enhancement/Wishlist and duplicates excluded). Filter by severity and status, and sort any column.</p>
-    <div class="toolbar">
-      <span class="chip ${punch.sev==='all'?'active':''}" data-sev="all">All</span>
-      <span class="chip ${punch.sev==='S1'?'active':''}" data-sev="S1">S1</span>
-      <span class="chip ${punch.sev==='S2'?'active':''}" data-sev="S2">S2</span>
-      <span class="chip ${punch.sev==='S3'?'active':''}" data-sev="S3">S3</span>
-      <span class="chip ${punch.sev==='S4'?'active':''}" data-sev="S4">S4</span>
-      <select class="sel" id="statusSel"><option value="all">All statuses</option>${statuses.map(s=>`<option value="${esc(s)}" ${punch.status===s?'selected':''}>${esc(s)}</option>`).join('')}</select>
-      <span class="cnote" id="punchCount"></span>
-    </div>
+    <p class="cap" style="margin-top:0;">Open items not yet Complete (Enhancement/Wishlist and duplicates excluded). Select multiple severities and/or statuses to filter; sort any column.</p>
+    <div class="toolbar" id="oiToolbar"></div>
     <div style="overflow-x:auto;"><table>
       <thead id="critHead"><tr>
         <th class="sortable" data-k="wi">Work item<span class="arw"></span></th>
@@ -487,13 +480,27 @@ function render(){
 
   // grow meter/bars from 0
   requestAnimationFrame(()=>{document.querySelectorAll('.meter .seg').forEach(s=>{const w=s.style.width;s.style.width='0';requestAnimationFrame(()=>s.style.width=w);});});
+  renderOpenToolbar();
   openItemsRows();
   wire();
 }
+function renderOpenToolbar(){
+  const statuses=[...new Set(D.openItems.map(r=>r.status))];
+  const sevChips=['S1','S2','S3','S4'].map(v=>`<span class="chip ${punch.sevSet.has(v)?'active':''}" data-sev="${v}">${v}</span>`).join('');
+  const statusChips=statuses.map(s=>`<span class="chip ${punch.statusSet.has(s)?'active':''}" data-status="${esc(s)}">${esc(s)}</span>`).join('');
+  $('#oiToolbar').innerHTML = `<span class="chip ${punch.sevSet.size===0?'active':''}" data-sevall="1">All</span>${sevChips}
+    <span class="tdiv"></span>
+    <span class="chip ${punch.statusSet.size===0?'active':''}" data-statusall="1">All statuses</span>${statusChips}
+    <span class="cnote" id="punchCount"></span>`;
+  $('#oiToolbar').querySelectorAll('[data-sev]').forEach(c=>c.onclick=()=>{const v=c.dataset.sev;
+    punch.sevSet.has(v)?punch.sevSet.delete(v):punch.sevSet.add(v); refreshOpenItems();});
+  $('#oiToolbar').querySelector('[data-sevall]').onclick=()=>{punch.sevSet.clear(); refreshOpenItems();};
+  $('#oiToolbar').querySelectorAll('[data-status]').forEach(c=>c.onclick=()=>{const v=c.dataset.status;
+    punch.statusSet.has(v)?punch.statusSet.delete(v):punch.statusSet.add(v); refreshOpenItems();});
+  $('#oiToolbar').querySelector('[data-statusall]').onclick=()=>{punch.statusSet.clear(); refreshOpenItems();};
+}
+function refreshOpenItems(){ renderOpenToolbar(); openItemsRows(); }
 function wire(){
-  document.querySelectorAll('.chip[data-sev]').forEach(c=>c.onclick=()=>{punch.sev=c.dataset.sev;
-    document.querySelectorAll('.chip[data-sev]').forEach(x=>x.classList.toggle('active',x.dataset.sev===punch.sev));openItemsRows();});
-  const ss=$('#statusSel'); if(ss) ss.onchange=()=>{punch.status=ss.value;openItemsRows();};
   document.querySelectorAll('#critHead th.sortable').forEach(th=>th.onclick=()=>{const kk=th.dataset.k;
     if(punch.key===kk)punch.dir*=-1; else {punch.key=kk;punch.dir=1;} openItemsRows();});
 }
