@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-21T17:54:42+00:00",
+  "generated": "2026-07-21T19:43:16+00:00",
   "kpis": {
-    "total": 87,
+    "total": 86,
     "resolved": 43,
-    "resolvedPct": 49,
-    "inProgress": 9,
-    "notStarted": 20,
-    "reTest": 4,
-    "reopened": 11,
-    "openS1": 0,
-    "openS2": 16,
-    "totalOpen": 44,
-    "unassignedOpen": 4,
+    "resolvedPct": 50,
+    "inProgress": 7,
+    "notStarted": 17,
+    "reTest": 10,
+    "reopened": 9,
+    "openS1": 1,
+    "openS2": 18,
+    "totalOpen": 43,
+    "unassignedOpen": 0,
     "future": 9,
-    "setAside": 14
+    "setAside": 15
   },
   "status": [
     {
@@ -22,58 +22,53 @@
     },
     {
       "label": "Re-open",
-      "count": 11
-    },
-    {
-      "label": "In progress",
       "count": 9
     },
     {
+      "label": "In progress",
+      "count": 7
+    },
+    {
       "label": "Re-test",
-      "count": 4
+      "count": 10
     },
     {
       "label": "Not started",
-      "count": 20
+      "count": 17
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 5,
-      "open": 0
-    },
-    {
-      "label": "S2 · Critical",
-      "total": 38,
-      "open": 16
-    },
-    {
-      "label": "S3 · Elevated",
-      "total": 35,
-      "open": 21
-    },
-    {
-      "label": "S4 · General",
-      "total": 3,
+      "total": 6,
       "open": 1
     },
     {
-      "label": "Unspecified",
-      "total": 6,
-      "open": 6
+      "label": "S2 · Critical",
+      "total": 40,
+      "open": 18
+    },
+    {
+      "label": "S3 · Elevated",
+      "total": 36,
+      "open": 22
+    },
+    {
+      "label": "S4 · General",
+      "total": 4,
+      "open": 2
     }
   ],
   "category": [
     {
+      "label": "UX / Conversation Design",
+      "total": 24,
+      "open": 13
+    },
+    {
       "label": "Escalation & Handoff",
       "total": 23,
       "open": 8
-    },
-    {
-      "label": "UX / Conversation Design",
-      "total": 21,
-      "open": 10
     },
     {
       "label": "Platform / Infrastructure",
@@ -84,11 +79,6 @@
       "label": "Session Management",
       "total": 10,
       "open": 8
-    },
-    {
-      "label": "Unspecified",
-      "total": 6,
-      "open": 6
     },
     {
       "label": "Grounding / Synthesis",
@@ -107,30 +97,35 @@
     },
     {
       "label": "Retrieval Quality",
-      "total": 2,
+      "total": 3,
+      "open": 2
+    },
+    {
+      "label": "Unspecified",
+      "total": 1,
       "open": 1
     }
   ],
   "rootCause": [
+    {
+      "label": "Instruction File / Prompt",
+      "total": 28,
+      "open": 18
+    },
     {
       "label": "Frontend / Chat Widget",
       "total": 25,
       "open": 9
     },
     {
-      "label": "Instruction File / Prompt",
-      "total": 25,
-      "open": 15
-    },
-    {
       "label": "n8n Workflow / Orchestration",
-      "total": 24,
-      "open": 10
+      "total": 25,
+      "open": 11
     },
     {
-      "label": "Unspecified",
-      "total": 7,
-      "open": 7
+      "label": "Knowledge Source / Retrieval",
+      "total": 3,
+      "open": 2
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -138,35 +133,30 @@
       "open": 1
     },
     {
-      "label": "Knowledge Source / Retrieval",
+      "label": "Session / State Management",
       "total": 2,
       "open": 1
     },
     {
-      "label": "Session / State Management",
-      "total": 2,
+      "label": "Unspecified",
+      "total": 1,
       "open": 1
     }
   ],
   "owner": [
+    {
+      "label": "Daniel Nicholas",
+      "total": 37,
+      "open": 26
+    },
     {
       "label": "Swastik Sharma",
       "total": 36,
       "open": 11
     },
     {
-      "label": "Daniel Nicholas",
-      "total": 34,
-      "open": 23
-    },
-    {
       "label": "Jerome Michael",
       "total": 7,
-      "open": 4
-    },
-    {
-      "label": "Unassigned",
-      "total": 4,
       "open": 4
     },
     {
@@ -216,7 +206,7 @@
     },
     {
       "wi": "SME-016 -- Session history lost after inactivity timeout (enhancement)",
-      "status": "Not started",
+      "status": "Working as designed",
       "owner": "Swastik Sharma"
     },
     {
@@ -302,19 +292,19 @@
   ],
   "openItems": [
     {
+      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
       "status": "Re-open",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking - Case and Chat created at the same time",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -358,19 +348,27 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
       "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking - Case and Chat created at the same time",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Case created when I did not accept the chat",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -398,6 +396,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
       "pri": "High",
@@ -406,11 +412,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Case created when I did not accept the chat",
+      "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -430,11 +436,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
-      "sev": "S3",
-      "pri": "Low",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
+      "wi": "TC-040 - Successful Transfer to Live Agent",
+      "sev": "S2",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -486,6 +492,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "DELA-026 — Case creation button still active after inactivity timeout",
+      "sev": "S3",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
       "sev": "S3",
       "pri": "Medium",
@@ -494,7 +508,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking Number - Markdown formatting in response",
+      "wi": "TC-09-02 - Summary missing information and formatting issues",
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
@@ -502,10 +516,18 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-09-02 - Summary missing information and formatting issues",
+      "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
+      "sev": "S3",
+      "pri": "Low",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "pri": "Medium",
-      "status": "In progress",
+      "status": "Re-test",
       "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
@@ -526,14 +548,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "DELA-026 — Case creation button still active after inactivity timeout",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
       "sev": "S3",
       "pri": "Low",
@@ -543,6 +557,14 @@
     },
     {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
@@ -601,56 +623,16 @@
       "wi": "Change text on the chatbot and greeting",
       "sev": "S4",
       "pri": "Low",
-      "status": "In progress",
+      "status": "Re-test",
       "owner": "Swastik Sharma",
       "type": "Task"
     },
     {
-      "wi": "No Tracking no - Asked for case, DSA responded that it cant make changes in ajera system",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking no. - Case summary before confirmation verbiage",
-      "sev": "—",
-      "pri": "—",
+      "sev": "S4",
+      "pri": "Low",
       "status": "Not started",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-040 - Successful Transfer to Live Agent",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
       "type": "Issue/Bugs"
     }
   ],
@@ -659,7 +641,7 @@
       "wi": "Change text on the chatbot and greeting",
       "sev": "S4",
       "owner": "Swastik Sharma",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 8
     },
@@ -667,7 +649,7 @@
       "wi": "No Tracking - Case and Chat created at the same time",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 8
     },
@@ -675,7 +657,7 @@
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 8
     },
@@ -779,7 +761,7 @@
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "2026-07-17",
       "days": 4
     },
@@ -787,7 +769,7 @@
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 4
     },
@@ -875,7 +857,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -939,7 +921,7 @@
       "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -961,7 +943,7 @@
     },
     {
       "wi": "No Tracking no. - Case summary before confirmation verbiage",
-      "sev": "—",
+      "sev": "S4",
       "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
@@ -969,7 +951,7 @@
     },
     {
       "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
-      "sev": "—",
+      "sev": "S1",
       "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
@@ -977,32 +959,24 @@
     },
     {
       "wi": "TC-040 - Successful Transfer to Live Agent",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
-      "sev": "—",
-      "owner": "Unassigned",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no - Asked for case, DSA responded that it cant make changes in ajera system",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
