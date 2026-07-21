@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-21T16:04:39+00:00",
+  "generated": "2026-07-21T17:54:42+00:00",
   "kpis": {
     "total": 87,
-    "resolved": 39,
-    "resolvedPct": 45,
+    "resolved": 43,
+    "resolvedPct": 49,
     "inProgress": 9,
-    "notStarted": 19,
-    "reTest": 9,
+    "notStarted": 20,
+    "reTest": 4,
     "reopened": 11,
     "openS1": 0,
-    "openS2": 19,
-    "totalOpen": 48,
-    "unassignedOpen": 3,
+    "openS2": 16,
+    "totalOpen": 44,
+    "unassignedOpen": 4,
     "future": 9,
-    "setAside": 13
+    "setAside": 14
   },
   "status": [
     {
       "label": "Complete",
-      "count": 39
+      "count": 43
     },
     {
       "label": "Re-open",
@@ -30,11 +30,11 @@
     },
     {
       "label": "Re-test",
-      "count": 9
+      "count": 4
     },
     {
       "label": "Not started",
-      "count": 19
+      "count": 20
     }
   ],
   "severity": [
@@ -46,22 +46,22 @@
     {
       "label": "S2 · Critical",
       "total": 38,
-      "open": 19
+      "open": 16
     },
     {
       "label": "S3 · Elevated",
       "total": 35,
-      "open": 22
+      "open": 21
     },
     {
       "label": "S4 · General",
-      "total": 4,
-      "open": 2
+      "total": 3,
+      "open": 1
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 5
+      "total": 6,
+      "open": 6
     }
   ],
   "category": [
@@ -72,28 +72,28 @@
     },
     {
       "label": "UX / Conversation Design",
-      "total": 22,
-      "open": 11
+      "total": 21,
+      "open": 10
     },
     {
       "label": "Platform / Infrastructure",
       "total": 12,
-      "open": 5
+      "open": 4
     },
     {
       "label": "Session Management",
       "total": 10,
-      "open": 9
+      "open": 8
+    },
+    {
+      "label": "Unspecified",
+      "total": 6,
+      "open": 6
     },
     {
       "label": "Grounding / Synthesis",
       "total": 5,
       "open": 3
-    },
-    {
-      "label": "Unspecified",
-      "total": 5,
-      "open": 5
     },
     {
       "label": "Content / Instruction Defects",
@@ -103,7 +103,7 @@
     {
       "label": "Guardrails / Output Quality",
       "total": 4,
-      "open": 4
+      "open": 2
     },
     {
       "label": "Retrieval Quality",
@@ -114,23 +114,23 @@
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 26,
-      "open": 11
-    },
-    {
-      "label": "n8n Workflow / Orchestration",
       "total": 25,
-      "open": 12
+      "open": 9
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 24,
+      "total": 25,
       "open": 15
     },
     {
+      "label": "n8n Workflow / Orchestration",
+      "total": 24,
+      "open": 10
+    },
+    {
       "label": "Unspecified",
-      "total": 6,
-      "open": 6
+      "total": 7,
+      "open": 7
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -145,34 +145,34 @@
     {
       "label": "Session / State Management",
       "total": 2,
-      "open": 2
+      "open": 1
     }
   ],
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 37,
-      "open": 13
+      "total": 36,
+      "open": 11
     },
     {
       "label": "Daniel Nicholas",
       "total": 34,
-      "open": 25
+      "open": 23
     },
     {
       "label": "Jerome Michael",
       "total": 7,
-      "open": 5
+      "open": 4
+    },
+    {
+      "label": "Unassigned",
+      "total": 4,
+      "open": 4
     },
     {
       "label": "Chris Smith",
       "total": 3,
       "open": 1
-    },
-    {
-      "label": "Unassigned",
-      "total": 3,
-      "open": 3
     },
     {
       "label": "Ekta Mangal",
@@ -188,7 +188,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 96
+      "count": 97
     },
     {
       "label": "Enhancement/Wishlist",
@@ -226,7 +226,7 @@
     },
     {
       "wi": "TC-09-01 - Chat Transcript file in pdf",
-      "status": "Re-test",
+      "status": "Complete",
       "owner": "Swastik Sharma"
     },
     {
@@ -374,14 +374,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - DSA prompting every minute",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "SME-011 — Chat session cross-contamination between sessions",
       "sev": "S2",
       "pri": "High",
@@ -403,22 +395,6 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -534,14 +510,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Duplicate DSA Searches",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "SME-009 — Unprofessional wording in responses",
       "sev": "S3",
       "pri": "Medium",
@@ -638,11 +606,11 @@
       "type": "Task"
     },
     {
-      "wi": "No Tracking No. - No option to skip submitting feedback",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
+      "wi": "No Tracking no - Asked for case, DSA responded that it cant make changes in ajera system",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
       "type": "Issue/Bugs"
     },
     {
@@ -832,22 +800,6 @@
       "days": 4
     },
     {
-      "wi": "No Tracking No. - No option to skip submitting feedback",
-      "sev": "S4",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "2026-07-17",
-      "days": 4
-    },
-    {
-      "wi": "No Tracking No. - DSA prompting every minute",
-      "sev": "S2",
-      "owner": "Jerome Michael",
-      "status": "Re-test",
-      "opened": "2026-07-17",
-      "days": 4
-    },
-    {
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
       "sev": "S3",
       "owner": "Swastik Sharma",
@@ -920,14 +872,6 @@
       "days": null
     },
     {
-      "wi": "No Tracking No. - Duplicate DSA Searches",
-      "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
@@ -936,26 +880,10 @@
       "days": null
     },
     {
-      "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "TC-09-02 - Summary missing information and formatting issues",
       "sev": "S3",
       "owner": "Jerome Michael",
       "status": "In progress",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -1065,6 +993,14 @@
     },
     {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no - Asked for case, DSA responded that it cant make changes in ajera system",
       "sev": "—",
       "owner": "Unassigned",
       "status": "Not started",
