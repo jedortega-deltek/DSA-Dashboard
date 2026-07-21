@@ -1,32 +1,32 @@
 {
-  "generated": "2026-07-21T14:10:57+00:00",
+  "generated": "2026-07-21T16:04:39+00:00",
   "kpis": {
-    "total": 86,
-    "resolved": 38,
-    "resolvedPct": 44,
-    "inProgress": 10,
-    "notStarted": 20,
+    "total": 87,
+    "resolved": 39,
+    "resolvedPct": 45,
+    "inProgress": 9,
+    "notStarted": 19,
     "reTest": 9,
-    "reopened": 9,
+    "reopened": 11,
     "openS1": 0,
-    "openS2": 20,
+    "openS2": 19,
     "totalOpen": 48,
-    "unassignedOpen": 4,
+    "unassignedOpen": 3,
     "future": 9,
     "setAside": 13
   },
   "status": [
     {
       "label": "Complete",
-      "count": 38
+      "count": 39
     },
     {
       "label": "Re-open",
-      "count": 9
+      "count": 11
     },
     {
       "label": "In progress",
-      "count": 10
+      "count": 9
     },
     {
       "label": "Re-test",
@@ -34,7 +34,7 @@
     },
     {
       "label": "Not started",
-      "count": 20
+      "count": 19
     }
   ],
   "severity": [
@@ -46,7 +46,7 @@
     {
       "label": "S2 · Critical",
       "total": 38,
-      "open": 20
+      "open": 19
     },
     {
       "label": "S3 · Elevated",
@@ -60,8 +60,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 4
+      "total": 5,
+      "open": 5
     }
   ],
   "category": [
@@ -88,7 +88,12 @@
     {
       "label": "Grounding / Synthesis",
       "total": 5,
-      "open": 4
+      "open": 3
+    },
+    {
+      "label": "Unspecified",
+      "total": 5,
+      "open": 5
     },
     {
       "label": "Content / Instruction Defects",
@@ -97,11 +102,6 @@
     },
     {
       "label": "Guardrails / Output Quality",
-      "total": 4,
-      "open": 4
-    },
-    {
-      "label": "Unspecified",
       "total": 4,
       "open": 4
     },
@@ -125,12 +125,12 @@
     {
       "label": "Instruction File / Prompt",
       "total": 24,
-      "open": 16
+      "open": 15
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 5
+      "total": 6,
+      "open": 6
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -151,13 +151,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 38,
-      "open": 14
+      "total": 37,
+      "open": 13
     },
     {
       "label": "Daniel Nicholas",
-      "total": 31,
-      "open": 23
+      "total": 34,
+      "open": 25
     },
     {
       "label": "Jerome Michael",
@@ -165,14 +165,14 @@
       "open": 5
     },
     {
-      "label": "Unassigned",
-      "total": 4,
-      "open": 4
-    },
-    {
       "label": "Chris Smith",
       "total": 3,
       "open": 1
+    },
+    {
+      "label": "Unassigned",
+      "total": 3,
+      "open": 3
     },
     {
       "label": "Ekta Mangal",
@@ -188,7 +188,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 95
+      "count": 96
     },
     {
       "label": "Enhancement/Wishlist",
@@ -241,7 +241,7 @@
     },
     {
       "wi": "SmartSoftware Customers Cannot Submit Cases or Initiate a Chat",
-      "status": "Re-test",
+      "status": "Working as designed",
       "owner": "Swastik Sharma"
     },
     {
@@ -318,6 +318,22 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "pri": "High",
@@ -342,19 +358,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
+      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -371,22 +379,6 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "SME-005 — Correct KB source retrieved but answer is wrong",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -414,6 +406,22 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
       "pri": "High",
@@ -423,14 +431,6 @@
     },
     {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
@@ -451,14 +451,6 @@
       "pri": "High",
       "status": "Not started",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -654,7 +646,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
+      "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
@@ -662,11 +654,19 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking no. - Case summary before confirmation verbiage",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -716,14 +716,6 @@
       "sev": "S3",
       "owner": "Daniel Nicholas",
       "status": "Re-open",
-      "opened": "2026-07-13",
-      "days": 8
-    },
-    {
-      "wi": "SME-005 — Correct KB source retrieved but answer is wrong",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 8
     },
@@ -882,8 +874,8 @@
     {
       "wi": "No Tracking no - Asked for case, DSA got me chat instead",
       "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "status": "Re-open",
       "opened": "2026-07-20",
       "days": 1
     },
@@ -947,7 +939,7 @@
       "wi": "TC-09b-04 - PII (DOB) stored in chat transcript",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -963,7 +955,7 @@
       "wi": "TC-11-02 - PII Info Displayed in the Customer Response",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -979,7 +971,7 @@
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "owner": "Jerome Michael",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
@@ -1019,7 +1011,7 @@
       "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
@@ -1042,7 +1034,7 @@
     {
       "wi": "No Tracking no. - Case summary before confirmation verbiage",
       "sev": "—",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
@@ -1050,7 +1042,7 @@
     {
       "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
       "sev": "—",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
@@ -1065,6 +1057,14 @@
     },
     {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
       "sev": "—",
       "owner": "Unassigned",
       "status": "Not started",
