@@ -87,8 +87,33 @@
   .spdleg{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:16px;font-size:12px;color:var(--muted);}
   .spdleg .k{display:inline-flex;align-items:center;gap:7px;}
   .spdleg .sw{width:11px;height:11px;border-radius:3px;}
+  .cyc{position:relative;height:190px;display:flex;align-items:flex-end;gap:14px;padding:6px 4px 0;margin-bottom:2px;}
+  .cyc::before{content:'';position:absolute;left:0;right:0;top:6px;bottom:0;
+    background-image:repeating-linear-gradient(to top, var(--grid) 0, var(--grid) 1px, transparent 1px, transparent 25%);pointer-events:none;}
+  .cyc .col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;position:relative;z-index:1;min-width:0;}
+  .cyc .bar{width:62%;max-width:52px;border-radius:6px 6px 0 0;transition:height .8s cubic-bezier(.22,.61,.36,1);}
+  .cyc .n{font-size:12.5px;font-weight:800;color:var(--marine);margin-bottom:7px;}
+  .cyc .xl{font-size:11px;color:var(--muted);margin-top:9px;text-align:center;white-space:nowrap;}
+  .hstack{display:flex;flex-direction:column;gap:12px;}
+  .hrow{display:grid;grid-template-columns:74px 1fr 34px;align-items:center;gap:10px;}
+  .hrow .hlab{font-size:12.5px;font-weight:600;color:var(--ink);white-space:nowrap;}
+  .hrow .htrack{position:relative;height:20px;background:var(--grid);border-radius:5px;overflow:hidden;display:flex;}
+  .hrow .htrack::after{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(to right, rgba(0,0,0,.06) 0, rgba(0,0,0,.06) 1px, transparent 1px, transparent 25%);pointer-events:none;}
+  .hrow .hseg{height:100%;}
+  .hrow .htot{font-size:12.5px;font-weight:800;color:var(--marine);text-align:right;}
+  .hsevleg{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:14px;font-size:12px;color:var(--muted);}
+  .hsevleg .k{display:inline-flex;align-items:center;gap:7px;}
+  .hsevleg .sw{width:11px;height:11px;border-radius:3px;}
+  .ctip{position:fixed;display:none;z-index:9999;pointer-events:none;background:var(--navy);color:#fff;
+    border-radius:10px;padding:11px 13px;font-size:12.5px;line-height:1.6;box-shadow:0 8px 24px rgba(0,20,40,.28);max-width:250px;}
+  .ctip .tt{font-weight:800;margin-bottom:6px;color:#fff;}
+  .ctip .tl{display:flex;align-items:center;gap:8px;white-space:nowrap;}
+  .ctip .tl b{margin-left:auto;padding-left:14px;}
+  .ctip .tsw{width:9px;height:9px;border-radius:3px;flex:none;}
+  .ctip .ttot{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,.2);font-weight:700;}
+  [data-tip]{cursor:default;}
   h2.sec{font-size:13px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);font-weight:700;margin:34px 0 14px;}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px;}
   .panel{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;box-shadow:var(--shadow);}
   .panel .head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;}
   .panel h3{margin:0 0 3px;font-size:16px;font-weight:700;letter-spacing:-.2px;}
@@ -178,6 +203,7 @@
     <div id="banner"></div>
     <div id="app"></div>
   </div>
+  <div id="ctip" class="ctip"></div>
 <script>
 const $ = s => document.querySelector(s);
 const esc = s => String(s==null?'':s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
@@ -186,7 +212,23 @@ const STATUS_COLOR = {"Complete":C.win,"Re-open":C.plan,"In progress":C.execute,
 const SEV_COLOR = {"S1 · Mission critical":'#7C0083',"S2 · Critical":'#C200CC',"S3 · Elevated":'#DA6BE0',"S4 · General":'#EFC2F2',"Unspecified":'#C4CDD3'};
 const SEVK = {"S1":0,"S2":1,"S3":2,"S4":3,"—":4};
 const SEV_BADGE = {"S1":["#7C0083","#fff"],"S2":["#C200CC","#fff"],"S3":["#DA6BE0","#fff"],"S4":["#EFC2F2","#7A2F80"],"—":["#C4CDD3","#3C454E"]};
-let D=null, barSort='open', punch={sev:'all',status:'all',key:'sev',dir:1};
+let D=null, barSort='open', punch={sev:'all',status:'all',key:'sev',dir:1}, TIPS={};
+(function(){
+  const tip=document.getElementById('ctip');
+  document.addEventListener('mousemove', e=>{
+    const el = e.target.closest('[data-tip]');
+    if(!el || !TIPS[el.dataset.tip]){ tip.style.display='none'; return; }
+    tip.innerHTML = TIPS[el.dataset.tip];
+    tip.style.display='block';
+    const pad=16, vw=window.innerWidth, vh=window.innerHeight;
+    const w=tip.offsetWidth, h=tip.offsetHeight;
+    let x=e.clientX+pad, y=e.clientY+pad;
+    if(x+w>vw-8) x=e.clientX-w-pad;
+    if(y+h>vh-8) y=e.clientY-h-pad;
+    tip.style.left=x+'px'; tip.style.top=y+'px';
+  });
+  document.addEventListener('mouseleave', ()=>{ tip.style.display='none'; });
+})();
 
 function donut(status){
   const total = status.reduce((a,b)=>a+b.count,0)||1;
@@ -260,6 +302,45 @@ function leaderboard(owner){
 }
 const OWNER_PAL=['#081581','#1742F6','#00B6C3','#6D18F1','#C200CC','#E0982E','#0A8F6A','#3C454E'];
 function ownerColorMap(names){const m={};let i=0;names.forEach(n=>{m[n]=(n==='Unassigned')?'#B7C0C8':OWNER_PAL[i++%OWNER_PAL.length];});return m;}
+const CYC_ORDER=['Same day','1 day','2 days','3 days','4+ days'];
+const CYC_COLOR={'Same day':C.win,'1 day':C.execute,'2 days':'#E0982E','3 days':C.analyze,'4+ days':C.plan};
+function cycleTimeChart(){
+  const s=D.solved.filter(x=>x.days!=null);
+  if(!s.length) return `<p style="color:var(--faint);font-size:13px">Populates after the next data refresh (needs both Date Found and Date Resolved).</p>`;
+  const counts={}; CYC_ORDER.forEach(k=>counts[k]=0);
+  s.forEach(x=>{const d=x.days; const k = d<=0?'Same day': d===1?'1 day': d===2?'2 days': d===3?'3 days':'4+ days'; counts[k]++;});
+  const max=Math.max(...Object.values(counts),1), H=160;
+  const cols=CYC_ORDER.map(k=>{const n=counts[k], h=n?Math.max(6,Math.round(n/max*H)):0;
+    return `<div class="col"><div class="n">${n||''}</div><div class="bar" style="height:${h}px;background:${CYC_COLOR[k]}"></div><div class="xl">${k}</div></div>`;}).join('');
+  const nud=D.solved.length-s.length;
+  return `<div class="cyc">${cols}</div>${nud?`<p style="font-size:11.5px;color:var(--faint);margin:10px 0 0">${nud} resolved item(s) lack a Date Found and aren't included.</p>`:''}`;
+}
+const AGE_BUCKETS=['7+ days','5-6 days','3-4 days','0-2 days','No date'];
+function agingSeverityBars(){
+  const a=D.aging;
+  if(!a.length) return `<p style="color:var(--faint);font-size:13px">Populates after the next data refresh (needs the updated generator).</p>`;
+  const sevs=['S1','S2','S3','S4','\u2014'];
+  const data={}; AGE_BUCKETS.forEach(b=>data[b]={});
+  a.forEach(x=>{const d=x.days;
+    const b = d==null?'No date': d<=2?'0-2 days': d<=4?'3-4 days': d<=6?'5-6 days':'7+ days';
+    data[b][x.sev]=(data[b][x.sev]||0)+1;});
+  const totals=AGE_BUCKETS.map(b=>Object.values(data[b]).reduce((s,v)=>s+v,0));
+  const max=Math.max(...totals,1);
+  const rows=AGE_BUCKETS.map((b,i)=>{const counts=data[b];
+    const SEVFULL={"S1":"S1 · Mission critical","S2":"S2 · Critical","S3":"S3 · Elevated","S4":"S4 · General"};
+    const lines=['S1','S2','S3','S4'].map(sv=>`<div class="tl"><span class="tsw" style="background:${SEV_COLOR[SEVFULL[sv]]}"></span>${SEVFULL[sv]}<b>${counts[sv]||0}</b></div>`).join('');
+    const unspec=counts['\u2014']||0;
+    const unspecLine=unspec?`<div class="tl"><span class="tsw" style="background:${SEV_COLOR['Unspecified']}"></span>Unspecified<b>${unspec}</b></div>`:'';
+    const tipKey=`age-${i}`;
+    TIPS[tipKey]=`<div class="tt">${esc(b)}</div>${lines}${unspecLine}<div class="ttot">${totals[i]} total</div>`;
+    const segs=sevs.filter(sv=>counts[sv]).map(sv=>{
+      const c=SEV_COLOR[{"S1":"S1 · Mission critical","S2":"S2 · Critical","S3":"S3 · Elevated","S4":"S4 · General","\u2014":"Unspecified"}[sv]]||'#C4CDD3';
+      return `<div class="hseg" style="width:${counts[sv]/max*100}%;background:${c}"></div>`;}).join('');
+    return `<div class="hrow" data-tip="${tipKey}"><div class="hlab">${b}</div><div class="htrack">${segs}</div><div class="htot">${totals[i]||''}</div></div>`;}).join('');
+  const legend=[['S1','S1 · Mission critical'],['S2','S2 · Critical'],['S3','S3 · Elevated'],['S4','S4 · General']]
+    .map(([sv,full])=>`<span class="k"><span class="sw" style="background:${SEV_COLOR[full]}"></span>${full}</span>`).join('');
+  return `<div class="hstack">${rows}</div><div class="hsevleg">${legend}</div>`;
+}
 function agingPanel(){
   const a=D.aging;
   if(!a.length) return `<p style="color:var(--faint);font-size:13px">Populates after the next data refresh (needs the updated generator).</p>`;
@@ -292,13 +373,18 @@ function solvedPanel(){
   const owners=[...new Set(s.map(x=>x.owner))].sort((a,b)=>tot[b]-tot[a]);
   const col=ownerColorMap(owners);
   const maxTot=Math.max(...days.map(d=>Object.values(byday[d]).reduce((a,b)=>a+b,0)),1), H=150;
-  const cols=days.map(d=>{const o=byday[d];const total=Object.values(o).reduce((a,b)=>a+b,0);const h=Math.max(6,Math.round(total/maxTot*H));
-    const segs=owners.filter(n=>o[n]).map(n=>`<div class="seg" title="${esc(n)}: ${o[n]} resolved ${d}" style="height:${Math.max(2,o[n]/total*h)}px;background:${col[n]}"></div>`).join('');
-    return `<div class="col"><div class="tot">${total}</div><div class="stack" style="height:${h}px">${segs}</div><div class="xl">${d.slice(5)}</div></div>`;}).join('');
-  const leg=owners.map(n=>`<span class="k"><span class="sw" style="background:${col[n]}"></span>${esc(n)} · ${tot[n]}</span>`).join('');
+  const cols=days.map((d,i)=>{const o=byday[d];const total=Object.values(o).reduce((a,b)=>a+b,0);const h=Math.max(6,Math.round(total/maxTot*H));
+    const segs=owners.filter(n=>o[n]).map(n=>`<div class="seg" style="height:${Math.max(2,o[n]/total*h)}px;background:${col[n]}"></div>`).join('');
+    const dlabel=new Date(d+'T00:00:00').toLocaleDateString(undefined,{month:'short',day:'numeric'});
+    const lines=owners.map(n=>`<div class="tl"><span class="tsw" style="background:${col[n]}"></span>${esc(n)}<b>${o[n]||0}</b></div>`).join('');
+    const tipKey=`spd-${i}`;
+    TIPS[tipKey]=`<div class="tt">${esc(dlabel)}</div>${lines}<div class="ttot">${total} total</div>`;
+    return `<div class="col" data-tip="${tipKey}"><div class="tot">${total}</div><div class="stack" style="height:${h}px">${segs}</div><div class="xl">${d.slice(5)}</div></div>`;}).join('');
+  const leg=owners.map(n=>`<span class="k"><span class="sw" style="background:${col[n]}"></span>${esc(n)}</span>`).join('');
   return `<div class="spd">${cols}</div><div class="spdleg">${leg}</div>`;
 }
 function render(){
+  TIPS={};
   ['status','severity','category','rootCause','owner','itemTypes','future','recent','openItems','aging','solved'].forEach(key=>{ if(!Array.isArray(D[key])) D[key]=[]; });
   const KDEF={total:0,resolved:0,resolvedPct:0,inProgress:0,notStarted:0,reTest:0,reopened:0,openS1:0,openS2:0,totalOpen:0,unassignedOpen:0,future:0,setAside:0};
   const k=Object.assign({},KDEF,D.kpis||{}), ph=D.generated==='placeholder';
@@ -325,7 +411,7 @@ function render(){
   </section>
 
   <h2 class="sec">Completed by assignee</h2>
-  <div class="panel"><h3>Fixes marked Complete — top contributors</h3><p class="cap">Items moved to Complete, ranked per person. Gold, silver and bronze lead the board.</p>
+  <div class="panel"><h3>Fixes marked Complete</h3>
     <div class="lb">${leaderboard(D.owner)}</div></div>
 
   <h2 class="sec">Resolution &amp; risk</h2>
@@ -357,8 +443,12 @@ function render(){
 
   <h2 class="sec">Trends</h2>
   <div class="grid2">
+    <div class="panel"><h3>Aging report — open items by days open</h3><p class="cap">Stacked by severity · oldest at top.</p>${agingSeverityBars()}</div>
+    <div class="panel"><h3>Cycle time distribution</h3><p class="cap">Days from found to closed.</p>${cycleTimeChart()}</div>
+  </div>
+  <div class="grid2">
     <div class="panel"><h3>Aging report</h3><p class="cap">How many days each open item has been open, from its Date Found. Oldest first.</p>${agingPanel()}</div>
-    <div class="panel"><h3>Issues solved per day</h3><p class="cap">Items marked Complete each day, stacked by assignee.</p>${solvedPanel()}</div>
+    <div class="panel"><h3>Resolved per day by resource</h3><p class="cap">Items marked Complete each day, stacked by assignee.</p>${solvedPanel()}</div>
   </div>
 
   <h2 class="sec">Open Issue/bug items</h2>
