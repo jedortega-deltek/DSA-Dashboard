@@ -219,7 +219,12 @@ for r in actionable:
         d = datetime.date.fromisoformat(dr[:10])
     except ValueError:
         continue
-    solved.append({"owner": owner_of(r), "resolved": d.isoformat(), "wi": norm(g(r, "Work Item"))})
+    df = norm(g(r, "Date Found"))
+    try:
+        f = datetime.date.fromisoformat(df[:10]); cyc = (d - f).days
+    except ValueError:
+        cyc = None
+    solved.append({"owner": owner_of(r), "resolved": d.isoformat(), "wi": norm(g(r, "Work Item")), "days": cyc})
 solved.sort(key=lambda x: x["resolved"])
 
 data = {
