@@ -1,9 +1,9 @@
 {
-  "generated": "2026-07-21T13:14:39+00:00",
+  "generated": "2026-07-21T13:30:31+00:00",
   "kpis": {
-    "total": 84,
-    "resolved": 36,
-    "resolvedPct": 43,
+    "total": 86,
+    "resolved": 38,
+    "resolvedPct": 44,
     "inProgress": 10,
     "notStarted": 20,
     "reTest": 9,
@@ -13,12 +13,12 @@
     "totalOpen": 48,
     "unassignedOpen": 4,
     "future": 9,
-    "setAside": 15
+    "setAside": 13
   },
   "status": [
     {
       "label": "Complete",
-      "count": 36
+      "count": 38
     },
     {
       "label": "Re-open",
@@ -45,7 +45,7 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 36,
+      "total": 38,
       "open": 20
     },
     {
@@ -66,14 +66,14 @@
   ],
   "category": [
     {
+      "label": "Escalation & Handoff",
+      "total": 23,
+      "open": 8
+    },
+    {
       "label": "UX / Conversation Design",
       "total": 22,
       "open": 11
-    },
-    {
-      "label": "Escalation & Handoff",
-      "total": 21,
-      "open": 8
     },
     {
       "label": "Platform / Infrastructure",
@@ -119,12 +119,12 @@
     },
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 24,
+      "total": 25,
       "open": 12
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 23,
+      "total": 24,
       "open": 16
     },
     {
@@ -151,12 +151,12 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 37,
+      "total": 38,
       "open": 14
     },
     {
       "label": "Daniel Nicholas",
-      "total": 30,
+      "total": 31,
       "open": 23
     },
     {
