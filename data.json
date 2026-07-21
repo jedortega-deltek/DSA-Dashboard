@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-21T06:36:19+00:00",
+  "generated": "2026-07-21T09:32:22+00:00",
   "kpis": {
     "total": 81,
     "resolved": 33,
     "resolvedPct": 41,
-    "inProgress": 11,
-    "notStarted": 19,
-    "reTest": 8,
+    "inProgress": 12,
+    "notStarted": 17,
+    "reTest": 9,
     "reopened": 9,
     "openS1": 0,
     "openS2": 21,
@@ -26,15 +26,15 @@
     },
     {
       "label": "In progress",
-      "count": 11
+      "count": 12
     },
     {
       "label": "Re-test",
-      "count": 8
+      "count": 9
     },
     {
       "label": "Not started",
-      "count": 19
+      "count": 17
     }
   ],
   "severity": [
@@ -326,14 +326,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - DSA prompting every minute",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
@@ -379,6 +371,14 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - DSA prompting every minute",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
@@ -534,6 +534,22 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-09-02 - Summary missing information and formatting issues",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No. - After hours case creation verbiage",
       "sev": "S3",
       "pri": "Medium",
@@ -582,14 +598,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-04-02 - DSA and DLH not the same",
       "sev": "S3",
       "pri": "—",
@@ -601,14 +609,6 @@
       "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
       "sev": "S3",
       "pri": "High",
-      "status": "Not started",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-09-02 - Summary missing information and formatting issues",
-      "sev": "S3",
-      "pri": "Medium",
       "status": "Not started",
       "owner": "Jerome Michael",
       "type": "Issue/Bugs"
@@ -867,7 +867,7 @@
       "wi": "No Tracking No. - DSA prompting every minute",
       "sev": "S2",
       "owner": "Jerome Michael",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 4
     },
@@ -955,7 +955,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
@@ -971,7 +971,7 @@
       "wi": "TC-09-02 - Summary missing information and formatting issues",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
