@@ -38,6 +38,7 @@ def rowdict(r):
     return d
 
 rows = [rowdict(r) for r in sheet.rows]
+rows = [r for r in rows if str(r.get("Work Item") or "").strip()]  # drop blank/unused rows
 
 def g(r, *names):
     for n in names:
@@ -90,6 +91,9 @@ for s in STATUS_ORDER:
     n = cnt(actionable, lambda r, s=s: status_of(r) == s)
     if n:
         status_rows.append({"label": STATUS_DISPLAY[s], "count": n})
+_other = len(actionable) - sum(s["count"] for s in status_rows)
+if _other:  # safety net: any status value not in STATUS_ORDER still gets counted, not dropped
+    status_rows.append({"label": "Other/unspecified", "count": _other})
 
 severity = []
 for lab in SEV_ORDER:
