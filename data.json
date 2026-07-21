@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-21T11:48:10+00:00",
+  "generated": "2026-07-21T11:52:26+00:00",
   "kpis": {
     "total": 80,
     "resolved": 33,
     "resolvedPct": 41,
-    "inProgress": 12,
+    "inProgress": 11,
     "notStarted": 16,
-    "reTest": 10,
+    "reTest": 11,
     "reopened": 9,
     "openS1": 0,
     "openS2": 22,
@@ -26,11 +26,11 @@
     },
     {
       "label": "In progress",
-      "count": 12
+      "count": 11
     },
     {
       "label": "Re-test",
-      "count": 10
+      "count": 11
     },
     {
       "label": "Not started",
@@ -311,14 +311,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking no. - No available cases, update message",
       "sev": "S2",
       "pri": "High",
@@ -364,6 +356,14 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -980,7 +980,7 @@
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
