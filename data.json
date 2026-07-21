@@ -1,32 +1,32 @@
 {
-  "generated": "2026-07-21T19:43:16+00:00",
+  "generated": "2026-07-21T21:19:21+00:00",
   "kpis": {
-    "total": 86,
-    "resolved": 43,
-    "resolvedPct": 50,
-    "inProgress": 7,
-    "notStarted": 17,
+    "total": 89,
+    "resolved": 45,
+    "resolvedPct": 51,
+    "inProgress": 6,
+    "notStarted": 21,
     "reTest": 10,
-    "reopened": 9,
+    "reopened": 7,
     "openS1": 1,
-    "openS2": 18,
-    "totalOpen": 43,
-    "unassignedOpen": 0,
+    "openS2": 19,
+    "totalOpen": 44,
+    "unassignedOpen": 2,
     "future": 9,
-    "setAside": 15
+    "setAside": 14
   },
   "status": [
     {
       "label": "Complete",
-      "count": 43
+      "count": 45
     },
     {
       "label": "Re-open",
-      "count": 9
+      "count": 7
     },
     {
       "label": "In progress",
-      "count": 7
+      "count": 6
     },
     {
       "label": "Re-test",
@@ -34,7 +34,7 @@
     },
     {
       "label": "Not started",
-      "count": 17
+      "count": 21
     }
   ],
   "severity": [
@@ -45,30 +45,35 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 40,
-      "open": 18
+      "total": 42,
+      "open": 19
     },
     {
       "label": "S3 · Elevated",
-      "total": 36,
-      "open": 22
+      "total": 35,
+      "open": 20
     },
     {
       "label": "S4 · General",
       "total": 4,
       "open": 2
+    },
+    {
+      "label": "Unspecified",
+      "total": 2,
+      "open": 2
     }
   ],
   "category": [
     {
-      "label": "UX / Conversation Design",
+      "label": "Escalation & Handoff",
       "total": 24,
-      "open": 13
+      "open": 9
     },
     {
-      "label": "Escalation & Handoff",
+      "label": "UX / Conversation Design",
       "total": 23,
-      "open": 8
+      "open": 12
     },
     {
       "label": "Platform / Infrastructure",
@@ -77,7 +82,7 @@
     },
     {
       "label": "Session Management",
-      "total": 10,
+      "total": 11,
       "open": 8
     },
     {
@@ -93,7 +98,7 @@
     {
       "label": "Guardrails / Output Quality",
       "total": 4,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Retrieval Quality",
@@ -102,30 +107,35 @@
     },
     {
       "label": "Unspecified",
-      "total": 1,
-      "open": 1
+      "total": 3,
+      "open": 3
     }
   ],
   "rootCause": [
     {
+      "label": "n8n Workflow / Orchestration",
+      "total": 27,
+      "open": 13
+    },
+    {
       "label": "Instruction File / Prompt",
-      "total": 28,
-      "open": 18
+      "total": 27,
+      "open": 16
     },
     {
       "label": "Frontend / Chat Widget",
       "total": 25,
-      "open": 9
-    },
-    {
-      "label": "n8n Workflow / Orchestration",
-      "total": 25,
-      "open": 11
+      "open": 8
     },
     {
       "label": "Knowledge Source / Retrieval",
       "total": 3,
       "open": 2
+    },
+    {
+      "label": "Unspecified",
+      "total": 3,
+      "open": 3
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -136,23 +146,18 @@
       "label": "Session / State Management",
       "total": 2,
       "open": 1
-    },
-    {
-      "label": "Unspecified",
-      "total": 1,
-      "open": 1
     }
   ],
   "owner": [
     {
-      "label": "Daniel Nicholas",
+      "label": "Swastik Sharma",
       "total": 37,
-      "open": 26
+      "open": 11
     },
     {
-      "label": "Swastik Sharma",
+      "label": "Daniel Nicholas",
       "total": 36,
-      "open": 11
+      "open": 24
     },
     {
       "label": "Jerome Michael",
@@ -165,20 +170,25 @@
       "open": 1
     },
     {
+      "label": "Scott Duckworth",
+      "total": 2,
+      "open": 1
+    },
+    {
       "label": "Ekta Mangal",
       "total": 2,
       "open": 1
     },
     {
-      "label": "Scott Duckworth",
-      "total": 1,
-      "open": 0
+      "label": "Unassigned",
+      "total": 2,
+      "open": 2
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 97
+      "count": 99
     },
     {
       "label": "Enhancement/Wishlist",
@@ -300,14 +310,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
@@ -340,7 +342,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
+      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
@@ -348,11 +350,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
+      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
-      "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "owner": "Scott Duckworth",
       "type": "Issue/Bugs"
     },
     {
@@ -372,11 +374,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-011 — Chat session cross-contamination between sessions",
+      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -412,6 +414,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No. - Duplicate Cases created",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
       "sev": "S2",
       "pri": "High",
@@ -421,6 +431,14 @@
     },
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
@@ -446,7 +464,7 @@
     {
       "wi": "No Tracking No.: Inconsistency of \"analyst\"",
       "sev": "S3",
-      "pri": "Medium",
+      "pri": "Low",
       "status": "Re-open",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
@@ -469,14 +487,6 @@
     },
     {
       "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-02-01 - One Question at a time",
       "sev": "S3",
       "pri": "Medium",
       "status": "Re-open",
@@ -529,14 +539,6 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "SME-009 — Unprofessional wording in responses",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -634,6 +636,22 @@
       "status": "Not started",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
     }
   ],
   "aging": [
@@ -662,33 +680,9 @@
       "days": 8
     },
     {
-      "wi": "TC-02-01 - One Question at a time",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "2026-07-13",
-      "days": 8
-    },
-    {
-      "wi": "SME-009 — Unprofessional wording in responses",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 8
-    },
-    {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "In progress",
-      "opened": "2026-07-13",
-      "days": 8
-    },
-    {
-      "wi": "SME-011 — Chat session cross-contamination between sessions",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
       "status": "Re-test",
       "opened": "2026-07-13",
       "days": 8
@@ -728,8 +722,8 @@
     {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
+      "owner": "Scott Duckworth",
+      "status": "Re-test",
       "opened": "2026-07-14",
       "days": 7
     },
@@ -770,6 +764,14 @@
       "sev": "S2",
       "owner": "Swastik Sharma",
       "status": "Re-test",
+      "opened": "2026-07-17",
+      "days": 4
+    },
+    {
+      "wi": "No Tracking No. - Duplicate Cases created",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
       "opened": "2026-07-17",
       "days": 4
     },
@@ -838,14 +840,6 @@
       "days": null
     },
     {
-      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
       "sev": "S3",
       "owner": "Daniel Nicholas",
@@ -886,6 +880,14 @@
       "days": null
     },
     {
+      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-open",
+      "opened": "",
+      "days": null
+    },
+    {
       "wi": "TC-14-04 - Sessions tagged DSA vs control",
       "sev": "S3",
       "owner": "Daniel Nicholas",
@@ -906,6 +908,14 @@
       "sev": "S2",
       "owner": "Daniel Nicholas",
       "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "Not started",
       "opened": "",
       "days": null
     },
@@ -977,6 +987,22 @@
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
       "sev": "S2",
       "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
