@@ -1,28 +1,28 @@
 {
-  "generated": "2026-07-21T21:19:21+00:00",
+  "generated": "2026-07-21T22:29:02+00:00",
   "kpis": {
-    "total": 89,
-    "resolved": 45,
-    "resolvedPct": 51,
+    "total": 90,
+    "resolved": 47,
+    "resolvedPct": 52,
     "inProgress": 6,
-    "notStarted": 21,
-    "reTest": 10,
-    "reopened": 7,
+    "notStarted": 22,
+    "reTest": 5,
+    "reopened": 10,
     "openS1": 1,
-    "openS2": 19,
-    "totalOpen": 44,
-    "unassignedOpen": 2,
+    "openS2": 17,
+    "totalOpen": 43,
+    "unassignedOpen": 3,
     "future": 9,
     "setAside": 14
   },
   "status": [
     {
       "label": "Complete",
-      "count": 45
+      "count": 47
     },
     {
       "label": "Re-open",
-      "count": 7
+      "count": 10
     },
     {
       "label": "In progress",
@@ -30,11 +30,11 @@
     },
     {
       "label": "Re-test",
-      "count": 10
+      "count": 5
     },
     {
       "label": "Not started",
-      "count": 21
+      "count": 22
     }
   ],
   "severity": [
@@ -46,7 +46,7 @@
     {
       "label": "S2 · Critical",
       "total": 42,
-      "open": 19
+      "open": 17
     },
     {
       "label": "S3 · Elevated",
@@ -60,15 +60,15 @@
     },
     {
       "label": "Unspecified",
-      "total": 2,
-      "open": 2
+      "total": 3,
+      "open": 3
     }
   ],
   "category": [
     {
       "label": "Escalation & Handoff",
       "total": 24,
-      "open": 9
+      "open": 8
     },
     {
       "label": "UX / Conversation Design",
@@ -83,7 +83,7 @@
     {
       "label": "Session Management",
       "total": 11,
-      "open": 8
+      "open": 7
     },
     {
       "label": "Grounding / Synthesis",
@@ -101,21 +101,21 @@
       "open": 1
     },
     {
+      "label": "Unspecified",
+      "total": 4,
+      "open": 4
+    },
+    {
       "label": "Retrieval Quality",
       "total": 3,
       "open": 2
-    },
-    {
-      "label": "Unspecified",
-      "total": 3,
-      "open": 3
     }
   ],
   "rootCause": [
     {
       "label": "n8n Workflow / Orchestration",
       "total": 27,
-      "open": 13
+      "open": 11
     },
     {
       "label": "Instruction File / Prompt",
@@ -128,14 +128,14 @@
       "open": 8
     },
     {
+      "label": "Unspecified",
+      "total": 4,
+      "open": 4
+    },
+    {
       "label": "Knowledge Source / Retrieval",
       "total": 3,
       "open": 2
-    },
-    {
-      "label": "Unspecified",
-      "total": 3,
-      "open": 3
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -152,7 +152,7 @@
     {
       "label": "Swastik Sharma",
       "total": 37,
-      "open": 11
+      "open": 9
     },
     {
       "label": "Daniel Nicholas",
@@ -170,6 +170,11 @@
       "open": 1
     },
     {
+      "label": "Unassigned",
+      "total": 3,
+      "open": 3
+    },
+    {
       "label": "Scott Duckworth",
       "total": 2,
       "open": 1
@@ -178,17 +183,12 @@
       "label": "Ekta Mangal",
       "total": 2,
       "open": 1
-    },
-    {
-      "label": "Unassigned",
-      "total": 2,
-      "open": 2
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 99
+      "count": 100
     },
     {
       "label": "Enhancement/Wishlist",
@@ -310,6 +310,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No. - Case created when I did not accept the chat",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
@@ -358,22 +366,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking - Case and Chat created at the same time",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - Case created when I did not accept the chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
@@ -391,14 +383,6 @@
     },
     {
       "wi": "SME-014 — Can't reach support right now during escalation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
@@ -462,11 +446,27 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
+      "sev": "S3",
+      "pri": "Low",
+      "status": "Re-open",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking No.: Inconsistency of \"analyst\"",
       "sev": "S3",
       "pri": "Low",
       "status": "Re-open",
       "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
@@ -522,22 +522,6 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
-      "sev": "S3",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
       "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
@@ -652,6 +636,14 @@
       "status": "Not started",
       "owner": "Unassigned",
       "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-041 - Can ask another question after case creation from previous issue",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
     }
   ],
   "aging": [
@@ -664,18 +656,10 @@
       "days": 8
     },
     {
-      "wi": "No Tracking - Case and Chat created at the same time",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 8
-    },
-    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "2026-07-13",
       "days": 8
     },
@@ -763,7 +747,7 @@
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "2026-07-17",
       "days": 4
     },
@@ -851,7 +835,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
@@ -928,14 +912,6 @@
       "days": null
     },
     {
-      "wi": "TC-014 and TC-042\n- Live Chat Offer Declined, But Case created",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
       "sev": "S3",
       "owner": "Daniel Nicholas",
@@ -1001,6 +977,14 @@
     },
     {
       "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-041 - Can ask another question after case creation from previous issue",
       "sev": "—",
       "owner": "Unassigned",
       "status": "Not started",
