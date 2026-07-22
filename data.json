@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-22T15:21:06+00:00",
+  "generated": "2026-07-22T16:57:38+00:00",
   "kpis": {
-    "total": 78,
+    "total": 83,
     "resolved": 47,
-    "resolvedPct": 60,
-    "inProgress": 9,
-    "notStarted": 10,
+    "resolvedPct": 57,
+    "inProgress": 10,
+    "notStarted": 14,
     "reTest": 7,
     "reopened": 5,
-    "openS1": 0,
-    "openS2": 14,
-    "totalOpen": 31,
-    "unassignedOpen": 0,
-    "future": 10,
-    "setAside": 26
+    "openS1": 1,
+    "openS2": 16,
+    "totalOpen": 36,
+    "unassignedOpen": 2,
+    "future": 11,
+    "setAside": 23
   },
   "status": [
     {
@@ -26,7 +26,7 @@
     },
     {
       "label": "In progress",
-      "count": 9
+      "count": 10
     },
     {
       "label": "Re-test",
@@ -34,19 +34,19 @@
     },
     {
       "label": "Not started",
-      "count": 10
+      "count": 14
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 5,
-      "open": 0
+      "total": 6,
+      "open": 1
     },
     {
       "label": "S2 · Critical",
-      "total": 39,
-      "open": 14
+      "total": 41,
+      "open": 16
     },
     {
       "label": "S3 · Elevated",
@@ -60,20 +60,20 @@
     },
     {
       "label": "Unspecified",
-      "total": 1,
-      "open": 1
+      "total": 3,
+      "open": 3
     }
   ],
   "category": [
     {
       "label": "Escalation & Handoff",
-      "total": 21,
-      "open": 5
+      "total": 23,
+      "open": 7
     },
     {
       "label": "UX / Conversation Design",
-      "total": 19,
-      "open": 8
+      "total": 20,
+      "open": 9
     },
     {
       "label": "Platform / Infrastructure",
@@ -104,23 +104,28 @@
       "label": "Content / Instruction Defects",
       "total": 3,
       "open": 1
+    },
+    {
+      "label": "Unspecified",
+      "total": 2,
+      "open": 2
     }
   ],
   "rootCause": [
+    {
+      "label": "n8n Workflow / Orchestration",
+      "total": 26,
+      "open": 10
+    },
     {
       "label": "Frontend / Chat Widget",
       "total": 25,
       "open": 8
     },
     {
-      "label": "n8n Workflow / Orchestration",
-      "total": 24,
-      "open": 8
-    },
-    {
       "label": "Instruction File / Prompt",
-      "total": 21,
-      "open": 10
+      "total": 22,
+      "open": 11
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -136,6 +141,11 @@
       "label": "Session / State Management",
       "total": 2,
       "open": 1
+    },
+    {
+      "label": "Unspecified",
+      "total": 2,
+      "open": 2
     }
   ],
   "owner": [
@@ -146,8 +156,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 25,
-      "open": 13
+      "total": 27,
+      "open": 15
     },
     {
       "label": "Jerome Michael",
@@ -156,8 +166,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 4,
-      "open": 3
+      "total": 5,
+      "open": 4
     },
     {
       "label": "Chris Smith",
@@ -168,16 +178,21 @@
       "label": "Scott Duckworth",
       "total": 2,
       "open": 1
+    },
+    {
+      "label": "Unassigned",
+      "total": 2,
+      "open": 2
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 100
+      "count": 102
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 10
+      "count": 11
     },
     {
       "label": "Task",
@@ -206,7 +221,7 @@
     },
     {
       "wi": "Additional Information S1 and S2 Customers on Submit a Case",
-      "status": "In progress",
+      "status": "Not started",
       "owner": "Swastik Sharma"
     },
     {
@@ -238,6 +253,11 @@
       "wi": "No Tracking no. - Case summary before confirmation verbiage",
       "status": "Not started",
       "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "BACKLOG - Duplicate text fields when answering",
+      "status": "Working as designed",
+      "owner": "Unassigned"
     }
   ],
   "recent": [
@@ -275,6 +295,14 @@
     }
   ],
   "openItems": [
+    {
+      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs"
+    },
     {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
@@ -372,7 +400,23 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
@@ -409,6 +453,14 @@
       "pri": "Medium",
       "status": "Re-open",
       "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs"
     },
     {
@@ -457,14 +509,6 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Ekta Mangal",
       "type": "Issue/Bugs"
     },
     {
@@ -521,6 +565,22 @@
       "pri": "—",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - Update case creation verbiage for business hours",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-024 - Creates a case after one turn",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
       "type": "Issue/Bugs"
     }
   ],
@@ -593,7 +653,7 @@
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "owner": "Ekta Mangal",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "2026-07-16",
       "days": 6
     },
@@ -657,6 +717,14 @@
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
       "owner": "Ekta Mangal",
+      "status": "Not started",
+      "opened": "2026-07-20",
+      "days": 2
+    },
+    {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "2026-07-20",
       "days": 2
@@ -726,10 +794,26 @@
       "days": null
     },
     {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
       "owner": "Daniel Nicholas",
       "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
+      "sev": "S1",
+      "owner": "Ekta Mangal",
+      "status": "Not started",
       "opened": "",
       "days": null
     },
@@ -770,6 +854,22 @@
       "sev": "S2",
       "owner": "Daniel Nicholas",
       "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-024 - Creates a case after one turn",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - Update case creation verbiage for business hours",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
       "opened": "",
       "days": null
     }
