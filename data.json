@@ -1,13 +1,13 @@
 {
-  "generated": "2026-07-22T16:57:38+00:00",
+  "generated": "2026-07-22T18:17:21+00:00",
   "kpis": {
     "total": 83,
     "resolved": 47,
     "resolvedPct": 57,
     "inProgress": 10,
-    "notStarted": 14,
-    "reTest": 7,
-    "reopened": 5,
+    "notStarted": 12,
+    "reTest": 10,
+    "reopened": 4,
     "openS1": 1,
     "openS2": 16,
     "totalOpen": 36,
@@ -22,7 +22,7 @@
     },
     {
       "label": "Re-open",
-      "count": 5
+      "count": 4
     },
     {
       "label": "In progress",
@@ -30,11 +30,11 @@
     },
     {
       "label": "Re-test",
-      "count": 7
+      "count": 10
     },
     {
       "label": "Not started",
-      "count": 14
+      "count": 12
     }
   ],
   "severity": [
@@ -304,14 +304,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Case created when I did not accept the chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
@@ -360,6 +352,22 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No. - Case created when I did not accept the chat",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking No. - Duplicate Cases created",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
@@ -389,14 +397,6 @@
       "pri": "High",
       "status": "Not started",
       "owner": "Ekta Mangal",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking No. - Duplicate Cases created",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -504,6 +504,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
       "sev": "S3",
       "pri": "High",
@@ -515,14 +523,6 @@
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
       "sev": "S3",
       "pri": "Low",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
-      "sev": "S3",
-      "pri": "Medium",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
@@ -685,7 +685,7 @@
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 5
     },
@@ -693,7 +693,7 @@
       "wi": "No Tracking No. - Duplicate Cases created",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 5
     },
@@ -845,7 +845,7 @@
       "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
