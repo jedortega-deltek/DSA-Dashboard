@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-22T18:17:21+00:00",
+  "generated": "2026-07-22T19:53:53+00:00",
   "kpis": {
-    "total": 83,
-    "resolved": 47,
+    "total": 84,
+    "resolved": 48,
     "resolvedPct": 57,
-    "inProgress": 10,
-    "notStarted": 12,
-    "reTest": 10,
+    "inProgress": 9,
+    "notStarted": 11,
+    "reTest": 12,
     "reopened": 4,
     "openS1": 1,
-    "openS2": 16,
+    "openS2": 15,
     "totalOpen": 36,
     "unassignedOpen": 2,
-    "future": 11,
-    "setAside": 23
+    "future": 12,
+    "setAside": 21
   },
   "status": [
     {
       "label": "Complete",
-      "count": 47
+      "count": 48
     },
     {
       "label": "Re-open",
@@ -26,15 +26,15 @@
     },
     {
       "label": "In progress",
-      "count": 10
+      "count": 9
     },
     {
       "label": "Re-test",
-      "count": 10
+      "count": 12
     },
     {
       "label": "Not started",
-      "count": 12
+      "count": 11
     }
   ],
   "severity": [
@@ -46,7 +46,7 @@
     {
       "label": "S2 · Critical",
       "total": 41,
-      "open": 16
+      "open": 15
     },
     {
       "label": "S3 · Elevated",
@@ -55,8 +55,8 @@
     },
     {
       "label": "S4 · General",
-      "total": 3,
-      "open": 1
+      "total": 4,
+      "open": 2
     },
     {
       "label": "Unspecified",
@@ -67,8 +67,8 @@
   "category": [
     {
       "label": "Escalation & Handoff",
-      "total": 23,
-      "open": 7
+      "total": 24,
+      "open": 8
     },
     {
       "label": "UX / Conversation Design",
@@ -78,7 +78,7 @@
     {
       "label": "Platform / Infrastructure",
       "total": 11,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Session Management",
@@ -115,7 +115,7 @@
     {
       "label": "n8n Workflow / Orchestration",
       "total": 26,
-      "open": 10
+      "open": 9
     },
     {
       "label": "Frontend / Chat Widget",
@@ -124,8 +124,8 @@
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 22,
-      "open": 11
+      "total": 23,
+      "open": 12
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -156,8 +156,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 27,
-      "open": 15
+      "total": 28,
+      "open": 16
     },
     {
       "label": "Jerome Michael",
@@ -172,7 +172,7 @@
     {
       "label": "Chris Smith",
       "total": 3,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Scott Duckworth",
@@ -188,11 +188,11 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 102
+      "count": 101
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 11
+      "count": 12
     },
     {
       "label": "Task",
@@ -246,6 +246,11 @@
     },
     {
       "wi": "Ability to Print or Download Chat with DSA",
+      "status": "Working as designed",
+      "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking No. - No option to skip submitting feedback",
       "status": "Working as designed",
       "owner": "Swastik Sharma"
     },
@@ -376,14 +381,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-013 — Chat becomes stuck / non-responsive",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Chris Smith",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "SME-014 — Can't reach support right now during escalation",
       "sev": "S2",
       "pri": "High",
@@ -464,14 +461,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "DELA-026 — Case creation button still active after inactivity timeout",
-      "sev": "S3",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
       "sev": "S3",
       "pri": "Medium",
@@ -504,6 +493,22 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "DELA-026 — Case creation button still active after inactivity timeout",
+      "sev": "S3",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
+      "sev": "S3",
+      "pri": "Low",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
       "sev": "S3",
       "pri": "Medium",
@@ -516,14 +521,6 @@
       "sev": "S3",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
-      "sev": "S3",
-      "pri": "Low",
-      "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
@@ -560,6 +557,14 @@
       "type": "Task"
     },
     {
+      "wi": "TC-08-03 - Did not get a human",
+      "sev": "S4",
+      "pri": "Low",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
       "sev": "—",
       "pri": "—",
@@ -594,6 +599,14 @@
       "days": 9
     },
     {
+      "wi": "TC-08-03 - Did not get a human",
+      "sev": "S4",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "2026-07-13",
+      "days": 9
+    },
+    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "owner": "Swastik Sharma",
@@ -605,14 +618,6 @@
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 9
-    },
-    {
-      "wi": "SME-013 — Chat becomes stuck / non-responsive",
-      "sev": "S2",
-      "owner": "Chris Smith",
       "status": "Re-test",
       "opened": "2026-07-13",
       "days": 9
@@ -677,7 +682,7 @@
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 5
     },
@@ -709,7 +714,7 @@
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 5
     },
@@ -957,6 +962,12 @@
       "owner": "Scott Duckworth",
       "resolved": "2026-07-14",
       "wi": "SME-008 — Interactions do not feel conversational",
+      "days": 1
+    },
+    {
+      "owner": "Chris Smith",
+      "resolved": "2026-07-14",
+      "wi": "SME-013 — Chat becomes stuck / non-responsive",
       "days": 1
     },
     {
