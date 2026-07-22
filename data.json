@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-22T11:26:32+00:00",
+  "generated": "2026-07-22T13:05:29+00:00",
   "kpis": {
-    "total": 90,
+    "total": 83,
     "resolved": 47,
-    "resolvedPct": 52,
+    "resolvedPct": 57,
     "inProgress": 7,
-    "notStarted": 22,
+    "notStarted": 19,
     "reTest": 5,
-    "reopened": 9,
+    "reopened": 5,
     "openS1": 1,
-    "openS2": 17,
-    "totalOpen": 43,
-    "unassignedOpen": 3,
+    "openS2": 15,
+    "totalOpen": 36,
+    "unassignedOpen": 0,
     "future": 9,
-    "setAside": 14
+    "setAside": 21
   },
   "status": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "label": "Re-open",
-      "count": 9
+      "count": 5
     },
     {
       "label": "In progress",
@@ -34,7 +34,7 @@
     },
     {
       "label": "Not started",
-      "count": 22
+      "count": 19
     }
   ],
   "severity": [
@@ -45,13 +45,13 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 42,
-      "open": 17
+      "total": 40,
+      "open": 15
     },
     {
       "label": "S3 · Elevated",
-      "total": 35,
-      "open": 20
+      "total": 32,
+      "open": 17
     },
     {
       "label": "S4 · General",
@@ -60,38 +60,38 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 1,
+      "open": 1
     }
   ],
   "category": [
     {
-      "label": "Escalation & Handoff",
-      "total": 24,
-      "open": 8
-    },
-    {
       "label": "UX / Conversation Design",
-      "total": 23,
-      "open": 12
+      "total": 22,
+      "open": 11
     },
     {
-      "label": "Platform / Infrastructure",
-      "total": 12,
-      "open": 4
+      "label": "Escalation & Handoff",
+      "total": 22,
+      "open": 6
     },
     {
       "label": "Session Management",
-      "total": 11,
-      "open": 7
+      "total": 12,
+      "open": 8
     },
     {
-      "label": "Grounding / Synthesis",
-      "total": 5,
+      "label": "Platform / Infrastructure",
+      "total": 11,
       "open": 3
     },
     {
       "label": "Content / Instruction Defects",
+      "total": 4,
+      "open": 2
+    },
+    {
+      "label": "Grounding / Synthesis",
       "total": 4,
       "open": 2
     },
@@ -101,41 +101,31 @@
       "open": 1
     },
     {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 4
-    },
-    {
       "label": "Retrieval Quality",
-      "total": 3,
-      "open": 2
+      "total": 4,
+      "open": 3
     }
   ],
   "rootCause": [
     {
+      "label": "Frontend / Chat Widget",
+      "total": 26,
+      "open": 9
+    },
+    {
       "label": "n8n Workflow / Orchestration",
-      "total": 27,
-      "open": 11
+      "total": 25,
+      "open": 9
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 27,
-      "open": 16
-    },
-    {
-      "label": "Frontend / Chat Widget",
-      "total": 25,
-      "open": 8
-    },
-    {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 4
+      "total": 24,
+      "open": 13
     },
     {
       "label": "Knowledge Source / Retrieval",
-      "total": 3,
-      "open": 2
+      "total": 4,
+      "open": 3
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -151,13 +141,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 37,
-      "open": 9
+      "total": 38,
+      "open": 10
     },
     {
       "label": "Daniel Nicholas",
-      "total": 36,
-      "open": 24
+      "total": 29,
+      "open": 17
     },
     {
       "label": "Jerome Michael",
@@ -165,22 +155,17 @@
       "open": 4
     },
     {
+      "label": "Ekta Mangal",
+      "total": 4,
+      "open": 3
+    },
+    {
       "label": "Chris Smith",
       "total": 3,
       "open": 1
     },
     {
-      "label": "Unassigned",
-      "total": 3,
-      "open": 3
-    },
-    {
       "label": "Scott Duckworth",
-      "total": 2,
-      "open": 1
-    },
-    {
-      "label": "Ekta Mangal",
       "total": 2,
       "open": 1
     }
@@ -222,7 +207,7 @@
     {
       "wi": "Additional Information S1 and S2 Customers on Submit a Case",
       "status": "In progress",
-      "owner": "Daniel Nicholas"
+      "owner": "Swastik Sharma"
     },
     {
       "wi": "TC-09-01 - Chat Transcript file in pdf",
@@ -237,7 +222,7 @@
     {
       "wi": "Ability to enlarge the chat window, or undock the chat window instead of embedded in the home page",
       "status": "Working as designed",
-      "owner": "Unassigned"
+      "owner": "Swastik Sharma"
     },
     {
       "wi": "SmartSoftware Customers Cannot Submit Cases or Initiate a Chat",
@@ -247,7 +232,7 @@
     {
       "wi": "Ability to Print or Download Chat with DSA",
       "status": "Working as designed",
-      "owner": "Unassigned"
+      "owner": "Swastik Sharma"
     }
   ],
   "recent": [
@@ -307,14 +292,6 @@
       "pri": "High",
       "status": "Re-open",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -378,7 +355,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs"
     },
     {
@@ -398,33 +375,25 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs"
     },
     {
       "wi": "TC-040 - Successful Transfer to Live Agent",
       "sev": "S2",
       "pri": "—",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-041 - Can ask another question after case creation from previous issue",
+      "sev": "S2",
+      "pri": "Medium",
       "status": "Not started",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
@@ -446,31 +415,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "Odd Response When Discussing KBs",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-006 - Valid Ajera question ignored",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-04-03 - Only provides one option with steps",
       "sev": "S3",
       "pri": "Medium",
       "status": "Re-open",
@@ -526,6 +471,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
       "pri": "Medium",
@@ -543,14 +496,6 @@
     },
     {
       "wi": "TC-04-02 - DSA and DLH not the same",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
@@ -606,27 +551,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-041 - Can ask another question after case creation from previous issue",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     }
   ],
@@ -746,7 +675,7 @@
     {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
+      "owner": "Ekta Mangal",
       "status": "Not started",
       "opened": "2026-07-17",
       "days": 5
@@ -760,52 +689,12 @@
       "days": 5
     },
     {
-      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "2026-07-20",
-      "days": 2
-    },
-    {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
+      "owner": "Ekta Mangal",
       "status": "Not started",
       "opened": "2026-07-20",
       "days": 2
-    },
-    {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "2026-07-20",
-      "days": 2
-    },
-    {
-      "wi": "TC-04-03 - Only provides one option with steps",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "Odd Response When Discussing KBs",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "",
-      "days": null
     },
     {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
@@ -880,23 +769,7 @@
       "days": null
     },
     {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "TC-04-02 - DSA and DLH not the same",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
       "sev": "S3",
       "owner": "Daniel Nicholas",
       "status": "Not started",
@@ -954,23 +827,23 @@
     {
       "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
       "sev": "—",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
       "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S3",
+      "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
       "wi": "TC-041 - Can ask another question after case creation from previous issue",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
