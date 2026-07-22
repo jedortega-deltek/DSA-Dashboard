@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-21T23:35:06+00:00",
+  "generated": "2026-07-22T03:29:56+00:00",
   "kpis": {
     "total": 90,
     "resolved": 47,
@@ -282,22 +282,6 @@
     {
       "wi": "TC-17-03 — Feedback text invisible (white text on white background)",
       "resolved": "2026-07-15"
-    },
-    {
-      "wi": "TC-08-02 - Chat dialog opens and button available in DSA chat window",
-      "resolved": "2026-07-14"
-    },
-    {
-      "wi": "TC-08-02 - Did not get a live chat",
-      "resolved": "2026-07-14"
-    },
-    {
-      "wi": "TC-08-04 - Chat window opens but there is also a button",
-      "resolved": "2026-07-14"
-    },
-    {
-      "wi": "TC-No# - Chat window hidden behind another window",
-      "resolved": "2026-07-14"
     }
   ],
   "openItems": [
@@ -653,7 +637,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 8
+      "days": 9
     },
     {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
@@ -661,7 +645,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "2026-07-13",
-      "days": 8
+      "days": 9
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -669,7 +653,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 8
+      "days": 9
     },
     {
       "wi": "SME-013 — Chat becomes stuck / non-responsive",
@@ -677,7 +661,7 @@
       "owner": "Chris Smith",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 8
+      "days": 9
     },
     {
       "wi": "SME-014 — Can't reach support right now during escalation",
@@ -685,7 +669,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 8
+      "days": 9
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
@@ -693,7 +677,7 @@
       "owner": "Daniel Nicholas",
       "status": "In progress",
       "opened": "2026-07-14",
-      "days": 7
+      "days": 8
     },
     {
       "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
@@ -701,7 +685,7 @@
       "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "2026-07-14",
-      "days": 7
+      "days": 8
     },
     {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
@@ -709,7 +693,7 @@
       "owner": "Scott Duckworth",
       "status": "Re-test",
       "opened": "2026-07-14",
-      "days": 7
+      "days": 8
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -717,7 +701,7 @@
       "owner": "Ekta Mangal",
       "status": "Not started",
       "opened": "2026-07-16",
-      "days": 5
+      "days": 6
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -725,7 +709,7 @@
       "owner": "Daniel Nicholas",
       "status": "In progress",
       "opened": "2026-07-16",
-      "days": 5
+      "days": 6
     },
     {
       "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
@@ -733,7 +717,7 @@
       "owner": "Jerome Michael",
       "status": "Not started",
       "opened": "2026-07-17",
-      "days": 4
+      "days": 5
     },
     {
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
@@ -741,7 +725,7 @@
       "owner": "Swastik Sharma",
       "status": "In progress",
       "opened": "2026-07-17",
-      "days": 4
+      "days": 5
     },
     {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
@@ -749,7 +733,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "2026-07-17",
-      "days": 4
+      "days": 5
     },
     {
       "wi": "No Tracking No. - Duplicate Cases created",
@@ -757,7 +741,7 @@
       "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "2026-07-17",
-      "days": 4
+      "days": 5
     },
     {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
@@ -765,7 +749,7 @@
       "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "2026-07-17",
-      "days": 4
+      "days": 5
     },
     {
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
@@ -773,7 +757,7 @@
       "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "2026-07-17",
-      "days": 4
+      "days": 5
     },
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
@@ -781,7 +765,7 @@
       "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "2026-07-20",
-      "days": 1
+      "days": 2
     },
     {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
@@ -789,7 +773,7 @@
       "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "2026-07-20",
-      "days": 1
+      "days": 2
     },
     {
       "wi": "No Tracking no - Asked for case, DSA got me chat instead",
@@ -797,7 +781,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-open",
       "opened": "2026-07-20",
-      "days": 1
+      "days": 2
     },
     {
       "wi": "TC-04-03 - Only provides one option with steps",
