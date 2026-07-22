@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-22T19:53:53+00:00",
+  "generated": "2026-07-22T21:17:00+00:00",
   "kpis": {
-    "total": 84,
-    "resolved": 48,
-    "resolvedPct": 57,
+    "total": 91,
+    "resolved": 50,
+    "resolvedPct": 55,
     "inProgress": 9,
-    "notStarted": 11,
-    "reTest": 12,
+    "notStarted": 12,
+    "reTest": 16,
     "reopened": 4,
     "openS1": 1,
-    "openS2": 15,
-    "totalOpen": 36,
+    "openS2": 16,
+    "totalOpen": 41,
     "unassignedOpen": 2,
     "future": 12,
-    "setAside": 21
+    "setAside": 14
   },
   "status": [
     {
       "label": "Complete",
-      "count": 48
+      "count": 50
     },
     {
       "label": "Re-open",
@@ -30,11 +30,11 @@
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 16
     },
     {
       "label": "Not started",
-      "count": 11
+      "count": 12
     }
   ],
   "severity": [
@@ -45,18 +45,18 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 41,
-      "open": 15
+      "total": 43,
+      "open": 16
     },
     {
       "label": "S3 · Elevated",
-      "total": 30,
-      "open": 15
+      "total": 35,
+      "open": 20
     },
     {
       "label": "S4 · General",
       "total": 4,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Unspecified",
@@ -67,18 +67,18 @@
   "category": [
     {
       "label": "Escalation & Handoff",
-      "total": 24,
+      "total": 25,
       "open": 8
     },
     {
       "label": "UX / Conversation Design",
-      "total": 20,
-      "open": 9
+      "total": 23,
+      "open": 11
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 11,
-      "open": 2
+      "total": 13,
+      "open": 4
     },
     {
       "label": "Session Management",
@@ -87,8 +87,8 @@
     },
     {
       "label": "Grounding / Synthesis",
-      "total": 5,
-      "open": 3
+      "total": 6,
+      "open": 4
     },
     {
       "label": "Guardrails / Output Quality",
@@ -114,18 +114,18 @@
   "rootCause": [
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 26,
-      "open": 9
+      "total": 28,
+      "open": 11
+    },
+    {
+      "label": "Instruction File / Prompt",
+      "total": 28,
+      "open": 16
     },
     {
       "label": "Frontend / Chat Widget",
       "total": 25,
       "open": 8
-    },
-    {
-      "label": "Instruction File / Prompt",
-      "total": 23,
-      "open": 12
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -135,7 +135,7 @@
     {
       "label": "Escalation Integration (RNT/Five9)",
       "total": 2,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Session / State Management",
@@ -152,12 +152,12 @@
     {
       "label": "Swastik Sharma",
       "total": 37,
-      "open": 9
+      "open": 7
     },
     {
       "label": "Daniel Nicholas",
-      "total": 28,
-      "open": 16
+      "total": 35,
+      "open": 23
     },
     {
       "label": "Jerome Michael",
@@ -381,11 +381,11 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "SME-014 — Can't reach support right now during escalation",
+      "wi": "TC-08-01 - Did not create a chat after 3 turns",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -406,6 +406,14 @@
     },
     {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
@@ -517,6 +525,46 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "Odd Response When Discussing KBs",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "SME-007 — Excessive response times (seconds to minutes)",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-02-04 - Best-effort fallback after two diagnostic turns",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-04-03 - Only provides one option with steps",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
       "sev": "S3",
       "pri": "High",
@@ -547,14 +595,6 @@
       "status": "Not started",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
-    },
-    {
-      "wi": "Change text on the chatbot and greeting",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Task"
     },
     {
       "wi": "TC-08-03 - Did not get a human",
@@ -591,16 +631,24 @@
   ],
   "aging": [
     {
-      "wi": "Change text on the chatbot and greeting",
+      "wi": "TC-08-03 - Did not get a human",
       "sev": "S4",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
       "days": 9
     },
     {
-      "wi": "TC-08-03 - Did not get a human",
-      "sev": "S4",
+      "wi": "TC-08-01 - Did not create a chat after 3 turns",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "2026-07-13",
+      "days": 9
+    },
+    {
+      "wi": "TC-02-04 - Best-effort fallback after two diagnostic turns",
+      "sev": "S3",
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
@@ -615,17 +663,17 @@
       "days": 9
     },
     {
-      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
-      "sev": "S2",
+      "wi": "SME-007 — Excessive response times (seconds to minutes)",
+      "sev": "S3",
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
       "days": 9
     },
     {
-      "wi": "SME-014 — Can't reach support right now during escalation",
+      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
       "days": 9
@@ -719,6 +767,14 @@
       "days": 5
     },
     {
+      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "2026-07-20",
+      "days": 2
+    },
+    {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
       "owner": "Ekta Mangal",
@@ -733,6 +789,30 @@
       "status": "Not started",
       "opened": "2026-07-20",
       "days": 2
+    },
+    {
+      "wi": "TC-04-03 - Only provides one option with steps",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Odd Response When Discussing KBs",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
     },
     {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
