@@ -1,13 +1,13 @@
 {
-  "generated": "2026-07-22T21:17:00+00:00",
+  "generated": "2026-07-22T22:36:02+00:00",
   "kpis": {
     "total": 91,
     "resolved": 50,
     "resolvedPct": 55,
     "inProgress": 9,
     "notStarted": 12,
-    "reTest": 16,
-    "reopened": 4,
+    "reTest": 17,
+    "reopened": 3,
     "openS1": 1,
     "openS2": 16,
     "totalOpen": 41,
@@ -22,7 +22,7 @@
     },
     {
       "label": "Re-open",
-      "count": 4
+      "count": 3
     },
     {
       "label": "In progress",
@@ -30,7 +30,7 @@
     },
     {
       "label": "Re-test",
-      "count": 16
+      "count": 17
     },
     {
       "label": "Not started",
@@ -156,8 +156,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 35,
-      "open": 23
+      "total": 34,
+      "open": 22
     },
     {
       "label": "Jerome Michael",
@@ -166,8 +166,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 5,
-      "open": 4
+      "total": 6,
+      "open": 5
     },
     {
       "label": "Chris Smith",
@@ -345,7 +345,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs"
     },
     {
@@ -453,14 +453,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-006 - Valid Ajera question ignored",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -534,6 +526,14 @@
     },
     {
       "wi": "SME-007 — Excessive response times (seconds to minutes)",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-006 - Valid Ajera question ignored",
       "sev": "S3",
       "pri": "Medium",
       "status": "Re-test",
@@ -681,7 +681,7 @@
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
+      "owner": "Ekta Mangal",
       "status": "In progress",
       "opened": "2026-07-14",
       "days": 8
@@ -866,7 +866,7 @@
       "wi": "TC-006 - Valid Ajera question ignored",
       "sev": "S3",
       "owner": "Daniel Nicholas",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
