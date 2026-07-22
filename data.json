@@ -1,13 +1,13 @@
 {
-  "generated": "2026-07-22T09:11:49+00:00",
+  "generated": "2026-07-22T11:26:32+00:00",
   "kpis": {
     "total": 90,
     "resolved": 47,
     "resolvedPct": 52,
-    "inProgress": 6,
+    "inProgress": 7,
     "notStarted": 22,
     "reTest": 5,
-    "reopened": 10,
+    "reopened": 9,
     "openS1": 1,
     "openS2": 17,
     "totalOpen": 43,
@@ -22,11 +22,11 @@
     },
     {
       "label": "Re-open",
-      "count": 10
+      "count": 9
     },
     {
       "label": "In progress",
-      "count": 6
+      "count": 7
     },
     {
       "label": "Re-test",
@@ -446,14 +446,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "Odd Response When Discussing KBs",
       "sev": "S3",
       "pri": "Medium",
@@ -499,6 +491,14 @@
       "pri": "Medium",
       "status": "In progress",
       "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
@@ -819,7 +819,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Re-open",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
