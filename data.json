@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-22T13:05:29+00:00",
+  "generated": "2026-07-22T15:21:06+00:00",
   "kpis": {
-    "total": 83,
+    "total": 78,
     "resolved": 47,
-    "resolvedPct": 57,
-    "inProgress": 7,
-    "notStarted": 19,
-    "reTest": 5,
+    "resolvedPct": 60,
+    "inProgress": 9,
+    "notStarted": 10,
+    "reTest": 7,
     "reopened": 5,
-    "openS1": 1,
-    "openS2": 15,
-    "totalOpen": 36,
+    "openS1": 0,
+    "openS2": 14,
+    "totalOpen": 31,
     "unassignedOpen": 0,
-    "future": 9,
-    "setAside": 21
+    "future": 10,
+    "setAside": 26
   },
   "status": [
     {
@@ -26,37 +26,37 @@
     },
     {
       "label": "In progress",
-      "count": 7
+      "count": 9
     },
     {
       "label": "Re-test",
-      "count": 5
+      "count": 7
     },
     {
       "label": "Not started",
-      "count": 19
+      "count": 10
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 6,
-      "open": 1
+      "total": 5,
+      "open": 0
     },
     {
       "label": "S2 · Critical",
-      "total": 40,
-      "open": 15
+      "total": 39,
+      "open": 14
     },
     {
       "label": "S3 · Elevated",
-      "total": 32,
-      "open": 17
+      "total": 30,
+      "open": 15
     },
     {
       "label": "S4 · General",
-      "total": 4,
-      "open": 2
+      "total": 3,
+      "open": 1
     },
     {
       "label": "Unspecified",
@@ -66,18 +66,13 @@
   ],
   "category": [
     {
-      "label": "UX / Conversation Design",
-      "total": 22,
-      "open": 11
-    },
-    {
       "label": "Escalation & Handoff",
-      "total": 22,
-      "open": 6
+      "total": 21,
+      "open": 5
     },
     {
-      "label": "Session Management",
-      "total": 12,
+      "label": "UX / Conversation Design",
+      "total": 19,
       "open": 8
     },
     {
@@ -86,14 +81,14 @@
       "open": 3
     },
     {
-      "label": "Content / Instruction Defects",
-      "total": 4,
-      "open": 2
+      "label": "Session Management",
+      "total": 11,
+      "open": 7
     },
     {
       "label": "Grounding / Synthesis",
-      "total": 4,
-      "open": 2
+      "total": 5,
+      "open": 3
     },
     {
       "label": "Guardrails / Output Quality",
@@ -104,23 +99,28 @@
       "label": "Retrieval Quality",
       "total": 4,
       "open": 3
+    },
+    {
+      "label": "Content / Instruction Defects",
+      "total": 3,
+      "open": 1
     }
   ],
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 26,
-      "open": 9
+      "total": 25,
+      "open": 8
     },
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 25,
-      "open": 9
+      "total": 24,
+      "open": 8
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 24,
-      "open": 13
+      "total": 21,
+      "open": 10
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -141,13 +141,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 38,
-      "open": 10
+      "total": 37,
+      "open": 9
     },
     {
       "label": "Daniel Nicholas",
-      "total": 29,
-      "open": 17
+      "total": 25,
+      "open": 13
     },
     {
       "label": "Jerome Michael",
@@ -177,7 +177,7 @@
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 9
+      "count": 10
     },
     {
       "label": "Task",
@@ -233,6 +233,11 @@
       "wi": "Ability to Print or Download Chat with DSA",
       "status": "Working as designed",
       "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking no. - Case summary before confirmation verbiage",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
     }
   ],
   "recent": [
@@ -271,14 +276,6 @@
   ],
   "openItems": [
     {
-      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
       "pri": "High",
@@ -296,6 +293,14 @@
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
@@ -383,22 +388,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-040 - Successful Transfer to Live Agent",
-      "sev": "S2",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-041 - Can ask another question after case creation from previous issue",
-      "sev": "S2",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "pri": "Low",
@@ -447,11 +436,27 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-09-02 - Summary missing information and formatting issues",
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
       "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
+      "sev": "S3",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -479,23 +484,7 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-04-02 - DSA and DLH not the same",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
@@ -519,22 +508,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "Change text on the chatbot and greeting",
       "sev": "S4",
       "pri": "Low",
@@ -543,18 +516,10 @@
       "type": "Task"
     },
     {
-      "wi": "No Tracking no. - Case summary before confirmation verbiage",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
       "sev": "—",
       "pri": "—",
-      "status": "Not started",
+      "status": "Re-test",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     }
@@ -612,7 +577,7 @@
       "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "2026-07-14",
       "days": 8
     },
@@ -721,14 +686,6 @@
       "days": null
     },
     {
-      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
-      "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "owner": "Jerome Michael",
@@ -769,42 +726,10 @@
       "days": null
     },
     {
-      "wi": "TC-04-02 - DSA and DLH not the same",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
       "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - Case summary before confirmation verbiage",
-      "sev": "S4",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
-      "sev": "S1",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-040 - Successful Transfer to Live Agent",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
@@ -828,7 +753,7 @@
       "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
       "sev": "—",
       "owner": "Daniel Nicholas",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -841,10 +766,10 @@
       "days": null
     },
     {
-      "wi": "TC-041 - Can ask another question after case creation from previous issue",
+      "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "",
       "days": null
     }
