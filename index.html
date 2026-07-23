@@ -170,6 +170,9 @@
   tbody td{padding:11px 12px;border-bottom:1px solid var(--grid);vertical-align:middle;}
   tbody tr:hover{background:#FAFCFD;}
   .wicell{font-weight:600;color:var(--ink);}
+  .wicell a{color:inherit;text-decoration:none;}
+  .wicell a:hover{color:var(--marine);text-decoration:underline;}
+  .wicell a .ext{font-size:11px;opacity:.55;text-decoration:none;}
   .tag{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:700;padding:3px 9px;border-radius:999px;white-space:nowrap;background:#EEF3F6;}
   .tag .pip{width:7px;height:7px;}
   .sev-badge{font-size:11px;font-weight:800;padding:3px 8px;border-radius:6px;color:#fff;}
@@ -213,7 +216,7 @@ const STATUS_COLOR = {"Complete":C.win,"Re-open":C.plan,"In progress":C.execute,
 const SEV_COLOR = {"S1 · Mission critical":'#7C0083',"S2 · Critical":'#C200CC',"S3 · Elevated":'#DA6BE0',"S4 · General":'#EFC2F2',"Unspecified":'#C4CDD3'};
 const SEVK = {"S1":0,"S2":1,"S3":2,"S4":3,"—":4};
 const SEV_BADGE = {"S1":["#7C0083","#fff"],"S2":["#C200CC","#fff"],"S3":["#DA6BE0","#fff"],"S4":["#EFC2F2","#7A2F80"],"—":["#C4CDD3","#3C454E"]};
-let D=null, barSort='open', punch={sevSet:new Set(),statusSet:new Set(),key:'sev',dir:1}, TIPS={};
+let D=null, barSort='open', punch={sevSet:new Set(),statusSet:new Set(),ownerSet:new Set(),key:'sev',dir:1}, TIPS={};
 (function(){
   const tip=document.getElementById('ctip');
   document.addEventListener('mousemove', e=>{
@@ -275,14 +278,17 @@ function openItemsRows(){
   let rows=D.openItems.slice();
   if(punch.sevSet.size) rows=rows.filter(r=>punch.sevSet.has(r.sev));
   if(punch.statusSet.size) rows=rows.filter(r=>punch.statusSet.has(r.status));
+  if(punch.ownerSet.size) rows=rows.filter(r=>punch.ownerSet.has(r.owner));
   const PRI={"High":0,"Medium":1,"Low":2,"—":3};
   const ST={"Re-open":0,"In progress":1,"Re-test":2,"Not started":3};
   const cmp={sev:(a,b)=>(SEVK[a.sev]-SEVK[b.sev])||ST[a.status]-ST[b.status],
     wi:(a,b)=>a.wi.localeCompare(b.wi),pri:(a,b)=>(PRI[a.pri]??9)-(PRI[b.pri]??9),
     status:(a,b)=>(ST[a.status]??9)-(ST[b.status]??9),owner:(a,b)=>a.owner.localeCompare(b.owner)}[punch.key];
   rows.sort((a,b)=>cmp(a,b)*punch.dir);
-  const body=rows.map(r=>{const bd=SEV_BADGE[r.sev]||SEV_BADGE['—'];return `<tr>
-    <td class="wicell">${esc(r.wi)}</td>
+  const body=rows.map(r=>{const bd=SEV_BADGE[r.sev]||SEV_BADGE['—'];
+    const wiHtml = r.link ? `<a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.wi)} <span class="ext">↗</span></a>` : esc(r.wi);
+    return `<tr>
+    <td class="wicell">${wiHtml}</td>
     <td><span class="sev-badge" style="background:${bd[0]};color:${bd[1]}">${r.sev}</span></td>
     <td>${esc(r.pri)}</td>
     <td><span class="tag"><span class="pip" style="background:${STATUS_COLOR[r.status]||'#9AA3AB'}"></span>${esc(r.status)}</span></td>
@@ -454,7 +460,7 @@ function render(){
 
   <h2 class="sec">Open Issue/bug items</h2>
   <div class="panel" style="padding-top:20px;">
-    <p class="cap" style="margin-top:0;">Open items not yet Complete (Enhancement/Wishlist and duplicates excluded). Select multiple severities and/or statuses to filter; sort any column.</p>
+    <p class="cap" style="margin-top:0;">Open items not yet Complete (Enhancement/Wishlist and duplicates excluded). Select multiple severities, statuses, and/or owners to filter; sort any column. Click a work item to open it directly in Smartsheet.</p>
     <div class="toolbar" id="oiToolbar"></div>
     <div style="overflow-x:auto;"><table>
       <thead id="critHead"><tr>
@@ -486,11 +492,16 @@ function render(){
 }
 function renderOpenToolbar(){
   const statuses=[...new Set(D.openItems.map(r=>r.status))];
+  const ownerCounts={}; D.openItems.forEach(r=>ownerCounts[r.owner]=(ownerCounts[r.owner]||0)+1);
+  const owners=[...new Set(D.openItems.map(r=>r.owner))].sort((a,b)=>ownerCounts[b]-ownerCounts[a]);
   const sevChips=['S1','S2','S3','S4'].map(v=>`<span class="chip ${punch.sevSet.has(v)?'active':''}" data-sev="${v}">${v}</span>`).join('');
   const statusChips=statuses.map(s=>`<span class="chip ${punch.statusSet.has(s)?'active':''}" data-status="${esc(s)}">${esc(s)}</span>`).join('');
+  const ownerChips=owners.map(o=>`<span class="chip ${punch.ownerSet.has(o)?'active':''}" data-owner="${esc(o)}">${esc(o)}</span>`).join('');
   $('#oiToolbar').innerHTML = `<span class="chip ${punch.sevSet.size===0?'active':''}" data-sevall="1">All</span>${sevChips}
     <span class="tdiv"></span>
     <span class="chip ${punch.statusSet.size===0?'active':''}" data-statusall="1">All statuses</span>${statusChips}
+    <span class="tdiv"></span>
+    <span class="chip ${punch.ownerSet.size===0?'active':''}" data-ownerall="1">All owners</span>${ownerChips}
     <span class="cnote" id="punchCount"></span>`;
   $('#oiToolbar').querySelectorAll('[data-sev]').forEach(c=>c.onclick=()=>{const v=c.dataset.sev;
     punch.sevSet.has(v)?punch.sevSet.delete(v):punch.sevSet.add(v); refreshOpenItems();});
@@ -498,6 +509,9 @@ function renderOpenToolbar(){
   $('#oiToolbar').querySelectorAll('[data-status]').forEach(c=>c.onclick=()=>{const v=c.dataset.status;
     punch.statusSet.has(v)?punch.statusSet.delete(v):punch.statusSet.add(v); refreshOpenItems();});
   $('#oiToolbar').querySelector('[data-statusall]').onclick=()=>{punch.statusSet.clear(); refreshOpenItems();};
+  $('#oiToolbar').querySelectorAll('[data-owner]').forEach(c=>c.onclick=()=>{const v=c.dataset.owner;
+    punch.ownerSet.has(v)?punch.ownerSet.delete(v):punch.ownerSet.add(v); refreshOpenItems();});
+  $('#oiToolbar').querySelector('[data-ownerall]').onclick=()=>{punch.ownerSet.clear(); refreshOpenItems();};
 }
 function refreshOpenItems(){ renderOpenToolbar(); openItemsRows(); }
 function wire(){

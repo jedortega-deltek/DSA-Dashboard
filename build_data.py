@@ -24,7 +24,7 @@ if not TOKEN:
 import smartsheet
 ss = smartsheet.Smartsheet(TOKEN)
 ss.errors_as_exceptions(True)
-sheet = ss.Sheets.get_sheet(SHEET_ID)
+sheet = ss.Sheets.get_sheet(SHEET_ID, include='rowPermalink')
 col = {c.id: c.title for c in sheet.columns}
 
 def rowdict(r):
@@ -35,6 +35,7 @@ def rowdict(r):
             continue
         v = cell.display_value if cell.display_value is not None else cell.value
         d[t] = v
+    d["_link"] = getattr(r, "permalink", None) or ""  # direct link to this row, opens its Details panel
     return d
 
 rows = [rowdict(r) for r in sheet.rows]
@@ -190,6 +191,7 @@ for r in actionable:
         "status": STATUS_DISPLAY.get(status_of(r), status_of(r)),
         "owner": owner_of(r),
         "type": item_type(r) or "Untagged",
+        "link": r.get("_link", ""),
     })
 open_items.sort(key=lambda x: (SEV_RANK.get(x["sev"], 9), STATUS_RANK.get(x["status"], 9), x["wi"]))
 
