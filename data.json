@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-23T21:14:11+00:00",
+  "generated": "2026-07-23T22:32:37+00:00",
   "kpis": {
     "total": 86,
-    "resolved": 62,
-    "resolvedPct": 72,
+    "resolved": 70,
+    "resolvedPct": 81,
     "inProgress": 2,
     "notStarted": 2,
-    "reTest": 15,
+    "reTest": 7,
     "reopened": 5,
     "openS1": 2,
-    "openS2": 11,
-    "totalOpen": 24,
+    "openS2": 7,
+    "totalOpen": 16,
     "unassignedOpen": 0,
-    "future": 15,
+    "future": 16,
     "setAside": 20
   },
   "status": [
     {
       "label": "Complete",
-      "count": 62
+      "count": 70
     },
     {
       "label": "Re-open",
@@ -30,7 +30,7 @@
     },
     {
       "label": "Re-test",
-      "count": 15
+      "count": 7
     },
     {
       "label": "Not started",
@@ -46,17 +46,17 @@
     {
       "label": "S2 · Critical",
       "total": 41,
-      "open": 11
+      "open": 7
     },
     {
       "label": "S3 · Elevated",
       "total": 29,
-      "open": 7
+      "open": 5
     },
     {
       "label": "S4 · General",
       "total": 5,
-      "open": 2
+      "open": 0
     },
     {
       "label": "Unspecified",
@@ -68,7 +68,7 @@
     {
       "label": "Escalation & Handoff",
       "total": 24,
-      "open": 6
+      "open": 2
     },
     {
       "label": "UX / Conversation Design",
@@ -83,17 +83,17 @@
     {
       "label": "Session Management",
       "total": 11,
-      "open": 3
+      "open": 1
     },
     {
       "label": "Grounding / Synthesis",
       "total": 6,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Guardrails / Output Quality",
       "total": 5,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Retrieval Quality",
@@ -115,17 +115,17 @@
     {
       "label": "n8n Workflow / Orchestration",
       "total": 28,
-      "open": 7
+      "open": 3
     },
     {
       "label": "Frontend / Chat Widget",
       "total": 25,
-      "open": 4
+      "open": 3
     },
     {
       "label": "Instruction File / Prompt",
       "total": 25,
-      "open": 10
+      "open": 7
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -152,27 +152,27 @@
     {
       "label": "Swastik Sharma",
       "total": 42,
-      "open": 7
+      "open": 4
     },
     {
       "label": "Daniel Nicholas",
       "total": 21,
-      "open": 4
+      "open": 3
     },
     {
       "label": "Ekta Mangal",
       "total": 8,
-      "open": 7
+      "open": 5
     },
     {
       "label": "Jerome Michael",
       "total": 6,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Scott Duckworth",
       "total": 5,
-      "open": 4
+      "open": 3
     },
     {
       "label": "Chris Smith",
@@ -187,7 +187,7 @@
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 15
+      "count": 16
     },
     {
       "label": "Task",
@@ -271,6 +271,11 @@
     },
     {
       "wi": "BACKLOG - Duplicate text fields when answering",
+      "status": "Working as designed",
+      "owner": "Unassigned"
+    },
+    {
+      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
       "status": "Working as designed",
       "owner": "Unassigned"
     }
@@ -365,42 +370,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
-      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1882061593247620"
-    },
-    {
-      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7051743289802628"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3904947388546948"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5456600960991108"
-    },
-    {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
       "pri": "High",
@@ -473,42 +442,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
     },
     {
-      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
-      "sev": "S3",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1483601287184260"
-    },
-    {
-      "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Scott Duckworth",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7022969156403076"
-    },
-    {
-      "wi": "TC-024 - Creates a case after one turn",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=137657984614276"
-    },
-    {
-      "wi": "TC-08-03 - Did not get a human",
-      "sev": "S4",
-      "pri": "Low",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8861221003132804"
-    },
-    {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
       "pri": "—",
@@ -528,14 +461,6 @@
     }
   ],
   "aging": [
-    {
-      "wi": "TC-08-03 - Did not get a human",
-      "sev": "S4",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 10
-    },
     {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
@@ -585,22 +510,6 @@
       "days": 7
     },
     {
-      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
-      "sev": "S2",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
-      "opened": "2026-07-17",
-      "days": 6
-    },
-    {
-      "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
-      "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "2026-07-17",
-      "days": 6
-    },
-    {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
       "owner": "Ekta Mangal",
@@ -617,42 +526,10 @@
       "days": 3
     },
     {
-      "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
-      "sev": "S3",
-      "owner": "Scott Duckworth",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
       "status": "Re-open",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
-      "sev": "S2",
-      "owner": "Jerome Michael",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -676,14 +553,6 @@
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-024 - Creates a case after one turn",
-      "sev": "S4",
-      "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "",
       "days": null
@@ -744,6 +613,12 @@
       "owner": "Daniel Nicholas",
       "resolved": "2026-07-13",
       "wi": "TC-02-02 - DSA Asking Questions, not Providing Answer",
+      "days": 0
+    },
+    {
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-13",
+      "wi": "TC-08-03 - Did not get a human",
       "days": 0
     },
     {
