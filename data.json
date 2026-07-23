@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-23T13:08:37+00:00",
+  "generated": "2026-07-23T14:23:04+00:00",
   "kpis": {
-    "total": 87,
-    "resolved": 51,
-    "resolvedPct": 59,
-    "inProgress": 9,
-    "notStarted": 7,
-    "reTest": 18,
+    "total": 86,
+    "resolved": 50,
+    "resolvedPct": 58,
+    "inProgress": 8,
+    "notStarted": 5,
+    "reTest": 21,
     "reopened": 2,
     "openS1": 1,
-    "openS2": 14,
+    "openS2": 16,
     "totalOpen": 36,
     "unassignedOpen": 2,
     "future": 14,
-    "setAside": 16
+    "setAside": 17
   },
   "status": [
     {
       "label": "Complete",
-      "count": 51
+      "count": 50
     },
     {
       "label": "Re-open",
@@ -26,15 +26,15 @@
     },
     {
       "label": "In progress",
-      "count": 9
+      "count": 8
     },
     {
       "label": "Re-test",
-      "count": 18
+      "count": 21
     },
     {
       "label": "Not started",
-      "count": 7
+      "count": 5
     }
   ],
   "severity": [
@@ -45,13 +45,13 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 41,
-      "open": 14
+      "total": 43,
+      "open": 16
     },
     {
       "label": "S3 · Elevated",
-      "total": 33,
-      "open": 17
+      "total": 30,
+      "open": 15
     },
     {
       "label": "S4 · General",
@@ -66,19 +66,19 @@
   ],
   "category": [
     {
-      "label": "UX / Conversation Design",
-      "total": 23,
-      "open": 10
+      "label": "Escalation & Handoff",
+      "total": 25,
+      "open": 8
     },
     {
-      "label": "Escalation & Handoff",
-      "total": 23,
-      "open": 6
+      "label": "UX / Conversation Design",
+      "total": 21,
+      "open": 9
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 13,
-      "open": 4
+      "total": 12,
+      "open": 3
     },
     {
       "label": "Session Management",
@@ -113,19 +113,19 @@
   ],
   "rootCause": [
     {
-      "label": "Instruction File / Prompt",
-      "total": 27,
-      "open": 14
-    },
-    {
       "label": "n8n Workflow / Orchestration",
-      "total": 26,
-      "open": 9
+      "total": 27,
+      "open": 10
     },
     {
       "label": "Frontend / Chat Widget",
       "total": 25,
       "open": 8
+    },
+    {
+      "label": "Instruction File / Prompt",
+      "total": 25,
+      "open": 13
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -156,8 +156,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 25,
-      "open": 12
+      "total": 23,
+      "open": 11
     },
     {
       "label": "Jerome Michael",
@@ -171,8 +171,8 @@
     },
     {
       "label": "Scott Duckworth",
-      "total": 4,
-      "open": 3
+      "total": 5,
+      "open": 4
     },
     {
       "label": "Chris Smith",
@@ -302,7 +302,7 @@
       "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
       "sev": "S1",
       "pri": "High",
-      "status": "Not started",
+      "status": "Re-test",
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5929209105350532"
@@ -335,15 +335,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
-      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1882061593247620"
-    },
-    {
       "wi": "No Tracking no. - No available cases, update message",
       "sev": "S2",
       "pri": "High",
@@ -351,6 +342,15 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3904947388546948"
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5456600960991108"
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
@@ -371,6 +371,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
     },
     {
+      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1882061593247620"
+    },
+    {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
       "sev": "S2",
       "pri": "High",
@@ -387,6 +396,24 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4867745052491652"
+    },
+    {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4342958790147972"
+    },
+    {
+      "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3590703958851460"
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -425,15 +452,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
     },
     {
-      "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3590703958851460"
-    },
-    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "pri": "Low",
@@ -441,15 +459,6 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
-    },
-    {
-      "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "In progress",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
     },
     {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
@@ -465,7 +474,7 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
-      "owner": "Ekta Mangal",
+      "owner": "Scott Duckworth",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5273236393033604"
     },
@@ -477,6 +486,15 @@
       "owner": "Jerome Michael",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3082319482453892"
+    },
+    {
+      "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
     },
     {
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
@@ -524,15 +542,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4771169342717828"
     },
     {
-      "wi": "SME-007 — Excessive response times (seconds to minutes)",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4774109860200324"
-    },
-    {
       "wi": "TC-01-01: Time for Response More than 10 seconds",
       "sev": "S3",
       "pri": "Medium",
@@ -540,15 +549,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8852556505022340"
-    },
-    {
-      "wi": "TC-02-04 - Best-effort fallback after two diagnostic turns",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7031633654513540"
     },
     {
       "wi": "TC-04-03 - Only provides one option with steps",
@@ -598,7 +598,7 @@
     {
       "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
       "sev": "—",
-      "pri": "—",
+      "pri": "Medium",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
@@ -641,26 +641,10 @@
       "days": 10
     },
     {
-      "wi": "TC-02-04 - Best-effort fallback after two diagnostic turns",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 10
-    },
-    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "owner": "Swastik Sharma",
       "status": "Re-open",
-      "opened": "2026-07-13",
-      "days": 10
-    },
-    {
-      "wi": "SME-007 — Excessive response times (seconds to minutes)",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 10
     },
@@ -700,7 +684,7 @@
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "owner": "Ekta Mangal",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-16",
       "days": 7
     },
@@ -748,7 +732,7 @@
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
       "owner": "Ekta Mangal",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 6
     },
@@ -772,7 +756,15 @@
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
       "sev": "S2",
       "owner": "Ekta Mangal",
-      "status": "Not started",
+      "status": "Re-test",
+      "opened": "2026-07-20",
+      "days": 3
+    },
+    {
+      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "sev": "S2",
+      "owner": "Ekta Mangal",
+      "status": "Re-test",
       "opened": "2026-07-20",
       "days": 3
     },
@@ -841,9 +833,17 @@
       "days": null
     },
     {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
-      "owner": "Ekta Mangal",
+      "owner": "Scott Duckworth",
       "status": "In progress",
       "opened": "",
       "days": null
@@ -852,7 +852,7 @@
       "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
       "sev": "S1",
       "owner": "Ekta Mangal",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
