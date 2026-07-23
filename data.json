@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-23T19:01:52+00:00",
+  "generated": "2026-07-23T19:37:33+00:00",
   "kpis": {
     "total": 86,
-    "resolved": 60,
-    "resolvedPct": 70,
+    "resolved": 61,
+    "resolvedPct": 71,
     "inProgress": 1,
-    "notStarted": 3,
-    "reTest": 18,
-    "reopened": 4,
-    "openS1": 3,
+    "notStarted": 2,
+    "reTest": 19,
+    "reopened": 3,
+    "openS1": 2,
     "openS2": 12,
-    "totalOpen": 26,
+    "totalOpen": 25,
     "unassignedOpen": 0,
     "future": 15,
     "setAside": 19
@@ -18,11 +18,11 @@
   "status": [
     {
       "label": "Complete",
-      "count": 60
+      "count": 61
     },
     {
       "label": "Re-open",
-      "count": 4
+      "count": 3
     },
     {
       "label": "In progress",
@@ -30,18 +30,18 @@
     },
     {
       "label": "Re-test",
-      "count": 18
+      "count": 19
     },
     {
       "label": "Not started",
-      "count": 3
+      "count": 2
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 8,
-      "open": 3
+      "open": 2
     },
     {
       "label": "S2 · Critical",
@@ -83,7 +83,7 @@
     {
       "label": "Session Management",
       "total": 11,
-      "open": 5
+      "open": 4
     },
     {
       "label": "Grounding / Synthesis",
@@ -115,7 +115,7 @@
     {
       "label": "n8n Workflow / Orchestration",
       "total": 29,
-      "open": 9
+      "open": 8
     },
     {
       "label": "Frontend / Chat Widget",
@@ -151,8 +151,8 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 41,
-      "open": 7
+      "total": 40,
+      "open": 6
     },
     {
       "label": "Daniel Nicholas",
@@ -161,8 +161,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 8,
-      "open": 7
+      "total": 9,
+      "open": 8
     },
     {
       "label": "Scott Duckworth",
@@ -177,7 +177,7 @@
     {
       "label": "Chris Smith",
       "total": 4,
-      "open": 1
+      "open": 0
     }
   ],
   "itemTypes": [
@@ -329,15 +329,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=896126970888068"
     },
     {
-      "wi": "DN2 - Changes to n8n environment broke API connection for telemetry",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Chris Smith",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7198370049687428"
-    },
-    {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
@@ -441,7 +432,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
     },
@@ -462,15 +453,6 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
-    },
-    {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -498,6 +480,15 @@
       "owner": "Scott Duckworth",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7022969156403076"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
@@ -629,7 +620,7 @@
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
-      "owner": "Swastik Sharma",
+      "owner": "Ekta Mangal",
       "status": "Not started",
       "opened": "2026-07-20",
       "days": 3
@@ -662,7 +653,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -743,14 +734,6 @@
       "sev": "S1",
       "owner": "Ekta Mangal",
       "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "DN2 - Changes to n8n environment broke API connection for telemetry",
-      "sev": "S1",
-      "owner": "Chris Smith",
-      "status": "Not started",
       "opened": "",
       "days": null
     }
