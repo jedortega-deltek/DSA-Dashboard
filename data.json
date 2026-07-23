@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-23T18:39:00+00:00",
+  "generated": "2026-07-23T19:01:52+00:00",
   "kpis": {
     "total": 86,
     "resolved": 60,
     "resolvedPct": 70,
-    "inProgress": 4,
+    "inProgress": 1,
     "notStarted": 3,
-    "reTest": 15,
+    "reTest": 18,
     "reopened": 4,
     "openS1": 3,
     "openS2": 12,
@@ -26,11 +26,11 @@
     },
     {
       "label": "In progress",
-      "count": 4
+      "count": 1
     },
     {
       "label": "Re-test",
-      "count": 15
+      "count": 18
     },
     {
       "label": "Not started",
@@ -347,24 +347,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
     },
     {
-      "wi": "No Tracking no. - No available cases, update message",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3904947388546948"
-    },
-    {
-      "wi": "No Tracking no. - No available cases, update message for Live Chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5456600960991108"
-    },
-    {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "pri": "High",
@@ -417,6 +399,24 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4342958790147972"
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3904947388546948"
+    },
+    {
+      "wi": "No Tracking no. - No available cases, update message for Live Chat",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5456600960991108"
     },
     {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
@@ -473,15 +473,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "In progress",
-      "owner": "Scott Duckworth",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -516,6 +507,15 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Scott Duckworth",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
     },
     {
       "wi": "TC-024 - Creates a case after one turn",
@@ -678,7 +678,7 @@
       "wi": "No Tracking no. - No available cases, update message",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -686,7 +686,7 @@
       "wi": "No Tracking no. - No available cases, update message for Live Chat",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -702,7 +702,7 @@
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "owner": "Scott Duckworth",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
