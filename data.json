@@ -1,57 +1,57 @@
 {
-  "generated": "2026-07-23T15:33:46+00:00",
+  "generated": "2026-07-23T17:39:29+00:00",
   "kpis": {
     "total": 87,
-    "resolved": 50,
-    "resolvedPct": 57,
-    "inProgress": 10,
-    "notStarted": 5,
-    "reTest": 21,
-    "reopened": 1,
-    "openS1": 2,
-    "openS2": 15,
-    "totalOpen": 37,
-    "unassignedOpen": 1,
+    "resolved": 60,
+    "resolvedPct": 69,
+    "inProgress": 7,
+    "notStarted": 6,
+    "reTest": 10,
+    "reopened": 4,
+    "openS1": 3,
+    "openS2": 12,
+    "totalOpen": 27,
+    "unassignedOpen": 0,
     "future": 14,
-    "setAside": 18
+    "setAside": 19
   },
   "status": [
     {
       "label": "Complete",
-      "count": 50
+      "count": 60
     },
     {
       "label": "Re-open",
-      "count": 1
+      "count": 4
     },
     {
       "label": "In progress",
-      "count": 10
+      "count": 7
     },
     {
       "label": "Re-test",
-      "count": 21
+      "count": 10
     },
     {
       "label": "Not started",
-      "count": 5
+      "count": 6
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 7,
-      "open": 2
+      "total": 8,
+      "open": 3
     },
     {
       "label": "S2 · Critical",
       "total": 42,
-      "open": 15
+      "open": 12
     },
     {
       "label": "S3 · Elevated",
-      "total": 31,
-      "open": 16
+      "total": 30,
+      "open": 9
     },
     {
       "label": "S4 · General",
@@ -61,34 +61,34 @@
     {
       "label": "Unspecified",
       "total": 2,
-      "open": 2
+      "open": 1
     }
   ],
   "category": [
     {
       "label": "Escalation & Handoff",
       "total": 24,
-      "open": 7
+      "open": 6
     },
     {
       "label": "UX / Conversation Design",
-      "total": 22,
-      "open": 10
+      "total": 21,
+      "open": 6
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 12,
-      "open": 3
+      "total": 13,
+      "open": 2
     },
     {
       "label": "Session Management",
-      "total": 10,
-      "open": 6
+      "total": 11,
+      "open": 5
     },
     {
       "label": "Grounding / Synthesis",
       "total": 6,
-      "open": 4
+      "open": 3
     },
     {
       "label": "Guardrails / Output Quality",
@@ -98,7 +98,7 @@
     {
       "label": "Retrieval Quality",
       "total": 4,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Content / Instruction Defects",
@@ -107,30 +107,30 @@
     },
     {
       "label": "Unspecified",
-      "total": 2,
-      "open": 2
+      "total": 1,
+      "open": 1
     }
   ],
   "rootCause": [
     {
-      "label": "Frontend / Chat Widget",
-      "total": 26,
-      "open": 9
-    },
-    {
       "label": "n8n Workflow / Orchestration",
-      "total": 26,
-      "open": 9
+      "total": 28,
+      "open": 8
     },
     {
       "label": "Instruction File / Prompt",
       "total": 26,
-      "open": 14
+      "open": 11
+    },
+    {
+      "label": "Frontend / Chat Widget",
+      "total": 25,
+      "open": 5
     },
     {
       "label": "Knowledge Source / Retrieval",
       "total": 4,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -138,31 +138,26 @@
       "open": 0
     },
     {
-      "label": "Unspecified",
-      "total": 2,
-      "open": 2
-    },
-    {
       "label": "Session / State Management",
       "total": 1,
       "open": 0
+    },
+    {
+      "label": "Unspecified",
+      "total": 1,
+      "open": 1
     }
   ],
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 40,
-      "open": 10
+      "total": 41,
+      "open": 7
     },
     {
       "label": "Daniel Nicholas",
-      "total": 24,
-      "open": 12
-    },
-    {
-      "label": "Jerome Michael",
-      "total": 7,
-      "open": 4
+      "total": 23,
+      "open": 6
     },
     {
       "label": "Ekta Mangal",
@@ -171,24 +166,24 @@
     },
     {
       "label": "Scott Duckworth",
-      "total": 5,
-      "open": 4
+      "total": 6,
+      "open": 5
+    },
+    {
+      "label": "Jerome Michael",
+      "total": 6,
+      "open": 2
     },
     {
       "label": "Chris Smith",
-      "total": 3,
-      "open": 0
-    },
-    {
-      "label": "Unassigned",
-      "total": 1,
+      "total": 4,
       "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 101
+      "count": 102
     },
     {
       "label": "Enhancement/Wishlist",
@@ -277,6 +272,14 @@
   ],
   "recent": [
     {
+      "wi": "TC-04-03 - Only provides one option with steps",
+      "resolved": "2026-07-20"
+    },
+    {
+      "wi": "Odd Response When Discussing KBs",
+      "resolved": "2026-07-20"
+    },
+    {
       "wi": "NO TRACKING NO. - Workflow execution failed during chat",
       "resolved": "2026-07-20"
     },
@@ -290,6 +293,10 @@
     },
     {
       "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
+      "resolved": "2026-07-17"
+    },
+    {
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
       "resolved": "2026-07-17"
     },
     {
@@ -317,22 +324,22 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5929209105350532"
     },
     {
-      "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
-      "sev": "S2",
+      "wi": "DN2 - Changes to n8n environment broke API connection for telemetry",
+      "sev": "S1",
       "pri": "High",
-      "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "owner": "Chris Smith",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1316380988538756"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7198370049687428"
     },
     {
-      "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
+      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
-      "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "status": "Re-open",
+      "owner": "Scott Duckworth",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
     },
     {
       "wi": "No Tracking no. - No available cases, update message",
@@ -348,7 +355,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5456600960991108"
     },
@@ -362,13 +369,22 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
     },
     {
-      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
+      "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Scott Duckworth",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1316380988538756"
+    },
+    {
+      "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
@@ -378,24 +394,6 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1882061593247620"
-    },
-    {
-      "wi": "No Tracking No. - Case created when I did not accept the chat",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7054612116144004"
-    },
-    {
-      "wi": "No Tracking No. - Duplicate Cases created",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4867745052491652"
     },
     {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
@@ -425,15 +423,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
     },
     {
-      "wi": "TC-08-01 - Did not create a chat after 3 turns",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4779833840828292"
-    },
-    {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
       "sev": "S2",
       "pri": "High",
@@ -452,6 +441,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
     },
     {
+      "wi": "DELA-026 — Case creation button still active after inactivity timeout",
+      "sev": "S3",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5006769469652868"
+    },
+    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "pri": "Low",
@@ -459,6 +457,15 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
@@ -479,15 +486,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5273236393033604"
     },
     {
-      "wi": "TC-09-02 - Summary missing information and formatting issues",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "In progress",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3082319482453892"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -497,15 +495,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
     },
     {
-      "wi": "DELA-026 — Case creation button still active after inactivity timeout",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5006769469652868"
-    },
-    {
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
       "sev": "S3",
       "pri": "Low",
@@ -513,69 +502,6 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1483601287184260"
-    },
-    {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
-    },
-    {
-      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1964547426877316"
-    },
-    {
-      "wi": "Odd Response When Discussing KBs",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4771169342717828"
-    },
-    {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8852556505022340"
-    },
-    {
-      "wi": "TC-04-03 - Only provides one option with steps",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4348956877651844"
-    },
-    {
-      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8399233433862020"
-    },
-    {
-      "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5211753840770948"
     },
     {
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
@@ -614,20 +540,11 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8861221003132804"
     },
     {
-      "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
-      "sev": "—",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7594046961090436"
-    },
-    {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Scott Duckworth",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     }
@@ -636,14 +553,6 @@
     {
       "wi": "TC-08-03 - Did not get a human",
       "sev": "S4",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 10
-    },
-    {
-      "wi": "TC-08-01 - Did not create a chat after 3 turns",
-      "sev": "S2",
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
@@ -674,18 +583,10 @@
       "days": 9
     },
     {
-      "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
-      "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "2026-07-14",
-      "days": 9
-    },
-    {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "owner": "Scott Duckworth",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "2026-07-14",
       "days": 9
     },
@@ -701,39 +602,15 @@
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-16",
       "days": 7
-    },
-    {
-      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
-      "sev": "S3",
-      "owner": "Jerome Michael",
-      "status": "Re-test",
-      "opened": "2026-07-17",
-      "days": 6
     },
     {
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "2026-07-17",
-      "days": 6
-    },
-    {
-      "wi": "No Tracking No. - Case created when I did not accept the chat",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "2026-07-17",
-      "days": 6
-    },
-    {
-      "wi": "No Tracking No. - Duplicate Cases created",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "2026-07-17",
       "days": 6
     },
@@ -770,30 +647,6 @@
       "days": 3
     },
     {
-      "wi": "TC-04-03 - Only provides one option with steps",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "Odd Response When Discussing KBs",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
       "sev": "S3",
       "owner": "Scott Duckworth",
@@ -805,15 +658,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-09-02 - Summary missing information and formatting issues",
-      "sev": "S3",
-      "owner": "Jerome Michael",
-      "status": "In progress",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
@@ -836,7 +681,7 @@
     {
       "wi": "No Tracking no. - No available cases, update message for Live Chat",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "status": "In progress",
       "opened": "",
       "days": null
@@ -874,26 +719,10 @@
       "days": null
     },
     {
-      "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
-      "sev": "—",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
-      "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "owner": "Daniel Nicholas",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -916,7 +745,7 @@
     {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
-      "owner": "Unassigned",
+      "owner": "Scott Duckworth",
       "status": "Not started",
       "opened": "",
       "days": null
@@ -926,6 +755,14 @@
       "sev": "S1",
       "owner": "Ekta Mangal",
       "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "DN2 - Changes to n8n environment broke API connection for telemetry",
+      "sev": "S1",
+      "owner": "Chris Smith",
+      "status": "Not started",
       "opened": "",
       "days": null
     }
@@ -1056,6 +893,24 @@
       "resolved": "2026-07-17",
       "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
       "days": 4
+    },
+    {
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-17",
+      "wi": "TC-01-01: Time for Response More than 10 seconds",
+      "days": null
+    },
+    {
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-20",
+      "wi": "TC-04-03 - Only provides one option with steps",
+      "days": null
+    },
+    {
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-20",
+      "wi": "Odd Response When Discussing KBs",
+      "days": null
     },
     {
       "owner": "Chris Smith",
