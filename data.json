@@ -1,32 +1,32 @@
 {
-  "generated": "2026-07-23T09:29:37+00:00",
+  "generated": "2026-07-23T11:28:27+00:00",
   "kpis": {
-    "total": 89,
-    "resolved": 50,
-    "resolvedPct": 56,
-    "inProgress": 8,
-    "notStarted": 10,
+    "total": 87,
+    "resolved": 51,
+    "resolvedPct": 59,
+    "inProgress": 9,
+    "notStarted": 7,
     "reTest": 18,
-    "reopened": 3,
+    "reopened": 2,
     "openS1": 1,
     "openS2": 14,
-    "totalOpen": 39,
+    "totalOpen": 36,
     "unassignedOpen": 2,
-    "future": 12,
+    "future": 14,
     "setAside": 16
   },
   "status": [
     {
       "label": "Complete",
-      "count": 50
+      "count": 51
     },
     {
       "label": "Re-open",
-      "count": 3
+      "count": 2
     },
     {
       "label": "In progress",
-      "count": 8
+      "count": 9
     },
     {
       "label": "Re-test",
@@ -34,7 +34,7 @@
     },
     {
       "label": "Not started",
-      "count": 10
+      "count": 7
     }
   ],
   "severity": [
@@ -50,8 +50,8 @@
     },
     {
       "label": "S3 · Elevated",
-      "total": 35,
-      "open": 20
+      "total": 33,
+      "open": 17
     },
     {
       "label": "S4 · General",
@@ -68,7 +68,7 @@
     {
       "label": "UX / Conversation Design",
       "total": 23,
-      "open": 11
+      "open": 10
     },
     {
       "label": "Escalation & Handoff",
@@ -82,8 +82,8 @@
     },
     {
       "label": "Session Management",
-      "total": 11,
-      "open": 7
+      "total": 10,
+      "open": 6
     },
     {
       "label": "Grounding / Synthesis",
@@ -102,8 +102,8 @@
     },
     {
       "label": "Content / Instruction Defects",
-      "total": 3,
-      "open": 1
+      "total": 2,
+      "open": 0
     },
     {
       "label": "Unspecified",
@@ -114,8 +114,8 @@
   "rootCause": [
     {
       "label": "Instruction File / Prompt",
-      "total": 28,
-      "open": 16
+      "total": 27,
+      "open": 14
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -138,26 +138,26 @@
       "open": 0
     },
     {
-      "label": "Session / State Management",
-      "total": 2,
-      "open": 1
-    },
-    {
       "label": "Unspecified",
       "total": 2,
       "open": 2
+    },
+    {
+      "label": "Session / State Management",
+      "total": 1,
+      "open": 0
     }
   ],
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 39,
-      "open": 9
+      "total": 41,
+      "open": 11
     },
     {
       "label": "Daniel Nicholas",
-      "total": 30,
-      "open": 18
+      "total": 25,
+      "open": 12
     },
     {
       "label": "Jerome Michael",
@@ -166,18 +166,18 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 6,
-      "open": 5
+      "total": 5,
+      "open": 4
+    },
+    {
+      "label": "Scott Duckworth",
+      "total": 4,
+      "open": 3
     },
     {
       "label": "Chris Smith",
       "total": 3,
       "open": 0
-    },
-    {
-      "label": "Scott Duckworth",
-      "total": 2,
-      "open": 1
     },
     {
       "label": "Unassigned",
@@ -188,11 +188,11 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 101
+      "count": 99
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 12
+      "count": 14
     },
     {
       "label": "Task",
@@ -248,6 +248,16 @@
       "wi": "Ability to Print or Download Chat with DSA",
       "status": "Working as designed",
       "owner": "Swastik Sharma"
+    },
+    {
+      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas"
+    },
+    {
+      "wi": "TC-14-04 - Sessions tagged DSA vs control",
+      "status": "Not started",
+      "owner": "Daniel Nicholas"
     },
     {
       "wi": "No Tracking No. - No option to skip submitting feedback",
@@ -321,11 +331,19 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "No Tracking no. - No available cases, update message",
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -333,7 +351,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "In progress",
-      "owner": "Ekta Mangal",
+      "owner": "Scott Duckworth",
       "type": "Issue/Bugs"
     },
     {
@@ -377,14 +395,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
       "sev": "S2",
       "pri": "High",
@@ -417,14 +427,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
-      "sev": "S3",
-      "pri": "Low",
-      "status": "Re-open",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -437,7 +439,7 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "owner": "Scott Duckworth",
       "type": "Issue/Bugs"
     },
     {
@@ -445,7 +447,7 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs"
     },
     {
@@ -505,14 +507,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "TC-006 - Valid Ajera question ignored",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-01-01: Time for Response More than 10 seconds",
       "sev": "S3",
       "pri": "Medium",
@@ -537,6 +531,14 @@
       "type": "Issue/Bugs"
     },
     {
+      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
+      "sev": "S3",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs"
+    },
+    {
       "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
       "sev": "S3",
       "pri": "High",
@@ -550,22 +552,6 @@
       "pri": "Medium",
       "status": "Not started",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
-      "wi": "TC-14-04 - Sessions tagged DSA vs control",
-      "sev": "S3",
-      "pri": "Low",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs"
     },
     {
@@ -653,7 +639,7 @@
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
-      "owner": "Ekta Mangal",
+      "owner": "Scott Duckworth",
       "status": "In progress",
       "opened": "2026-07-14",
       "days": 9
@@ -694,7 +680,7 @@
       "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "2026-07-17",
       "days": 6
     },
@@ -726,7 +712,7 @@
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
       "sev": "S2",
       "owner": "Ekta Mangal",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "2026-07-17",
       "days": 6
     },
@@ -781,7 +767,7 @@
     {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
       "sev": "S3",
-      "owner": "Daniel Nicholas",
+      "owner": "Scott Duckworth",
       "status": "In progress",
       "opened": "",
       "days": null
@@ -811,33 +797,9 @@
       "days": null
     },
     {
-      "wi": "No Tracking No.: Inconsistency of \"analyst\"",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-open",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-14-04 - Sessions tagged DSA vs control",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-006 - Valid Ajera question ignored",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking no. - No available cases, update message",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "status": "In progress",
       "opened": "",
       "days": null
@@ -845,7 +807,7 @@
     {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
-      "owner": "Daniel Nicholas",
+      "owner": "Swastik Sharma",
       "status": "In progress",
       "opened": "",
       "days": null
