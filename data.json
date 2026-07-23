@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T11:28:27+00:00",
+  "generated": "2026-07-23T12:47:35+00:00",
   "kpis": {
     "total": 87,
     "resolved": 51,
@@ -151,8 +151,8 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 41,
-      "open": 11
+      "total": 40,
+      "open": 10
     },
     {
       "label": "Daniel Nicholas",
@@ -166,8 +166,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 5,
-      "open": 4
+      "total": 6,
+      "open": 5
     },
     {
       "label": "Scott Duckworth",
@@ -304,7 +304,8 @@
       "pri": "High",
       "status": "Not started",
       "owner": "Ekta Mangal",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5929209105350532"
     },
     {
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
@@ -312,7 +313,8 @@
       "pri": "High",
       "status": "Re-open",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7051743289802628"
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -320,7 +322,8 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1316380988538756"
     },
     {
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
@@ -328,7 +331,8 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
       "wi": "No Tracking No. - Asked DSA to Create a Case and Prompted with Live Chat.",
@@ -336,7 +340,8 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Ekta Mangal",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1882061593247620"
     },
     {
       "wi": "No Tracking no. - No available cases, update message",
@@ -344,7 +349,8 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3904947388546948"
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
@@ -352,7 +358,8 @@
       "pri": "High",
       "status": "In progress",
       "owner": "Scott Duckworth",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
     },
     {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
@@ -360,7 +367,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Scott Duckworth",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
     },
     {
       "wi": "No Tracking No. - Case created when I did not accept the chat",
@@ -368,7 +376,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7054612116144004"
     },
     {
       "wi": "No Tracking No. - Duplicate Cases created",
@@ -376,7 +385,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4867745052491652"
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -384,7 +394,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
     },
     {
       "wi": "TC-08-01 - Did not create a chat after 3 turns",
@@ -392,7 +403,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4779833840828292"
     },
     {
       "wi": "No Tracking no - Live chat offered for a question that has a public KBA",
@@ -400,7 +412,8 @@
       "pri": "High",
       "status": "Not started",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4514023823769476"
     },
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
@@ -408,7 +421,8 @@
       "pri": "High",
       "status": "Not started",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
     },
     {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
@@ -416,7 +430,8 @@
       "pri": "High",
       "status": "Not started",
       "owner": "Ekta Mangal",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3590703958851460"
     },
     {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
@@ -424,7 +439,8 @@
       "pri": "Low",
       "status": "Re-open",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -432,7 +448,8 @@
       "pri": "Medium",
       "status": "In progress",
       "owner": "Ekta Mangal",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
     },
     {
       "wi": "No Tracking No. - Questions on Support Site or Customer Searching for a KB on the DSC",
@@ -440,15 +457,17 @@
       "pri": "Medium",
       "status": "In progress",
       "owner": "Scott Duckworth",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7022969156403076"
     },
     {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5273236393033604"
     },
     {
       "wi": "TC-09-02 - Summary missing information and formatting issues",
@@ -456,7 +475,8 @@
       "pri": "Medium",
       "status": "In progress",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3082319482453892"
     },
     {
       "wi": "DELA-026 — Case creation button still active after inactivity timeout",
@@ -464,7 +484,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5006769469652868"
     },
     {
       "wi": "NO TRACKING NO: DSA moved to next step after user answered yes to still being there",
@@ -472,7 +493,8 @@
       "pri": "Low",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1483601287184260"
     },
     {
       "wi": "No Tracking Number - Markdown formatting in response",
@@ -480,7 +502,8 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
       "wi": "No Tracking no - Remove \"Connecting you with a live agent...\"",
@@ -488,7 +511,8 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1964547426877316"
     },
     {
       "wi": "Odd Response When Discussing KBs",
@@ -496,7 +520,8 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4771169342717828"
     },
     {
       "wi": "SME-007 — Excessive response times (seconds to minutes)",
@@ -504,7 +529,8 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4774109860200324"
     },
     {
       "wi": "TC-01-01: Time for Response More than 10 seconds",
@@ -512,7 +538,8 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8852556505022340"
     },
     {
       "wi": "TC-02-04 - Best-effort fallback after two diagnostic turns",
@@ -520,7 +547,8 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7031633654513540"
     },
     {
       "wi": "TC-04-03 - Only provides one option with steps",
@@ -528,7 +556,8 @@
       "pri": "Medium",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4348956877651844"
     },
     {
       "wi": "TC-09-01 - Chat Transcripts showing Code for Support Assistant Responses",
@@ -536,7 +565,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8399233433862020"
     },
     {
       "wi": "TC-18-01/TC-18-02 — Loading messages constantly changing and random",
@@ -544,7 +574,8 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5211753840770948"
     },
     {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
@@ -552,7 +583,8 @@
       "pri": "Medium",
       "status": "Not started",
       "owner": "Swastik Sharma",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
     },
     {
       "wi": "TC-08-03 - Did not get a human",
@@ -560,7 +592,8 @@
       "pri": "Low",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8861221003132804"
     },
     {
       "wi": "TC-039 - DSA cannot locate KB but it does exist and is public",
@@ -568,7 +601,8 @@
       "pri": "—",
       "status": "Re-test",
       "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7594046961090436"
     },
     {
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
@@ -576,7 +610,8 @@
       "pri": "—",
       "status": "Not started",
       "owner": "Unassigned",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
     },
     {
       "wi": "TC-024 - Creates a case after one turn",
@@ -584,7 +619,8 @@
       "pri": "—",
       "status": "Not started",
       "owner": "Unassigned",
-      "type": "Issue/Bugs"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=137657984614276"
     }
   ],
   "aging": [
@@ -807,7 +843,7 @@
     {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
-      "owner": "Swastik Sharma",
+      "owner": "Ekta Mangal",
       "status": "In progress",
       "opened": "",
       "days": null
