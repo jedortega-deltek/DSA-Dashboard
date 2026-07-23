@@ -1,12 +1,12 @@
 {
-  "generated": "2026-07-23T06:37:21+00:00",
+  "generated": "2026-07-23T09:29:37+00:00",
   "kpis": {
     "total": 89,
     "resolved": 50,
     "resolvedPct": 56,
-    "inProgress": 9,
+    "inProgress": 8,
     "notStarted": 10,
-    "reTest": 17,
+    "reTest": 18,
     "reopened": 3,
     "openS1": 1,
     "openS2": 14,
@@ -26,11 +26,11 @@
     },
     {
       "label": "In progress",
-      "count": 9
+      "count": 8
     },
     {
       "label": "Re-test",
-      "count": 17
+      "count": 18
     },
     {
       "label": "Not started",
@@ -441,14 +441,6 @@
       "type": "Issue/Bugs"
     },
     {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "In progress",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs"
-    },
-    {
       "wi": "TC-017 - New Issue Pivot Mid-Conversation",
       "sev": "S3",
       "pri": "Medium",
@@ -478,6 +470,14 @@
       "pri": "Low",
       "status": "Re-test",
       "owner": "Swastik Sharma",
+      "type": "Issue/Bugs"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs"
     },
     {
@@ -790,7 +790,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
