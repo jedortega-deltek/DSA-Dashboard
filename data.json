@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-23T14:23:04+00:00",
+  "generated": "2026-07-23T15:29:44+00:00",
   "kpis": {
     "total": 86,
     "resolved": 50,
     "resolvedPct": 58,
-    "inProgress": 8,
-    "notStarted": 5,
+    "inProgress": 10,
+    "notStarted": 4,
     "reTest": 21,
-    "reopened": 2,
-    "openS1": 1,
-    "openS2": 16,
+    "reopened": 1,
+    "openS1": 2,
+    "openS2": 15,
     "totalOpen": 36,
-    "unassignedOpen": 2,
+    "unassignedOpen": 0,
     "future": 14,
-    "setAside": 17
+    "setAside": 18
   },
   "status": [
     {
@@ -22,11 +22,11 @@
     },
     {
       "label": "Re-open",
-      "count": 2
+      "count": 1
     },
     {
       "label": "In progress",
-      "count": 8
+      "count": 10
     },
     {
       "label": "Re-test",
@@ -34,46 +34,46 @@
     },
     {
       "label": "Not started",
-      "count": 5
+      "count": 4
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 6,
-      "open": 1
+      "total": 7,
+      "open": 2
     },
     {
       "label": "S2 · Critical",
-      "total": 43,
-      "open": 16
-    },
-    {
-      "label": "S3 · Elevated",
-      "total": 30,
+      "total": 42,
       "open": 15
     },
     {
+      "label": "S3 · Elevated",
+      "total": 31,
+      "open": 16
+    },
+    {
       "label": "S4 · General",
-      "total": 4,
-      "open": 1
+      "total": 5,
+      "open": 2
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 3
+      "total": 1,
+      "open": 1
     }
   ],
   "category": [
     {
       "label": "Escalation & Handoff",
-      "total": 25,
-      "open": 8
+      "total": 24,
+      "open": 7
     },
     {
       "label": "UX / Conversation Design",
-      "total": 21,
-      "open": 9
+      "total": 22,
+      "open": 10
     },
     {
       "label": "Platform / Infrastructure",
@@ -92,8 +92,8 @@
     },
     {
       "label": "Guardrails / Output Quality",
-      "total": 4,
-      "open": 1
+      "total": 5,
+      "open": 2
     },
     {
       "label": "Retrieval Quality",
@@ -107,25 +107,25 @@
     },
     {
       "label": "Unspecified",
-      "total": 2,
-      "open": 2
+      "total": 1,
+      "open": 1
     }
   ],
   "rootCause": [
     {
-      "label": "n8n Workflow / Orchestration",
-      "total": 27,
-      "open": 10
+      "label": "Frontend / Chat Widget",
+      "total": 26,
+      "open": 9
     },
     {
-      "label": "Frontend / Chat Widget",
-      "total": 25,
-      "open": 8
+      "label": "n8n Workflow / Orchestration",
+      "total": 26,
+      "open": 9
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 25,
-      "open": 13
+      "total": 26,
+      "open": 14
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -138,14 +138,14 @@
       "open": 0
     },
     {
-      "label": "Unspecified",
-      "total": 2,
-      "open": 2
-    },
-    {
       "label": "Session / State Management",
       "total": 1,
       "open": 0
+    },
+    {
+      "label": "Unspecified",
+      "total": 1,
+      "open": 1
     }
   ],
   "owner": [
@@ -156,8 +156,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 23,
-      "open": 11
+      "total": 24,
+      "open": 12
     },
     {
       "label": "Jerome Michael",
@@ -166,8 +166,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 6,
-      "open": 5
+      "total": 7,
+      "open": 6
     },
     {
       "label": "Scott Duckworth",
@@ -178,17 +178,12 @@
       "label": "Chris Smith",
       "total": 3,
       "open": 0
-    },
-    {
-      "label": "Unassigned",
-      "total": 2,
-      "open": 2
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 99
+      "count": 100
     },
     {
       "label": "Enhancement/Wishlist",
@@ -299,6 +294,15 @@
   ],
   "openItems": [
     {
+      "wi": "SQL Query Ingestion Risk",
+      "sev": "S1",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=896126970888068"
+    },
+    {
       "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
       "sev": "S1",
       "pri": "High",
@@ -306,15 +310,6 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5929209105350532"
-    },
-    {
-      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7051743289802628"
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -398,13 +393,13 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4867745052491652"
     },
     {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
+      "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Ekta Mangal",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4342958790147972"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7051743289802628"
     },
     {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
@@ -578,13 +573,31 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5211753840770948"
     },
     {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "wi": "No Tracking no. - Update case creation verbiage for business hours",
       "sev": "S3",
       "pri": "Medium",
       "status": "Not started",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
+    },
+    {
+      "wi": "TC-024 - Creates a case after one turn",
+      "sev": "S4",
+      "pri": "Low",
+      "status": "In progress",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=137657984614276"
     },
     {
       "wi": "TC-08-03 - Did not get a human",
@@ -603,24 +616,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7594046961090436"
-    },
-    {
-      "wi": "No Tracking no. - Update case creation verbiage for business hours",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
-    },
-    {
-      "wi": "TC-024 - Creates a case after one turn",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=137657984614276"
     }
   ],
   "aging": [
@@ -761,14 +756,6 @@
       "days": 3
     },
     {
-      "wi": "No Tracking no - Asked for case, DSA got me chat instead",
-      "sev": "S2",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
-      "opened": "2026-07-20",
-      "days": 3
-    },
-    {
       "wi": "TC-04-03 - Only provides one option with steps",
       "sev": "S3",
       "owner": "Daniel Nicholas",
@@ -820,7 +807,7 @@
       "wi": "No Tracking No. - Product on Cases Created Always Set to Ajera / Other",
       "sev": "S2",
       "owner": "Jerome Michael",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -859,7 +846,7 @@
     {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
-      "owner": "Swastik Sharma",
+      "owner": "Daniel Nicholas",
       "status": "Not started",
       "opened": "",
       "days": null
@@ -898,17 +885,25 @@
     },
     {
       "wi": "TC-024 - Creates a case after one turn",
-      "sev": "—",
-      "owner": "Unassigned",
-      "status": "Not started",
+      "sev": "S4",
+      "owner": "Ekta Mangal",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
     {
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S3",
+      "owner": "Swastik Sharma",
       "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "SQL Query Ingestion Risk",
+      "sev": "S1",
+      "owner": "Ekta Mangal",
+      "status": "In progress",
       "opened": "",
       "days": null
     }
