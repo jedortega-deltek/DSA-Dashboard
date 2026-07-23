@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-23T15:29:44+00:00",
+  "generated": "2026-07-23T15:33:46+00:00",
   "kpis": {
-    "total": 86,
+    "total": 87,
     "resolved": 50,
-    "resolvedPct": 58,
+    "resolvedPct": 57,
     "inProgress": 10,
-    "notStarted": 4,
+    "notStarted": 5,
     "reTest": 21,
     "reopened": 1,
     "openS1": 2,
     "openS2": 15,
-    "totalOpen": 36,
-    "unassignedOpen": 0,
+    "totalOpen": 37,
+    "unassignedOpen": 1,
     "future": 14,
     "setAside": 18
   },
@@ -34,7 +34,7 @@
     },
     {
       "label": "Not started",
-      "count": 4
+      "count": 5
     }
   ],
   "severity": [
@@ -60,8 +60,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 1,
-      "open": 1
+      "total": 2,
+      "open": 2
     }
   ],
   "category": [
@@ -107,8 +107,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 1,
-      "open": 1
+      "total": 2,
+      "open": 2
     }
   ],
   "rootCause": [
@@ -138,14 +138,14 @@
       "open": 0
     },
     {
+      "label": "Unspecified",
+      "total": 2,
+      "open": 2
+    },
+    {
       "label": "Session / State Management",
       "total": 1,
       "open": 0
-    },
-    {
-      "label": "Unspecified",
-      "total": 1,
-      "open": 1
     }
   ],
   "owner": [
@@ -178,12 +178,17 @@
       "label": "Chris Smith",
       "total": 3,
       "open": 0
+    },
+    {
+      "label": "Unassigned",
+      "total": 1,
+      "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 100
+      "count": 101
     },
     {
       "label": "Enhancement/Wishlist",
@@ -616,6 +621,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7594046961090436"
+    },
+    {
+      "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     }
   ],
   "aging": [
@@ -895,6 +909,14 @@
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
       "sev": "S3",
       "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
