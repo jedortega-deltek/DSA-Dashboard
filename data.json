@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-24T20:47:48+00:00",
+  "generated": "2026-07-24T22:12:02+00:00",
   "kpis": {
     "total": 96,
-    "resolved": 75,
-    "resolvedPct": 78,
+    "resolved": 79,
+    "resolvedPct": 82,
     "inProgress": 1,
     "notStarted": 1,
-    "reTest": 15,
+    "reTest": 11,
     "reopened": 4,
     "openS1": 0,
-    "openS2": 8,
-    "totalOpen": 21,
+    "openS2": 7,
+    "totalOpen": 17,
     "unassignedOpen": 1,
     "future": 15,
     "setAside": 16
@@ -18,7 +18,7 @@
   "status": [
     {
       "label": "Complete",
-      "count": 75
+      "count": 79
     },
     {
       "label": "Re-open",
@@ -30,7 +30,7 @@
     },
     {
       "label": "Re-test",
-      "count": 15
+      "count": 11
     },
     {
       "label": "Not started",
@@ -46,12 +46,12 @@
     {
       "label": "S2 · Critical",
       "total": 44,
-      "open": 8
+      "open": 7
     },
     {
       "label": "S3 · Elevated",
       "total": 34,
-      "open": 10
+      "open": 8
     },
     {
       "label": "S4 · General",
@@ -61,19 +61,19 @@
     {
       "label": "Unspecified",
       "total": 5,
-      "open": 3
+      "open": 2
     }
   ],
   "category": [
     {
       "label": "UX / Conversation Design",
       "total": 24,
-      "open": 8
+      "open": 6
     },
     {
       "label": "Escalation & Handoff",
       "total": 24,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Platform / Infrastructure",
@@ -98,7 +98,7 @@
     {
       "label": "Unspecified",
       "total": 4,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Retrieval Quality",
@@ -120,7 +120,7 @@
     {
       "label": "Instruction File / Prompt",
       "total": 29,
-      "open": 9
+      "open": 6
     },
     {
       "label": "Frontend / Chat Widget",
@@ -130,7 +130,7 @@
     {
       "label": "Unspecified",
       "total": 4,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -152,12 +152,12 @@
     {
       "label": "Swastik Sharma",
       "total": 44,
-      "open": 6
+      "open": 4
     },
     {
       "label": "Daniel Nicholas",
       "total": 26,
-      "open": 7
+      "open": 6
     },
     {
       "label": "Ekta Mangal",
@@ -172,7 +172,7 @@
     {
       "label": "Scott Duckworth",
       "total": 4,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Chris Smith",
@@ -312,15 +312,6 @@
   ],
   "openItems": [
     {
-      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
-    },
-    {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "pri": "High",
@@ -456,24 +447,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4774109860200324"
     },
     {
-      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Scott Duckworth",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5273236393033604"
-    },
-    {
-      "wi": "TC-02-01 - One Question at a time",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7357805956038532"
-    },
-    {
       "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
       "sev": "—",
       "pri": "—",
@@ -490,15 +463,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
-    },
-    {
-      "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
-      "sev": "—",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5527671157424004"
     }
   ],
   "aging": [
@@ -507,14 +471,6 @@
       "sev": "S3",
       "owner": "Swastik Sharma",
       "status": "Re-open",
-      "opened": "2026-07-13",
-      "days": 11
-    },
-    {
-      "wi": "TC-02-01 - One Question at a time",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 11
     },
@@ -538,14 +494,6 @@
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "owner": "Scott Duckworth",
-      "status": "Re-test",
-      "opened": "2026-07-14",
-      "days": 10
-    },
-    {
-      "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
       "status": "Re-test",
       "opened": "2026-07-14",
       "days": 10
@@ -591,14 +539,6 @@
       "days": null
     },
     {
-      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
-      "sev": "S3",
-      "owner": "Scott Duckworth",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "owner": "Ekta Mangal",
@@ -626,14 +566,6 @@
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
       "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
-      "sev": "—",
-      "owner": "Swastik Sharma",
       "status": "Re-test",
       "opened": "",
       "days": null
