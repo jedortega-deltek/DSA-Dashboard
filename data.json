@@ -1,36 +1,40 @@
 {
-  "generated": "2026-07-24T19:01:14+00:00",
+  "generated": "2026-07-24T20:47:48+00:00",
   "kpis": {
-    "total": 95,
-    "resolved": 74,
+    "total": 96,
+    "resolved": 75,
     "resolvedPct": 78,
-    "inProgress": 0,
-    "notStarted": 3,
-    "reTest": 16,
-    "reopened": 2,
+    "inProgress": 1,
+    "notStarted": 1,
+    "reTest": 15,
+    "reopened": 4,
     "openS1": 0,
     "openS2": 8,
     "totalOpen": 21,
-    "unassignedOpen": 2,
+    "unassignedOpen": 1,
     "future": 15,
     "setAside": 16
   },
   "status": [
     {
       "label": "Complete",
-      "count": 74
+      "count": 75
     },
     {
       "label": "Re-open",
-      "count": 2
+      "count": 4
+    },
+    {
+      "label": "In progress",
+      "count": 1
     },
     {
       "label": "Re-test",
-      "count": 16
+      "count": 15
     },
     {
       "label": "Not started",
-      "count": 3
+      "count": 1
     }
   ],
   "severity": [
@@ -41,13 +45,13 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 43,
+      "total": 44,
       "open": 8
     },
     {
       "label": "S3 · Elevated",
-      "total": 33,
-      "open": 9
+      "total": 34,
+      "open": 10
     },
     {
       "label": "S4 · General",
@@ -56,8 +60,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 6,
-      "open": 4
+      "total": 5,
+      "open": 3
     }
   ],
   "category": [
@@ -82,19 +86,19 @@
       "open": 0
     },
     {
+      "label": "Guardrails / Output Quality",
+      "total": 7,
+      "open": 2
+    },
+    {
       "label": "Grounding / Synthesis",
       "total": 6,
       "open": 2
     },
     {
-      "label": "Guardrails / Output Quality",
-      "total": 5,
-      "open": 1
-    },
-    {
       "label": "Unspecified",
-      "total": 5,
-      "open": 4
+      "total": 4,
+      "open": 3
     },
     {
       "label": "Retrieval Quality",
@@ -115,18 +119,18 @@
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 27,
-      "open": 8
+      "total": 29,
+      "open": 9
     },
     {
       "label": "Frontend / Chat Widget",
-      "total": 26,
-      "open": 4
+      "total": 27,
+      "open": 5
     },
     {
       "label": "Unspecified",
-      "total": 6,
-      "open": 5
+      "total": 4,
+      "open": 3
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -157,8 +161,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 9,
-      "open": 3
+      "total": 11,
+      "open": 4
     },
     {
       "label": "Jerome Michael",
@@ -177,14 +181,14 @@
     },
     {
       "label": "Unassigned",
-      "total": 2,
-      "open": 2
+      "total": 1,
+      "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 106
+      "count": 107
     },
     {
       "label": "Enhancement/Wishlist",
@@ -335,6 +339,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
+      "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=686330827112324"
+    },
+    {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
       "pri": "High",
@@ -362,15 +375,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
     },
     {
-      "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Task",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=686330827112324"
-    },
-    {
       "wi": "Multiple Entry fields for chats on a sub topic",
       "sev": "S2",
       "pri": "Medium",
@@ -396,6 +400,33 @@
       "owner": "Jerome Michael",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "S3",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
+    },
+    {
+      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-open",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1956419575611268"
+    },
+    {
+      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5611305904242564"
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -434,15 +465,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5273236393033604"
     },
     {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
-    },
-    {
       "wi": "TC-02-01 - One Question at a time",
       "sev": "S3",
       "pri": "Medium",
@@ -450,15 +472,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7357805956038532"
-    },
-    {
-      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1956419575611268"
     },
     {
       "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
@@ -486,15 +499,6 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5527671157424004"
-    },
-    {
-      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5611305904242564"
     }
   ],
   "aging": [
@@ -582,7 +586,7 @@
       "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
       "sev": "S3",
       "owner": "Daniel Nicholas",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
@@ -598,7 +602,7 @@
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "owner": "Ekta Mangal",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
@@ -646,15 +650,15 @@
       "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
     {
       "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
-      "sev": "—",
-      "owner": "Unassigned",
-      "status": "Not started",
+      "sev": "S3",
+      "owner": "Ekta Mangal",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
