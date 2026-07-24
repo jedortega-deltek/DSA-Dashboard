@@ -1,13 +1,13 @@
 {
-  "generated": "2026-07-24T13:55:16+00:00",
+  "generated": "2026-07-24T15:14:46+00:00",
   "kpis": {
     "total": 89,
     "resolved": 73,
     "resolvedPct": 82,
-    "inProgress": 3,
+    "inProgress": 0,
     "notStarted": 3,
-    "reTest": 7,
-    "reopened": 3,
+    "reTest": 11,
+    "reopened": 2,
     "openS1": 1,
     "openS2": 7,
     "totalOpen": 16,
@@ -22,15 +22,11 @@
     },
     {
       "label": "Re-open",
-      "count": 3
-    },
-    {
-      "label": "In progress",
-      "count": 3
+      "count": 2
     },
     {
       "label": "Re-test",
-      "count": 7
+      "count": 11
     },
     {
       "label": "Not started",
@@ -319,28 +315,10 @@
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
-      "status": "Re-open",
+      "status": "Re-test",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
-    },
-    {
-      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
-    },
-    {
-      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
-      "sev": "S2",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Scott Duckworth",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -361,6 +339,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
+      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
+    },
+    {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
@@ -368,6 +355,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
+    },
+    {
+      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Scott Duckworth",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
     },
     {
       "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
@@ -397,15 +393,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "S3",
-      "pri": "High",
-      "status": "In progress",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -422,6 +409,15 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "S3",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
     },
     {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
@@ -472,7 +468,7 @@
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
       "sev": "S2",
       "owner": "Scott Duckworth",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-14",
       "days": 10
     },
@@ -480,7 +476,7 @@
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "2026-07-14",
       "days": 10
     },
@@ -504,7 +500,7 @@
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
       "owner": "Ekta Mangal",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "2026-07-20",
       "days": 4
     },
@@ -520,7 +516,7 @@
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "owner": "Ekta Mangal",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
