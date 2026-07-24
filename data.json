@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-24T11:19:38+00:00",
+  "generated": "2026-07-24T12:46:20+00:00",
   "kpis": {
     "total": 86,
-    "resolved": 70,
-    "resolvedPct": 81,
-    "inProgress": 2,
-    "notStarted": 2,
-    "reTest": 7,
-    "reopened": 5,
-    "openS1": 2,
-    "openS2": 7,
-    "totalOpen": 16,
+    "resolved": 72,
+    "resolvedPct": 84,
+    "inProgress": 4,
+    "notStarted": 1,
+    "reTest": 6,
+    "reopened": 3,
+    "openS1": 1,
+    "openS2": 6,
+    "totalOpen": 14,
     "unassignedOpen": 0,
     "future": 16,
     "setAside": 20
@@ -18,35 +18,35 @@
   "status": [
     {
       "label": "Complete",
-      "count": 70
+      "count": 72
     },
     {
       "label": "Re-open",
-      "count": 5
+      "count": 3
     },
     {
       "label": "In progress",
-      "count": 2
+      "count": 4
     },
     {
       "label": "Re-test",
-      "count": 7
+      "count": 6
     },
     {
       "label": "Not started",
-      "count": 2
+      "count": 1
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 8,
-      "open": 2
+      "open": 1
     },
     {
       "label": "S2 · Critical",
       "total": 41,
-      "open": 7
+      "open": 6
     },
     {
       "label": "S3 · Elevated",
@@ -73,7 +73,7 @@
     {
       "label": "UX / Conversation Design",
       "total": 20,
-      "open": 5
+      "open": 4
     },
     {
       "label": "Platform / Infrastructure",
@@ -83,7 +83,7 @@
     {
       "label": "Session Management",
       "total": 11,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Grounding / Synthesis",
@@ -115,7 +115,7 @@
     {
       "label": "n8n Workflow / Orchestration",
       "total": 28,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Frontend / Chat Widget",
@@ -125,7 +125,7 @@
     {
       "label": "Instruction File / Prompt",
       "total": 25,
-      "open": 7
+      "open": 6
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -161,8 +161,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 8,
-      "open": 5
+      "total": 9,
+      "open": 4
     },
     {
       "label": "Jerome Michael",
@@ -170,14 +170,14 @@
       "open": 1
     },
     {
-      "label": "Scott Duckworth",
-      "total": 4,
-      "open": 2
-    },
-    {
       "label": "Chris Smith",
       "total": 4,
       "open": 0
+    },
+    {
+      "label": "Scott Duckworth",
+      "total": 3,
+      "open": 1
     }
   ],
   "itemTypes": [
@@ -312,15 +312,6 @@
   ],
   "openItems": [
     {
-      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5929209105350532"
-    },
-    {
       "wi": "SQL Query Ingestion Risk",
       "sev": "S1",
       "pri": "High",
@@ -337,6 +328,15 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
+    },
+    {
+      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
+      "sev": "S2",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
@@ -366,15 +366,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
-      "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3590703958851460"
-    },
-    {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
       "sev": "S2",
       "pri": "High",
@@ -382,15 +373,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
-    },
-    {
-      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
     },
     {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
@@ -411,20 +393,11 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
-      "wi": "No Tracking no. - Update case creation verbiage for business hours",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
-    },
-    {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Scott Duckworth",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
     },
@@ -436,6 +409,15 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
+    },
+    {
+      "wi": "No Tracking no. - Update case creation verbiage for business hours",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
     },
     {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
@@ -509,15 +491,7 @@
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
       "sev": "S2",
       "owner": "Ekta Mangal",
-      "status": "Not started",
-      "opened": "2026-07-20",
-      "days": 4
-    },
-    {
-      "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
-      "sev": "S2",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
+      "status": "In progress",
       "opened": "2026-07-20",
       "days": 4
     },
@@ -530,18 +504,10 @@
       "days": null
     },
     {
-      "wi": "No Tracking no. - After Hours testing: Asked for case, DSA mentioned Live Chat is not available.",
-      "sev": "S1",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
-      "owner": "Scott Duckworth",
-      "status": "Re-open",
+      "owner": "Ekta Mangal",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
@@ -557,7 +523,7 @@
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
       "sev": "S3",
       "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
