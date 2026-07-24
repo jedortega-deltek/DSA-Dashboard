@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-24T13:03:40+00:00",
+  "generated": "2026-07-24T13:55:16+00:00",
   "kpis": {
-    "total": 87,
-    "resolved": 72,
-    "resolvedPct": 83,
-    "inProgress": 4,
-    "notStarted": 2,
-    "reTest": 6,
+    "total": 89,
+    "resolved": 73,
+    "resolvedPct": 82,
+    "inProgress": 3,
+    "notStarted": 3,
+    "reTest": 7,
     "reopened": 3,
     "openS1": 1,
-    "openS2": 6,
-    "totalOpen": 15,
-    "unassignedOpen": 1,
-    "future": 16,
+    "openS2": 7,
+    "totalOpen": 16,
+    "unassignedOpen": 0,
+    "future": 15,
     "setAside": 20
   },
   "status": [
     {
       "label": "Complete",
-      "count": 72
+      "count": 73
     },
     {
       "label": "Re-open",
@@ -26,15 +26,15 @@
     },
     {
       "label": "In progress",
-      "count": 4
+      "count": 3
     },
     {
       "label": "Re-test",
-      "count": 6
+      "count": 7
     },
     {
       "label": "Not started",
-      "count": 2
+      "count": 3
     }
   ],
   "severity": [
@@ -45,8 +45,8 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 41,
-      "open": 6
+      "total": 42,
+      "open": 7
     },
     {
       "label": "S3 · Elevated",
@@ -60,7 +60,7 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
+      "total": 5,
       "open": 3
     }
   ],
@@ -77,8 +77,8 @@
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 13,
-      "open": 2
+      "total": 14,
+      "open": 3
     },
     {
       "label": "Session Management",
@@ -96,14 +96,14 @@
       "open": 1
     },
     {
+      "label": "Unspecified",
+      "total": 4,
+      "open": 3
+    },
+    {
       "label": "Retrieval Quality",
       "total": 3,
       "open": 1
-    },
-    {
-      "label": "Unspecified",
-      "total": 3,
-      "open": 3
     },
     {
       "label": "Content / Instruction Defects",
@@ -114,8 +114,8 @@
   "rootCause": [
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 28,
-      "open": 2
+      "total": 29,
+      "open": 3
     },
     {
       "label": "Frontend / Chat Widget",
@@ -128,14 +128,14 @@
       "open": 6
     },
     {
+      "label": "Unspecified",
+      "total": 4,
+      "open": 3
+    },
+    {
       "label": "Knowledge Source / Retrieval",
       "total": 3,
       "open": 1
-    },
-    {
-      "label": "Unspecified",
-      "total": 3,
-      "open": 3
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -151,13 +151,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 43,
-      "open": 5
+      "total": 44,
+      "open": 6
     },
     {
       "label": "Daniel Nicholas",
-      "total": 21,
-      "open": 3
+      "total": 23,
+      "open": 4
     },
     {
       "label": "Ekta Mangal",
@@ -178,25 +178,20 @@
       "label": "Scott Duckworth",
       "total": 3,
       "open": 1
-    },
-    {
-      "label": "Unassigned",
-      "total": 1,
-      "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 103
+      "count": 104
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 16
+      "count": 15
     },
     {
       "label": "Task",
-      "count": 3
+      "count": 4
     },
     {
       "label": "Untagged",
@@ -276,11 +271,6 @@
     },
     {
       "wi": "BACKLOG - Duplicate text fields when answering",
-      "status": "Working as designed",
-      "owner": "Unassigned"
-    },
-    {
-      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
       "status": "Working as designed",
       "owner": "Unassigned"
     }
@@ -380,6 +370,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
     },
     {
+      "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=686330827112324"
+    },
+    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "pri": "Low",
@@ -428,19 +427,19 @@
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
       "pri": "—",
-      "status": "In progress",
-      "owner": "Swastik Sharma",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     },
     {
-      "wi": "No Tracking no. - Dela creates a case without me asking for it yet, and also mentioned that chat is closed",
+      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
       "sev": "—",
       "pri": "—",
       "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2583633972297604"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8895933666688900"
     },
     {
       "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
@@ -544,8 +543,8 @@
     {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
-      "owner": "Swastik Sharma",
-      "status": "In progress",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -566,9 +565,17 @@
       "days": null
     },
     {
-      "wi": "No Tracking no. - Dela creates a case without me asking for it yet, and also mentioned that chat is closed",
+      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
       "sev": "—",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "",
       "days": null
