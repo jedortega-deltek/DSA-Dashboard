@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-24T09:26:49+00:00",
+  "generated": "2026-07-24T11:19:38+00:00",
   "kpis": {
     "total": 86,
     "resolved": 70,
@@ -151,8 +151,8 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 42,
-      "open": 4
+      "total": 43,
+      "open": 5
     },
     {
       "label": "Daniel Nicholas",
@@ -171,8 +171,8 @@
     },
     {
       "label": "Scott Duckworth",
-      "total": 5,
-      "open": 3
+      "total": 4,
+      "open": 2
     },
     {
       "label": "Chris Smith",
@@ -442,7 +442,7 @@
       "sev": "—",
       "pri": "—",
       "status": "In progress",
-      "owner": "Scott Duckworth",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     },
@@ -564,7 +564,7 @@
     {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
-      "owner": "Scott Duckworth",
+      "owner": "Swastik Sharma",
       "status": "In progress",
       "opened": "",
       "days": null
