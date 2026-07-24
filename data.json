@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23T23:32:21+00:00",
+  "generated": "2026-07-24T00:06:28+00:00",
   "kpis": {
     "total": 86,
     "resolved": 70,
@@ -308,10 +308,6 @@
     {
       "wi": "TC-01-01: Time for Response More than 10 seconds",
       "resolved": "2026-07-17"
-    },
-    {
-      "wi": "TC-23-03 — UI doesn't switch to Coveo search when Javascript is disabled",
-      "resolved": "2026-07-16"
     }
   ],
   "openItems": [
@@ -467,7 +463,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "2026-07-13",
-      "days": 10
+      "days": 11
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -475,7 +471,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 10
+      "days": 11
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
@@ -483,7 +479,7 @@
       "owner": "Scott Duckworth",
       "status": "In progress",
       "opened": "2026-07-14",
-      "days": 9
+      "days": 10
     },
     {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
@@ -491,7 +487,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "2026-07-14",
-      "days": 9
+      "days": 10
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -499,7 +495,7 @@
       "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 7
+      "days": 8
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -507,7 +503,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 7
+      "days": 8
     },
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
@@ -515,7 +511,7 @@
       "owner": "Ekta Mangal",
       "status": "Not started",
       "opened": "2026-07-20",
-      "days": 3
+      "days": 4
     },
     {
       "wi": "No Tracking no. - Weekend testing asking for Live Chat. No case is created",
@@ -523,7 +519,7 @@
       "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "2026-07-20",
-      "days": 3
+      "days": 4
     },
     {
       "wi": "No Tracking Number - Markdown formatting in response",
