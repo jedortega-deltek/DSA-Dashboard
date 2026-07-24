@@ -1,43 +1,43 @@
 {
-  "generated": "2026-07-24T15:14:46+00:00",
+  "generated": "2026-07-24T17:07:50+00:00",
   "kpis": {
-    "total": 89,
-    "resolved": 73,
-    "resolvedPct": 82,
+    "total": 94,
+    "resolved": 74,
+    "resolvedPct": 79,
     "inProgress": 0,
-    "notStarted": 3,
-    "reTest": 11,
-    "reopened": 2,
-    "openS1": 1,
+    "notStarted": 4,
+    "reTest": 13,
+    "reopened": 3,
+    "openS1": 0,
     "openS2": 7,
-    "totalOpen": 16,
-    "unassignedOpen": 0,
+    "totalOpen": 20,
+    "unassignedOpen": 1,
     "future": 15,
-    "setAside": 20
+    "setAside": 16
   },
   "status": [
     {
       "label": "Complete",
-      "count": 73
+      "count": 74
     },
     {
       "label": "Re-open",
-      "count": 2
+      "count": 3
     },
     {
       "label": "Re-test",
-      "count": 11
+      "count": 13
     },
     {
       "label": "Not started",
-      "count": 3
+      "count": 4
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 8,
-      "open": 1
+      "open": 0
     },
     {
       "label": "S2 · Critical",
@@ -46,8 +46,8 @@
     },
     {
       "label": "S3 · Elevated",
-      "total": 29,
-      "open": 5
+      "total": 33,
+      "open": 9
     },
     {
       "label": "S4 · General",
@@ -56,8 +56,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 3
+      "total": 6,
+      "open": 4
     }
   ],
   "category": [
@@ -68,12 +68,12 @@
     },
     {
       "label": "UX / Conversation Design",
-      "total": 20,
-      "open": 4
+      "total": 23,
+      "open": 7
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 14,
+      "total": 15,
       "open": 3
     },
     {
@@ -93,8 +93,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 3
+      "total": 5,
+      "open": 4
     },
     {
       "label": "Retrieval Quality",
@@ -110,23 +110,23 @@
   "rootCause": [
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 29,
-      "open": 3
-    },
-    {
-      "label": "Frontend / Chat Widget",
-      "total": 25,
+      "total": 30,
       "open": 3
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 25,
-      "open": 6
+      "total": 27,
+      "open": 8
+    },
+    {
+      "label": "Frontend / Chat Widget",
+      "total": 26,
+      "open": 4
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 3
+      "total": 5,
+      "open": 4
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -152,13 +152,13 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 23,
-      "open": 4
+      "total": 26,
+      "open": 7
     },
     {
       "label": "Ekta Mangal",
       "total": 9,
-      "open": 4
+      "open": 3
     },
     {
       "label": "Jerome Michael",
@@ -166,20 +166,25 @@
       "open": 1
     },
     {
+      "label": "Scott Duckworth",
+      "total": 4,
+      "open": 2
+    },
+    {
       "label": "Chris Smith",
       "total": 4,
       "open": 0
     },
     {
-      "label": "Scott Duckworth",
-      "total": 3,
+      "label": "Unassigned",
+      "total": 1,
       "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 104
+      "count": 105
     },
     {
       "label": "Enhancement/Wishlist",
@@ -303,19 +308,10 @@
   ],
   "openItems": [
     {
-      "wi": "SQL Query Ingestion Risk",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=896126970888068"
-    },
-    {
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
-      "status": "Re-test",
+      "status": "Re-open",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
@@ -411,6 +407,24 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
     },
     {
+      "wi": "SME-007 — Excessive response times (seconds to minutes)",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4774109860200324"
+    },
+    {
+      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Scott Duckworth",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5273236393033604"
+    },
+    {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "pri": "High",
@@ -418,6 +432,24 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
+    },
+    {
+      "wi": "TC-02-01 - One Question at a time",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7357805956038532"
+    },
+    {
+      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1956419575611268"
     },
     {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
@@ -438,6 +470,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8895933666688900"
     },
     {
+      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5611305904242564"
+    },
+    {
       "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
       "sev": "—",
       "pri": "Medium",
@@ -453,6 +494,22 @@
       "sev": "S3",
       "owner": "Swastik Sharma",
       "status": "Re-open",
+      "opened": "2026-07-13",
+      "days": 11
+    },
+    {
+      "wi": "TC-02-01 - One Question at a time",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "2026-07-13",
+      "days": 11
+    },
+    {
+      "wi": "SME-007 — Excessive response times (seconds to minutes)",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 11
     },
@@ -476,7 +533,7 @@
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "2026-07-14",
       "days": 10
     },
@@ -513,6 +570,22 @@
       "days": null
     },
     {
+      "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-017 - New Issue Pivot Mid-Conversation",
+      "sev": "S3",
+      "owner": "Scott Duckworth",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "owner": "Ekta Mangal",
@@ -545,14 +618,6 @@
       "days": null
     },
     {
-      "wi": "SQL Query Ingestion Risk",
-      "sev": "S1",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
       "sev": "—",
       "owner": "Swastik Sharma",
@@ -572,6 +637,14 @@
       "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
       "sev": "S2",
       "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
