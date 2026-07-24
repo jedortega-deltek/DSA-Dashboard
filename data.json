@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-24T17:07:50+00:00",
+  "generated": "2026-07-24T19:01:14+00:00",
   "kpis": {
-    "total": 94,
+    "total": 95,
     "resolved": 74,
-    "resolvedPct": 79,
+    "resolvedPct": 78,
     "inProgress": 0,
-    "notStarted": 4,
-    "reTest": 13,
-    "reopened": 3,
+    "notStarted": 3,
+    "reTest": 16,
+    "reopened": 2,
     "openS1": 0,
-    "openS2": 7,
-    "totalOpen": 20,
-    "unassignedOpen": 1,
+    "openS2": 8,
+    "totalOpen": 21,
+    "unassignedOpen": 2,
     "future": 15,
     "setAside": 16
   },
@@ -22,15 +22,15 @@
     },
     {
       "label": "Re-open",
-      "count": 3
+      "count": 2
     },
     {
       "label": "Re-test",
-      "count": 13
+      "count": 16
     },
     {
       "label": "Not started",
-      "count": 4
+      "count": 3
     }
   ],
   "severity": [
@@ -41,8 +41,8 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 42,
-      "open": 7
+      "total": 43,
+      "open": 8
     },
     {
       "label": "S3 · Elevated",
@@ -62,14 +62,14 @@
   ],
   "category": [
     {
+      "label": "UX / Conversation Design",
+      "total": 24,
+      "open": 8
+    },
+    {
       "label": "Escalation & Handoff",
       "total": 24,
       "open": 2
-    },
-    {
-      "label": "UX / Conversation Design",
-      "total": 23,
-      "open": 7
     },
     {
       "label": "Platform / Infrastructure",
@@ -125,8 +125,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 4
+      "total": 6,
+      "open": 5
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -177,14 +177,14 @@
     },
     {
       "label": "Unassigned",
-      "total": 1,
-      "open": 1
+      "total": 2,
+      "open": 2
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 105
+      "count": 106
     },
     {
       "label": "Enhancement/Wishlist",
@@ -311,7 +311,7 @@
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "pri": "High",
-      "status": "Re-open",
+      "status": "Re-test",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=114170814398340"
@@ -369,6 +369,15 @@
       "owner": "Swastik Sharma",
       "type": "Task",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=686330827112324"
+    },
+    {
+      "wi": "Multiple Entry fields for chats on a sub topic",
+      "sev": "S2",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1338087819313028"
     },
     {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
@@ -452,6 +461,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1956419575611268"
     },
     {
+      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
+      "sev": "—",
+      "pri": "—",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8895933666688900"
+    },
+    {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "—",
       "pri": "—",
@@ -461,13 +479,13 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     },
     {
-      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
+      "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
       "sev": "—",
-      "pri": "—",
-      "status": "Not started",
+      "pri": "Medium",
+      "status": "Re-test",
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8895933666688900"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5527671157424004"
     },
     {
       "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
@@ -477,15 +495,6 @@
       "owner": "Unassigned",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5611305904242564"
-    },
-    {
-      "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
-      "sev": "—",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5527671157424004"
     }
   ],
   "aging": [
@@ -533,7 +542,7 @@
       "wi": "DELA-019 — Inconsistent Severity Level / Issue Type assigned during case creation",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "2026-07-14",
       "days": 10
     },
@@ -621,7 +630,7 @@
       "wi": "No Tracking no. Update the Live agent box message for customers out of cases",
       "sev": "—",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -629,7 +638,7 @@
       "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
       "sev": "—",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -644,6 +653,14 @@
     {
       "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
       "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Multiple Entry fields for chats on a sub topic",
+      "sev": "S2",
       "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
