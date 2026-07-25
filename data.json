@@ -1,18 +1,18 @@
 {
-  "generated": "2026-07-24T23:35:27+00:00",
+  "generated": "2026-07-25T03:28:47+00:00",
   "kpis": {
-    "total": 96,
+    "total": 95,
     "resolved": 79,
-    "resolvedPct": 82,
-    "inProgress": 1,
-    "notStarted": 1,
-    "reTest": 11,
+    "resolvedPct": 83,
+    "inProgress": 0,
+    "notStarted": 0,
+    "reTest": 12,
     "reopened": 4,
     "openS1": 0,
-    "openS2": 7,
-    "totalOpen": 17,
-    "unassignedOpen": 1,
-    "future": 15,
+    "openS2": 6,
+    "totalOpen": 16,
+    "unassignedOpen": 0,
+    "future": 16,
     "setAside": 16
   },
   "status": [
@@ -25,16 +25,8 @@
       "count": 4
     },
     {
-      "label": "In progress",
-      "count": 1
-    },
-    {
       "label": "Re-test",
-      "count": 11
-    },
-    {
-      "label": "Not started",
-      "count": 1
+      "count": 12
     }
   ],
   "severity": [
@@ -45,8 +37,8 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 44,
-      "open": 7
+      "total": 43,
+      "open": 6
     },
     {
       "label": "S3 · Elevated",
@@ -66,14 +58,14 @@
   ],
   "category": [
     {
-      "label": "UX / Conversation Design",
-      "total": 24,
-      "open": 6
-    },
-    {
       "label": "Escalation & Handoff",
       "total": 24,
       "open": 1
+    },
+    {
+      "label": "UX / Conversation Design",
+      "total": 23,
+      "open": 5
     },
     {
       "label": "Platform / Infrastructure",
@@ -124,8 +116,8 @@
     },
     {
       "label": "Frontend / Chat Widget",
-      "total": 27,
-      "open": 5
+      "total": 26,
+      "open": 4
     },
     {
       "label": "Unspecified",
@@ -178,21 +170,16 @@
       "label": "Chris Smith",
       "total": 4,
       "open": 0
-    },
-    {
-      "label": "Unassigned",
-      "total": 1,
-      "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 107
+      "count": 106
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 15
+      "count": 16
     },
     {
       "label": "Task",
@@ -278,6 +265,11 @@
       "wi": "BACKLOG - Duplicate text fields when answering",
       "status": "Working as designed",
       "owner": "Unassigned"
+    },
+    {
+      "wi": "Multiple Entry fields for chats on a sub topic",
+      "status": "Not started",
+      "owner": "Unassigned"
     }
   ],
   "recent": [
@@ -296,18 +288,6 @@
     {
       "wi": "Telemetry object being passed to front end",
       "resolved": "2026-07-20"
-    },
-    {
-      "wi": "SME-002 — Incorrect Ajera terminology and navigation paths",
-      "resolved": "2026-07-17"
-    },
-    {
-      "wi": "SME-003 — Instructions reference controls that do not exist in Ajera",
-      "resolved": "2026-07-17"
-    },
-    {
-      "wi": "TC-01-01: Time for Response More than 10 seconds",
-      "resolved": "2026-07-17"
     }
   ],
   "openItems": [
@@ -366,15 +346,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
     },
     {
-      "wi": "Multiple Entry fields for chats on a sub topic",
-      "sev": "S2",
-      "pri": "Medium",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1338087819313028"
-    },
-    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "pri": "Low",
@@ -411,15 +382,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1956419575611268"
     },
     {
-      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "In progress",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5611305904242564"
-    },
-    {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
       "sev": "S3",
       "pri": "Medium",
@@ -427,6 +389,15 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
+    },
+    {
+      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5611305904242564"
     },
     {
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
@@ -472,7 +443,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "2026-07-13",
-      "days": 11
+      "days": 12
     },
     {
       "wi": "SME-007 — Excessive response times (seconds to minutes)",
@@ -480,7 +451,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 11
+      "days": 12
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -488,7 +459,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 11
+      "days": 12
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
@@ -496,7 +467,7 @@
       "owner": "Scott Duckworth",
       "status": "Re-test",
       "opened": "2026-07-14",
-      "days": 10
+      "days": 11
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -504,7 +475,7 @@
       "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 8
+      "days": 9
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -512,7 +483,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 8
+      "days": 9
     },
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
@@ -520,7 +491,7 @@
       "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "2026-07-20",
-      "days": 4
+      "days": 5
     },
     {
       "wi": "No Tracking Number - Markdown formatting in response",
@@ -590,15 +561,7 @@
       "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
       "sev": "S3",
       "owner": "Ekta Mangal",
-      "status": "In progress",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "Multiple Entry fields for chats on a sub topic",
-      "sev": "S2",
-      "owner": "Unassigned",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     }
