@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-27T07:41:05+00:00",
+  "generated": "2026-07-27T11:33:53+00:00",
   "kpis": {
-    "total": 95,
+    "total": 99,
     "resolved": 79,
-    "resolvedPct": 83,
+    "resolvedPct": 80,
     "inProgress": 0,
-    "notStarted": 0,
+    "notStarted": 4,
     "reTest": 13,
     "reopened": 3,
-    "openS1": 0,
-    "openS2": 6,
-    "totalOpen": 16,
-    "unassignedOpen": 0,
+    "openS1": 1,
+    "openS2": 8,
+    "totalOpen": 20,
+    "unassignedOpen": 4,
     "future": 16,
     "setAside": 16
   },
@@ -27,18 +27,22 @@
     {
       "label": "Re-test",
       "count": 13
+    },
+    {
+      "label": "Not started",
+      "count": 4
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 8,
-      "open": 0
+      "total": 9,
+      "open": 1
     },
     {
       "label": "S2 · Critical",
-      "total": 43,
-      "open": 6
+      "total": 45,
+      "open": 8
     },
     {
       "label": "S3 · Elevated",
@@ -52,8 +56,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 2
+      "total": 6,
+      "open": 3
     }
   ],
   "category": [
@@ -78,6 +82,11 @@
       "open": 0
     },
     {
+      "label": "Unspecified",
+      "total": 8,
+      "open": 6
+    },
+    {
       "label": "Guardrails / Output Quality",
       "total": 7,
       "open": 2
@@ -85,11 +94,6 @@
     {
       "label": "Grounding / Synthesis",
       "total": 6,
-      "open": 2
-    },
-    {
-      "label": "Unspecified",
-      "total": 4,
       "open": 2
     },
     {
@@ -121,8 +125,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 2
+      "total": 8,
+      "open": 6
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -170,12 +174,17 @@
       "label": "Chris Smith",
       "total": 4,
       "open": 0
+    },
+    {
+      "label": "Unassigned",
+      "total": 4,
+      "open": 4
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 106
+      "count": 109
     },
     {
       "label": "Enhancement/Wishlist",
@@ -183,7 +192,7 @@
     },
     {
       "label": "Task",
-      "count": 4
+      "count": 5
     },
     {
       "label": "Untagged",
@@ -292,6 +301,15 @@
   ],
   "openItems": [
     {
+      "wi": "Feedback popup needs sizing constraints.",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6386697778888580"
+    },
+    {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
       "sev": "S2",
       "pri": "High",
@@ -344,6 +362,24 @@
       "owner": "Scott Duckworth",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
+    },
+    {
+      "wi": "Delete 2nd turn “friendly greeting” from instructions.",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4116363822366596"
+    },
+    {
+      "wi": "Ensure buttons are visible without scrolling",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3575701301493636"
     },
     {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
@@ -434,6 +470,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
+    },
+    {
+      "wi": "Remove buttons and links from home page",
+      "sev": "—",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8796098758311812"
     }
   ],
   "aging": [
@@ -562,6 +607,38 @@
       "sev": "S3",
       "owner": "Ekta Mangal",
       "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Delete 2nd turn “friendly greeting” from instructions.",
+      "sev": "S2",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Feedback popup needs sizing constraints.",
+      "sev": "S1",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Ensure buttons are visible without scrolling",
+      "sev": "S2",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Remove buttons and links from home page",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
       "opened": "",
       "days": null
     }
