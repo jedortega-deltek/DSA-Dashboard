@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-27T18:58:00+00:00",
+  "generated": "2026-07-27T20:39:43+00:00",
   "kpis": {
     "total": 106,
-    "resolved": 87,
-    "resolvedPct": 82,
+    "resolved": 88,
+    "resolvedPct": 83,
     "inProgress": 0,
     "notStarted": 7,
-    "reTest": 10,
+    "reTest": 9,
     "reopened": 2,
     "openS1": 1,
-    "openS2": 9,
-    "totalOpen": 19,
+    "openS2": 10,
+    "totalOpen": 18,
     "unassignedOpen": 0,
     "future": 18,
     "setAside": 15
@@ -18,7 +18,7 @@
   "status": [
     {
       "label": "Complete",
-      "count": 87
+      "count": 88
     },
     {
       "label": "Re-open",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Re-test",
-      "count": 10
+      "count": 9
     },
     {
       "label": "Not started",
@@ -41,8 +41,8 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 48,
-      "open": 9
+      "total": 50,
+      "open": 10
     },
     {
       "label": "S3 · Elevated",
@@ -56,15 +56,15 @@
     },
     {
       "label": "Unspecified",
-      "total": 6,
-      "open": 3
+      "total": 4,
+      "open": 1
     }
   ],
   "category": [
     {
       "label": "UX / Conversation Design",
-      "total": 32,
-      "open": 12
+      "total": 33,
+      "open": 13
     },
     {
       "label": "Escalation & Handoff",
@@ -74,7 +74,7 @@
     {
       "label": "Platform / Infrastructure",
       "total": 16,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Session Management",
@@ -92,44 +92,44 @@
       "open": 2
     },
     {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 2
-    },
-    {
       "label": "Content / Instruction Defects",
-      "total": 3,
-      "open": 0
+      "total": 4,
+      "open": 1
     },
     {
       "label": "Retrieval Quality",
       "total": 3,
       "open": 1
+    },
+    {
+      "label": "Unspecified",
+      "total": 2,
+      "open": 0
     }
   ],
   "rootCause": [
+    {
+      "label": "Frontend / Chat Widget",
+      "total": 33,
+      "open": 10
+    },
     {
       "label": "Instruction File / Prompt",
       "total": 33,
       "open": 5
     },
     {
-      "label": "Frontend / Chat Widget",
-      "total": 31,
-      "open": 8
-    },
-    {
       "label": "n8n Workflow / Orchestration",
       "total": 31,
-      "open": 2
-    },
-    {
-      "label": "Unspecified",
-      "total": 5,
-      "open": 3
+      "open": 1
     },
     {
       "label": "Knowledge Source / Retrieval",
+      "total": 3,
+      "open": 1
+    },
+    {
+      "label": "Unspecified",
       "total": 3,
       "open": 1
     },
@@ -148,12 +148,12 @@
     {
       "label": "Swastik Sharma",
       "total": 49,
-      "open": 9
+      "open": 8
     },
     {
       "label": "Daniel Nicholas",
-      "total": 30,
-      "open": 8
+      "total": 29,
+      "open": 7
     },
     {
       "label": "Ekta Mangal",
@@ -167,8 +167,8 @@
     },
     {
       "label": "Chris Smith",
-      "total": 5,
-      "open": 0
+      "total": 6,
+      "open": 1
     },
     {
       "label": "Scott Duckworth",
@@ -333,15 +333,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
     },
     {
-      "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Task",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=686330827112324"
-    },
-    {
       "wi": "Delete 2nd turn “friendly greeting” from instructions.",
       "sev": "S2",
       "pri": "High",
@@ -349,6 +340,24 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4116363822366596"
+    },
+    {
+      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
+      "sev": "S2",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8895933666688900"
+    },
+    {
+      "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     },
     {
       "wi": "Remove buttons and links from home page",
@@ -391,7 +400,7 @@
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Daniel Nicholas",
+      "owner": "Chris Smith",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
     },
@@ -448,24 +457,6 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2071134755749764"
-    },
-    {
-      "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
-      "sev": "—",
-      "pri": "—",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8895933666688900"
-    },
-    {
-      "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
-      "sev": "—",
-      "pri": "—",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     },
     {
       "wi": "Knowledge Base Updates and Search Visibility",
@@ -536,7 +527,7 @@
     },
     {
       "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
-      "sev": "—",
+      "sev": "S2",
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "",
@@ -544,14 +535,6 @@
     },
     {
       "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
-      "sev": "—",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
       "sev": "S2",
       "owner": "Swastik Sharma",
       "status": "Re-test",
@@ -617,7 +600,7 @@
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S2",
-      "owner": "Daniel Nicholas",
+      "owner": "Chris Smith",
       "status": "Not started",
       "opened": "",
       "days": null
