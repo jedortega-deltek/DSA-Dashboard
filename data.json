@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-26T23:31:21+00:00",
+  "generated": "2026-07-27T03:52:05+00:00",
   "kpis": {
     "total": 95,
     "resolved": 79,
@@ -443,7 +443,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "2026-07-13",
-      "days": 13
+      "days": 14
     },
     {
       "wi": "SME-007 — Excessive response times (seconds to minutes)",
@@ -451,7 +451,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 13
+      "days": 14
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -459,7 +459,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 13
+      "days": 14
     },
     {
       "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
@@ -467,7 +467,7 @@
       "owner": "Scott Duckworth",
       "status": "Re-test",
       "opened": "2026-07-14",
-      "days": 12
+      "days": 13
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -475,7 +475,7 @@
       "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 10
+      "days": 11
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -483,7 +483,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 10
+      "days": 11
     },
     {
       "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
@@ -491,7 +491,7 @@
       "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "2026-07-20",
-      "days": 6
+      "days": 7
     },
     {
       "wi": "No Tracking Number - Markdown formatting in response",
