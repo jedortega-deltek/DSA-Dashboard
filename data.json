@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-27T11:33:53+00:00",
+  "generated": "2026-07-27T13:51:54+00:00",
   "kpis": {
-    "total": 99,
-    "resolved": 79,
+    "total": 103,
+    "resolved": 82,
     "resolvedPct": 80,
     "inProgress": 0,
-    "notStarted": 4,
+    "notStarted": 5,
     "reTest": 13,
     "reopened": 3,
-    "openS1": 1,
-    "openS2": 8,
-    "totalOpen": 20,
-    "unassignedOpen": 4,
-    "future": 16,
-    "setAside": 16
+    "openS1": 2,
+    "openS2": 9,
+    "totalOpen": 21,
+    "unassignedOpen": 0,
+    "future": 18,
+    "setAside": 15
   },
   "status": [
     {
       "label": "Complete",
-      "count": 79
+      "count": 82
     },
     {
       "label": "Re-open",
@@ -30,23 +30,23 @@
     },
     {
       "label": "Not started",
-      "count": 4
+      "count": 5
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 9,
-      "open": 1
+      "total": 10,
+      "open": 2
     },
     {
       "label": "S2 · Critical",
-      "total": 45,
-      "open": 8
+      "total": 47,
+      "open": 9
     },
     {
       "label": "S3 · Elevated",
-      "total": 34,
+      "total": 36,
       "open": 8
     },
     {
@@ -56,35 +56,30 @@
     },
     {
       "label": "Unspecified",
-      "total": 6,
-      "open": 3
+      "total": 5,
+      "open": 2
     }
   ],
   "category": [
+    {
+      "label": "UX / Conversation Design",
+      "total": 29,
+      "open": 10
+    },
     {
       "label": "Escalation & Handoff",
       "total": 24,
       "open": 1
     },
     {
-      "label": "UX / Conversation Design",
-      "total": 23,
-      "open": 5
-    },
-    {
       "label": "Platform / Infrastructure",
-      "total": 15,
+      "total": 16,
       "open": 3
     },
     {
       "label": "Session Management",
       "total": 11,
       "open": 0
-    },
-    {
-      "label": "Unspecified",
-      "total": 8,
-      "open": 6
     },
     {
       "label": "Guardrails / Output Quality",
@@ -97,36 +92,41 @@
       "open": 2
     },
     {
-      "label": "Retrieval Quality",
-      "total": 3,
-      "open": 1
+      "label": "Unspecified",
+      "total": 4,
+      "open": 2
     },
     {
       "label": "Content / Instruction Defects",
-      "total": 2,
+      "total": 3,
       "open": 0
+    },
+    {
+      "label": "Retrieval Quality",
+      "total": 3,
+      "open": 1
     }
   ],
   "rootCause": [
     {
       "label": "n8n Workflow / Orchestration",
-      "total": 30,
+      "total": 31,
       "open": 3
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 29,
+      "total": 31,
       "open": 6
     },
     {
       "label": "Frontend / Chat Widget",
-      "total": 26,
-      "open": 4
+      "total": 30,
+      "open": 8
     },
     {
       "label": "Unspecified",
-      "total": 8,
-      "open": 6
+      "total": 5,
+      "open": 3
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -147,18 +147,18 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 44,
-      "open": 4
+      "total": 50,
+      "open": 10
     },
     {
       "label": "Daniel Nicholas",
-      "total": 26,
+      "total": 28,
       "open": 6
     },
     {
       "label": "Ekta Mangal",
-      "total": 11,
-      "open": 4
+      "total": 10,
+      "open": 2
     },
     {
       "label": "Jerome Michael",
@@ -166,33 +166,28 @@
       "open": 1
     },
     {
-      "label": "Scott Duckworth",
-      "total": 4,
+      "label": "Chris Smith",
+      "total": 5,
       "open": 1
     },
     {
-      "label": "Chris Smith",
+      "label": "Scott Duckworth",
       "total": 4,
-      "open": 0
-    },
-    {
-      "label": "Unassigned",
-      "total": 4,
-      "open": 4
+      "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 109
+      "count": 111
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 16
+      "count": 18
     },
     {
       "label": "Task",
-      "count": 5
+      "count": 6
     },
     {
       "label": "Untagged",
@@ -277,7 +272,17 @@
     },
     {
       "wi": "Multiple Entry fields for chats on a sub topic",
-      "status": "Not started",
+      "status": "Working as designed",
+      "owner": "Unassigned"
+    },
+    {
+      "wi": "BACKLOG: Change chat box to an auto-expanding multi-line text area",
+      "status": "Working as designed",
+      "owner": "Unassigned"
+    },
+    {
+      "wi": "BACKLOG - Remove \"Creating your case...\" text in the case creation card",
+      "status": "Working as designed",
       "owner": "Unassigned"
     }
   ],
@@ -301,11 +306,20 @@
   ],
   "openItems": [
     {
+      "wi": "DN6 - Prompt caching for Agent nodes",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Chris Smith",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=883238807928708"
+    },
+    {
       "wi": "Feedback popup needs sizing constraints.",
       "sev": "S1",
       "pri": "High",
       "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6386697778888580"
     },
@@ -337,13 +351,22 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=686330827112324"
     },
     {
-      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
+      "wi": "Delete 2nd turn “friendly greeting” from instructions.",
       "sev": "S2",
       "pri": "High",
       "status": "Re-test",
-      "owner": "Ekta Mangal",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=364499546013572"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4116363822366596"
+    },
+    {
+      "wi": "Remove buttons and links from home page",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8796098758311812"
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -364,20 +387,20 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
     },
     {
-      "wi": "Delete 2nd turn “friendly greeting” from instructions.",
+      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4116363822366596"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
     },
     {
       "wi": "Ensure buttons are visible without scrolling",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3575701301493636"
     },
@@ -395,7 +418,7 @@
       "sev": "S3",
       "pri": "High",
       "status": "Re-open",
-      "owner": "Ekta Mangal",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
     },
@@ -445,13 +468,13 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
     },
     {
-      "wi": "SME-007 — Excessive response times (seconds to minutes)",
+      "wi": "when the additional input box is active, the main one should be disabled",
       "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4774109860200324"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2071134755749764"
     },
     {
       "wi": "Information displays the DSA is going to pass the customer to a live agent or submit a case, but the customer has no cases left. Messages displayed is confusing.",
@@ -470,15 +493,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
-    },
-    {
-      "wi": "Remove buttons and links from home page",
-      "sev": "—",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Task",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8796098758311812"
     }
   ],
   "aging": [
@@ -487,14 +501,6 @@
       "sev": "S3",
       "owner": "Swastik Sharma",
       "status": "Re-open",
-      "opened": "2026-07-13",
-      "days": 14
-    },
-    {
-      "wi": "SME-007 — Excessive response times (seconds to minutes)",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
       "opened": "2026-07-13",
       "days": 14
     },
@@ -531,14 +537,6 @@
       "days": 11
     },
     {
-      "wi": "No Tracking no. - Asked case number. DSA advised to check email confirmation",
-      "sev": "S2",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
-      "opened": "2026-07-20",
-      "days": 7
-    },
-    {
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
@@ -557,7 +555,7 @@
     {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
-      "owner": "Ekta Mangal",
+      "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "",
       "days": null
@@ -613,15 +611,15 @@
     {
       "wi": "Delete 2nd turn “friendly greeting” from instructions.",
       "sev": "S2",
-      "owner": "Unassigned",
-      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
     {
       "wi": "Feedback popup needs sizing constraints.",
       "sev": "S1",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "",
       "days": null
@@ -629,15 +627,39 @@
     {
       "wi": "Ensure buttons are visible without scrolling",
       "sev": "S2",
-      "owner": "Unassigned",
+      "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
       "wi": "Remove buttons and links from home page",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "DN6 - Prompt caching for Agent nodes",
+      "sev": "S1",
+      "owner": "Chris Smith",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "when the additional input box is active, the main one should be disabled",
+      "sev": "S3",
+      "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "",
       "days": null
