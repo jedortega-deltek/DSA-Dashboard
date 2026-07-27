@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-27T17:04:25+00:00",
+  "generated": "2026-07-27T18:58:00+00:00",
   "kpis": {
-    "total": 105,
-    "resolved": 85,
-    "resolvedPct": 81,
+    "total": 106,
+    "resolved": 87,
+    "resolvedPct": 82,
     "inProgress": 0,
-    "notStarted": 6,
-    "reTest": 12,
+    "notStarted": 7,
+    "reTest": 10,
     "reopened": 2,
     "openS1": 1,
-    "openS2": 8,
-    "totalOpen": 20,
-    "unassignedOpen": 1,
+    "openS2": 9,
+    "totalOpen": 19,
+    "unassignedOpen": 0,
     "future": 18,
     "setAside": 15
   },
   "status": [
     {
       "label": "Complete",
-      "count": 85
+      "count": 87
     },
     {
       "label": "Re-open",
@@ -26,11 +26,11 @@
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 10
     },
     {
       "label": "Not started",
-      "count": 6
+      "count": 7
     }
   ],
   "severity": [
@@ -41,13 +41,13 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 47,
-      "open": 8
+      "total": 48,
+      "open": 9
     },
     {
       "label": "S3 · Elevated",
       "total": 37,
-      "open": 8
+      "open": 6
     },
     {
       "label": "S4 · General",
@@ -63,8 +63,8 @@
   "category": [
     {
       "label": "UX / Conversation Design",
-      "total": 30,
-      "open": 10
+      "total": 32,
+      "open": 12
     },
     {
       "label": "Escalation & Handoff",
@@ -74,7 +74,7 @@
     {
       "label": "Platform / Infrastructure",
       "total": 16,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Session Management",
@@ -84,7 +84,7 @@
     {
       "label": "Guardrails / Output Quality",
       "total": 7,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Grounding / Synthesis",
@@ -93,8 +93,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 3
+      "total": 4,
+      "open": 2
     },
     {
       "label": "Content / Instruction Defects",
@@ -110,13 +110,13 @@
   "rootCause": [
     {
       "label": "Instruction File / Prompt",
-      "total": 32,
+      "total": 33,
       "open": 5
     },
     {
       "label": "Frontend / Chat Widget",
       "total": 31,
-      "open": 9
+      "open": 8
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -152,17 +152,17 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 29,
-      "open": 7
+      "total": 30,
+      "open": 8
     },
     {
       "label": "Ekta Mangal",
       "total": 11,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Jerome Michael",
-      "total": 6,
+      "total": 7,
       "open": 1
     },
     {
@@ -174,11 +174,6 @@
       "label": "Scott Duckworth",
       "total": 4,
       "open": 0
-    },
-    {
-      "label": "Unassigned",
-      "total": 1,
-      "open": 1
     }
   ],
   "itemTypes": [
@@ -192,7 +187,7 @@
     },
     {
       "label": "Task",
-      "count": 6
+      "count": 7
     },
     {
       "label": "Untagged",
@@ -392,6 +387,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3575701301493636"
     },
     {
+      "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
+    },
+    {
       "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
       "sev": "S3",
       "pri": "Low",
@@ -417,24 +421,6 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
-    },
-    {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
-    },
-    {
-      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5611305904242564"
     },
     {
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
@@ -482,13 +468,13 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
     },
     {
-      "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
+      "wi": "Knowledge Base Updates and Search Visibility",
       "sev": "—",
-      "pri": "—",
+      "pri": "Medium",
       "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
+      "owner": "Jerome Michael",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3462128608870276"
     }
   ],
   "aging": [
@@ -523,14 +509,6 @@
       "status": "Re-test",
       "opened": "2026-07-16",
       "days": 11
-    },
-    {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "owner": "Jerome Michael",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
     },
     {
       "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
@@ -576,14 +554,6 @@
       "wi": "DN3 - Check to see if the Transcript becomes accessible to a customer via browser/console/etc as it's being included in the webhook",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
-      "sev": "S3",
-      "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "",
       "days": null
@@ -646,8 +616,16 @@
     },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "Knowledge Base Updates and Search Visibility",
       "sev": "—",
-      "owner": "Unassigned",
+      "owner": "Jerome Michael",
       "status": "Not started",
       "opened": "",
       "days": null
