@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-27T14:53:51+00:00",
+  "generated": "2026-07-27T17:04:25+00:00",
   "kpis": {
-    "total": 103,
-    "resolved": 83,
+    "total": 105,
+    "resolved": 85,
     "resolvedPct": 81,
     "inProgress": 0,
-    "notStarted": 4,
-    "reTest": 14,
+    "notStarted": 6,
+    "reTest": 12,
     "reopened": 2,
     "openS1": 1,
-    "openS2": 9,
+    "openS2": 8,
     "totalOpen": 20,
-    "unassignedOpen": 0,
+    "unassignedOpen": 1,
     "future": 18,
     "setAside": 15
   },
   "status": [
     {
       "label": "Complete",
-      "count": 83
+      "count": 85
     },
     {
       "label": "Re-open",
@@ -26,11 +26,11 @@
     },
     {
       "label": "Re-test",
-      "count": 14
+      "count": 12
     },
     {
       "label": "Not started",
-      "count": 4
+      "count": 6
     }
   ],
   "severity": [
@@ -42,11 +42,11 @@
     {
       "label": "S2 · Critical",
       "total": 47,
-      "open": 9
+      "open": 8
     },
     {
       "label": "S3 · Elevated",
-      "total": 36,
+      "total": 37,
       "open": 8
     },
     {
@@ -56,20 +56,20 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 2
+      "total": 6,
+      "open": 3
     }
   ],
   "category": [
     {
       "label": "UX / Conversation Design",
-      "total": 29,
+      "total": 30,
       "open": 10
     },
     {
       "label": "Escalation & Handoff",
       "total": 24,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Platform / Infrastructure",
@@ -93,8 +93,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 2
+      "total": 5,
+      "open": 3
     },
     {
       "label": "Content / Instruction Defects",
@@ -109,19 +109,19 @@
   ],
   "rootCause": [
     {
-      "label": "n8n Workflow / Orchestration",
-      "total": 31,
-      "open": 2
-    },
-    {
       "label": "Instruction File / Prompt",
-      "total": 31,
-      "open": 6
+      "total": 32,
+      "open": 5
     },
     {
       "label": "Frontend / Chat Widget",
-      "total": 30,
-      "open": 8
+      "total": 31,
+      "open": 9
+    },
+    {
+      "label": "n8n Workflow / Orchestration",
+      "total": 31,
+      "open": 2
     },
     {
       "label": "Unspecified",
@@ -152,13 +152,13 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 28,
-      "open": 6
+      "total": 29,
+      "open": 7
     },
     {
       "label": "Ekta Mangal",
       "total": 11,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Jerome Michael",
@@ -173,13 +173,18 @@
     {
       "label": "Scott Duckworth",
       "total": 4,
+      "open": 0
+    },
+    {
+      "label": "Unassigned",
+      "total": 1,
       "open": 1
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 112
+      "count": 113
     },
     {
       "label": "Enhancement/Wishlist",
@@ -187,7 +192,7 @@
     },
     {
       "label": "Task",
-      "count": 5
+      "count": 6
     },
     {
       "label": "Untagged",
@@ -369,15 +374,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
     },
     {
-      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Scott Duckworth",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=708154213400452"
-    },
-    {
       "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
       "sev": "S2",
       "pri": "High",
@@ -450,13 +446,13 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
     },
     {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "wi": "VK1 - Add language into the Main Chat module that if a CSM/account rep is needed or the name/info is requested, reference the \"My Account Team\" tab and advise that it is on the right side of their browser window",
       "sev": "S3",
       "pri": "High",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6529822463754116"
     },
     {
       "wi": "when the additional input box is active, the main one should be disabled",
@@ -484,6 +480,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
+    },
+    {
+      "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
     }
   ],
   "aging": [
@@ -502,14 +507,6 @@
       "status": "Re-test",
       "opened": "2026-07-13",
       "days": 14
-    },
-    {
-      "wi": "TC-12-02/TC-12-04 — Case automatically created without confirmation at turn cap",
-      "sev": "S2",
-      "owner": "Scott Duckworth",
-      "status": "Re-test",
-      "opened": "2026-07-14",
-      "days": 13
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -540,14 +537,6 @@
       "sev": "S3",
       "owner": "Daniel Nicholas",
       "status": "Re-open",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "S3",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -643,6 +632,22 @@
       "wi": "when the additional input box is active, the main one should be disabled",
       "sev": "S3",
       "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "VK1 - Add language into the Main Chat module that if a CSM/account rep is needed or the name/info is requested, reference the \"My Account Team\" tab and advise that it is on the right side of their browser window",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
