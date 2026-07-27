@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T13:51:54+00:00",
+  "generated": "2026-07-27T13:54:20+00:00",
   "kpis": {
     "total": 103,
     "resolved": 82,
@@ -179,7 +179,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 111
+      "count": 112
     },
     {
       "label": "Enhancement/Wishlist",
@@ -187,7 +187,7 @@
     },
     {
       "label": "Task",
-      "count": 6
+      "count": 5
     },
     {
       "label": "Untagged",
@@ -365,7 +365,7 @@
       "pri": "High",
       "status": "Re-test",
       "owner": "Swastik Sharma",
-      "type": "Task",
+      "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8796098758311812"
     },
     {
