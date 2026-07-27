@@ -1,13 +1,13 @@
 {
-  "generated": "2026-07-27T03:52:05+00:00",
+  "generated": "2026-07-27T07:41:05+00:00",
   "kpis": {
     "total": 95,
     "resolved": 79,
     "resolvedPct": 83,
     "inProgress": 0,
     "notStarted": 0,
-    "reTest": 12,
-    "reopened": 4,
+    "reTest": 13,
+    "reopened": 3,
     "openS1": 0,
     "openS2": 6,
     "totalOpen": 16,
@@ -22,11 +22,11 @@
     },
     {
       "label": "Re-open",
-      "count": 4
+      "count": 3
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 13
     }
   ],
   "severity": [
@@ -355,15 +355,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
     },
     {
-      "wi": "No Tracking Number - Markdown formatting in response",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
-    },
-    {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
       "pri": "High",
@@ -389,6 +380,15 @@
       "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
+    },
+    {
+      "wi": "No Tracking Number - Markdown formatting in response",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Jerome Michael",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5897069249560452"
     },
     {
       "wi": "No Tracking no - Case offered after one turn, the issue is about an existing KBA",
@@ -497,7 +497,7 @@
       "wi": "No Tracking Number - Markdown formatting in response",
       "sev": "S3",
       "owner": "Jerome Michael",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
