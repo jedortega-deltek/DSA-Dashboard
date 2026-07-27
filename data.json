@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-27T13:54:20+00:00",
+  "generated": "2026-07-27T14:53:51+00:00",
   "kpis": {
     "total": 103,
-    "resolved": 82,
-    "resolvedPct": 80,
+    "resolved": 83,
+    "resolvedPct": 81,
     "inProgress": 0,
-    "notStarted": 5,
-    "reTest": 13,
-    "reopened": 3,
-    "openS1": 2,
+    "notStarted": 4,
+    "reTest": 14,
+    "reopened": 2,
+    "openS1": 1,
     "openS2": 9,
-    "totalOpen": 21,
+    "totalOpen": 20,
     "unassignedOpen": 0,
     "future": 18,
     "setAside": 15
@@ -18,26 +18,26 @@
   "status": [
     {
       "label": "Complete",
-      "count": 82
+      "count": 83
     },
     {
       "label": "Re-open",
-      "count": 3
+      "count": 2
     },
     {
       "label": "Re-test",
-      "count": 13
+      "count": 14
     },
     {
       "label": "Not started",
-      "count": 5
+      "count": 4
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 10,
-      "open": 2
+      "open": 1
     },
     {
       "label": "S2 · Critical",
@@ -74,7 +74,7 @@
     {
       "label": "Platform / Infrastructure",
       "total": 16,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Session Management",
@@ -111,7 +111,7 @@
     {
       "label": "n8n Workflow / Orchestration",
       "total": 31,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Instruction File / Prompt",
@@ -147,8 +147,8 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 50,
-      "open": 10
+      "total": 49,
+      "open": 9
     },
     {
       "label": "Daniel Nicholas",
@@ -157,8 +157,8 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 10,
-      "open": 2
+      "total": 11,
+      "open": 3
     },
     {
       "label": "Jerome Michael",
@@ -168,7 +168,7 @@
     {
       "label": "Chris Smith",
       "total": 5,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Scott Duckworth",
@@ -306,15 +306,6 @@
   ],
   "openItems": [
     {
-      "wi": "DN6 - Prompt caching for Agent nodes",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Chris Smith",
-      "type": "Task",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=883238807928708"
-    },
-    {
       "wi": "Feedback popup needs sizing constraints.",
       "sev": "S1",
       "pri": "High",
@@ -414,15 +405,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
     },
     {
-      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
-    },
-    {
       "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
       "sev": "S3",
       "pri": "Medium",
@@ -466,6 +448,15 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3331712553975684"
+    },
+    {
+      "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
+      "sev": "S3",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Ekta Mangal",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1289419462410116"
     },
     {
       "wi": "when the additional input box is active, the main one should be disabled",
@@ -555,8 +546,8 @@
     {
       "wi": "TC-018 - DSA ignored one issue in my multiple issue in one message",
       "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "owner": "Ekta Mangal",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -644,14 +635,6 @@
       "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "DN6 - Prompt caching for Agent nodes",
-      "sev": "S1",
-      "owner": "Chris Smith",
       "status": "Not started",
       "opened": "",
       "days": null
