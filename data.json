@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-27T23:36:55+00:00",
+  "generated": "2026-07-28T03:22:53+00:00",
   "kpis": {
     "total": 107,
     "resolved": 89,
@@ -291,24 +291,7 @@
       "owner": "Unassigned"
     }
   ],
-  "recent": [
-    {
-      "wi": "TC-04-03 - Only provides one option with steps",
-      "resolved": "2026-07-20"
-    },
-    {
-      "wi": "Odd Response When Discussing KBs",
-      "resolved": "2026-07-20"
-    },
-    {
-      "wi": "NO TRACKING NO. - Workflow execution failed during chat",
-      "resolved": "2026-07-20"
-    },
-    {
-      "wi": "Telemetry object being passed to front end",
-      "resolved": "2026-07-20"
-    }
-  ],
+  "recent": [],
   "openItems": [
     {
       "wi": "Feedback popup needs sizing constraints.",
@@ -480,7 +463,7 @@
       "owner": "Swastik Sharma",
       "status": "Re-open",
       "opened": "2026-07-13",
-      "days": 14
+      "days": 15
     },
     {
       "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
@@ -488,7 +471,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-13",
-      "days": 14
+      "days": 15
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -496,7 +479,7 @@
       "owner": "Ekta Mangal",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 11
+      "days": 12
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -504,7 +487,7 @@
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "2026-07-16",
-      "days": 11
+      "days": 12
     },
     {
       "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
