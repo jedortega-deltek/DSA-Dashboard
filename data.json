@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-28T21:15:47+00:00",
+  "generated": "2026-07-28T22:35:57+00:00",
   "kpis": {
-    "total": 113,
+    "total": 112,
     "resolved": 97,
-    "resolvedPct": 86,
+    "resolvedPct": 87,
     "inProgress": 1,
     "notStarted": 2,
-    "reTest": 11,
-    "reopened": 2,
+    "reTest": 12,
+    "reopened": 0,
     "openS1": 2,
     "openS2": 10,
-    "totalOpen": 16,
+    "totalOpen": 15,
     "unassignedOpen": 0,
     "future": 19,
-    "setAside": 13
+    "setAside": 14
   },
   "status": [
     {
@@ -21,16 +21,12 @@
       "count": 97
     },
     {
-      "label": "Re-open",
-      "count": 2
-    },
-    {
       "label": "In progress",
       "count": 1
     },
     {
       "label": "Re-test",
-      "count": 11
+      "count": 12
     },
     {
       "label": "Not started",
@@ -50,8 +46,8 @@
     },
     {
       "label": "S3 · Elevated",
-      "total": 39,
-      "open": 4
+      "total": 38,
+      "open": 3
     },
     {
       "label": "S4 · General",
@@ -67,8 +63,8 @@
   "category": [
     {
       "label": "UX / Conversation Design",
-      "total": 33,
-      "open": 9
+      "total": 32,
+      "open": 8
     },
     {
       "label": "Escalation & Handoff",
@@ -114,8 +110,8 @@
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 36,
-      "open": 9
+      "total": 35,
+      "open": 8
     },
     {
       "label": "Instruction File / Prompt",
@@ -151,8 +147,8 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 53,
-      "open": 9
+      "total": 52,
+      "open": 8
     },
     {
       "label": "Daniel Nicholas",
@@ -216,7 +212,7 @@
     },
     {
       "wi": "Additional Information S1 and S2 Customers on Submit a Case",
-      "status": "Not started",
+      "status": "Working as designed",
       "owner": "Swastik Sharma"
     },
     {
@@ -316,15 +312,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6806762080829316"
     },
     {
-      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
-    },
-    {
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "pri": "High",
@@ -332,6 +319,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
+    },
+    {
+      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
     },
     {
       "wi": "Delete 2nd turn “friendly greeting” from instructions.",
@@ -406,15 +402,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
     },
     {
-      "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
-      "sev": "S3",
-      "pri": "Low",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
-    },
-    {
       "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
       "sev": "S3",
       "pri": "Medium",
@@ -443,14 +430,6 @@
     }
   ],
   "aging": [
-    {
-      "wi": "No Tracking No.: Connect to a live agent - Word Contradiction",
-      "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Re-open",
-      "opened": "2026-07-13",
-      "days": 15
-    },
     {
       "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
       "sev": "S3",
@@ -511,7 +490,7 @@
       "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-open",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
