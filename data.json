@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-28T09:19:27+00:00",
+  "generated": "2026-07-28T11:36:50+00:00",
   "kpis": {
     "total": 107,
     "resolved": 89,
     "resolvedPct": 83,
     "inProgress": 0,
-    "notStarted": 8,
-    "reTest": 8,
+    "notStarted": 7,
+    "reTest": 9,
     "reopened": 2,
     "openS1": 2,
     "openS2": 9,
     "totalOpen": 18,
-    "unassignedOpen": 1,
+    "unassignedOpen": 0,
     "future": 18,
     "setAside": 15
   },
@@ -26,11 +26,11 @@
     },
     {
       "label": "Re-test",
-      "count": 8
+      "count": 9
     },
     {
       "label": "Not started",
-      "count": 8
+      "count": 7
     }
   ],
   "severity": [
@@ -152,8 +152,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 29,
-      "open": 7
+      "total": 30,
+      "open": 8
     },
     {
       "label": "Ekta Mangal",
@@ -174,11 +174,6 @@
       "label": "Scott Duckworth",
       "total": 4,
       "open": 0
-    },
-    {
-      "label": "Unassigned",
-      "total": 1,
-      "open": 1
     }
   ],
   "itemTypes": [
@@ -294,6 +289,15 @@
   "recent": [],
   "openItems": [
     {
+      "wi": "URGENT: No Tracking No. - Org with Support Plan Professional can \"chat\"",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6806762080829316"
+    },
+    {
       "wi": "Feedback popup needs sizing constraints.",
       "sev": "S1",
       "pri": "High",
@@ -301,15 +305,6 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6386697778888580"
-    },
-    {
-      "wi": "URGENT: No Tracking No. - Org with Support Plan Professional can \"chat\"",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6806762080829316"
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -596,8 +591,8 @@
     {
       "wi": "URGENT: No Tracking No. - Org with Support Plan Professional can \"chat\"",
       "sev": "S1",
-      "owner": "Unassigned",
-      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
       "opened": "",
       "days": null
     }
