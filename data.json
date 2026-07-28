@@ -1,17 +1,17 @@
 {
-  "generated": "2026-07-28T11:36:50+00:00",
+  "generated": "2026-07-28T13:14:18+00:00",
   "kpis": {
-    "total": 107,
+    "total": 108,
     "resolved": 89,
-    "resolvedPct": 83,
-    "inProgress": 0,
-    "notStarted": 7,
-    "reTest": 9,
+    "resolvedPct": 82,
+    "inProgress": 1,
+    "notStarted": 5,
+    "reTest": 11,
     "reopened": 2,
     "openS1": 2,
     "openS2": 9,
-    "totalOpen": 18,
-    "unassignedOpen": 0,
+    "totalOpen": 19,
+    "unassignedOpen": 1,
     "future": 18,
     "setAside": 15
   },
@@ -25,12 +25,16 @@
       "count": 2
     },
     {
+      "label": "In progress",
+      "count": 1
+    },
+    {
       "label": "Re-test",
-      "count": 9
+      "count": 11
     },
     {
       "label": "Not started",
-      "count": 7
+      "count": 5
     }
   ],
   "severity": [
@@ -46,8 +50,8 @@
     },
     {
       "label": "S3 · Elevated",
-      "total": 37,
-      "open": 6
+      "total": 38,
+      "open": 7
     },
     {
       "label": "S4 · General",
@@ -78,8 +82,8 @@
     },
     {
       "label": "Session Management",
-      "total": 11,
-      "open": 0
+      "total": 13,
+      "open": 2
     },
     {
       "label": "Guardrails / Output Quality",
@@ -103,8 +107,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 1
+      "total": 2,
+      "open": 0
     }
   ],
   "rootCause": [
@@ -114,22 +118,22 @@
       "open": 9
     },
     {
+      "label": "n8n Workflow / Orchestration",
+      "total": 33,
+      "open": 3
+    },
+    {
       "label": "Instruction File / Prompt",
       "total": 33,
       "open": 5
     },
     {
-      "label": "n8n Workflow / Orchestration",
-      "total": 31,
+      "label": "Knowledge Source / Retrieval",
+      "total": 3,
       "open": 1
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 2
-    },
-    {
-      "label": "Knowledge Source / Retrieval",
       "total": 3,
       "open": 1
     },
@@ -174,6 +178,11 @@
       "label": "Scott Duckworth",
       "total": 4,
       "open": 0
+    },
+    {
+      "label": "Unassigned",
+      "total": 1,
+      "open": 1
     }
   ],
   "itemTypes": [
@@ -187,7 +196,7 @@
     },
     {
       "label": "Task",
-      "count": 7
+      "count": 8
     },
     {
       "label": "Untagged",
@@ -289,6 +298,15 @@
   "recent": [],
   "openItems": [
     {
+      "wi": "Feedback popup needs sizing constraints.",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6386697778888580"
+    },
+    {
       "wi": "URGENT: No Tracking No. - Org with Support Plan Professional can \"chat\"",
       "sev": "S1",
       "pri": "High",
@@ -296,15 +314,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6806762080829316"
-    },
-    {
-      "wi": "Feedback popup needs sizing constraints.",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6386697778888580"
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -323,6 +332,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
+    },
+    {
+      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
     },
     {
       "wi": "Delete 2nd turn “friendly greeting” from instructions.",
@@ -361,15 +379,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
     },
     {
-      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
-    },
-    {
       "wi": "Ensure buttons are visible without scrolling",
       "sev": "S2",
       "pri": "High",
@@ -404,6 +413,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1956419575611268"
+    },
+    {
+      "wi": "DN6 - Telemetry updates",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "In progress",
+      "owner": "Unassigned",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=320607608504196"
     },
     {
       "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
@@ -528,7 +546,7 @@
       "wi": "Feedback popup needs sizing constraints.",
       "sev": "S1",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -552,7 +570,7 @@
       "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -593,6 +611,14 @@
       "sev": "S1",
       "owner": "Daniel Nicholas",
       "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "DN6 - Telemetry updates",
+      "sev": "S3",
+      "owner": "Unassigned",
+      "status": "In progress",
       "opened": "",
       "days": null
     }
