@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-28T13:14:18+00:00",
+  "generated": "2026-07-28T13:58:33+00:00",
   "kpis": {
     "total": 108,
-    "resolved": 89,
-    "resolvedPct": 82,
-    "inProgress": 1,
-    "notStarted": 5,
-    "reTest": 11,
+    "resolved": 91,
+    "resolvedPct": 84,
+    "inProgress": 2,
+    "notStarted": 4,
+    "reTest": 9,
     "reopened": 2,
     "openS1": 2,
-    "openS2": 9,
-    "totalOpen": 19,
+    "openS2": 8,
+    "totalOpen": 17,
     "unassignedOpen": 1,
     "future": 18,
     "setAside": 15
@@ -18,7 +18,7 @@
   "status": [
     {
       "label": "Complete",
-      "count": 89
+      "count": 91
     },
     {
       "label": "Re-open",
@@ -26,15 +26,15 @@
     },
     {
       "label": "In progress",
-      "count": 1
+      "count": 2
     },
     {
       "label": "Re-test",
-      "count": 11
+      "count": 9
     },
     {
       "label": "Not started",
-      "count": 5
+      "count": 4
     }
   ],
   "severity": [
@@ -46,12 +46,12 @@
     {
       "label": "S2 · Critical",
       "total": 50,
-      "open": 9
+      "open": 8
     },
     {
       "label": "S3 · Elevated",
       "total": 38,
-      "open": 7
+      "open": 6
     },
     {
       "label": "S4 · General",
@@ -88,7 +88,7 @@
     {
       "label": "Guardrails / Output Quality",
       "total": 7,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Grounding / Synthesis",
@@ -103,7 +103,7 @@
     {
       "label": "Retrieval Quality",
       "total": 3,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Unspecified",
@@ -120,7 +120,7 @@
     {
       "label": "n8n Workflow / Orchestration",
       "total": 33,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Instruction File / Prompt",
@@ -130,7 +130,7 @@
     {
       "label": "Knowledge Source / Retrieval",
       "total": 3,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Unspecified",
@@ -157,12 +157,12 @@
     {
       "label": "Daniel Nicholas",
       "total": 30,
-      "open": 8
+      "open": 7
     },
     {
       "label": "Ekta Mangal",
       "total": 11,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Jerome Michael",
@@ -370,15 +370,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8796098758311812"
     },
     {
-      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1396410139672452"
-    },
-    {
       "wi": "Ensure buttons are visible without scrolling",
       "sev": "S2",
       "pri": "High",
@@ -424,15 +415,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=320607608504196"
     },
     {
-      "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "Re-test",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6945880522751876"
-    },
-    {
       "wi": "No Tracking no. - Update case creation verbiage for business hours",
       "sev": "S3",
       "pri": "Medium",
@@ -463,7 +445,7 @@
       "wi": "Knowledge Base Updates and Search Visibility",
       "sev": "—",
       "pri": "Medium",
-      "status": "Not started",
+      "status": "In progress",
       "owner": "Jerome Michael",
       "type": "Task",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3462128608870276"
@@ -477,22 +459,6 @@
       "status": "Re-open",
       "opened": "2026-07-13",
       "days": 15
-    },
-    {
-      "wi": "SME-010 — Source KB articles unrelated to the issue being discussed",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-13",
-      "days": 15
-    },
-    {
-      "wi": "DELA-024 — Input guardrail false positive on KB article lookup request",
-      "sev": "S3",
-      "owner": "Ekta Mangal",
-      "status": "Re-test",
-      "opened": "2026-07-16",
-      "days": 12
     },
     {
       "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
@@ -602,7 +568,7 @@
       "wi": "Knowledge Base Updates and Search Visibility",
       "sev": "—",
       "owner": "Jerome Michael",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
