@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-28T14:27:51+00:00",
+  "generated": "2026-07-28T16:19:47+00:00",
   "kpis": {
-    "total": 108,
-    "resolved": 92,
+    "total": 111,
+    "resolved": 94,
     "resolvedPct": 85,
-    "inProgress": 2,
-    "notStarted": 1,
-    "reTest": 12,
+    "inProgress": 1,
+    "notStarted": 4,
+    "reTest": 11,
     "reopened": 1,
     "openS1": 2,
-    "openS2": 8,
-    "totalOpen": 16,
+    "openS2": 9,
+    "totalOpen": 17,
     "unassignedOpen": 1,
     "future": 18,
     "setAside": 15
@@ -18,7 +18,7 @@
   "status": [
     {
       "label": "Complete",
-      "count": 92
+      "count": 94
     },
     {
       "label": "Re-open",
@@ -26,15 +26,15 @@
     },
     {
       "label": "In progress",
-      "count": 2
+      "count": 1
     },
     {
       "label": "Re-test",
-      "count": 12
+      "count": 11
     },
     {
       "label": "Not started",
-      "count": 1
+      "count": 4
     }
   ],
   "severity": [
@@ -45,8 +45,8 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 50,
-      "open": 8
+      "total": 53,
+      "open": 9
     },
     {
       "label": "S3 · Elevated",
@@ -72,8 +72,8 @@
     },
     {
       "label": "Escalation & Handoff",
-      "total": 24,
-      "open": 0
+      "total": 26,
+      "open": 2
     },
     {
       "label": "Platform / Infrastructure",
@@ -93,12 +93,12 @@
     {
       "label": "Grounding / Synthesis",
       "total": 6,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Content / Instruction Defects",
       "total": 4,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Retrieval Quality",
@@ -107,15 +107,15 @@
     },
     {
       "label": "Unspecified",
-      "total": 2,
-      "open": 0
+      "total": 3,
+      "open": 1
     }
   ],
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 33,
-      "open": 8
+      "total": 35,
+      "open": 9
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -125,17 +125,17 @@
     {
       "label": "Instruction File / Prompt",
       "total": 33,
-      "open": 5
+      "open": 4
+    },
+    {
+      "label": "Unspecified",
+      "total": 4,
+      "open": 2
     },
     {
       "label": "Knowledge Source / Retrieval",
       "total": 3,
       "open": 0
-    },
-    {
-      "label": "Unspecified",
-      "total": 3,
-      "open": 1
     },
     {
       "label": "Escalation Integration (RNT/Five9)",
@@ -151,13 +151,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 50,
-      "open": 7
+      "total": 52,
+      "open": 9
     },
     {
       "label": "Daniel Nicholas",
-      "total": 29,
-      "open": 6
+      "total": 30,
+      "open": 5
     },
     {
       "label": "Ekta Mangal",
@@ -188,7 +188,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 114
+      "count": 117
     },
     {
       "label": "Enhancement/Wishlist",
@@ -316,15 +316,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6806762080829316"
     },
     {
-      "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=1316380988538756"
-    },
-    {
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "pri": "High",
@@ -361,15 +352,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3575701301493636"
     },
     {
-      "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5140202293428100"
-    },
-    {
       "wi": "Remove buttons and links from home page",
       "sev": "S2",
       "pri": "High",
@@ -377,6 +359,33 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8796098758311812"
+    },
+    {
+      "wi": "No Tacking no - Out of cases customer prompted to contact CSM instead of ACC",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=751208144699268"
+    },
+    {
+      "wi": "No Tracking No. - Could not submit feedback, but thank you!",
+      "sev": "S2",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2008918450372484"
+    },
+    {
+      "wi": "No Tracking No: Cannot Create a Case for Legacy Client & to contact CSM",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3414921091874692"
     },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
@@ -401,7 +410,7 @@
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "type": "Task",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=320607608504196"
     },
@@ -436,7 +445,7 @@
       "wi": "Knowledge Base Updates and Search Visibility",
       "sev": "—",
       "pri": "Medium",
-      "status": "In progress",
+      "status": "Re-test",
       "owner": "Jerome Michael",
       "type": "Task",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3462128608870276"
@@ -452,14 +461,6 @@
       "days": 15
     },
     {
-      "wi": "DELA-025 — Brain serving Vantagepoint content to Ajera customer (product boundary violation)",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "2026-07-16",
-      "days": 12
-    },
-    {
       "wi": "TC-17-01 - Feedback not displaying when ending via the chat with Dela",
       "sev": "S3",
       "owner": "Swastik Sharma",
@@ -469,14 +470,6 @@
     },
     {
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
-      "sev": "S2",
-      "owner": "Daniel Nicholas",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking no. - Case summary is showing Issue Type: 37 and incorrect issue type classification",
       "sev": "S2",
       "owner": "Daniel Nicholas",
       "status": "Re-test",
@@ -551,7 +544,7 @@
       "wi": "Knowledge Base Updates and Search Visibility",
       "sev": "—",
       "owner": "Jerome Michael",
-      "status": "In progress",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -566,8 +559,32 @@
     {
       "wi": "DN7 - Telemetry updates",
       "sev": "S3",
-      "owner": "Unassigned",
+      "owner": "Daniel Nicholas",
       "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tacking no - Out of cases customer prompted to contact CSM instead of ACC",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking No: Cannot Create a Case for Legacy Client & to contact CSM",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "No Tracking No. - Could not submit feedback, but thank you!",
+      "sev": "S2",
+      "owner": "Unassigned",
+      "status": "Not started",
       "opened": "",
       "days": null
     }
