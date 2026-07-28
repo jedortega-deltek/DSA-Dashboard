@@ -1,28 +1,28 @@
 {
-  "generated": "2026-07-28T17:58:36+00:00",
+  "generated": "2026-07-28T21:15:47+00:00",
   "kpis": {
-    "total": 111,
-    "resolved": 96,
+    "total": 113,
+    "resolved": 97,
     "resolvedPct": 86,
     "inProgress": 1,
-    "notStarted": 4,
-    "reTest": 9,
-    "reopened": 1,
+    "notStarted": 2,
+    "reTest": 11,
+    "reopened": 2,
     "openS1": 2,
-    "openS2": 9,
-    "totalOpen": 15,
+    "openS2": 10,
+    "totalOpen": 16,
     "unassignedOpen": 0,
     "future": 19,
-    "setAside": 15
+    "setAside": 13
   },
   "status": [
     {
       "label": "Complete",
-      "count": 96
+      "count": 97
     },
     {
       "label": "Re-open",
-      "count": 1
+      "count": 2
     },
     {
       "label": "In progress",
@@ -30,11 +30,11 @@
     },
     {
       "label": "Re-test",
-      "count": 9
+      "count": 11
     },
     {
       "label": "Not started",
-      "count": 4
+      "count": 2
     }
   ],
   "severity": [
@@ -45,12 +45,12 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 53,
-      "open": 9
+      "total": 54,
+      "open": 10
     },
     {
       "label": "S3 · Elevated",
-      "total": 38,
+      "total": 39,
       "open": 4
     },
     {
@@ -72,17 +72,17 @@
     },
     {
       "label": "Escalation & Handoff",
-      "total": 26,
-      "open": 2
+      "total": 27,
+      "open": 3
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 16,
-      "open": 0
+      "total": 17,
+      "open": 1
     },
     {
       "label": "Session Management",
-      "total": 13,
+      "total": 14,
       "open": 2
     },
     {
@@ -107,33 +107,33 @@
     },
     {
       "label": "Unspecified",
-      "total": 3,
-      "open": 1
+      "total": 2,
+      "open": 0
     }
   ],
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
+      "total": 36,
+      "open": 9
+    },
+    {
+      "label": "Instruction File / Prompt",
       "total": 35,
-      "open": 8
+      "open": 6
     },
     {
       "label": "n8n Workflow / Orchestration",
       "total": 33,
-      "open": 2
-    },
-    {
-      "label": "Instruction File / Prompt",
-      "total": 33,
-      "open": 4
-    },
-    {
-      "label": "Unspecified",
-      "total": 4,
       "open": 1
     },
     {
       "label": "Knowledge Source / Retrieval",
+      "total": 3,
+      "open": 0
+    },
+    {
+      "label": "Unspecified",
       "total": 3,
       "open": 0
     },
@@ -156,8 +156,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 30,
-      "open": 5
+      "total": 32,
+      "open": 6
     },
     {
       "label": "Ekta Mangal",
@@ -292,7 +292,7 @@
     {
       "wi": "DSA users are able to access Submit a Case and Initiate a Chat if they have the direct links or saved as a Bookmark/Favorite",
       "status": "Working as designed",
-      "owner": "Unassigned"
+      "owner": "Jennifer Folkman"
     }
   ],
   "recent": [],
@@ -316,6 +316,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6806762080829316"
     },
     {
+      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-open",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
+    },
+    {
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "pri": "High",
@@ -323,15 +332,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2788725474328452"
-    },
-    {
-      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
     },
     {
       "wi": "Delete 2nd turn “friendly greeting” from instructions.",
@@ -352,6 +352,24 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3575701301493636"
     },
     {
+      "wi": "No Tacking no - Out of cases customer prompted to contact CSM instead of ACC",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=751208144699268"
+    },
+    {
+      "wi": "No Tracking No: Cannot Create a Case for Legacy Client & to contact CSM",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3414921091874692"
+    },
+    {
       "wi": "Remove buttons and links from home page",
       "sev": "S2",
       "pri": "High",
@@ -361,13 +379,13 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8796098758311812"
     },
     {
-      "wi": "No Tacking no - Out of cases customer prompted to contact CSM instead of ACC",
+      "wi": "TC-041 - Can ask another question after case creation from previous issue",
       "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=751208144699268"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2974463469944708"
     },
     {
       "wi": "No Tracking No. - Could not submit feedback, but thank you!",
@@ -377,15 +395,6 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2008918450372484"
-    },
-    {
-      "wi": "No Tracking No: Cannot Create a Case for Legacy Client & to contact CSM",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3414921091874692"
     },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
@@ -406,13 +415,13 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3250015838797700"
     },
     {
-      "wi": "DN7 - Telemetry updates",
+      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
       "sev": "S3",
       "pri": "Medium",
       "status": "In progress",
       "owner": "Daniel Nicholas",
-      "type": "Task",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=320607608504196"
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4296570090946436"
     },
     {
       "wi": "VK1 - Add language into the Main Chat module that if a CSM/account rep is needed or the name/info is requested, reference the \"My Account Team\" tab and advise that it is on the right side of their browser window",
@@ -443,6 +452,22 @@
       "days": 15
     },
     {
+      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "In progress",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "TC-041 - Can ask another question after case creation from previous issue",
+      "sev": "S2",
+      "owner": "Daniel Nicholas",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
       "wi": "DN1 - Fields/Menu Items being created based on assumptions from Learning Hub content",
       "sev": "S2",
       "owner": "Daniel Nicholas",
@@ -486,7 +511,7 @@
       "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Re-test",
+      "status": "Re-open",
       "opened": "",
       "days": null
     },
@@ -523,18 +548,10 @@
       "days": null
     },
     {
-      "wi": "DN7 - Telemetry updates",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "In progress",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tacking no - Out of cases customer prompted to contact CSM instead of ACC",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
@@ -542,7 +559,7 @@
       "wi": "No Tracking No: Cannot Create a Case for Legacy Client & to contact CSM",
       "sev": "S2",
       "owner": "Swastik Sharma",
-      "status": "Not started",
+      "status": "Re-test",
       "opened": "",
       "days": null
     },
