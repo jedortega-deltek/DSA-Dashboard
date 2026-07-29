@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-29T19:35:01+00:00",
+  "generated": "2026-07-29T21:04:55+00:00",
   "kpis": {
-    "total": 116,
-    "resolved": 110,
-    "resolvedPct": 95,
+    "total": 117,
+    "resolved": 112,
+    "resolvedPct": 96,
     "inProgress": 2,
-    "notStarted": 4,
+    "notStarted": 3,
     "reTest": 0,
     "reopened": 0,
-    "openS1": 2,
+    "openS1": 1,
     "openS2": 1,
-    "totalOpen": 6,
+    "totalOpen": 5,
     "unassignedOpen": 0,
-    "future": 19,
+    "future": 20,
     "setAside": 14
   },
   "status": [
     {
       "label": "Complete",
-      "count": 110
+      "count": 112
     },
     {
       "label": "In progress",
@@ -26,14 +26,14 @@
     },
     {
       "label": "Not started",
-      "count": 4
+      "count": 3
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 13,
-      "open": 2
+      "open": 1
     },
     {
       "label": "S2 · Critical",
@@ -52,7 +52,7 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
+      "total": 5,
       "open": 0
     }
   ],
@@ -60,7 +60,7 @@
     {
       "label": "UX / Conversation Design",
       "total": 34,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Escalation & Handoff",
@@ -99,7 +99,7 @@
     },
     {
       "label": "Unspecified",
-      "total": 2,
+      "total": 3,
       "open": 0
     }
   ],
@@ -107,7 +107,7 @@
     {
       "label": "Frontend / Chat Widget",
       "total": 38,
-      "open": 3
+      "open": 2
     },
     {
       "label": "Instruction File / Prompt",
@@ -120,12 +120,12 @@
       "open": 0
     },
     {
-      "label": "Knowledge Source / Retrieval",
-      "total": 3,
+      "label": "Unspecified",
+      "total": 4,
       "open": 0
     },
     {
-      "label": "Unspecified",
+      "label": "Knowledge Source / Retrieval",
       "total": 3,
       "open": 0
     },
@@ -144,7 +144,7 @@
     {
       "label": "Swastik Sharma",
       "total": 56,
-      "open": 4
+      "open": 2
     },
     {
       "label": "Daniel Nicholas",
@@ -158,8 +158,8 @@
     },
     {
       "label": "Jerome Michael",
-      "total": 7,
-      "open": 0
+      "total": 8,
+      "open": 1
     },
     {
       "label": "Chris Smith",
@@ -175,11 +175,11 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 121
+      "count": 122
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 19
+      "count": 20
     },
     {
       "label": "Task",
@@ -285,25 +285,21 @@
       "wi": "DSA users are able to access Submit a Case and Initiate a Chat if they have the direct links or saved as a Bookmark/Favorite",
       "status": "Working as designed",
       "owner": "Jennifer Folkman"
+    },
+    {
+      "wi": "BACKLOG - PROD - No Tracking No:",
+      "status": "Working as designed",
+      "owner": "Unassigned"
     }
   ],
   "recent": [],
   "openItems": [
     {
-      "wi": "PROD - Case created in TST2 instead of Prod",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4331767760551812"
-    },
-    {
       "wi": "PROD - No Tracking No: Submit a Case & Initiate Chat are Appearing & Disappearing & Reappearing",
       "sev": "S1",
       "pri": "High",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Jerome Michael",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6583567574237060"
     },
@@ -380,15 +376,7 @@
     {
       "wi": "PROD - No Tracking No: Submit a Case & Initiate Chat are Appearing & Disappearing & Reappearing",
       "sev": "S1",
-      "owner": "Swastik Sharma",
-      "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "PROD - Case created in TST2 instead of Prod",
-      "sev": "S1",
-      "owner": "Swastik Sharma",
+      "owner": "Jerome Michael",
       "status": "Not started",
       "opened": "",
       "days": null
