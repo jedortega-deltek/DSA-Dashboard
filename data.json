@@ -1,15 +1,15 @@
 {
-  "generated": "2026-07-29T13:04:16+00:00",
+  "generated": "2026-07-29T14:53:50+00:00",
   "kpis": {
     "total": 113,
     "resolved": 110,
     "resolvedPct": 97,
-    "inProgress": 1,
-    "notStarted": 2,
+    "inProgress": 2,
+    "notStarted": 1,
     "reTest": 0,
     "reopened": 0,
     "openS1": 0,
-    "openS2": 1,
+    "openS2": 0,
     "totalOpen": 3,
     "unassignedOpen": 0,
     "future": 19,
@@ -22,11 +22,11 @@
     },
     {
       "label": "In progress",
-      "count": 1
+      "count": 2
     },
     {
       "label": "Not started",
-      "count": 2
+      "count": 1
     }
   ],
   "severity": [
@@ -37,8 +37,8 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 54,
-      "open": 1
+      "total": 53,
+      "open": 0
     },
     {
       "label": "S3 · Elevated",
@@ -47,8 +47,8 @@
     },
     {
       "label": "S4 · General",
-      "total": 6,
-      "open": 0
+      "total": 7,
+      "open": 1
     },
     {
       "label": "Unspecified",
@@ -290,15 +290,6 @@
   "recent": [],
   "openItems": [
     {
-      "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Chris Smith",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
-    },
-    {
       "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
       "sev": "S3",
       "pri": "Medium",
@@ -306,6 +297,15 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4296570090946436"
+    },
+    {
+      "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
+      "sev": "S4",
+      "pri": "High",
+      "status": "In progress",
+      "owner": "Chris Smith",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
     },
     {
       "wi": "If a Standard Care customer has an Unlimited SLA but not a Case limit SLA DSA comes back that the customer does not have any cases and it will not create a case or chat.",
@@ -328,9 +328,9 @@
     },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
-      "sev": "S2",
+      "sev": "S4",
       "owner": "Chris Smith",
-      "status": "Not started",
+      "status": "In progress",
       "opened": "",
       "days": null
     },
