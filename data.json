@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-29T12:08:12+00:00",
+  "generated": "2026-07-29T13:04:16+00:00",
   "kpis": {
     "total": 113,
-    "resolved": 107,
-    "resolvedPct": 95,
+    "resolved": 110,
+    "resolvedPct": 97,
     "inProgress": 1,
     "notStarted": 2,
-    "reTest": 2,
-    "reopened": 1,
+    "reTest": 0,
+    "reopened": 0,
     "openS1": 0,
-    "openS2": 3,
-    "totalOpen": 6,
+    "openS2": 1,
+    "totalOpen": 3,
     "unassignedOpen": 0,
     "future": 19,
     "setAside": 14
@@ -18,19 +18,11 @@
   "status": [
     {
       "label": "Complete",
-      "count": 107
-    },
-    {
-      "label": "Re-open",
-      "count": 1
+      "count": 110
     },
     {
       "label": "In progress",
       "count": 1
-    },
-    {
-      "label": "Re-test",
-      "count": 2
     },
     {
       "label": "Not started",
@@ -46,12 +38,12 @@
     {
       "label": "S2 · Critical",
       "total": 54,
-      "open": 3
+      "open": 1
     },
     {
       "label": "S3 · Elevated",
       "total": 37,
-      "open": 2
+      "open": 1
     },
     {
       "label": "S4 · General",
@@ -68,7 +60,7 @@
     {
       "label": "UX / Conversation Design",
       "total": 32,
-      "open": 3
+      "open": 1
     },
     {
       "label": "Escalation & Handoff",
@@ -78,7 +70,7 @@
     {
       "label": "Platform / Infrastructure",
       "total": 17,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Session Management",
@@ -115,7 +107,7 @@
     {
       "label": "Frontend / Chat Widget",
       "total": 35,
-      "open": 3
+      "open": 0
     },
     {
       "label": "Instruction File / Prompt",
@@ -152,7 +144,7 @@
     {
       "label": "Swastik Sharma",
       "total": 53,
-      "open": 4
+      "open": 1
     },
     {
       "label": "Daniel Nicholas",
@@ -298,24 +290,6 @@
   "recent": [],
   "openItems": [
     {
-      "wi": "No Tracking No. - Could not submit feedback, but thank you!",
-      "sev": "S2",
-      "pri": "Medium",
-      "status": "Re-open",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2008918450372484"
-    },
-    {
-      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3306288740433796"
-    },
-    {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S2",
       "pri": "High",
@@ -332,15 +306,6 @@
       "owner": "Daniel Nicholas",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4296570090946436"
-    },
-    {
-      "wi": "when the additional input box is active, the main one should be disabled",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2071134755749764"
     },
     {
       "wi": "If a Standard Care customer has an Unlimited SLA but not a Case limit SLA DSA comes back that the customer does not have any cases and it will not create a case or chat.",
@@ -362,34 +327,10 @@
       "days": null
     },
     {
-      "wi": "DN5 - Vertical chat window size is very small and user has to consistently scroll to review information",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "when the additional input box is active, the main one should be disabled",
-      "sev": "S3",
-      "owner": "Swastik Sharma",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S2",
       "owner": "Chris Smith",
       "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "No Tracking No. - Could not submit feedback, but thank you!",
-      "sev": "S2",
-      "owner": "Swastik Sharma",
-      "status": "Re-open",
       "opened": "",
       "days": null
     },
