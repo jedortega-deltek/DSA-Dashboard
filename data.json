@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-28T22:35:57+00:00",
+  "generated": "2026-07-29T00:04:04+00:00",
   "kpis": {
     "total": 112,
     "resolved": 97,
@@ -46,13 +46,13 @@
     },
     {
       "label": "S3 · Elevated",
-      "total": 38,
-      "open": 3
+      "total": 37,
+      "open": 2
     },
     {
       "label": "S4 · General",
-      "total": 5,
-      "open": 0
+      "total": 6,
+      "open": 1
     },
     {
       "label": "Unspecified",
@@ -411,15 +411,6 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4296570090946436"
     },
     {
-      "wi": "VK1 - Add language into the Main Chat module that if a CSM/account rep is needed or the name/info is requested, reference the \"My Account Team\" tab and advise that it is on the right side of their browser window",
-      "sev": "S3",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Daniel Nicholas",
-      "type": "Task",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6529822463754116"
-    },
-    {
       "wi": "when the additional input box is active, the main one should be disabled",
       "sev": "S3",
       "pri": "High",
@@ -427,6 +418,15 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2071134755749764"
+    },
+    {
+      "wi": "VK1 - Add language into the Main Chat module that if a CSM/account rep is needed or the name/info is requested, reference the \"My Account Team\" tab and advise that it is on the right side of their browser window",
+      "sev": "S4",
+      "pri": "Medium",
+      "status": "Re-test",
+      "owner": "Daniel Nicholas",
+      "type": "Task",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6529822463754116"
     }
   ],
   "aging": [
@@ -504,7 +504,7 @@
     },
     {
       "wi": "VK1 - Add language into the Main Chat module that if a CSM/account rep is needed or the name/info is requested, reference the \"My Account Team\" tab and advise that it is on the right side of their browser window",
-      "sev": "S3",
+      "sev": "S4",
       "owner": "Daniel Nicholas",
       "status": "Re-test",
       "opened": "",
