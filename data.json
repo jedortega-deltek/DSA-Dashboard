@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-30T13:29:11+00:00",
+  "generated": "2026-07-30T16:09:09+00:00",
   "kpis": {
     "total": 117,
-    "resolved": 113,
+    "resolved": 114,
     "resolvedPct": 97,
     "inProgress": 2,
-    "notStarted": 2,
+    "notStarted": 1,
     "reTest": 0,
     "reopened": 0,
     "openS1": 0,
-    "openS2": 1,
-    "totalOpen": 4,
-    "unassignedOpen": 0,
-    "future": 20,
+    "openS2": 0,
+    "totalOpen": 3,
+    "unassignedOpen": 1,
+    "future": 21,
     "setAside": 15
   },
   "status": [
     {
       "label": "Complete",
-      "count": 113
+      "count": 114
     },
     {
       "label": "In progress",
@@ -26,7 +26,7 @@
     },
     {
       "label": "Not started",
-      "count": 2
+      "count": 1
     }
   ],
   "severity": [
@@ -37,13 +37,13 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 54,
-      "open": 1
+      "total": 53,
+      "open": 0
     },
     {
       "label": "S3 · Elevated",
       "total": 37,
-      "open": 1
+      "open": 0
     },
     {
       "label": "S4 · General",
@@ -52,8 +52,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 0
+      "total": 6,
+      "open": 1
     }
   ],
   "category": [
@@ -65,7 +65,7 @@
     {
       "label": "Escalation & Handoff",
       "total": 27,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Platform / Infrastructure",
@@ -79,8 +79,8 @@
     },
     {
       "label": "Guardrails / Output Quality",
-      "total": 8,
-      "open": 1
+      "total": 7,
+      "open": 0
     },
     {
       "label": "Grounding / Synthesis",
@@ -93,12 +93,12 @@
       "open": 0
     },
     {
-      "label": "Retrieval Quality",
-      "total": 3,
-      "open": 0
+      "label": "Unspecified",
+      "total": 4,
+      "open": 1
     },
     {
-      "label": "Unspecified",
+      "label": "Retrieval Quality",
       "total": 3,
       "open": 0
     }
@@ -111,8 +111,8 @@
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 36,
-      "open": 3
+      "total": 35,
+      "open": 1
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -121,8 +121,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 0
+      "total": 5,
+      "open": 1
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -149,12 +149,12 @@
     {
       "label": "Daniel Nicholas",
       "total": 32,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Ekta Mangal",
-      "total": 12,
-      "open": 1
+      "total": 11,
+      "open": 0
     },
     {
       "label": "Jerome Michael",
@@ -170,6 +170,11 @@
       "label": "Scott Duckworth",
       "total": 4,
       "open": 0
+    },
+    {
+      "label": "Unassigned",
+      "total": 1,
+      "open": 1
     }
   ],
   "itemTypes": [
@@ -179,7 +184,7 @@
     },
     {
       "label": "Enhancement/Wishlist",
-      "count": 20
+      "count": 21
     },
     {
       "label": "Task",
@@ -290,28 +295,15 @@
       "wi": "BACKLOG - PROD - No Tracking No:",
       "status": "Working as designed",
       "owner": "Unassigned"
+    },
+    {
+      "wi": "PROD TC-006: Mixed Content Query (Multiple Topics)",
+      "status": "Not started",
+      "owner": "Ekta Mangal"
     }
   ],
   "recent": [],
   "openItems": [
-    {
-      "wi": "PROD TC-006: Mixed Content Query (Multiple Topics)",
-      "sev": "S2",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Ekta Mangal",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2964597172469636"
-    },
-    {
-      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
-      "sev": "S3",
-      "pri": "Medium",
-      "status": "In progress",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4296570090946436"
-    },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S4",
@@ -329,17 +321,18 @@
       "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7709467481079684"
+    },
+    {
+      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
+      "sev": "—",
+      "pri": "—",
+      "status": "In progress",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3611286161981316"
     }
   ],
   "aging": [
-    {
-      "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
-      "sev": "S3",
-      "owner": "Daniel Nicholas",
-      "status": "In progress",
-      "opened": "",
-      "days": null
-    },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S4",
@@ -357,10 +350,10 @@
       "days": null
     },
     {
-      "wi": "PROD TC-006: Mixed Content Query (Multiple Topics)",
-      "sev": "S2",
-      "owner": "Ekta Mangal",
-      "status": "Not started",
+      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "In progress",
       "opened": "",
       "days": null
     }
