@@ -1,32 +1,28 @@
 {
-  "generated": "2026-07-30T11:56:54+00:00",
+  "generated": "2026-07-30T13:29:11+00:00",
   "kpis": {
     "total": 117,
-    "resolved": 112,
-    "resolvedPct": 96,
+    "resolved": 113,
+    "resolvedPct": 97,
     "inProgress": 2,
     "notStarted": 2,
-    "reTest": 1,
+    "reTest": 0,
     "reopened": 0,
-    "openS1": 1,
+    "openS1": 0,
     "openS2": 1,
-    "totalOpen": 5,
+    "totalOpen": 4,
     "unassignedOpen": 0,
     "future": 20,
-    "setAside": 14
+    "setAside": 15
   },
   "status": [
     {
       "label": "Complete",
-      "count": 112
+      "count": 113
     },
     {
       "label": "In progress",
       "count": 2
-    },
-    {
-      "label": "Re-test",
-      "count": 1
     },
     {
       "label": "Not started",
@@ -37,7 +33,7 @@
     {
       "label": "S1 · Mission critical",
       "total": 13,
-      "open": 1
+      "open": 0
     },
     {
       "label": "S2 · Critical",
@@ -64,7 +60,7 @@
     {
       "label": "UX / Conversation Design",
       "total": 34,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Escalation & Handoff",
@@ -73,8 +69,8 @@
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 18,
-      "open": 1
+      "total": 17,
+      "open": 0
     },
     {
       "label": "Session Management",
@@ -83,8 +79,8 @@
     },
     {
       "label": "Guardrails / Output Quality",
-      "total": 7,
-      "open": 0
+      "total": 8,
+      "open": 1
     },
     {
       "label": "Grounding / Synthesis",
@@ -111,12 +107,12 @@
     {
       "label": "Frontend / Chat Widget",
       "total": 38,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 35,
-      "open": 2
+      "total": 36,
+      "open": 3
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -140,15 +136,15 @@
     },
     {
       "label": "Session / State Management",
-      "total": 2,
-      "open": 1
+      "total": 1,
+      "open": 0
     }
   ],
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 56,
-      "open": 2
+      "total": 55,
+      "open": 1
     },
     {
       "label": "Daniel Nicholas",
@@ -157,13 +153,13 @@
     },
     {
       "label": "Ekta Mangal",
-      "total": 11,
-      "open": 0
+      "total": 12,
+      "open": 1
     },
     {
       "label": "Jerome Michael",
       "total": 8,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Chris Smith",
@@ -179,7 +175,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 122
+      "count": 123
     },
     {
       "label": "Enhancement/Wishlist",
@@ -299,22 +295,13 @@
   "recent": [],
   "openItems": [
     {
-      "wi": "PROD - No Tracking No: Submit a Case & Initiate Chat are Appearing & Disappearing & Reappearing",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Jerome Michael",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=6583567574237060"
-    },
-    {
-      "wi": "PROD -  TC-02-04 - Dela seemed to stop working, no hold messages",
+      "wi": "PROD TC-006: Mixed Content Query (Multiple Topics)",
       "sev": "S2",
       "pri": "High",
       "status": "Not started",
-      "owner": "Swastik Sharma",
+      "owner": "Ekta Mangal",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2079967946866564"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=2964597172469636"
     },
     {
       "wi": "TC-044 - No one available in chat. DSA did not advice customer case created",
@@ -370,18 +357,10 @@
       "days": null
     },
     {
-      "wi": "PROD -  TC-02-04 - Dela seemed to stop working, no hold messages",
+      "wi": "PROD TC-006: Mixed Content Query (Multiple Topics)",
       "sev": "S2",
-      "owner": "Swastik Sharma",
+      "owner": "Ekta Mangal",
       "status": "Not started",
-      "opened": "",
-      "days": null
-    },
-    {
-      "wi": "PROD - No Tracking No: Submit a Case & Initiate Chat are Appearing & Disappearing & Reappearing",
-      "sev": "S1",
-      "owner": "Jerome Michael",
-      "status": "Re-test",
       "opened": "",
       "days": null
     }
