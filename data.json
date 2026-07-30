@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-30T17:57:59+00:00",
+  "generated": "2026-07-30T19:45:13+00:00",
   "kpis": {
-    "total": 118,
+    "total": 119,
     "resolved": 114,
-    "resolvedPct": 97,
+    "resolvedPct": 96,
     "inProgress": 1,
-    "notStarted": 2,
-    "reTest": 1,
+    "notStarted": 4,
+    "reTest": 0,
     "reopened": 0,
     "openS1": 0,
     "openS2": 1,
-    "totalOpen": 4,
-    "unassignedOpen": 3,
+    "totalOpen": 5,
+    "unassignedOpen": 0,
     "future": 21,
-    "setAside": 16
+    "setAside": 17
   },
   "status": [
     {
@@ -25,12 +25,8 @@
       "count": 1
     },
     {
-      "label": "Re-test",
-      "count": 1
-    },
-    {
       "label": "Not started",
-      "count": 2
+      "count": 4
     }
   ],
   "severity": [
@@ -46,8 +42,8 @@
     },
     {
       "label": "S3 · Elevated",
-      "total": 37,
-      "open": 0
+      "total": 40,
+      "open": 3
     },
     {
       "label": "S4 · General",
@@ -56,15 +52,15 @@
     },
     {
       "label": "Unspecified",
-      "total": 7,
-      "open": 2
+      "total": 5,
+      "open": 0
     }
   ],
   "category": [
     {
       "label": "UX / Conversation Design",
-      "total": 34,
-      "open": 1
+      "total": 35,
+      "open": 2
     },
     {
       "label": "Escalation & Handoff",
@@ -78,8 +74,8 @@
     },
     {
       "label": "Session Management",
-      "total": 14,
-      "open": 0
+      "total": 16,
+      "open": 2
     },
     {
       "label": "Guardrails / Output Quality",
@@ -92,17 +88,17 @@
       "open": 0
     },
     {
-      "label": "Unspecified",
-      "total": 6,
-      "open": 3
-    },
-    {
       "label": "Content / Instruction Defects",
-      "total": 4,
-      "open": 0
+      "total": 5,
+      "open": 1
     },
     {
       "label": "Retrieval Quality",
+      "total": 3,
+      "open": 0
+    },
+    {
+      "label": "Unspecified",
       "total": 3,
       "open": 0
     }
@@ -110,8 +106,8 @@
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 37,
-      "open": 0
+      "total": 41,
+      "open": 4
     },
     {
       "label": "Instruction File / Prompt",
@@ -125,8 +121,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 7,
-      "open": 3
+      "total": 4,
+      "open": 0
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -147,13 +143,13 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 54,
-      "open": 0
+      "total": 57,
+      "open": 3
     },
     {
       "label": "Daniel Nicholas",
-      "total": 32,
-      "open": 0
+      "total": 33,
+      "open": 1
     },
     {
       "label": "Ekta Mangal",
@@ -174,17 +170,12 @@
       "label": "Scott Duckworth",
       "total": 4,
       "open": 0
-    },
-    {
-      "label": "Unassigned",
-      "total": 3,
-      "open": 3
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 125
+      "count": 127
     },
     {
       "label": "Enhancement/Wishlist",
@@ -309,13 +300,40 @@
   "recent": [],
   "openItems": [
     {
-      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
+      "wi": "PROD: DSA customers can access Submit case and Initiate a Chat via links in Deltek Community",
       "sev": "S2",
-      "pri": "High",
-      "status": "Re-test",
-      "owner": "Unassigned",
+      "pri": "Low",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3611286161981316"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=4094822287540100"
+    },
+    {
+      "wi": "PROD - No Tracking No - DSA say you can submit a case in Manage Cases",
+      "sev": "S3",
+      "pri": "Low",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5559513660653444"
+    },
+    {
+      "wi": "PROD - No Tracking No. - Inaccurate Message to Customer",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Swastik Sharma",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8114885789351812"
+    },
+    {
+      "wi": "PROD: TC-033: Dela gave an answer after I replied \"latest\" when asked what version",
+      "sev": "S3",
+      "pri": "Medium",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=746251370758020"
     },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
@@ -325,24 +343,6 @@
       "owner": "Chris Smith",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
-    },
-    {
-      "wi": "PROD - No Tracking No. - Inaccurate Message to Customer",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8114885789351812"
-    },
-    {
-      "wi": "PROD: TC-033: Dela gave an answer after I replied \"latest\" when asked what version",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=746251370758020"
     }
   ],
   "aging": [
@@ -355,25 +355,33 @@
       "days": null
     },
     {
-      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
-      "sev": "S2",
-      "owner": "Unassigned",
-      "status": "Re-test",
-      "opened": "",
-      "days": null
-    },
-    {
       "wi": "PROD - No Tracking No. - Inaccurate Message to Customer",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S3",
+      "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
       "wi": "PROD: TC-033: Dela gave an answer after I replied \"latest\" when asked what version",
-      "sev": "—",
-      "owner": "Unassigned",
+      "sev": "S3",
+      "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "PROD: DSA customers can access Submit case and Initiate a Chat via links in Deltek Community",
+      "sev": "S2",
+      "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "PROD - No Tracking No - DSA say you can submit a case in Manage Cases",
+      "sev": "S3",
+      "owner": "Swastik Sharma",
       "status": "Not started",
       "opened": "",
       "days": null
