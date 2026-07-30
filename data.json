@@ -1,19 +1,19 @@
 {
-  "generated": "2026-07-30T16:09:09+00:00",
+  "generated": "2026-07-30T17:57:59+00:00",
   "kpis": {
-    "total": 117,
+    "total": 118,
     "resolved": 114,
     "resolvedPct": 97,
-    "inProgress": 2,
-    "notStarted": 1,
-    "reTest": 0,
+    "inProgress": 1,
+    "notStarted": 2,
+    "reTest": 1,
     "reopened": 0,
     "openS1": 0,
-    "openS2": 0,
-    "totalOpen": 3,
-    "unassignedOpen": 1,
+    "openS2": 1,
+    "totalOpen": 4,
+    "unassignedOpen": 3,
     "future": 21,
-    "setAside": 15
+    "setAside": 16
   },
   "status": [
     {
@@ -22,11 +22,15 @@
     },
     {
       "label": "In progress",
-      "count": 2
+      "count": 1
+    },
+    {
+      "label": "Re-test",
+      "count": 1
     },
     {
       "label": "Not started",
-      "count": 1
+      "count": 2
     }
   ],
   "severity": [
@@ -37,8 +41,8 @@
     },
     {
       "label": "S2 · Critical",
-      "total": 53,
-      "open": 0
+      "total": 54,
+      "open": 1
     },
     {
       "label": "S3 · Elevated",
@@ -47,13 +51,13 @@
     },
     {
       "label": "S4 · General",
-      "total": 8,
-      "open": 2
+      "total": 7,
+      "open": 1
     },
     {
       "label": "Unspecified",
-      "total": 6,
-      "open": 1
+      "total": 7,
+      "open": 2
     }
   ],
   "category": [
@@ -74,8 +78,8 @@
     },
     {
       "label": "Session Management",
-      "total": 15,
-      "open": 1
+      "total": 14,
+      "open": 0
     },
     {
       "label": "Guardrails / Output Quality",
@@ -88,14 +92,14 @@
       "open": 0
     },
     {
+      "label": "Unspecified",
+      "total": 6,
+      "open": 3
+    },
+    {
       "label": "Content / Instruction Defects",
       "total": 4,
       "open": 0
-    },
-    {
-      "label": "Unspecified",
-      "total": 4,
-      "open": 1
     },
     {
       "label": "Retrieval Quality",
@@ -106,8 +110,8 @@
   "rootCause": [
     {
       "label": "Frontend / Chat Widget",
-      "total": 38,
-      "open": 1
+      "total": 37,
+      "open": 0
     },
     {
       "label": "Instruction File / Prompt",
@@ -121,8 +125,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 1
+      "total": 7,
+      "open": 3
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -143,8 +147,8 @@
   "owner": [
     {
       "label": "Swastik Sharma",
-      "total": 55,
-      "open": 1
+      "total": 54,
+      "open": 0
     },
     {
       "label": "Daniel Nicholas",
@@ -173,14 +177,14 @@
     },
     {
       "label": "Unassigned",
-      "total": 1,
-      "open": 1
+      "total": 3,
+      "open": 3
     }
   ],
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 123
+      "count": 125
     },
     {
       "label": "Enhancement/Wishlist",
@@ -298,38 +302,47 @@
     },
     {
       "wi": "PROD TC-006: Mixed Content Query (Multiple Topics)",
-      "status": "Not started",
+      "status": "In progress",
       "owner": "Ekta Mangal"
     }
   ],
   "recent": [],
   "openItems": [
     {
+      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
+      "sev": "S2",
+      "pri": "High",
+      "status": "Re-test",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3611286161981316"
+    },
+    {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S4",
-      "pri": "High",
+      "pri": "Medium",
       "status": "In progress",
       "owner": "Chris Smith",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
     },
     {
-      "wi": "If a Standard Care customer has an Unlimited SLA but not a Case limit SLA DSA comes back that the customer does not have any cases and it will not create a case or chat.",
-      "sev": "S4",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Swastik Sharma",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=7709467481079684"
-    },
-    {
-      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
+      "wi": "PROD - No Tracking No. - Inaccurate Message to Customer",
       "sev": "—",
       "pri": "—",
-      "status": "In progress",
+      "status": "Not started",
       "owner": "Unassigned",
       "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=3611286161981316"
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8114885789351812"
+    },
+    {
+      "wi": "PROD: TC-033: Dela gave an answer after I replied \"latest\" when asked what version",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=746251370758020"
     }
   ],
   "aging": [
@@ -342,18 +355,26 @@
       "days": null
     },
     {
-      "wi": "If a Standard Care customer has an Unlimited SLA but not a Case limit SLA DSA comes back that the customer does not have any cases and it will not create a case or chat.",
-      "sev": "S4",
-      "owner": "Swastik Sharma",
+      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
+      "sev": "S2",
+      "owner": "Unassigned",
+      "status": "Re-test",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "PROD - No Tracking No. - Inaccurate Message to Customer",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
     },
     {
-      "wi": "PROD: TC-02-04 - Dela seemed to stop working, no hold messages",
+      "wi": "PROD: TC-033: Dela gave an answer after I replied \"latest\" when asked what version",
       "sev": "—",
       "owner": "Unassigned",
-      "status": "In progress",
+      "status": "Not started",
       "opened": "",
       "days": null
     }
