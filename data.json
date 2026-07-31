@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-31T17:07:28+00:00",
+  "generated": "2026-07-31T18:55:12+00:00",
   "kpis": {
     "total": 123,
     "resolved": 115,
@@ -47,13 +47,13 @@
     },
     {
       "label": "S4 · General",
-      "total": 7,
-      "open": 1
+      "total": 8,
+      "open": 2
     },
     {
       "label": "Unspecified",
-      "total": 8,
-      "open": 3
+      "total": 7,
+      "open": 2
     }
   ],
   "category": [
@@ -64,8 +64,8 @@
     },
     {
       "label": "Escalation & Handoff",
-      "total": 27,
-      "open": 0
+      "total": 28,
+      "open": 1
     },
     {
       "label": "Platform / Infrastructure",
@@ -88,14 +88,14 @@
       "open": 0
     },
     {
-      "label": "Unspecified",
-      "total": 6,
-      "open": 3
-    },
-    {
       "label": "Content / Instruction Defects",
       "total": 5,
       "open": 1
+    },
+    {
+      "label": "Unspecified",
+      "total": 5,
+      "open": 2
     },
     {
       "label": "Retrieval Quality",
@@ -121,8 +121,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 7,
-      "open": 3
+      "total": 6,
+      "open": 2
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -136,8 +136,8 @@
     },
     {
       "label": "Session / State Management",
-      "total": 1,
-      "open": 0
+      "total": 2,
+      "open": 1
     }
   ],
   "owner": [
@@ -180,7 +180,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 128
+      "count": 129
     },
     {
       "label": "Enhancement/Wishlist",
@@ -192,7 +192,7 @@
     },
     {
       "label": "Untagged",
-      "count": 4
+      "count": 3
     }
   ],
   "future": [
@@ -355,6 +355,15 @@
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
     },
     {
+      "wi": "DSA Backlogs: Notification (KB Alerts) Bar and Session End Confirmation upon page reload/exit",
+      "sev": "S4",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5212040823963524"
+    },
+    {
       "wi": "BACKLOG - Session End Confirmation upon page reload/exit",
       "sev": "—",
       "pri": "—",
@@ -362,15 +371,6 @@
       "owner": "Unassigned",
       "type": "Untagged",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=426524398190468"
-    },
-    {
-      "wi": "DSA Backlogs: Notification (KB Alerts) Bar and Session End Confirmation upon page reload/exit",
-      "sev": "—",
-      "pri": "—",
-      "status": "Not started",
-      "owner": "Unassigned",
-      "type": "Untagged",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5212040823963524"
     },
     {
       "wi": "PROD Staging Live Chat Case Handoff",
@@ -425,7 +425,7 @@
     },
     {
       "wi": "DSA Backlogs: Notification (KB Alerts) Bar and Session End Confirmation upon page reload/exit",
-      "sev": "—",
+      "sev": "S4",
       "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
