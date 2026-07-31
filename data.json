@@ -1,24 +1,24 @@
 {
-  "generated": "2026-07-31T13:28:20+00:00",
+  "generated": "2026-07-31T15:05:43+00:00",
   "kpis": {
-    "total": 120,
-    "resolved": 114,
-    "resolvedPct": 95,
+    "total": 123,
+    "resolved": 115,
+    "resolvedPct": 93,
     "inProgress": 1,
-    "notStarted": 5,
+    "notStarted": 7,
     "reTest": 0,
     "reopened": 0,
-    "openS1": 1,
+    "openS1": 0,
     "openS2": 1,
-    "totalOpen": 6,
-    "unassignedOpen": 0,
+    "totalOpen": 8,
+    "unassignedOpen": 3,
     "future": 21,
     "setAside": 17
   },
   "status": [
     {
       "label": "Complete",
-      "count": 114
+      "count": 115
     },
     {
       "label": "In progress",
@@ -26,14 +26,14 @@
     },
     {
       "label": "Not started",
-      "count": 5
+      "count": 7
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
       "total": 14,
-      "open": 1
+      "open": 0
     },
     {
       "label": "S2 · Critical",
@@ -52,8 +52,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 5,
-      "open": 0
+      "total": 8,
+      "open": 3
     }
   ],
   "category": [
@@ -70,7 +70,7 @@
     {
       "label": "Platform / Infrastructure",
       "total": 18,
-      "open": 1
+      "open": 0
     },
     {
       "label": "Session Management",
@@ -88,17 +88,17 @@
       "open": 0
     },
     {
+      "label": "Unspecified",
+      "total": 6,
+      "open": 3
+    },
+    {
       "label": "Content / Instruction Defects",
       "total": 5,
       "open": 1
     },
     {
       "label": "Retrieval Quality",
-      "total": 3,
-      "open": 0
-    },
-    {
-      "label": "Unspecified",
       "total": 3,
       "open": 0
     }
@@ -112,7 +112,7 @@
     {
       "label": "Instruction File / Prompt",
       "total": 36,
-      "open": 2
+      "open": 1
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -121,8 +121,8 @@
     },
     {
       "label": "Unspecified",
-      "total": 4,
-      "open": 0
+      "total": 7,
+      "open": 3
     },
     {
       "label": "Knowledge Source / Retrieval",
@@ -149,7 +149,7 @@
     {
       "label": "Daniel Nicholas",
       "total": 34,
-      "open": 2
+      "open": 1
     },
     {
       "label": "Ekta Mangal",
@@ -170,6 +170,11 @@
       "label": "Scott Duckworth",
       "total": 4,
       "open": 0
+    },
+    {
+      "label": "Unassigned",
+      "total": 3,
+      "open": 3
     }
   ],
   "itemTypes": [
@@ -187,7 +192,7 @@
     },
     {
       "label": "Untagged",
-      "count": 1
+      "count": 4
     }
   ],
   "future": [
@@ -297,17 +302,13 @@
       "owner": "Ekta Mangal"
     }
   ],
-  "recent": [],
-  "openItems": [
+  "recent": [
     {
       "wi": "PROD - No Tracking No - DSA  in Ajera Brain instructions, skills referenced for Five9 for routing from\nDSS Select - Ajera XXXXXXXXXXXXX",
-      "sev": "S1",
-      "pri": "High",
-      "status": "Not started",
-      "owner": "Daniel Nicholas",
-      "type": "Issue/Bugs",
-      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5072510781357956"
-    },
+      "resolved": "2026-07-31"
+    }
+  ],
+  "openItems": [
     {
       "wi": "PROD: DSA customers can access Submit case and Initiate a Chat via links in Deltek Community",
       "sev": "S2",
@@ -352,17 +353,36 @@
       "owner": "Chris Smith",
       "type": "Issue/Bugs",
       "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=454050351284100"
+    },
+    {
+      "wi": "BACKLOG - Session End Confirmation upon page reload/exit",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Untagged",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=426524398190468"
+    },
+    {
+      "wi": "DSA Backlogs: Notification (KB Alerts) Bar and Session End Confirmation upon page reload/exit",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Untagged",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5212040823963524"
+    },
+    {
+      "wi": "PROD Staging Live Chat Case Handoff",
+      "sev": "—",
+      "pri": "—",
+      "status": "Not started",
+      "owner": "Unassigned",
+      "type": "Untagged",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=8945136763273092"
     }
   ],
   "aging": [
-    {
-      "wi": "PROD - No Tracking No - DSA  in Ajera Brain instructions, skills referenced for Five9 for routing from\nDSS Select - Ajera XXXXXXXXXXXXX",
-      "sev": "S1",
-      "owner": "Daniel Nicholas",
-      "status": "Not started",
-      "opened": "2026-07-31",
-      "days": 0
-    },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S4",
@@ -399,6 +419,30 @@
       "wi": "PROD - No Tracking No - DSA say you can submit a case in Manage Cases",
       "sev": "S3",
       "owner": "Swastik Sharma",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "DSA Backlogs: Notification (KB Alerts) Bar and Session End Confirmation upon page reload/exit",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "BACKLOG - Session End Confirmation upon page reload/exit",
+      "sev": "—",
+      "owner": "Unassigned",
+      "status": "Not started",
+      "opened": "",
+      "days": null
+    },
+    {
+      "wi": "PROD Staging Live Chat Case Handoff",
+      "sev": "—",
+      "owner": "Unassigned",
       "status": "Not started",
       "opened": "",
       "days": null
@@ -565,6 +609,12 @@
       "owner": "Ekta Mangal",
       "resolved": "2026-07-20",
       "wi": "Telemetry object being passed to front end",
+      "days": 0
+    },
+    {
+      "owner": "Daniel Nicholas",
+      "resolved": "2026-07-31",
+      "wi": "PROD - No Tracking No - DSA  in Ajera Brain instructions, skills referenced for Five9 for routing from\nDSS Select - Ajera XXXXXXXXXXXXX",
       "days": 0
     }
   ]
