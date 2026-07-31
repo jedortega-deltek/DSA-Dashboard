@@ -1,16 +1,16 @@
 {
-  "generated": "2026-07-31T12:29:58+00:00",
+  "generated": "2026-07-31T13:28:20+00:00",
   "kpis": {
-    "total": 119,
+    "total": 120,
     "resolved": 114,
-    "resolvedPct": 96,
+    "resolvedPct": 95,
     "inProgress": 1,
-    "notStarted": 4,
+    "notStarted": 5,
     "reTest": 0,
     "reopened": 0,
-    "openS1": 0,
+    "openS1": 1,
     "openS2": 1,
-    "totalOpen": 5,
+    "totalOpen": 6,
     "unassignedOpen": 0,
     "future": 21,
     "setAside": 17
@@ -26,14 +26,14 @@
     },
     {
       "label": "Not started",
-      "count": 4
+      "count": 5
     }
   ],
   "severity": [
     {
       "label": "S1 · Mission critical",
-      "total": 13,
-      "open": 0
+      "total": 14,
+      "open": 1
     },
     {
       "label": "S2 · Critical",
@@ -69,8 +69,8 @@
     },
     {
       "label": "Platform / Infrastructure",
-      "total": 17,
-      "open": 0
+      "total": 18,
+      "open": 1
     },
     {
       "label": "Session Management",
@@ -111,8 +111,8 @@
     },
     {
       "label": "Instruction File / Prompt",
-      "total": 35,
-      "open": 1
+      "total": 36,
+      "open": 2
     },
     {
       "label": "n8n Workflow / Orchestration",
@@ -148,8 +148,8 @@
     },
     {
       "label": "Daniel Nicholas",
-      "total": 33,
-      "open": 1
+      "total": 34,
+      "open": 2
     },
     {
       "label": "Ekta Mangal",
@@ -175,7 +175,7 @@
   "itemTypes": [
     {
       "label": "Issue/Bugs",
-      "count": 127
+      "count": 128
     },
     {
       "label": "Enhancement/Wishlist",
@@ -300,6 +300,15 @@
   "recent": [],
   "openItems": [
     {
+      "wi": "PROD - No Tracking No - DSA  in Ajera Brain instructions, skills referenced for Five9 for routing from\nDSS Select - Ajera XXXXXXXXXXXXX",
+      "sev": "S1",
+      "pri": "High",
+      "status": "Not started",
+      "owner": "Daniel Nicholas",
+      "type": "Issue/Bugs",
+      "link": "https://app.smartsheet.com/sheets/V4wQxRfwM5927282xP3qfgrcMxFGXJQXhJR83g91?rowId=5072510781357956"
+    },
+    {
       "wi": "PROD: DSA customers can access Submit case and Initiate a Chat via links in Deltek Community",
       "sev": "S2",
       "pri": "Low",
@@ -346,6 +355,14 @@
     }
   ],
   "aging": [
+    {
+      "wi": "PROD - No Tracking No - DSA  in Ajera Brain instructions, skills referenced for Five9 for routing from\nDSS Select - Ajera XXXXXXXXXXXXX",
+      "sev": "S1",
+      "owner": "Daniel Nicholas",
+      "status": "Not started",
+      "opened": "2026-07-31",
+      "days": 0
+    },
     {
       "wi": "No Tracking no. - Sorry, I could not reach support right now. Please try again.",
       "sev": "S4",
