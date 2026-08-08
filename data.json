@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-07T23:40:06+00:00",
+  "generated": "2026-08-08T02:07:33+00:00",
   "kpis": {
     "total": 123,
     "resolved": 115,
@@ -302,12 +302,7 @@
       "owner": "Ekta Mangal"
     }
   ],
-  "recent": [
-    {
-      "wi": "PROD - No Tracking No - DSA  in Ajera Brain instructions, skills referenced for Five9 for routing from\nDSS Select - Ajera XXXXXXXXXXXXX",
-      "resolved": "2026-07-31"
-    }
-  ],
+  "recent": [],
   "openItems": [
     {
       "wi": "PROD: DSA customers can access Submit case and Initiate a Chat via links in Deltek Community",
